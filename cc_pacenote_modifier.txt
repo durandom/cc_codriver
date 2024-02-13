@@ -1,0 +1,16 @@
+// public enum PacenoteModifier : int
+
+none = 0,
+detail_narrows = 1,
+detail_wideout = 2,
+detail_tightens = 4,
+detail_dont_cut = 32,
+detail_cut = 64,
+detail_double_tightens = 128,
+detail_opens = 256,
+detail_longlong = 512,
+detail_long = 1024,
+detail_minus = 2048,
+detail_plus = 4096,
+detail_maybe = 8192,
+detail_widens = 16384

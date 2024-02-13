@@ -213,12 +213,12 @@ class CoDriver:
             note.create()
 
     def rbr_list_csv(self):
+        csv_writer = csv.writer(sys.stdout)
+        csv_writer.writerow(['style', 'id', 'name', 'type', 'category', 'package', 'ini', 'sound_count', 'sounds'])
         for name, rbr_pacenote_plugin in self.rbr_pacenote_plugins.items():
             notes = rbr_pacenote_plugin.pacenotes.values()
             notes = sorted(notes, key=lambda x: x.id)
 
-            csv_writer = csv.writer(sys.stdout)
-            csv_writer.writerow(['style', 'id', 'name', 'type', 'category', 'package', 'ini', 'sound_count', 'sounds'])
             for note in notes:
                 for sound in note.sounds:
                     csv_writer.writerow([name, note.id, note.name, note.type, note.category, note.package, note.ini, note.sound_count, sound])

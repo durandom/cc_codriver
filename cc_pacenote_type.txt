@@ -1,3 +1,4 @@
+// public enum PacenoteType
 // Weird naming is used to simplify sound reading.
 corner_1_left = 0,
 corner_square_left = 1,

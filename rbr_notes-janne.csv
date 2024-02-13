@@ -265,7 +265,6 @@ Number First,2108,over_jump,PACENOTE,OBSTACLES,RBR,Extended.ini,2,hypynyli1.ogg
 Number First,2108,over_jump,PACENOTE,OBSTACLES,RBR,Extended.ini,2,hypynyli2.ogg
 Number First,2109,small_crest,PACENOTE,OBSTACLES,RBR,Extended.ini,2,pikkunyppy1.ogg
 Number First,2109,small_crest,PACENOTE,OBSTACLES,RBR,Extended.ini,2,pikkunyppy2.ogg
-style,id,name,type,category,package,ini,sound_count,sounds
 Direction First,0,one_left,PACENOTE,CORNERS,RBR,Numeric.ini,2,vasen_tiukka1.ogg
 Direction First,0,one_left,PACENOTE,CORNERS,RBR,Numeric.ini,2,vasen_tiukka2.ogg
 Direction First,0,narrows,PACENOTE,MODIFIER,RBR,Extended.ini,1,sumppu.ogg
@@ -532,7 +531,6 @@ Direction First,2108,over_jump,PACENOTE,OBSTACLES,RBR,Extended.ini,2,hypynyli1.o
 Direction First,2108,over_jump,PACENOTE,OBSTACLES,RBR,Extended.ini,2,hypynyli2.ogg
 Direction First,2109,small_crest,PACENOTE,OBSTACLES,RBR,Extended.ini,2,pikkunyppy1.ogg
 Direction First,2109,small_crest,PACENOTE,OBSTACLES,RBR,Extended.ini,2,pikkunyppy2.ogg
-style,id,name,type,category,package,ini,sound_count,sounds
 English Descriptive,0,hairpin_left,PACENOTE,CORNERS,RBR,Descriptive.ini,2,vasen_serpo1.ogg
 English Descriptive,0,hairpin_left,PACENOTE,CORNERS,RBR,Descriptive.ini,2,vasen_serpo2.ogg
 English Descriptive,0,narrows,PACENOTE,MODIFIER,RBR,Extended.ini,1,sumppu.ogg
