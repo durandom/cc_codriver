@@ -69,6 +69,8 @@ class CrewChiefNote:
         print(f'{self.name}')
 
     def add_sound(self, file, subtitle):
+        if file in self.sounds:
+            logging.error(f'Duplicate sound: {file} in {self}')
         self.sounds[file] = subtitle
 
     def __str__(self):
@@ -322,14 +324,13 @@ class CoDriver:
 
             if len(notes) != 1:
                 logging.error(f'{sound}: Found {len(notes)} notes for type {type} - {notes}')
-                exit(1)
+
             logging.debug(f'{sound}: - type: {type} - note: {notes}')
 
             for note in notes:
                 cc_note.add_note(note)
 
             cc_notes.append(cc_note)
-            print(cc_note)
 
         self.mapped_cc_notes = cc_notes
 
@@ -364,8 +365,7 @@ if __name__ == '__main__':
 
     # get commandline arguments and parse them
     parser = argparse.ArgumentParser(description='CoDriver')
-    # parser.add_argument('--config', help='Configuration file', default='config.json')
-    parser.add_argument('--config', help='Configuration file', default='config-janne-v2.json')
+    parser.add_argument('--config', help='Configuration file', default='config.json')
     parser.add_argument('--rbr-list', action='store_true', help='List RBR pacenotes')
     parser.add_argument('--rbr-list-csv', action='store_true', help='List RBR pacenotes as CSV')
     parser.add_argument('--rbr-find-note-by-name', help='Find a note by name')
@@ -385,7 +385,6 @@ if __name__ == '__main__':
     )
 
     for package in config['packages']:
-
         pacenote_dir_absolute = os.path.join(base_dir, package['base_dir'])
         ini_files = package['ini_files']
         rbr_pacenote_plugin = RbrPacenotePlugin(pacenote_dir_absolute, ini_files=ini_files)

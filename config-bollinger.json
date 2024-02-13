@@ -1,0 +1,57 @@
+{
+    "cc_sounds": "assets/codriver",
+    "skip_notes": {
+        "acknowledge_end_recce": -1,
+        "acknowledge_start_recce": -1,
+        "correction": -1,
+        "microphone_check": -1,
+        "penalty_false_start": -1,
+        "we_are_lost": -1,
+
+        "detail_bad_camber": 355,
+        "detail_big_jump": 40002,
+        "detail_and": 4084,
+        "detail_caution_water": 4077,
+        "detail_go": -1,
+        "corner_open_hairpin_left": 40003,
+        "corner_open_hairpin_right": 40004
+    },
+    "map_notes": [
+      {
+        "cc_id": 64,
+        "rbr_name": "cut"
+      }
+    ],
+    "map_cc_types": {
+        "corner_hairpin_right": "corner_1_right",
+        "corner_hairpin_left": "corner_1_left"
+    },
+    "_comment": "additional_cc_types are added to cc_pacenote_type.txt",
+    "additional_cc_types": {
+        "detail_double": 2102,
+        "detail_half_long": 2103,
+        "detail_immediate": 2030,
+        "detail_slippery": 268
+    },
+    "packages":
+    [
+        {
+            "name": "Deskriptiv",
+            "base_dir": "assets/Co_Driver_RBR_Deutsch_Bollinger_V1.1_22-12-03/David_Bollinger_(CH)/Deutsch Numerisch - Deskriptiv/Plugins/Pacenote",
+            "ini_files": ["Rbr.ini", "Rbr-Enhanced.ini"],
+            "type": "descriptive"
+        },
+        {
+            "name": "Direction First",
+            "base_dir": "assets/Co_Driver_RBR_Deutsch_Bollinger_V1.1_22-12-03/David_Bollinger_(CH)/Deutsch Numerisch - Kurve zuerst/Plugins/Pacenote",
+            "ini_files": ["Rbr.ini", "Rbr-Enhanced.ini"],
+            "type": "reversed"
+        },
+        {
+            "name": "English Descriptive",
+            "base_dir": "assets/Co_Driver_RBR_Deutsch_Bollinger_V1.1_22-12-03/David_Bollinger_(CH)/Deutsch Numerisch - Nummer zuerst/Plugins/Pacenote",
+            "ini_files": ["Rbr.ini", "Rbr-Enhanced.ini"],
+            "type": "numeric"
+        }
+    ]
+}

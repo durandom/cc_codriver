@@ -154,17 +154,17 @@ class RbrPacenotePlugin:
             return
 
         config = configparser.ConfigParser(strict=False)
-        # config.read(content.splitlines())
         try:
             config.read(file, encoding='utf-8')
         except Exception as e:
-            logging.error(f'Error reading {file}: {e}')
+            # logging.error(f'Error reading {file}: {e}')
             # work around for configparser not handling utf-8
             with open(file, 'r', encoding='utf-8') as f:
                 content = f.read()
             # remove the BOM
             content = content.replace('\ufeff', '')
             config.read_string(content)
+
         strings = {}
         for section in config.sections():
             if section == 'STRINGS':
