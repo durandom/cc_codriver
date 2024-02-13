@@ -18,6 +18,38 @@ class RbrPacenote:
     def __str__(self):
         return f'{self.id}: {self.name} - T: {self.type} - C: {self.category} - P: {self.package} - Sounds: {self.sounds} - Translation: {self.translation} - Ini: {self.ini}'
 
+    def __repr__(self):
+        return f'{self.id}: {self.name} - T: {self.type} - C: {self.category} - P: {self.package} - Sounds: {self.sounds} - Translation: {self.translation} - Ini: {self.ini}'
+
+    def __hash__(self) -> int:
+        str = f'{self.id}: {self.name} - Sounds: {self.sounds.sort()} - Translation: {self.translation}'
+        return hash(str)
+
+    def __eq__(self, other):
+        if not isinstance(other, RbrPacenote):
+            return False
+
+        if self.name != other.name:
+            return False
+        if self.id != other.id:
+            return False
+        # if self.type != other.type:
+        #     return False
+        # if self.category != other.category:
+        #     return False
+        # if self.package != other.package:
+        #     return False
+        if self.translation != other.translation:
+            return False
+
+        # compare the sounds as a set
+        my_sounds = set(self.sounds)
+        other_sounds = set(other.sounds)
+        if my_sounds != other_sounds:
+            return False
+
+        return True
+
     def almost_equal(self, other):
         if not isinstance(other, RbrPacenote):
             return False
@@ -37,34 +69,10 @@ class RbrPacenote:
 
         return True
 
-    def __eq__(self, other):
-        if not isinstance(other, RbrPacenote):
-            return False
-
-        if self.name != other.name:
-            return False
-        if self.id != other.id:
-            return False
-        if self.type != other.type:
-            return False
-        if self.category != other.category:
-            return False
-        if self.package != other.package:
-            return False
-        if self.translation != other.translation:
-            return False
-
-        # compare the sounds as a set
-        my_sounds = set(self.sounds)
-        other_sounds = set(other.sounds)
-        if my_sounds != other_sounds:
-            return False
-
-        return True
 
 class RbrPacenotePlugin:
     def __init__(self, plugin_dir = "Pacenote/", ini_files = ["Rbr.ini", "Rbr-Enhanced.ini"]):
-        self.pacenotes = {}
+        self.pacenotes = set()
         # self.ini_file = ini_file
         # base_dir is the directory of this file + ini_file
         self.plugin_dir = plugin_dir
@@ -205,7 +213,7 @@ class RbrPacenotePlugin:
                 note.type = type
                 note.category = category
                 note.package = package
-                note.id = config.getint(section, 'id', fallback=0)
+                note.id = config.getint(section, 'id', fallback=-1)
                 if not note.id and note.type == 'PACENOTE':
                     logging.debug(f'No id in {section}')
                 note.sound_count = config.getint(section, 'Sounds', fallback=-1)
@@ -221,14 +229,15 @@ class RbrPacenotePlugin:
                 #     # sound = os.path.join(current_base_dir, sound)
 
                 self.add_translation(note)
+                self.pacenotes.add(note)
 
-                if name not in self.pacenotes:
-                    # logging.debug('New pacenote id: %s - %s' % (id, section))
-                    self.pacenotes[name] = note
-                else:
-                    existing = self.pacenotes[name]
-                    if not existing.almost_equal(note):
-                        logging.error('Conflicting pacenote: \n%s\n%s' % (existing, note))
+                # if name not in self.pacenotes:
+                #     # logging.debug('New pacenote id: %s - %s' % (id, section))
+                #     self.pacenotes[name] = note
+                # else:
+                #     existing = self.pacenotes[name]
+                #     if not existing.almost_equal(note):
+                #         logging.error('Conflicting pacenote: \n%s\n%s' % (existing, note))
 
 
 if __name__ == '__main__':

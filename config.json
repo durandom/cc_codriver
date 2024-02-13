@@ -1,20 +1,24 @@
 {
+    "cc_sounds": "assets/codriver",
     "packages":
     [
         {
             "name": "Number First",
             "base_dir": "assets/Janne's Note Pack v2.0/English Numeric - Number First/Plugins/Pacenote",
-            "ini_files": ["Rbr.ini", "Rbr-Enhanced.ini"]
+            "ini_files": ["Rbr.ini", "Rbr-Enhanced.ini"],
+            "type": "numeric"
         },
         {
             "name": "Direction First",
             "base_dir": "assets/Janne's Note Pack v2.0/English Numeric - Direction First/Plugins/Pacenote",
-            "ini_files": ["Rbr.ini", "Rbr-Enhanced.ini"]
+            "ini_files": ["Rbr.ini", "Rbr-Enhanced.ini"],
+            "type": "direction-first"
         },
         {
             "name": "English Descriptive",
             "base_dir": "assets/Janne's Note Pack v2.0/English Descriptive/Plugins/Pacenote",
-            "ini_files": ["Rbr.ini", "Rbr-Enhanced.ini"]
+            "ini_files": ["Rbr.ini", "Rbr-Enhanced.ini"],
+            "type": "descriptive"
         }
     ]
 }

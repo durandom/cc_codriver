@@ -6,7 +6,8 @@ import json
 import os
 import logging
 import sys
-from rbr_pacenote_plugin import RbrPacenotePlugin
+from typing import List, Optional
+from rbr_pacenote_plugin import RbrPacenotePlugin, RbrPacenote
 
 
 class PacenoteType:
@@ -22,6 +23,7 @@ class PacenoteType:
             'corner_4' : 'four',
             'corner_5' : 'five',
             'corner_6' : 'six',
+            'detail_' : '',
         }
 
         _rbr_name = self.name
@@ -35,9 +37,21 @@ class PacenoteType:
         return f'{self.name} - {self.id}'
 
 class CrewChiefNote:
-    def __init__(self, name):
+
+    def __init__(self, name, notes=[]):
         self.name = name
         self.sounds = {} # soundfile: subtitle
+        self.rushed = False
+        self.prefix = None
+
+        if notes:
+            for note in notes:
+                self.add_note(note)
+
+    def add_note(self, note):
+        for file in note.sounds:
+            subtitle = note.translation
+            self.add_sound(file, subtitle)
 
     def create(self):
         print(f'{self.name}')
@@ -49,7 +63,7 @@ class CrewChiefNote:
         return f'{self.name} - {self.sounds}'
 
 class CoDriver:
-    def __init__(self, cc_pacenote_types = "pacenote_type.txt", cc_sounds = "codriver"):
+    def __init__(self, cc_pacenote_types = "cc_pacenote_type.txt", cc_sounds = "codriver"):
         self.cc_pacenotes_types = {}
         self.cc_sounds = {}
         self.rbr_sounds = {}
@@ -59,8 +73,8 @@ class CoDriver:
         self.init_cc_sounds(cc_sounds)
 
 
-    def add_pacenote_plugin(self, name, rbr_pacenote_plugin):
-        self.rbr_pacenote_plugins[name] = rbr_pacenote_plugin
+    def add_pacenote_plugin(self, type, rbr_pacenote_plugin):
+        self.rbr_pacenote_plugins[type] = rbr_pacenote_plugin
 
     # 2. Get the mapping from CC CoDriver.cs
     # public enum PacenoteType
@@ -69,7 +83,7 @@ class CoDriver:
     #     corner_1_left = 0,
     #     corner_square_left = 1,
     #     detail_finish = 22,
-    def init_cc_pacenotes_types(self, file = "pacenote_type.txt"):
+    def init_cc_pacenotes_types(self, file = "cc_pacenote_type.txt"):
         # // Weird naming is used to simplify sound reading.
         # corner_1_left = 0,
         # iterate through the lines
@@ -127,84 +141,131 @@ class CoDriver:
             exit(1)
         return type
 
-    def get_rbr_pacenote_by_name(self, name):
-        for id, note in self.rbr_pacenotes.items():
-            if note.name.lower() == name.lower():
-                return note
-        return None
+    def get_rbr_pacenote_by_name(self, name, package = "numeric"):
+        plugin = self.rbr_pacenote_plugins[package]
+        name = name.lower()
+        notes = [ note for note in plugin.pacenotes if note.name.lower() == name]
+        return notes
 
-    def get_rbr_pacenote_by_id(self, id):
-        for note in self.rbr_pacenotes.values():
-            if note.id == id:
-                return note
-        return None
+    def get_rbr_pacenotes_by_id(self, id, package = "numeric"):
+        plugin = self.rbr_pacenote_plugins[package]
+        notes = [ note for note in plugin.pacenotes if note.id == id]
+        return notes
 
-    def get_pacenote_type_for_cc_sound(self, sound):
+    def get_rbr_pacenotes(self, id='', name='', package = "numeric") -> List[RbrPacenote]:
+        notes = []
+        if id:
+            notes = self.get_rbr_pacenotes_by_id(id, package=package)
+            if notes:
+                return notes
+        if name:
+            notes = self.get_rbr_pacenote_by_name(name, package=package)
+            if notes:
+                return notes
+
+    def get_pacenote_type_for_cc_sound(self, sound) -> Optional[PacenoteType]:
         for id, type in self.cc_pacenotes_types.items():
             if type.name.lower() == sound.lower():
                 return type
         return None
 
-    def map_notes(self):
-        # iterate through the pacenotes
-        for id, note in self.rbr_pacenotes.items():
-            logging.debug(f'{note}')
-            if note.id:
-                type = self.get_pacenote_type_for_id(note.id)
-                name = type.name
-            else:
-                logging.debug(f'no id')
+    # def map_notes(self):
+    #     # iterate through the pacenotes
+    #     for id, note in self.rbr_pacenotes.items():
+    #         logging.debug(f'{note}')
+    #         if note.id:
+    #             type = self.get_pacenote_type_for_id(note.id)
+    #             name = type.name
+    #         else:
+    #             logging.debug(f'no id')
 
-            cc_note = CrewChiefNote(name)
+    #         cc_note = CrewChiefNote(name)
 
-            for sound in note.sounds:
-                # get the path to the rbr sound file
-                file = self.rbr_pacenote_plugin.sound_file(sound)
-                if os.path.exists(file):
-                    logging.debug(f'Found sound: {sound}')
-                    cc_note.add_sound(file, "")
-                else:
-                    logging.error(f'Not found: {sound} - {file}')
-                    return
+    #         for sound in note.sounds:
+    #             # get the path to the rbr sound file
+    #             file = self.rbr_pacenote_plugin.sound_file(sound)
+    #             if os.path.exists(file):
+    #                 logging.debug(f'Found sound: {sound}')
+    #                 cc_note.add_sound(file, "")
+    #             else:
+    #                 logging.error(f'Not found: {sound} - {file}')
+    #                 return
+
+    def map_package_and_type(self, type = '', package = 'numeric'):
+        if type.endswith('_descriptive'):
+            package = 'descriptive'
+            type = type[:-12]
+
+        mapping = {
+            'corner_hairpin_right': 'corner_1_right',
+            'corner_hairpin_left': 'corner_1_left',
+        }
+
+        if type in mapping:
+            type = mapping[type]
+
+        return (package, type)
+
     def map_notes_from_cc(self):
         ignore = [
             'acknowledge_end_recce',
             'acknowledge_start_recce'
         ]
+
+        type = self.get_pacenote_type_for_cc_sound('detail_into')
+        if not type:
+            logging.error(f'Unknown pacenote type: detail_into')
+            exit(1)
+        notes = self.get_rbr_pacenotes(id=type.id, name=type.rbr_name())
+        if len(notes) != 1:
+            logging.error(f'Found {len(notes)} notes for type {type} - {notes}')
+            exit(1)
+        into = CrewChiefNote('detail_into', notes=notes)
+
+
         for sound in sorted(self.cc_sounds.keys()):
             if sound in ignore:
                 logging.debug(f'ignoring {sound}')
                 continue
+
+            # create a new CrewChiefNote
+            cc_note = CrewChiefNote(sound)
+
             if sound.startswith('cmp_'):
                 # remove the cmp_ prefix
                 remainder = sound[4:]
+
                 if remainder.startswith('into_'):
-                    into = self.get_rbr_pacenote_by_name('into')
                     remainder = remainder[5:]
+                    cc_note.prefix = into
+
+                if remainder.endswith('_rushed'):
+                    remainder = remainder[:-7]
+                    cc_note.rushed = True
+
+                (package, remainder) = self.map_package_and_type(type=remainder)
+
                 # get the pacenote type
                 type = self.get_pacenote_type_for_cc_sound(remainder)
                 if not type:
                     logging.error(f'Unknown pacenote type: {remainder}')
                     exit(1)
+
                 # get the rbr pacenote
+                notes = self.get_rbr_pacenotes_by_id(type.id, package=package)
 
-                note = self.get_rbr_pacenote_by_name(type.rbr_name())
-                if not note:
-                    logging.error(f'Unknown pacenote: {type.id}')
+                if len(notes) != 1:
+                    logging.error(f'Found {len(notes)} notes for type {type} - {notes}')
                     exit(1)
-                logging.debug(f'{sound}: - type: {type} - note: {note}')
+                logging.debug(f'{sound}: - type: {type} - note: {notes}')
 
-                # create a new CrewChiefNote
-                cc_note = CrewChiefNote(sound)
-                for file in note.sounds:
-                    subtitle = note.translation
-                    cc_note.add_sound(file, subtitle)
+                for note in notes:
+                    for file in note.sounds:
+                        subtitle = note.translation
+                        cc_note.add_sound(file, subtitle)
+                        # FIXME: merge the sounds
+
                 print(cc_note)
-
-                print(sound)
-                exit(1)
-                continue
-            print(f'{sound}')
 
     def write_cc_notes(self):
         logging.debug(f'writing {len(self.mapped_cc_notes)} notes')
@@ -214,14 +275,14 @@ class CoDriver:
 
     def rbr_list_csv(self):
         csv_writer = csv.writer(sys.stdout)
-        csv_writer.writerow(['style', 'id', 'name', 'type', 'category', 'package', 'ini', 'sound_count', 'sounds'])
+        csv_writer.writerow(['style', 'id', 'name', 'type', 'category', 'package', 'ini', 'sound_count', 'translation', 'sound'])
         for name, rbr_pacenote_plugin in self.rbr_pacenote_plugins.items():
-            notes = rbr_pacenote_plugin.pacenotes.values()
+            notes = rbr_pacenote_plugin.pacenotes
             notes = sorted(notes, key=lambda x: x.id)
 
             for note in notes:
                 for sound in note.sounds:
-                    csv_writer.writerow([name, note.id, note.name, note.type, note.category, note.package, note.ini, note.sound_count, sound])
+                    csv_writer.writerow([name, note.id, note.name, note.type, note.category, note.package, note.ini, note.sound_count, note.translation, sound])
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.DEBUG)
@@ -240,14 +301,16 @@ if __name__ == '__main__':
     # read the configuration file, which is a json file
     config = json.load(open(args.config))
 
-    codriver = CoDriver()
+    codriver = CoDriver(
+        cc_sounds=config['cc_sounds'],
+    )
 
     for package in config['packages']:
 
         pacenote_dir_absolute = os.path.join(base_dir, package['base_dir'])
         ini_files = package['ini_files']
         rbr_pacenote_plugin = RbrPacenotePlugin(pacenote_dir_absolute, ini_files=ini_files)
-        codriver.add_pacenote_plugin(package['name'], rbr_pacenote_plugin)
+        codriver.add_pacenote_plugin(package['type'], rbr_pacenote_plugin)
 
 
     # if args.rbr_list:
@@ -257,6 +320,7 @@ if __name__ == '__main__':
 
     #     for note in notes:
     #         print(f'{note}')
+    # descriptive,2109,small_crest,PACENOTE,OBSTACLES,RBR_ENHANCED,Extended.ini,2,,pikkunyppy2.ogg
 
     if args.rbr_list_csv:
         codriver.rbr_list_csv()
