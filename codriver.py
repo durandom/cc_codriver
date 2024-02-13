@@ -100,6 +100,8 @@ class CoDriver:
         self.init_cc_pacenotes_modifier(cc_pacenote_modifier)
         self.init_cc_sounds(cc_sounds)
 
+        self.mapped_cc_notes : List[CrewChiefNote] = []
+
     def add_pacenote_plugin(self, type, rbr_pacenote_plugin):
         self.rbr_pacenote_plugins[type] = rbr_pacenote_plugin
 
@@ -273,6 +275,8 @@ class CoDriver:
         return (package, type)
 
     def map_notes_from_cc(self):
+        cc_notes = []
+
         type = self.get_pacenote_type_for_cc_sound('detail_into')
         if not type:
             logging.error(f'Unknown pacenote type: detail_into')
@@ -324,7 +328,10 @@ class CoDriver:
             for note in notes:
                 cc_note.add_note(note)
 
+            cc_notes.append(cc_note)
             print(cc_note)
+
+        self.mapped_cc_notes = cc_notes
 
     def write_cc_notes(self):
         logging.debug(f'writing {len(self.mapped_cc_notes)} notes')
@@ -343,17 +350,26 @@ class CoDriver:
                 for sound in note.sounds:
                     csv_writer.writerow([name, note.id, note.name, note.type, note.category, note.package, note.ini, note.sound_count, note.translation, sound])
 
+    def cc_list_csv(self):
+        csv_writer = csv.writer(sys.stdout)
+        csv_writer.writerow(['type', 'file', 'subtitle'])
+        notes = sorted(self.mapped_cc_notes, key=lambda x: x.name)
+        for note in notes:
+            for sound, subtitle in note.sounds.items():
+                csv_writer.writerow([note.name, sound, subtitle])
+
 if __name__ == '__main__':
     logging.basicConfig(level=logging.DEBUG)
     base_dir = os.path.dirname(os.path.abspath(__file__))
 
     # get commandline arguments and parse them
     parser = argparse.ArgumentParser(description='CoDriver')
-    parser.add_argument('--config', help='Configuration file', default='config.json')
+    # parser.add_argument('--config', help='Configuration file', default='config.json')
+    parser.add_argument('--config', help='Configuration file', default='config-janne-v2.json')
     parser.add_argument('--rbr-list', action='store_true', help='List RBR pacenotes')
     parser.add_argument('--rbr-list-csv', action='store_true', help='List RBR pacenotes as CSV')
     parser.add_argument('--rbr-find-note-by-name', help='Find a note by name')
-    parser.add_argument('--map-to-cc', action='store_true', help='Map RBR pacenotes to CC pacenotes')
+    parser.add_argument('--map-to-cc-csv', action='store_true', help='Map RBR pacenotes to CC pacenotes and write to CSV')
 
     args = parser.parse_args()
 
@@ -395,8 +411,9 @@ if __name__ == '__main__':
         else:
             print(f'Not found: {args.rbr_find_note_by_name}')
 
-    if args.map_to_cc:
+    if args.map_to_cc_csv:
         codriver.map_notes_from_cc()
+        codriver.cc_list_csv()
 
 
 # Links

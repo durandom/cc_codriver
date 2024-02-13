@@ -13,12 +13,12 @@
             "args": "${command:pickArgs}"
         },
         {
-            "name": "map-to-cc",
+            "name": "map-to-cc-csv",
             "type": "debugpy",
             "request": "launch",
             "program": "codriver.py",
             "console": "integratedTerminal",
-            "args": ["--map-to-cc"]
+            "args": ["--map-to-cc-csv"]
         },
         {
             "name": "rbr-list-csv",
