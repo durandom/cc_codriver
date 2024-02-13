@@ -2,6 +2,7 @@
 
 import argparse
 import csv
+import json
 import os
 import logging
 import sys
@@ -48,13 +49,18 @@ class CrewChiefNote:
         return f'{self.name} - {self.sounds}'
 
 class CoDriver:
-    def __init__(self, rbr_pacenote_plugin = None):
+    def __init__(self, cc_pacenote_types = "pacenote_type.txt", cc_sounds = "codriver"):
         self.cc_pacenotes_types = {}
         self.cc_sounds = {}
         self.rbr_sounds = {}
         self.mapped_cc_notes = {}
-        self.rbr_pacenote_plugin = rbr_pacenote_plugin
-        self.rbr_pacenotes = rbr_pacenote_plugin.pacenotes
+        self.rbr_pacenote_plugins = {}
+        self.init_cc_pacenotes_types(cc_pacenote_types)
+        self.init_cc_sounds(cc_sounds)
+
+
+    def add_pacenote_plugin(self, name, rbr_pacenote_plugin):
+        self.rbr_pacenote_plugins[name] = rbr_pacenote_plugin
 
     # 2. Get the mapping from CC CoDriver.cs
     # public enum PacenoteType
@@ -206,70 +212,54 @@ class CoDriver:
         for id, note in self.mapped_cc_notes.items():
             note.create()
 
+    def rbr_list_csv(self):
+        for name, rbr_pacenote_plugin in self.rbr_pacenote_plugins.items():
+            notes = rbr_pacenote_plugin.pacenotes.values()
+            notes = sorted(notes, key=lambda x: x.id)
+
+            csv_writer = csv.writer(sys.stdout)
+            csv_writer.writerow(['style', 'id', 'name', 'type', 'category', 'package', 'ini', 'sound_count', 'sounds'])
+            for note in notes:
+                for sound in note.sounds:
+                    csv_writer.writerow([name, note.id, note.name, note.type, note.category, note.package, note.ini, note.sound_count, sound])
+
 if __name__ == '__main__':
     logging.basicConfig(level=logging.DEBUG)
     base_dir = os.path.dirname(os.path.abspath(__file__))
 
-    pacenote_dir = "Janne's Note Pack v2.0/English Numeric - Number First/Plugins/Pacenote"
-    pacenote_ini = ["Rbr.ini", "Rbr-Enhanced.ini"]
-
-    # pacenote_dir = "Pacenote"
-    # pacenote_ini = ["Rbr.ini", "Rbr-Enhanced.ini"]
-
-    # pacenote_dir = "RBR-German-tts-Codriver-main/Plugins/Pacenote"
-    # pacenote_ini = ["Smo-Nummern_und_90.ini"]
-    # pacenote_ini = ["Smo-Mix.ini"]
-
-    # pacenote_dir = "Co_Driver_RBR_Deutsch_Bollinger_V1.1_22-12-03/David_Bollinger_(CH)/Deutsch Numerisch - Deskriptiv/Plugins/Pacenote"
-    # pacenote_dir = "Co_Driver_RBR_Deutsch_Bollinger_V1.1_22-12-03/David_Bollinger_(CH)/Deutsch Numerisch - Nummer zuerst/Plugins/Pacenote"
-    # pacenote_dir = "Co_Driver_RBR_Deutsch_Bollinger_V1.1_22-12-03/David_Bollinger_(CH)/Deutsch Numerisch - Kurve zuerst/Plugins/Pacenote"
-    pacenote_ini = ["Rbr.ini"]
-
-    pacenote_dir_absolute = os.path.join(base_dir, pacenote_dir)
-    rbr_pacenote_plugin = RbrPacenotePlugin(pacenote_dir_absolute, pacenote_ini=pacenote_ini)
-
-    codriver = CoDriver(rbr_pacenote_plugin=rbr_pacenote_plugin)
-    codriver.init_cc_pacenotes_types("pacenote_type.txt")
-    codriver.init_cc_sounds("codriver")
-    # codriver.init_rbr_sounds("Pacenote/sounds/DavidBollinger")
-
-    sounds = set(codriver.cc_sounds.keys())
-    pacenotes = set(codriver.cc_pacenotes_types.keys())
-    rbr_pacenotes = set(codriver.rbr_pacenotes.keys())
-    # print(rbr_pacenotes)
-    # print(len(rbr_pacenotes))
-    rbr_sounds = set(codriver.rbr_sounds.keys())
-    # print(rbr_sounds)
-
-    # print(pacenotes - sounds)
-    # print(sounds - pacenotes)
-
     # get commandline arguments and parse them
     parser = argparse.ArgumentParser(description='CoDriver')
+    parser.add_argument('--config', help='Configuration file', default='config.json')
     parser.add_argument('--rbr-list', action='store_true', help='List RBR pacenotes')
     parser.add_argument('--rbr-list-csv', action='store_true', help='List RBR pacenotes as CSV')
     parser.add_argument('--rbr-find-note-by-name', help='Find a note by name')
     parser.add_argument('--map-to-cc', action='store_true', help='Map RBR pacenotes to CC pacenotes')
 
     args = parser.parse_args()
-    if args.rbr_list:
-        notes = rbr_pacenote_plugin.pacenotes.values()
-        # sort notes by id
-        notes = sorted(notes, key=lambda x: x.id)
 
-        for note in notes:
-            print(f'{note}')
+    # read the configuration file, which is a json file
+    config = json.load(open(args.config))
+
+    codriver = CoDriver()
+
+    for package in config['packages']:
+
+        pacenote_dir_absolute = os.path.join(base_dir, package['base_dir'])
+        ini_files = package['ini_files']
+        rbr_pacenote_plugin = RbrPacenotePlugin(pacenote_dir_absolute, ini_files=ini_files)
+        codriver.add_pacenote_plugin(package['name'], rbr_pacenote_plugin)
+
+
+    # if args.rbr_list:
+    #     notes = rbr_pacenote_plugin.pacenotes.values()
+    #     # sort notes by id
+    #     notes = sorted(notes, key=lambda x: x.id)
+
+    #     for note in notes:
+    #         print(f'{note}')
 
     if args.rbr_list_csv:
-        notes = rbr_pacenote_plugin.pacenotes.values()
-        # sort notes by id
-        notes = sorted(notes, key=lambda x: x.id)
-
-        csv_writer = csv.writer(sys.stdout)
-        csv_writer.writerow(['id', 'name', 'type', 'category', 'package', 'ini', 'sound_count', 'sounds'])
-        for note in notes:
-            for sound in note.sounds:
-                csv_writer.writerow([note.id, note.name, note.type, note.category, note.package, note.ini, note.sound_count, sound])
+        codriver.rbr_list_csv()
 
     if args.rbr_find_note_by_name:
         note = codriver.get_rbr_pacenote_by_name(args.rbr_find_note_by_name)

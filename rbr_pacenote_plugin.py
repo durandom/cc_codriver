@@ -63,7 +63,7 @@ class RbrPacenote:
         return True
 
 class RbrPacenotePlugin:
-    def __init__(self, plugin_dir = "Pacenote/", pacenote_ini = ["Rbr.ini", "Rbr-Enhanced.ini"]):
+    def __init__(self, plugin_dir = "Pacenote/", ini_files = ["Rbr.ini", "Rbr-Enhanced.ini"]):
         self.pacenotes = {}
         # self.ini_file = ini_file
         # base_dir is the directory of this file + ini_file
@@ -91,7 +91,7 @@ class RbrPacenotePlugin:
         logging.debug(f'language: {self.language}')
         logging.debug(f'sounds: {self.sounds}')
 
-        for ini_file in pacenote_ini:
+        for ini_file in ini_files:
             ini_file = os.path.join(plugin_dir, 'config', 'pacenotes', ini_file)
             self.read_ini(ini_file)
 
