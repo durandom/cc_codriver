@@ -6,7 +6,7 @@ import os
 class RbrPacenote:
     def __init__(self, name):
         self.name = name
-        self.id = 0
+        self.id = -1
         self.type = ''
         self.category = ''
         self.package = ''
@@ -144,8 +144,13 @@ class RbrPacenotePlugin:
         if not os.path.exists(file):
             # logging.debug(f'Not found: {file}')
             return
+
+        # work around for configparser not handling utf-8
+        with open(file, 'r', encoding='utf-8') as f:
+            content = f.read()
+        # logging.debug(f'content: {content}')
         config = configparser.ConfigParser(strict=False)
-        config.read(file)
+        config.read(content.splitlines())
         strings = {}
         for section in config.sections():
             if section == 'STRINGS':
@@ -203,7 +208,7 @@ class RbrPacenotePlugin:
                 note.id = config.getint(section, 'id', fallback=0)
                 if not note.id and note.type == 'PACENOTE':
                     logging.debug(f'No id in {section}')
-                note.sound_count = config.getint(section, 'Sounds', fallback=0)
+                note.sound_count = config.getint(section, 'Sounds', fallback=-1)
                 for option in config.options(section):
                     if option.startswith('snd'):
                         sound = config.get(section, option)

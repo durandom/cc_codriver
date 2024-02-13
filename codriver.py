@@ -3,8 +3,8 @@
 import argparse
 import csv
 import os
-import configparser
 import logging
+import sys
 from rbr_pacenote_plugin import RbrPacenotePlugin
 
 
@@ -12,6 +12,26 @@ class PacenoteType:
     def __init__(self, name, id):
         self.name = name
         self.id = id
+
+    def rbr_name(self):
+        translation_table = {
+            'corner_1' : 'one',
+            'corner_2' : 'two',
+            'corner_3' : 'three',
+            'corner_4' : 'four',
+            'corner_5' : 'five',
+            'corner_6' : 'six',
+        }
+
+        _rbr_name = self.name
+        for key, value in translation_table.items():
+            _rbr_name = _rbr_name.replace(key, value)
+
+        print(f'{self.name} -> {_rbr_name}')
+        return _rbr_name
+
+    def __str__(self):
+        return f'{self.name} - {self.id}'
 
 class CrewChiefNote:
     def __init__(self, name):
@@ -23,6 +43,9 @@ class CrewChiefNote:
 
     def add_sound(self, file, subtitle):
         self.sounds[file] = subtitle
+
+    def __str__(self):
+        return f'{self.name} - {self.sounds}'
 
 class CoDriver:
     def __init__(self, rbr_pacenote_plugin = None):
@@ -104,6 +127,18 @@ class CoDriver:
                 return note
         return None
 
+    def get_rbr_pacenote_by_id(self, id):
+        for note in self.rbr_pacenotes.values():
+            if note.id == id:
+                return note
+        return None
+
+    def get_pacenote_type_for_cc_sound(self, sound):
+        for id, type in self.cc_pacenotes_types.items():
+            if type.name.lower() == sound.lower():
+                return type
+        return None
+
     def map_notes(self):
         # iterate through the pacenotes
         for id, note in self.rbr_pacenotes.items():
@@ -135,7 +170,33 @@ class CoDriver:
                 logging.debug(f'ignoring {sound}')
                 continue
             if sound.startswith('cmp_'):
-                into = self.get_rbr_pacenote_by_name('into')
+                # remove the cmp_ prefix
+                remainder = sound[4:]
+                if remainder.startswith('into_'):
+                    into = self.get_rbr_pacenote_by_name('into')
+                    remainder = remainder[5:]
+                # get the pacenote type
+                type = self.get_pacenote_type_for_cc_sound(remainder)
+                if not type:
+                    logging.error(f'Unknown pacenote type: {remainder}')
+                    exit(1)
+                # get the rbr pacenote
+
+                note = self.get_rbr_pacenote_by_name(type.rbr_name())
+                if not note:
+                    logging.error(f'Unknown pacenote: {type.id}')
+                    exit(1)
+                logging.debug(f'{sound}: - type: {type} - note: {note}')
+
+                # create a new CrewChiefNote
+                cc_note = CrewChiefNote(sound)
+                for file in note.sounds:
+                    subtitle = note.translation
+                    cc_note.add_sound(file, subtitle)
+                print(cc_note)
+
+                print(sound)
+                exit(1)
                 continue
             print(f'{sound}')
 
@@ -149,15 +210,18 @@ if __name__ == '__main__':
     logging.basicConfig(level=logging.DEBUG)
     base_dir = os.path.dirname(os.path.abspath(__file__))
 
-    pacenote_dir = "Pacenote"
+    pacenote_dir = "Janne's Note Pack v2.0/English Numeric - Number First/Plugins/Pacenote"
     pacenote_ini = ["Rbr.ini", "Rbr-Enhanced.ini"]
 
-    pacenote_dir = "RBR-German-tts-Codriver-main/Plugins/Pacenote"
-    pacenote_ini = ["Smo-Nummern_und_90.ini"]
-    pacenote_ini = ["Smo-Mix.ini"]
+    # pacenote_dir = "Pacenote"
+    # pacenote_ini = ["Rbr.ini", "Rbr-Enhanced.ini"]
 
-    pacenote_dir = "Co_Driver_RBR_Deutsch_Bollinger_V1.1_22-12-03/David_Bollinger_(CH)/Deutsch Numerisch - Deskriptiv/Plugins/Pacenote"
-    pacenote_dir = "Co_Driver_RBR_Deutsch_Bollinger_V1.1_22-12-03/David_Bollinger_(CH)/Deutsch Numerisch - Nummer zuerst/Plugins/Pacenote"
+    # pacenote_dir = "RBR-German-tts-Codriver-main/Plugins/Pacenote"
+    # pacenote_ini = ["Smo-Nummern_und_90.ini"]
+    # pacenote_ini = ["Smo-Mix.ini"]
+
+    # pacenote_dir = "Co_Driver_RBR_Deutsch_Bollinger_V1.1_22-12-03/David_Bollinger_(CH)/Deutsch Numerisch - Deskriptiv/Plugins/Pacenote"
+    # pacenote_dir = "Co_Driver_RBR_Deutsch_Bollinger_V1.1_22-12-03/David_Bollinger_(CH)/Deutsch Numerisch - Nummer zuerst/Plugins/Pacenote"
     # pacenote_dir = "Co_Driver_RBR_Deutsch_Bollinger_V1.1_22-12-03/David_Bollinger_(CH)/Deutsch Numerisch - Kurve zuerst/Plugins/Pacenote"
     pacenote_ini = ["Rbr.ini"]
 
@@ -180,14 +244,12 @@ if __name__ == '__main__':
     # print(pacenotes - sounds)
     # print(sounds - pacenotes)
 
-    # codriver.map_notes()
-    # codriver.map_notes_from_cc()
-    # codriver.write_cc_notes()
-
     # get commandline arguments and parse them
     parser = argparse.ArgumentParser(description='CoDriver')
     parser.add_argument('--rbr-list', action='store_true', help='List RBR pacenotes')
+    parser.add_argument('--rbr-list-csv', action='store_true', help='List RBR pacenotes as CSV')
     parser.add_argument('--rbr-find-note-by-name', help='Find a note by name')
+    parser.add_argument('--map-to-cc', action='store_true', help='Map RBR pacenotes to CC pacenotes')
 
     args = parser.parse_args()
     if args.rbr_list:
@@ -198,12 +260,26 @@ if __name__ == '__main__':
         for note in notes:
             print(f'{note}')
 
+    if args.rbr_list_csv:
+        notes = rbr_pacenote_plugin.pacenotes.values()
+        # sort notes by id
+        notes = sorted(notes, key=lambda x: x.id)
+
+        csv_writer = csv.writer(sys.stdout)
+        csv_writer.writerow(['id', 'name', 'type', 'category', 'package', 'ini', 'sound_count', 'sounds'])
+        for note in notes:
+            for sound in note.sounds:
+                csv_writer.writerow([note.id, note.name, note.type, note.category, note.package, note.ini, note.sound_count, sound])
+
     if args.rbr_find_note_by_name:
         note = codriver.get_rbr_pacenote_by_name(args.rbr_find_note_by_name)
         if note:
             print(note)
         else:
             print(f'Not found: {args.rbr_find_note_by_name}')
+
+    if args.map_to_cc:
+        codriver.map_notes_from_cc()
 
 
 # Links
