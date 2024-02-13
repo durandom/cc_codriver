@@ -220,7 +220,12 @@ class RbrPacenotePlugin:
                 for option in config.options(section):
                     if option.startswith('snd'):
                         sound = config.get(section, option)
-                        note.sounds.append(sound)
+                        # check if the sound file exists
+                        sound_file = self.sound_file(sound)
+                        if not os.path.exists(sound_file):
+                            logging.error(f'Not found: {sound_file}')
+                        else:
+                            note.sounds.append(sound)
                 if note.sound_count != len(note.sounds):
                     logging.error(f'Invalid sound count: {note.sound_count} - {note}')
                 # for i in range(int(sounds)):
@@ -229,7 +234,9 @@ class RbrPacenotePlugin:
                 #     # sound = os.path.join(current_base_dir, sound)
 
                 self.add_translation(note)
-                self.pacenotes.add(note)
+                # only add the pacenote if it has sounds
+                if len(note.sounds) > 0:
+                    self.pacenotes.add(note)
 
                 # if name not in self.pacenotes:
                 #     # logging.debug('New pacenote id: %s - %s' % (id, section))
