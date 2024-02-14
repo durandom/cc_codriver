@@ -5,6 +5,7 @@ import csv
 import json
 import os
 import logging
+import shutil
 import sys
 from typing import List, Optional, Union
 from rbr_pacenote_plugin import RbrPacenotePlugin, RbrPacenote
@@ -47,20 +48,21 @@ class PacenoteType(PacenoteModifier):
 
 class CrewChiefNote:
 
-    def __init__(self, name: str, notes=[], prefix: Optional['CrewChiefNote'] = None):
+    def __init__(self, name: str, prefix: Optional['CrewChiefNote'] = None):
         self.name = name
         self.sounds = {} # soundfile: subtitle
         self.rushed = False
         self.prefix = prefix
 
-        if notes:
-            for note in notes:
-                self.add_note(note)
+    def add_notes(self, notes: List[RbrPacenote]):
+        for note in notes:
+            self.add_note(note)
 
-    def add_note(self, note):
+    def add_note(self, note: RbrPacenote):
         for file in note.sounds:
             subtitle = note.translation
-            self.add_sound(file, subtitle)
+            file_with_path = os.path.join(note.sounds_dir, file)
+            self.add_sound(file_with_path, subtitle)
 
     def add_prefix(self, prefix: 'CrewChiefNote'):
         self.prefix = prefix
@@ -230,7 +232,9 @@ class CoDriver:
             if notes:
                 return notes
 
-    def get_pacenote_type_for_cc_sound(self, sound) -> Union[PacenoteType, PacenoteModifier]:
+        return []
+
+    def get_pacenote_type_for_cc_sound(self, sound) -> Union[PacenoteType, PacenoteModifier, None]:
         for src, dst in self.map_cc_types.items():
             if sound == src:
                 sound = dst
@@ -242,28 +246,6 @@ class CoDriver:
             if type.name.lower() == sound.lower():
                 return type
         return None
-
-    # def map_notes(self):
-    #     # iterate through the pacenotes
-    #     for id, note in self.rbr_pacenotes.items():
-    #         logging.debug(f'{note}')
-    #         if note.id:
-    #             type = self.get_pacenote_type_for_id(note.id)
-    #             name = type.name
-    #         else:
-    #             logging.debug(f'no id')
-
-    #         cc_note = CrewChiefNote(name)
-
-    #         for sound in note.sounds:
-    #             # get the path to the rbr sound file
-    #             file = self.rbr_pacenote_plugin.sound_file(sound)
-    #             if os.path.exists(file):
-    #                 logging.debug(f'Found sound: {sound}')
-    #                 cc_note.add_sound(file, "")
-    #             else:
-    #                 logging.error(f'Not found: {sound} - {file}')
-    #                 return
 
     def map_package_and_type(self, type = '', package = 'numeric'):
         if type.endswith('_descriptive'):
@@ -287,7 +269,8 @@ class CoDriver:
         if len(notes) != 1:
             logging.error(f'Found {len(notes)} notes for type {type} - {notes}')
             exit(1)
-        into = CrewChiefNote('detail_into', notes=notes)
+        into = CrewChiefNote('detail_into')
+        into.add_notes(notes)
 
         for sound in sorted(self.cc_sounds.keys()):
             if sound in self.skip_notes.keys():
@@ -334,11 +317,30 @@ class CoDriver:
 
         self.mapped_cc_notes = cc_notes
 
-    def write_cc_notes(self):
-        logging.debug(f'writing {len(self.mapped_cc_notes)} notes')
-        # iterate through the pacenotes
-        for id, note in self.mapped_cc_notes.items():
-            note.create()
+    def cc_create_copilot(self, directory):
+        # create the directory
+        if not os.path.exists(directory):
+            os.makedirs(directory)
+        else:
+            logging.error(f'Directory {directory} already exists')
+
+        for note in self.mapped_cc_notes:
+            path = os.path.join(directory, note.name)
+            if not os.path.exists(path):
+                os.makedirs(path)
+            else:
+                logging.error(f'Directory {path} already exists')
+
+            with open(os.path.join(path, 'subtitles.csv'), mode='w', encoding='utf-8') as file:
+                csv_writer = csv.writer(file)
+                for sound, subtitle in note.sounds.items():
+                    sound_file_basename = os.path.basename(sound)
+                    csv_writer.writerow([sound_file_basename, subtitle])
+
+            for sound, subtitle in note.sounds.items():
+                # copy sound file to path
+                shutil.copy(sound, path)
+
 
     def rbr_list_csv(self):
         csv_writer = csv.writer(sys.stdout)
@@ -357,7 +359,8 @@ class CoDriver:
         notes = sorted(self.mapped_cc_notes, key=lambda x: x.name)
         for note in notes:
             for sound, subtitle in note.sounds.items():
-                csv_writer.writerow([note.name, sound, subtitle])
+                sound_file_basename = os.path.basename(sound)
+                csv_writer.writerow([note.name, sound_file_basename, subtitle])
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.DEBUG)
@@ -369,6 +372,7 @@ if __name__ == '__main__':
     parser.add_argument('--rbr-list', action='store_true', help='List RBR pacenotes')
     parser.add_argument('--rbr-list-csv', action='store_true', help='List RBR pacenotes as CSV')
     parser.add_argument('--rbr-find-note-by-name', help='Find a note by name')
+    parser.add_argument('--map-to-cc', default='build/copilot', help='Map RBR pacenotes to CC pacenotes and create folder structure')
     parser.add_argument('--map-to-cc-csv', action='store_true', help='Map RBR pacenotes to CC pacenotes and write to CSV')
 
     args = parser.parse_args()
@@ -413,6 +417,10 @@ if __name__ == '__main__':
     if args.map_to_cc_csv:
         codriver.map_notes_from_cc()
         codriver.cc_list_csv()
+
+    if args.map_to_cc:
+        codriver.map_notes_from_cc()
+        codriver.cc_create_copilot(args.map_to_cc)
 
 
 # Links

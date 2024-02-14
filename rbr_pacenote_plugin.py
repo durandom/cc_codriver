@@ -14,6 +14,7 @@ class RbrPacenote:
         self.sounds = []
         self.sound_count = 0
         self.translation = ''
+        self.sounds_dir = ''
 
     def __str__(self):
         return f'{self.id}: {self.name} - T: {self.type} - C: {self.category} - P: {self.package} - Sounds: {self.sounds} - Translation: {self.translation} - Ini: {self.ini}'
@@ -107,7 +108,10 @@ class RbrPacenotePlugin:
         self.read_ini(ini_file)
 
     def sound_file(self, sound):
-        return os.path.join(self.plugin_dir, 'sounds', self.sounds, sound)
+        return os.path.join(self.sounds_dir(), sound)
+
+    def sounds_dir(self):
+        return os.path.join(self.plugin_dir, 'sounds', self.sounds)
 
     def add_translation(self, note):
         # ; So, if the plugin searches for a string to translate, e.g. ONE_LEFT
@@ -220,6 +224,7 @@ class RbrPacenotePlugin:
                 note.category = category
                 note.package = package
                 note.id = config.getint(section, 'id', fallback=-1)
+                note.sounds_dir = self.sounds_dir()
                 if not note.id and note.type == 'PACENOTE':
                     logging.debug(f'No id in {section}')
                 note.sound_count = config.getint(section, 'Sounds', fallback=-1)
