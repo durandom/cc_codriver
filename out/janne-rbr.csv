@@ -1,47 +1,47 @@
 style,id,name,type,category,package,ini,sound_count,translation,sound
-numeric,-1,160,RANGE,EXTENDED,RBR,Extended.ini,1,160,160_1.ogg
 numeric,-1,100,RANGE,EXTENDED,RBR,Extended.ini,1,100,100_1.ogg
-numeric,-1,700,RANGE,EXTENDED,RBR,Extended.ini,1,700,700.ogg
+numeric,-1,1000,RANGE,EXTENDED,RBR,Extended.ini,1,1000,1000.ogg
 numeric,-1,120,RANGE,EXTENDED,RBR,Extended.ini,1,120,120_1.ogg
-numeric,-1,500,RANGE,EXTENDED,RBR,Extended.ini,1,500,500_1.ogg
-numeric,-1,350,RANGE,EXTENDED,RBR,Extended.ini,1,350,350_1.ogg
-numeric,-1,tightensbad,PACENOTE,MODIFIER,RBR,Extended.ini,2,Double Tightens,kirraa_kirraa.ogg
-numeric,-1,tightensbad,PACENOTE,MODIFIER,RBR,Extended.ini,2,Double Tightens,kirraa_kirraa_2.ogg
+numeric,-1,140,RANGE,EXTENDED,RBR,Extended.ini,1,140,140_1.ogg
 numeric,-1,150,RANGE,EXTENDED,RBR,Extended.ini,1,150,150_1.ogg
+numeric,-1,160,RANGE,EXTENDED,RBR,Extended.ini,1,160,160_1.ogg
+numeric,-1,180,RANGE,EXTENDED,RBR,Extended.ini,1,180,180_1.ogg
+numeric,-1,200,RANGE,EXTENDED,RBR,Extended.ini,1,200,200_1.ogg
+numeric,-1,250,RANGE,EXTENDED,RBR,Extended.ini,1,250,250_1.ogg
+numeric,-1,30,RANGE,EXTENDED,RBR,Extended.ini,1,30,30_1.ogg
 numeric,-1,300,RANGE,EXTENDED,RBR,Extended.ini,1,300,300_1.ogg
+numeric,-1,350,RANGE,EXTENDED,RBR,Extended.ini,1,350,350_1.ogg
+numeric,-1,40,RANGE,EXTENDED,RBR,Extended.ini,1,40,40_1.ogg
+numeric,-1,400,RANGE,EXTENDED,RBR,Extended.ini,1,400,400_1.ogg
+numeric,-1,450,RANGE,EXTENDED,RBR,Extended.ini,1,450,450_1.ogg
+numeric,-1,50,RANGE,EXTENDED,RBR,Extended.ini,1,50,50_1.ogg
+numeric,-1,500,RANGE,EXTENDED,RBR,Extended.ini,1,500,500_1.ogg
+numeric,-1,60,RANGE,EXTENDED,RBR,Extended.ini,1,60,60_1.ogg
+numeric,-1,600,RANGE,EXTENDED,RBR,Extended.ini,1,600,600.ogg
+numeric,-1,70,RANGE,EXTENDED,RBR,Extended.ini,1,70,70_1.ogg
+numeric,-1,700,RANGE,EXTENDED,RBR,Extended.ini,1,700,700.ogg
+numeric,-1,80,RANGE,EXTENDED,RBR,Extended.ini,1,80,80_1.ogg
+numeric,-1,800,RANGE,EXTENDED,RBR,Extended.ini,1,800,800.ogg
+numeric,-1,900,RANGE,EXTENDED,RBR,Extended.ini,1,900,900.ogg
+numeric,-1,and,PACENOTE,LINKS,RBR,Extended.ini,2,And,jatkuu1.ogg
+numeric,-1,and,PACENOTE,LINKS,RBR,Extended.ini,2,And,jatkuu2.ogg
+numeric,-1,caution_water,PACENOTE,CAUTIONS,RBR,Extended.ini,1,Caution Water,huomio_vetta.ogg
+numeric,-1,cut,PACENOTE,MODIFIER,RBR,Extended.ini,1,Cut,sisalta.ogg
+numeric,-1,dontcut,PACENOTE,MODIFIER,RBR,Extended.ini,1,Don't Cut,ala.ogg
 numeric,-1,into,PACENOTE,LINKS,RBR,Extended.ini,2,Into,into1.ogg
 numeric,-1,into,PACENOTE,LINKS,RBR,Extended.ini,2,Into,into2.ogg
-numeric,-1,tightensbad,PACENOTE,ADJECTIVES,RBR,Extended.ini,2,Tightens Bad,kirraa_kirraa.ogg
-numeric,-1,tightensbad,PACENOTE,ADJECTIVES,RBR,Extended.ini,2,Tightens Bad,kirraa_kirraa_2.ogg
-numeric,-1,80,RANGE,EXTENDED,RBR,Extended.ini,1,80,80_1.ogg
+numeric,-1,long,PACENOTE,MODIFIER,RBR,Extended.ini,1,Long,pitka.ogg
 numeric,-1,maybe,PACENOTE,MODIFIER,RBR,Extended.ini,1,Maybe,ehka1.ogg
 numeric,-1,maybe,PACENOTE,ADDITIONAL,RBR,Extended.ini,1,Maybe,ehka1.ogg
 numeric,-1,maybe,PACENOTE,ADDITIONAL,RBR,Extended.ini,1,Maybe,ehka2.ogg
-numeric,-1,900,RANGE,EXTENDED,RBR,Extended.ini,1,900,900.ogg
-numeric,-1,180,RANGE,EXTENDED,RBR,Extended.ini,1,180,180_1.ogg
-numeric,-1,cut,PACENOTE,MODIFIER,RBR,Extended.ini,1,Cut,sisalta.ogg
-numeric,-1,wideout,PACENOTE,MODIFIER,RBR,Extended.ini,1,Widens,levenee.ogg
-numeric,-1,450,RANGE,EXTENDED,RBR,Extended.ini,1,450,450_1.ogg
-numeric,-1,dontcut,PACENOTE,MODIFIER,RBR,Extended.ini,1,Don't Cut,ala.ogg
-numeric,-1,1000,RANGE,EXTENDED,RBR,Extended.ini,1,1000,1000.ogg
-numeric,-1,140,RANGE,EXTENDED,RBR,Extended.ini,1,140,140_1.ogg
-numeric,-1,600,RANGE,EXTENDED,RBR,Extended.ini,1,600,600.ogg
-numeric,-1,800,RANGE,EXTENDED,RBR,Extended.ini,1,800,800.ogg
-numeric,-1,50,RANGE,EXTENDED,RBR,Extended.ini,1,50,50_1.ogg
-numeric,-1,and,PACENOTE,LINKS,RBR,Extended.ini,2,And,jatkuu1.ogg
-numeric,-1,and,PACENOTE,LINKS,RBR,Extended.ini,2,And,jatkuu2.ogg
-numeric,-1,tightens,PACENOTE,MODIFIER,RBR,Extended.ini,1,Tightens,kirraa1.ogg
-numeric,-1,onto,PACENOTE,LINKS,RBR,Extended.ini,1,Onto,onto.ogg
-numeric,-1,200,RANGE,EXTENDED,RBR,Extended.ini,1,200,200_1.ogg
-numeric,-1,caution_water,PACENOTE,CAUTIONS,RBR,Extended.ini,1,Caution Water,huomio_vetta.ogg
-numeric,-1,60,RANGE,EXTENDED,RBR,Extended.ini,1,60,60_1.ogg
 numeric,-1,narrows,PACENOTE,MODIFIER,RBR,Extended.ini,1,Narrows,sumppu.ogg
-numeric,-1,70,RANGE,EXTENDED,RBR,Extended.ini,1,70,70_1.ogg
-numeric,-1,long,PACENOTE,MODIFIER,RBR,Extended.ini,1,Long,pitka.ogg
-numeric,-1,40,RANGE,EXTENDED,RBR,Extended.ini,1,40,40_1.ogg
-numeric,-1,250,RANGE,EXTENDED,RBR,Extended.ini,1,250,250_1.ogg
-numeric,-1,400,RANGE,EXTENDED,RBR,Extended.ini,1,400,400_1.ogg
-numeric,-1,30,RANGE,EXTENDED,RBR,Extended.ini,1,30,30_1.ogg
+numeric,-1,onto,PACENOTE,LINKS,RBR,Extended.ini,1,Onto,onto.ogg
+numeric,-1,tightens,PACENOTE,MODIFIER,RBR,Extended.ini,1,Tightens,kirraa1.ogg
+numeric,-1,tightensbad,PACENOTE,MODIFIER,RBR,Extended.ini,2,Double Tightens,kirraa_kirraa.ogg
+numeric,-1,tightensbad,PACENOTE,MODIFIER,RBR,Extended.ini,2,Double Tightens,kirraa_kirraa_2.ogg
+numeric,-1,tightensbad,PACENOTE,ADJECTIVES,RBR,Extended.ini,2,Tightens Bad,kirraa_kirraa.ogg
+numeric,-1,tightensbad,PACENOTE,ADJECTIVES,RBR,Extended.ini,2,Tightens Bad,kirraa_kirraa_2.ogg
+numeric,-1,wideout,PACENOTE,MODIFIER,RBR,Extended.ini,1,Widens,levenee.ogg
 numeric,0,one_left,PACENOTE,CORNERS,RBR,Numeric.ini,2,HP Left,vasen_tiukka1.ogg
 numeric,0,one_left,PACENOTE,CORNERS,RBR,Numeric.ini,2,HP Left,vasen_tiukka2.ogg
 numeric,1,square_left,PACENOTE,CORNERS,RBR,Numeric.ini,2,2 Left,vasen_kaks1.ogg
@@ -197,49 +197,49 @@ numeric,2108,over_jump,PACENOTE,OBSTACLES,RBR,Extended.ini,2,Over Jump,hypynyli1
 numeric,2108,over_jump,PACENOTE,OBSTACLES,RBR,Extended.ini,2,Over Jump,hypynyli2.ogg
 numeric,2109,small_crest,PACENOTE,OBSTACLES,RBR,Extended.ini,2,Small Crest,pikkunyppy1.ogg
 numeric,2109,small_crest,PACENOTE,OBSTACLES,RBR,Extended.ini,2,Small Crest,pikkunyppy2.ogg
-reversed,-1,160,RANGE,EXTENDED,RBR,Extended.ini,1,160,160_1.ogg
 reversed,-1,100,RANGE,EXTENDED,RBR,Extended.ini,1,100,100_1.ogg
-reversed,-1,700,RANGE,EXTENDED,RBR,Extended.ini,1,700,700.ogg
+reversed,-1,1000,RANGE,EXTENDED,RBR,Extended.ini,1,1000,1000.ogg
 reversed,-1,120,RANGE,EXTENDED,RBR,Extended.ini,1,120,120_1.ogg
-reversed,-1,500,RANGE,EXTENDED,RBR,Extended.ini,1,500,500_1.ogg
-reversed,-1,350,RANGE,EXTENDED,RBR,Extended.ini,1,350,350_1.ogg
-reversed,-1,tightensbad,PACENOTE,MODIFIER,RBR,Extended.ini,2,Double Tightens,kirraa_kirraa.ogg
-reversed,-1,tightensbad,PACENOTE,MODIFIER,RBR,Extended.ini,2,Double Tightens,kirraa_kirraa_2.ogg
+reversed,-1,140,RANGE,EXTENDED,RBR,Extended.ini,1,140,140_1.ogg
 reversed,-1,150,RANGE,EXTENDED,RBR,Extended.ini,1,150,150_1.ogg
+reversed,-1,160,RANGE,EXTENDED,RBR,Extended.ini,1,160,160_1.ogg
+reversed,-1,180,RANGE,EXTENDED,RBR,Extended.ini,1,180,180_1.ogg
+reversed,-1,200,RANGE,EXTENDED,RBR,Extended.ini,1,200,200_1.ogg
+reversed,-1,250,RANGE,EXTENDED,RBR,Extended.ini,1,250,250_1.ogg
+reversed,-1,30,RANGE,EXTENDED,RBR,Extended.ini,1,30,30_1.ogg
 reversed,-1,300,RANGE,EXTENDED,RBR,Extended.ini,1,300,300_1.ogg
+reversed,-1,350,RANGE,EXTENDED,RBR,Extended.ini,1,350,350_1.ogg
+reversed,-1,40,RANGE,EXTENDED,RBR,Extended.ini,1,40,40_1.ogg
+reversed,-1,400,RANGE,EXTENDED,RBR,Extended.ini,1,400,400_1.ogg
+reversed,-1,450,RANGE,EXTENDED,RBR,Extended.ini,1,450,450_1.ogg
+reversed,-1,50,RANGE,EXTENDED,RBR,Extended.ini,1,50,50_1.ogg
+reversed,-1,500,RANGE,EXTENDED,RBR,Extended.ini,1,500,500_1.ogg
+reversed,-1,60,RANGE,EXTENDED,RBR,Extended.ini,1,60,60_1.ogg
+reversed,-1,600,RANGE,EXTENDED,RBR,Extended.ini,1,600,600.ogg
+reversed,-1,70,RANGE,EXTENDED,RBR,Extended.ini,1,70,70_1.ogg
+reversed,-1,700,RANGE,EXTENDED,RBR,Extended.ini,1,700,700.ogg
+reversed,-1,80,RANGE,EXTENDED,RBR,Extended.ini,1,80,80_1.ogg
+reversed,-1,800,RANGE,EXTENDED,RBR,Extended.ini,1,800,800.ogg
+reversed,-1,900,RANGE,EXTENDED,RBR,Extended.ini,1,900,900.ogg
+reversed,-1,and,PACENOTE,LINKS,RBR,Extended.ini,2,And,jatkuu1.ogg
+reversed,-1,and,PACENOTE,LINKS,RBR,Extended.ini,2,And,jatkuu2.ogg
+reversed,-1,caution_water,PACENOTE,CAUTIONS,RBR,Extended.ini,1,Caution Water,huomio_vetta.ogg
+reversed,-1,cut,PACENOTE,MODIFIER,RBR,Extended.ini,1,Cut,sisalta.ogg
+reversed,-1,dontcut,PACENOTE,MODIFIER,RBR,Extended.ini,1,Don't Cut,ala.ogg
 reversed,-1,into,PACENOTE,LINKS,RBR,Extended.ini,2,Into,into1.ogg
 reversed,-1,into,PACENOTE,LINKS,RBR,Extended.ini,2,Into,into2.ogg
-reversed,-1,tightensbad,PACENOTE,ADJECTIVES,RBR,Extended.ini,2,Tightens Bad,kirraa_kirraa.ogg
-reversed,-1,tightensbad,PACENOTE,ADJECTIVES,RBR,Extended.ini,2,Tightens Bad,kirraa_kirraa_2.ogg
-reversed,-1,80,RANGE,EXTENDED,RBR,Extended.ini,1,80,80_1.ogg
+reversed,-1,long,PACENOTE,MODIFIER,RBR,Extended.ini,1,Long,pitka.ogg
 reversed,-1,maybe,PACENOTE,MODIFIER,RBR,Extended.ini,1,Maybe,ehka1.ogg
 reversed,-1,maybe,PACENOTE,ADDITIONAL,RBR,Extended.ini,1,Maybe,ehka1.ogg
 reversed,-1,maybe,PACENOTE,ADDITIONAL,RBR,Extended.ini,1,Maybe,ehka2.ogg
-reversed,-1,900,RANGE,EXTENDED,RBR,Extended.ini,1,900,900.ogg
-reversed,-1,180,RANGE,EXTENDED,RBR,Extended.ini,1,180,180_1.ogg
-reversed,-1,cut,PACENOTE,MODIFIER,RBR,Extended.ini,1,Cut,sisalta.ogg
-reversed,-1,wideout,PACENOTE,MODIFIER,RBR,Extended.ini,1,Widens,levenee.ogg
-reversed,-1,450,RANGE,EXTENDED,RBR,Extended.ini,1,450,450_1.ogg
-reversed,-1,dontcut,PACENOTE,MODIFIER,RBR,Extended.ini,1,Don't Cut,ala.ogg
-reversed,-1,1000,RANGE,EXTENDED,RBR,Extended.ini,1,1000,1000.ogg
-reversed,-1,140,RANGE,EXTENDED,RBR,Extended.ini,1,140,140_1.ogg
-reversed,-1,600,RANGE,EXTENDED,RBR,Extended.ini,1,600,600.ogg
-reversed,-1,800,RANGE,EXTENDED,RBR,Extended.ini,1,800,800.ogg
-reversed,-1,50,RANGE,EXTENDED,RBR,Extended.ini,1,50,50_1.ogg
-reversed,-1,and,PACENOTE,LINKS,RBR,Extended.ini,2,And,jatkuu1.ogg
-reversed,-1,and,PACENOTE,LINKS,RBR,Extended.ini,2,And,jatkuu2.ogg
+reversed,-1,narrows,PACENOTE,MODIFIER,RBR,Extended.ini,1,Narrows,sumppu.ogg
 reversed,-1,onto,PACENOTE,LINKS,RBR,Extended.ini,1,Onto,onto.ogg
 reversed,-1,tightens,PACENOTE,MODIFIER,RBR,Extended.ini,1,Tightens,kirraa1.ogg
-reversed,-1,200,RANGE,EXTENDED,RBR,Extended.ini,1,200,200_1.ogg
-reversed,-1,caution_water,PACENOTE,CAUTIONS,RBR,Extended.ini,1,Caution Water,huomio_vetta.ogg
-reversed,-1,60,RANGE,EXTENDED,RBR,Extended.ini,1,60,60_1.ogg
-reversed,-1,narrows,PACENOTE,MODIFIER,RBR,Extended.ini,1,Narrows,sumppu.ogg
-reversed,-1,70,RANGE,EXTENDED,RBR,Extended.ini,1,70,70_1.ogg
-reversed,-1,long,PACENOTE,MODIFIER,RBR,Extended.ini,1,Long,pitka.ogg
-reversed,-1,40,RANGE,EXTENDED,RBR,Extended.ini,1,40,40_1.ogg
-reversed,-1,250,RANGE,EXTENDED,RBR,Extended.ini,1,250,250_1.ogg
-reversed,-1,400,RANGE,EXTENDED,RBR,Extended.ini,1,400,400_1.ogg
-reversed,-1,30,RANGE,EXTENDED,RBR,Extended.ini,1,30,30_1.ogg
+reversed,-1,tightensbad,PACENOTE,MODIFIER,RBR,Extended.ini,2,Double Tightens,kirraa_kirraa.ogg
+reversed,-1,tightensbad,PACENOTE,MODIFIER,RBR,Extended.ini,2,Double Tightens,kirraa_kirraa_2.ogg
+reversed,-1,tightensbad,PACENOTE,ADJECTIVES,RBR,Extended.ini,2,Tightens Bad,kirraa_kirraa.ogg
+reversed,-1,tightensbad,PACENOTE,ADJECTIVES,RBR,Extended.ini,2,Tightens Bad,kirraa_kirraa_2.ogg
+reversed,-1,wideout,PACENOTE,MODIFIER,RBR,Extended.ini,1,Widens,levenee.ogg
 reversed,0,one_left,PACENOTE,CORNERS,RBR,Numeric.ini,2,Left HP,vasen_tiukka1.ogg
 reversed,0,one_left,PACENOTE,CORNERS,RBR,Numeric.ini,2,Left HP,vasen_tiukka2.ogg
 reversed,1,square_left,PACENOTE,CORNERS,RBR,Numeric.ini,2,Left 2,vasen_kaks1.ogg
@@ -395,49 +395,49 @@ reversed,2108,over_jump,PACENOTE,OBSTACLES,RBR,Extended.ini,2,Over Jump,hypynyli
 reversed,2108,over_jump,PACENOTE,OBSTACLES,RBR,Extended.ini,2,Over Jump,hypynyli2.ogg
 reversed,2109,small_crest,PACENOTE,OBSTACLES,RBR,Extended.ini,2,Small Crest,pikkunyppy1.ogg
 reversed,2109,small_crest,PACENOTE,OBSTACLES,RBR,Extended.ini,2,Small Crest,pikkunyppy2.ogg
-descriptive,-1,160,RANGE,EXTENDED,RBR,Extended.ini,1,160,160_1.ogg
-descriptive,-1,700,RANGE,EXTENDED,RBR,Extended.ini,1,700,700.ogg
 descriptive,-1,100,RANGE,EXTENDED,RBR,Extended.ini,1,100,100_1.ogg
+descriptive,-1,1000,RANGE,EXTENDED,RBR,Extended.ini,1,1000,1000.ogg
 descriptive,-1,120,RANGE,EXTENDED,RBR,Extended.ini,1,120,120_1.ogg
-descriptive,-1,500,RANGE,EXTENDED,RBR,Extended.ini,1,500,500_1.ogg
-descriptive,-1,350,RANGE,EXTENDED,RBR,Extended.ini,1,350,350_1.ogg
-descriptive,-1,tightensbad,PACENOTE,MODIFIER,RBR,Extended.ini,2,Double Tightens,kirraa_kirraa.ogg
-descriptive,-1,tightensbad,PACENOTE,MODIFIER,RBR,Extended.ini,2,Double Tightens,kirraa_kirraa_2.ogg
+descriptive,-1,140,RANGE,EXTENDED,RBR,Extended.ini,1,140,140_1.ogg
 descriptive,-1,150,RANGE,EXTENDED,RBR,Extended.ini,1,150,150_1.ogg
+descriptive,-1,160,RANGE,EXTENDED,RBR,Extended.ini,1,160,160_1.ogg
+descriptive,-1,180,RANGE,EXTENDED,RBR,Extended.ini,1,180,180_1.ogg
+descriptive,-1,200,RANGE,EXTENDED,RBR,Extended.ini,1,200,200_1.ogg
+descriptive,-1,250,RANGE,EXTENDED,RBR,Extended.ini,1,250,250_1.ogg
+descriptive,-1,30,RANGE,EXTENDED,RBR,Extended.ini,1,30,30_1.ogg
 descriptive,-1,300,RANGE,EXTENDED,RBR,Extended.ini,1,300,300_1.ogg
+descriptive,-1,350,RANGE,EXTENDED,RBR,Extended.ini,1,350,350_1.ogg
+descriptive,-1,40,RANGE,EXTENDED,RBR,Extended.ini,1,40,40_1.ogg
+descriptive,-1,400,RANGE,EXTENDED,RBR,Extended.ini,1,400,400_1.ogg
+descriptive,-1,450,RANGE,EXTENDED,RBR,Extended.ini,1,450,450_1.ogg
+descriptive,-1,50,RANGE,EXTENDED,RBR,Extended.ini,1,50,50_1.ogg
+descriptive,-1,500,RANGE,EXTENDED,RBR,Extended.ini,1,500,500_1.ogg
+descriptive,-1,60,RANGE,EXTENDED,RBR,Extended.ini,1,60,60_1.ogg
+descriptive,-1,600,RANGE,EXTENDED,RBR,Extended.ini,1,600,600.ogg
+descriptive,-1,70,RANGE,EXTENDED,RBR,Extended.ini,1,70,70_1.ogg
+descriptive,-1,700,RANGE,EXTENDED,RBR,Extended.ini,1,700,700.ogg
+descriptive,-1,80,RANGE,EXTENDED,RBR,Extended.ini,1,80,80_1.ogg
+descriptive,-1,800,RANGE,EXTENDED,RBR,Extended.ini,1,800,800.ogg
+descriptive,-1,900,RANGE,EXTENDED,RBR,Extended.ini,1,900,900.ogg
+descriptive,-1,and,PACENOTE,LINKS,RBR,Extended.ini,2,And,jatkuu1.ogg
+descriptive,-1,and,PACENOTE,LINKS,RBR,Extended.ini,2,And,jatkuu2.ogg
+descriptive,-1,caution_water,PACENOTE,CAUTIONS,RBR,Extended.ini,1,Caution Water,huomio_vetta.ogg
+descriptive,-1,cut,PACENOTE,MODIFIER,RBR,Extended.ini,1,Cut,sisalta.ogg
+descriptive,-1,dontcut,PACENOTE,MODIFIER,RBR,Extended.ini,1,Don't Cut,ala.ogg
 descriptive,-1,into,PACENOTE,LINKS,RBR,Extended.ini,2,Into,into1.ogg
 descriptive,-1,into,PACENOTE,LINKS,RBR,Extended.ini,2,Into,into2.ogg
-descriptive,-1,tightensbad,PACENOTE,ADJECTIVES,RBR,Extended.ini,2,Tightens Bad,kirraa_kirraa.ogg
-descriptive,-1,tightensbad,PACENOTE,ADJECTIVES,RBR,Extended.ini,2,Tightens Bad,kirraa_kirraa_2.ogg
-descriptive,-1,80,RANGE,EXTENDED,RBR,Extended.ini,1,80,80_1.ogg
+descriptive,-1,long,PACENOTE,MODIFIER,RBR,Extended.ini,1,Long,pitka.ogg
 descriptive,-1,maybe,PACENOTE,MODIFIER,RBR,Extended.ini,1,Maybe,ehka1.ogg
 descriptive,-1,maybe,PACENOTE,ADDITIONAL,RBR,Extended.ini,1,Maybe,ehka1.ogg
 descriptive,-1,maybe,PACENOTE,ADDITIONAL,RBR,Extended.ini,1,Maybe,ehka2.ogg
-descriptive,-1,900,RANGE,EXTENDED,RBR,Extended.ini,1,900,900.ogg
-descriptive,-1,180,RANGE,EXTENDED,RBR,Extended.ini,1,180,180_1.ogg
-descriptive,-1,cut,PACENOTE,MODIFIER,RBR,Extended.ini,1,Cut,sisalta.ogg
-descriptive,-1,wideout,PACENOTE,MODIFIER,RBR,Extended.ini,1,Widens,levenee.ogg
-descriptive,-1,450,RANGE,EXTENDED,RBR,Extended.ini,1,450,450_1.ogg
-descriptive,-1,dontcut,PACENOTE,MODIFIER,RBR,Extended.ini,1,Don't Cut,ala.ogg
-descriptive,-1,1000,RANGE,EXTENDED,RBR,Extended.ini,1,1000,1000.ogg
-descriptive,-1,140,RANGE,EXTENDED,RBR,Extended.ini,1,140,140_1.ogg
-descriptive,-1,600,RANGE,EXTENDED,RBR,Extended.ini,1,600,600.ogg
-descriptive,-1,800,RANGE,EXTENDED,RBR,Extended.ini,1,800,800.ogg
-descriptive,-1,50,RANGE,EXTENDED,RBR,Extended.ini,1,50,50_1.ogg
-descriptive,-1,and,PACENOTE,LINKS,RBR,Extended.ini,2,And,jatkuu1.ogg
-descriptive,-1,and,PACENOTE,LINKS,RBR,Extended.ini,2,And,jatkuu2.ogg
-descriptive,-1,tightens,PACENOTE,MODIFIER,RBR,Extended.ini,1,Tightens,kirraa1.ogg
-descriptive,-1,onto,PACENOTE,LINKS,RBR,Extended.ini,1,Onto,onto.ogg
-descriptive,-1,200,RANGE,EXTENDED,RBR,Extended.ini,1,200,200_1.ogg
-descriptive,-1,caution_water,PACENOTE,CAUTIONS,RBR,Extended.ini,1,Caution Water,huomio_vetta.ogg
-descriptive,-1,60,RANGE,EXTENDED,RBR,Extended.ini,1,60,60_1.ogg
 descriptive,-1,narrows,PACENOTE,MODIFIER,RBR,Extended.ini,1,Narrows,sumppu.ogg
-descriptive,-1,70,RANGE,EXTENDED,RBR,Extended.ini,1,70,70_1.ogg
-descriptive,-1,long,PACENOTE,MODIFIER,RBR,Extended.ini,1,Long,pitka.ogg
-descriptive,-1,40,RANGE,EXTENDED,RBR,Extended.ini,1,40,40_1.ogg
-descriptive,-1,250,RANGE,EXTENDED,RBR,Extended.ini,1,250,250_1.ogg
-descriptive,-1,400,RANGE,EXTENDED,RBR,Extended.ini,1,400,400_1.ogg
-descriptive,-1,30,RANGE,EXTENDED,RBR,Extended.ini,1,30,30_1.ogg
+descriptive,-1,onto,PACENOTE,LINKS,RBR,Extended.ini,1,Onto,onto.ogg
+descriptive,-1,tightens,PACENOTE,MODIFIER,RBR,Extended.ini,1,Tightens,kirraa1.ogg
+descriptive,-1,tightensbad,PACENOTE,MODIFIER,RBR,Extended.ini,2,Double Tightens,kirraa_kirraa.ogg
+descriptive,-1,tightensbad,PACENOTE,MODIFIER,RBR,Extended.ini,2,Double Tightens,kirraa_kirraa_2.ogg
+descriptive,-1,tightensbad,PACENOTE,ADJECTIVES,RBR,Extended.ini,2,Tightens Bad,kirraa_kirraa.ogg
+descriptive,-1,tightensbad,PACENOTE,ADJECTIVES,RBR,Extended.ini,2,Tightens Bad,kirraa_kirraa_2.ogg
+descriptive,-1,wideout,PACENOTE,MODIFIER,RBR,Extended.ini,1,Widens,levenee.ogg
 descriptive,0,hairpin_left,PACENOTE,CORNERS,RBR,Descriptive.ini,2,HP Left,vasen_serpo1.ogg
 descriptive,0,hairpin_left,PACENOTE,CORNERS,RBR,Descriptive.ini,2,HP Left,vasen_serpo2.ogg
 descriptive,1,square_left,PACENOTE,CORNERS,RBR,Descriptive.ini,2,Square Left,vasen_90_1.ogg

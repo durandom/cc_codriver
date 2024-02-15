@@ -59,7 +59,11 @@ class CrewChiefNote:
     def __init__(self, name: str, prefix: Optional['CrewChiefNote'] = None):
         self.name = name
         self.sounds = {} # soundfile: subtitle
+        self.notes = []
         self.rushed = False
+        self.prefix = prefix
+
+    def add_prefix(self, prefix: 'CrewChiefNote'):
         self.prefix = prefix
 
     def add_notes(self, notes: List[RbrPacenote]):
@@ -67,21 +71,19 @@ class CrewChiefNote:
             self.add_note(note)
 
     def add_note(self, note: RbrPacenote):
-        for file in note.sounds:
-            subtitle = note.translation
-            file_with_path = os.path.join(note.sounds_dir, file)
-            self.add_sound(file_with_path, subtitle)
+        self.notes.append(note)
 
-    def add_prefix(self, prefix: 'CrewChiefNote'):
-        self.prefix = prefix
+    # def add_sound(self, file, subtitle):
+    #     if file in self.sounds:
+    #         logging.error(f'Duplicate sound: {file} in {self}')
+    #     self.sounds[file] = subtitle
 
-    def create(self):
-        print(f'{self.name}')
+    #         subtitle = note.translation
+    #         file_with_path = os.path.join(note.sounds_dir, file)
+    #         self.add_sound(file_with_path, subtitle)
 
-    def add_sound(self, file, subtitle):
-        if file in self.sounds:
-            logging.error(f'Duplicate sound: {file} in {self}')
-        self.sounds[file] = subtitle
+    # def create(self):
+    #     print(f'{self.name}')
 
     def __str__(self):
         return f'{self.name} - {self.sounds}'
@@ -362,7 +364,9 @@ class CoDriver:
         csv_writer.writerow(['style', 'id', 'name', 'type', 'category', 'package', 'ini', 'sound_count', 'translation', 'sound'])
         for name, rbr_pacenote_plugin in self.rbr_pacenote_plugins.items():
             notes = rbr_pacenote_plugin.pacenotes
-            notes = sorted(notes, key=lambda x: x.id)
+            # sort notes by id and name
+            notes = sorted(notes, key=lambda x: (x.id, x.name))
+
 
             for note in notes:
                 for sound in note.sounds:
@@ -371,11 +375,16 @@ class CoDriver:
     def cc_list_csv(self):
         csv_writer = csv.writer(sys.stdout)
         csv_writer.writerow(['type', 'file', 'subtitle'])
-        notes = sorted(self.mapped_cc_notes, key=lambda x: x.name)
-        for note in notes:
-            for sound, subtitle in note.sounds.items():
-                sound_file_basename = os.path.basename(sound)
-                csv_writer.writerow([note.name, sound_file_basename, subtitle])
+        cc_notes = sorted(self.mapped_cc_notes, key=lambda x: x.name)
+        for cc_note in cc_notes:
+            for rbr_note in cc_note.notes:
+                for sound in rbr_note.sounds:
+                    file = sound
+                    subtitle = rbr_note.translation
+                    csv_writer.writerow([cc_note.name, file, subtitle])
+            # for sound, subtitle in note.sounds.items():
+            #     sound_file_basename = os.path.basename(sound)
+            #     csv_writer.writerow([note.name, sound_file_basename, subtitle])
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.DEBUG)

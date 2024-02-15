@@ -16,6 +16,22 @@ class RbrPacenote:
         self.translation = ''
         self.sounds_dir = ''
 
+    def sound_as_wav(self, sound):
+        ogg = os.path.join(self.sounds_dir, sound)
+        if not os.path.exists(ogg):
+            raise FileNotFoundError(f'Not found: {ogg}')
+
+        # replace .ogg with .wav
+        wav = sound.replace('.ogg', '.wav')
+        # check if the sound file exists
+        sound_file = os.path.join(self.sounds_dir, wav)
+        if not os.path.exists(sound_file):
+            # convert the sound file from .ogg to .wav
+            # convert the sound file
+            logging.debug(f'Converting {ogg} to {sound_file}')
+            os.system(f'ffmpeg -i {ogg} {sound_file}')
+        return wav
+
     def __str__(self):
         return f'{self.id}: {self.name} - T: {self.type} - C: {self.category} - P: {self.package} - Sounds: {self.sounds} - Translation: {self.translation} - Ini: {self.ini}'
 
@@ -180,7 +196,7 @@ class RbrPacenotePlugin:
         return strings
 
 
-    def read_ini(self, ini_file = '', recursion = 0, category = None, package = None):
+    def read_ini(self, ini_file = '', recursion = 0, category = '', package = ''):
         # make sure the ini_file exists
         if not os.path.exists(ini_file):
             logging.error(f'Not found: {ini_file}')
