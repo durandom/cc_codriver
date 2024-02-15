@@ -329,8 +329,6 @@ corner_hairpin_right_reversed,oikee_tiukka1.ogg,Right HP
 corner_hairpin_right_reversed,oikee_tiukka2.ogg,Right HP
 corner_hairpin_right_rushed,oikee_tiukka1.ogg,HP Right
 corner_hairpin_right_rushed,oikee_tiukka2.ogg,HP Right
-corner_open_hairpin_left_rushed,sisalta.ogg,Cut
-corner_open_hairpin_right_rushed,sisalta.ogg,Cut
 corner_square_left,vasen_kaks1.ogg,2 Left
 corner_square_left,vasen_kaks2.ogg,2 Left
 corner_square_left_descriptive,vasen_90_1.ogg,Square Left
@@ -355,7 +353,8 @@ corner_square_right_reversed_rushed,oikee_kaks1.ogg,Right 2
 corner_square_right_reversed_rushed,oikee_kaks2.ogg,Right 2
 corner_square_right_rushed,oikee_kaks1.ogg,2 Right
 corner_square_right_rushed,oikee_kaks2.ogg,2 Right
-detail_and_rushed,sisalta.ogg,Cut
+detail_and_rushed,jatkuu1.ogg,And
+detail_and_rushed,jatkuu2.ogg,And
 detail_brake,jarru1.ogg,Brake
 detail_brake,jarru2.ogg,Brake
 detail_brake_rushed,jarru1.ogg,Brake
@@ -376,7 +375,7 @@ detail_care_out_rushed,varo_ulkona.ogg,Care Out
 detail_care_rushed,varo1.ogg,Care
 detail_caution,huomio.ogg,Caution
 detail_caution_rushed,huomio.ogg,Caution
-detail_caution_water_rushed,sisalta.ogg,Cut
+detail_caution_water_rushed,huomio_vetta.ogg,Caution Water
 detail_concrete,betonille.ogg,Concrete
 detail_concrete_rushed,betonille.ogg,Concrete
 detail_continues_over_crest,jatkuu_yli_nypyn.ogg,Continues Over Crest
@@ -402,8 +401,6 @@ detail_double_caution_rushed,huomio_huomio.ogg,Danger
 detail_double_rushed,tupla1.ogg,Double
 detail_double_rushed,tupla2.ogg,Double
 detail_double_rushed,tupla3.ogg,Double
-detail_double_tightens,sisalta.ogg,Cut
-detail_double_tightens_rushed,sisalta.ogg,Cut
 detail_downhill,alas1.ogg,Down
 detail_downhill,alas2.ogg,Down
 detail_downhill_rushed,alas1.ogg,Down
@@ -443,8 +440,10 @@ detail_immediate_rushed,heti1.ogg,Immediate
 detail_immediate_rushed,heti2.ogg,Immediate
 detail_inside,sisalla.ogg,Inside
 detail_inside_rushed,sisalla.ogg,Inside
-detail_into,sisalta.ogg,Cut
-detail_into_rushed,sisalta.ogg,Cut
+detail_into,into1.ogg,Into
+detail_into,into2.ogg,Into
+detail_into_rushed,into1.ogg,Into
+detail_into_rushed,into2.ogg,Into
 detail_jump,hyppy1.ogg,Jump
 detail_jump,hyppy2.ogg,Jump
 detail_jump_bind,hyppysido1.ogg,Jump Tie
@@ -483,27 +482,18 @@ detail_left_entry_chicane,shikaani_vasemmalta.ogg,Left Entry Chicane
 detail_left_entry_chicane_rushed,shikaani_vasemmalta.ogg,Left Entry Chicane
 detail_left_foot_braking,sido.ogg,Tie
 detail_left_foot_braking_rushed,sido.ogg,Tie
-detail_logs_inside,sisalta.ogg,Cut
-detail_logs_inside_rushed,sisalta.ogg,Cut
-detail_logs_outside,sisalta.ogg,Cut
-detail_logs_outside_rushed,sisalta.ogg,Cut
-detail_long,sisalta.ogg,Cut
-detail_long_rushed,sisalta.ogg,Cut
 detail_longlong,tosi_pitka.ogg,Very Long
 detail_longlong_rushed,tosi_pitka.ogg,Very Long
-detail_loose_gravel,sisalta.ogg,Cut
-detail_maybe,sisalta.ogg,Cut
-detail_maybe_rushed,sisalta.ogg,Cut
 detail_minus,miinus.ogg,Minus
 detail_minus_rushed,miinus.ogg,Minus
 detail_narrows,sumppu.ogg,Narrows
 detail_narrows_rushed,sumppu.ogg,Narrows
-detail_onto,sisalta.ogg,Cut
+detail_onto,onto.ogg,Onto
 detail_onto_concrete,betonille.ogg,On Concrete
 detail_onto_concrete_rushed,betonille.ogg,On Concrete
 detail_onto_gravel,soralle.ogg,On Gravel
 detail_onto_gravel_rushed,soralle.ogg,On Gravel
-detail_onto_rushed,sisalta.ogg,Cut
+detail_onto_rushed,onto.ogg,Onto
 detail_onto_snow,lumelle.ogg,On Snow
 detail_onto_snow_rushed,lumelle.ogg,On Snow
 detail_onto_tarmac,asfaltille.ogg,On Tarmac
@@ -531,10 +521,6 @@ detail_puddle,vetta.ogg,LÄTÄKKÖ
 detail_rails,raiteet.ogg,Rails
 detail_right_entry_chicane,shikaani_oikeelta.ogg,Right Entry Chicane
 detail_right_entry_chicane_rushed,shikaani_oikeelta.ogg,Right Entry Chicane
-detail_rocks_inside,sisalta.ogg,Cut
-detail_rocks_inside_rushed,sisalta.ogg,Cut
-detail_rocks_outside,sisalta.ogg,Cut
-detail_rocks_outside_rushed,sisalta.ogg,Cut
 detail_round,pyoree.ogg,Round
 detail_round_rushed,pyoree.ogg,Round
 detail_ruts,urat.ogg,Ruts
@@ -555,14 +541,10 @@ detail_small_crest_rushed,pikkunyppy1.ogg,Small Crest
 detail_small_crest_rushed,pikkunyppy2.ogg,Small Crest
 detail_snow,lumelle.ogg,Snow
 detail_snow_rushed,lumelle.ogg,Snow
-detail_split,sisalta.ogg,Cut
 detail_stay_out,roiku.ogg,Hang
 detail_stay_out_rushed,roiku.ogg,Hang
 detail_tarmac,asfaltille.ogg,Tarmac
 detail_tarmac_rushed,asfaltille.ogg,Tarmac
-detail_then,sisalta.ogg,Cut
-detail_then_rushed,sisalta.ogg,Cut
-detail_through_gate,sisalta.ogg,Cut
 detail_tight,ahdas.ogg,Tight
 detail_tight_rushed,ahdas.ogg,Tight
 detail_tightens,vasen_viis1.ogg,5 Left
@@ -596,10 +578,6 @@ detail_to_6,_kuueks.ogg,6
 detail_to_acute,_tiukaks.ogg,HP
 detail_to_dip,notko.ogg,TODIP
 detail_to_finish,maaliin1.ogg,To Finish
-detail_tree_inside,sisalta.ogg,Cut
-detail_tree_inside_rushed,sisalta.ogg,Cut
-detail_tree_outside,sisalta.ogg,Cut
-detail_tree_outside_rushed,sisalta.ogg,Cut
 detail_triple_caution,huomio_huomio.ogg,TRIPLE CAUTION
 detail_tunnel,tunneli.ogg,Tunnel
 detail_twisty,suoraksi.ogg,Twisty
@@ -607,39 +585,35 @@ detail_uphill,ylos1.ogg,Up
 detail_uphill,ylos2.ogg,Up
 detail_very_long,tosi_pitka.ogg,Very Long
 detail_water,vetta.ogg,VETTÄ
-detail_widens,sisalta.ogg,Cut
 detail_wideout,levenee.ogg,Widens
-number_1,sisalta.ogg,Cut
-number_100,sisalta.ogg,Cut
-number_1000,sisalta.ogg,Cut
-number_100_rushed,sisalta.ogg,Cut
-number_120,sisalta.ogg,Cut
-number_140,sisalta.ogg,Cut
-number_150,sisalta.ogg,Cut
-number_160,sisalta.ogg,Cut
-number_180,sisalta.ogg,Cut
-number_2,sisalta.ogg,Cut
-number_200,sisalta.ogg,Cut
-number_250,sisalta.ogg,Cut
-number_3,sisalta.ogg,Cut
-number_30,sisalta.ogg,Cut
-number_300,sisalta.ogg,Cut
-number_30_rushed,sisalta.ogg,Cut
-number_350,sisalta.ogg,Cut
-number_40,sisalta.ogg,Cut
-number_400,sisalta.ogg,Cut
-number_40_rushed,sisalta.ogg,Cut
-number_450,sisalta.ogg,Cut
-number_50,sisalta.ogg,Cut
-number_500,sisalta.ogg,Cut
-number_50_rushed,sisalta.ogg,Cut
-number_60,sisalta.ogg,Cut
-number_600,sisalta.ogg,Cut
-number_60_rushed,sisalta.ogg,Cut
-number_70,sisalta.ogg,Cut
-number_700,sisalta.ogg,Cut
-number_70_rushed,sisalta.ogg,Cut
-number_80,sisalta.ogg,Cut
-number_800,sisalta.ogg,Cut
-number_80_rushed,sisalta.ogg,Cut
-number_900,sisalta.ogg,Cut
+number_100,100_1.ogg,100
+number_1000,1000.ogg,1000
+number_100_rushed,100_1.ogg,100
+number_120,120_1.ogg,120
+number_140,140_1.ogg,140
+number_150,150_1.ogg,150
+number_160,160_1.ogg,160
+number_180,180_1.ogg,180
+number_200,200_1.ogg,200
+number_250,250_1.ogg,250
+number_30,30_1.ogg,30
+number_300,300_1.ogg,300
+number_30_rushed,30_1.ogg,30
+number_350,350_1.ogg,350
+number_40,40_1.ogg,40
+number_400,400_1.ogg,400
+number_40_rushed,40_1.ogg,40
+number_450,450_1.ogg,450
+number_50,50_1.ogg,50
+number_500,500_1.ogg,500
+number_50_rushed,50_1.ogg,50
+number_60,60_1.ogg,60
+number_600,600.ogg,600
+number_60_rushed,60_1.ogg,60
+number_70,70_1.ogg,70
+number_700,700.ogg,700
+number_70_rushed,70_1.ogg,70
+number_80,80_1.ogg,80
+number_800,800.ogg,800
+number_80_rushed,80_1.ogg,80
+number_900,900.ogg,900

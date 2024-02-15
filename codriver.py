@@ -43,8 +43,16 @@ class PacenoteType(PacenoteModifier):
             'corner_4' : 'four',
             'corner_5' : 'five',
             'corner_6' : 'six',
-            # 'detail_' : '',
+            'detail_' : '',
         }
+
+class PacenoteRange(PacenoteModifier):
+    def __init__(self, name: str, id: int = -1):
+        # check if name is numeric
+        if not name.isnumeric():
+            raise ValueError(f'Invalid name: {name} for PacenoteRange')
+        # just call the parent constructor
+        super().__init__(name, id)
 
 class CrewChiefNote:
 
@@ -214,7 +222,7 @@ class CoDriver:
             if id == cc_id:
                 id = mapping.get('rbr_id', id)
                 name = mapping.get('rbr_name', name)
-            cc_name = mapping.get('cc_name', name)
+            cc_name = mapping.get('cc_name')
             if name == cc_name:
                 id = mapping.get('rbr_id', id)
                 name = mapping.get('rbr_name', name)
@@ -234,7 +242,7 @@ class CoDriver:
 
         return []
 
-    def get_pacenote_type_for_cc_sound(self, sound) -> Union[PacenoteType, PacenoteModifier, None]:
+    def get_pacenote_type_for_cc_sound(self, sound) -> Union[PacenoteType, PacenoteModifier, PacenoteRange, None]:
         for src, dst in self.map_cc_types.items():
             if sound == src:
                 sound = dst
@@ -245,6 +253,10 @@ class CoDriver:
         for id, type in self.cc_pacenotes_modifiers.items():
             if type.name.lower() == sound.lower():
                 return type
+
+        if sound.isnumeric():
+            return PacenoteRange(sound)
+
         return None
 
     def map_package_and_type(self, type = '', package = 'numeric'):
@@ -293,6 +305,9 @@ class CoDriver:
             if sound_lookup.endswith('_rushed'):
                 sound_lookup = sound_lookup[:-7]
                 cc_note.rushed = True
+
+            if sound_lookup.startswith('number_'):
+                sound_lookup = sound_lookup[7:]
 
             (package, sound_lookup) = self.map_package_and_type(type=sound_lookup)
 
@@ -372,7 +387,7 @@ if __name__ == '__main__':
     parser.add_argument('--rbr-list', action='store_true', help='List RBR pacenotes')
     parser.add_argument('--rbr-list-csv', action='store_true', help='List RBR pacenotes as CSV')
     parser.add_argument('--rbr-find-note-by-name', help='Find a note by name')
-    parser.add_argument('--map-to-cc', default='build/copilot', help='Map RBR pacenotes to CC pacenotes and create folder structure')
+    parser.add_argument('--map-to-cc', help='Map RBR pacenotes to CC pacenotes and create folder structure')
     parser.add_argument('--map-to-cc-csv', action='store_true', help='Map RBR pacenotes to CC pacenotes and write to CSV')
 
     args = parser.parse_args()
