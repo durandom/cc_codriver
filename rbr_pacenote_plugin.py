@@ -29,7 +29,9 @@ class RbrPacenote:
             # convert the sound file from .ogg to .wav
             # convert the sound file
             logging.debug(f'Converting {ogg} to {sound_file}')
-            os.system(f'ffmpeg -i {ogg} {sound_file}')
+            rv = os.system(f'ffmpeg -i "{ogg}" "{sound_file}"')
+            if rv != 0:
+                raise Exception(f'Error converting {ogg} to {sound_file}')
         return wav
 
     def __str__(self):

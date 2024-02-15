@@ -59,7 +59,7 @@ class CrewChiefNote:
     def __init__(self, name: str, prefix: Optional['CrewChiefNote'] = None):
         self.name = name
         self.sounds = {} # soundfile: subtitle
-        self.notes = []
+        self.notes : List[RbrPacenote] = []
         self.rushed = False
         self.prefix = prefix
 
@@ -341,22 +341,29 @@ class CoDriver:
         else:
             logging.error(f'Directory {directory} already exists')
 
-        for note in self.mapped_cc_notes:
-            path = os.path.join(directory, note.name)
+        for cc_note in self.mapped_cc_notes:
+            # create the directory for the note
+            path = os.path.join(directory, cc_note.name)
             if not os.path.exists(path):
                 os.makedirs(path)
             else:
                 logging.error(f'Directory {path} already exists')
 
+            # copy sound files
+            for rbr_note in cc_note.notes:
+                for sound in rbr_note.sounds:
+                    wave_file = rbr_note.sound_as_wav(sound)
+                    wave_file = os.path.join(rbr_note.sounds_dir, wave_file)
+                    shutil.copy(wave_file, path)
+
+            # create subtitles.csv
             with open(os.path.join(path, 'subtitles.csv'), mode='w', encoding='utf-8') as file:
                 csv_writer = csv.writer(file)
-                for sound, subtitle in note.sounds.items():
-                    sound_file_basename = os.path.basename(sound)
+                for sound in rbr_note.sounds:
+                    wave_file = rbr_note.sound_as_wav(sound)
+                    sound_file_basename = os.path.basename(wave_file)
+                    subtitle = rbr_note.translation
                     csv_writer.writerow([sound_file_basename, subtitle])
-
-            for sound, subtitle in note.sounds.items():
-                # copy sound file to path
-                shutil.copy(sound, path)
 
 
     def rbr_list_csv(self):
@@ -382,9 +389,6 @@ class CoDriver:
                     file = sound
                     subtitle = rbr_note.translation
                     csv_writer.writerow([cc_note.name, file, subtitle])
-            # for sound, subtitle in note.sounds.items():
-            #     sound_file_basename = os.path.basename(sound)
-            #     csv_writer.writerow([note.name, sound_file_basename, subtitle])
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.DEBUG)
@@ -445,12 +449,3 @@ if __name__ == '__main__':
     if args.map_to_cc:
         codriver.map_notes_from_cc()
         codriver.cc_create_copilot(args.map_to_cc)
-
-
-# Links
-#  https://thecrewchief.org/showthread.php?1851-Richard-Burns-Rally-Crew-Chief-setup-and-known-issues
-#  https://thecrewchief.org/showthread.php?825-Authoring-alternative-Crew-Chief-voice-packs
-#  https://gitlab.com/mr_belowski/CrewChiefV4/-/blob/master/complete-radioerize-from-raw.txt
-#  https://nerdynav.com/best-ai-voice-generators/
-#  https://github.com/Smo-RBR/RBR-German-tts-Codriver
-

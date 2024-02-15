@@ -32,8 +32,8 @@ descriptive,-1,long,PACENOTE,MODIFIER,RBR,Extended.ini,1,Lang,long.ogg
 descriptive,-1,maybe,PACENOTE,MODIFIER,RBR,Extended.ini,1,Vielleicht,maybe.ogg
 descriptive,-1,narrows,PACENOTE,MODIFIER,RBR,Extended.ini,1,Enger,narrows.ogg
 descriptive,-1,onto,PACENOTE,LINKS,RBR,Extended.ini,1,Auf,onto.ogg
-descriptive,-1,tightens,PACENOTE,MODIFIER,RBR,Extended.ini,1,Macht zu,tightens.ogg
 descriptive,-1,tightens,PACENOTE,ADJECTIVES,RBR,Extended.ini,1,Macht Zu,tightens.ogg
+descriptive,-1,tightens,PACENOTE,MODIFIER,RBR,Extended.ini,1,Macht zu,tightens.ogg
 descriptive,-1,tightensbad,PACENOTE,ADJECTIVES,RBR,Extended.ini,1,Macht Stark Zu,tightensbad.ogg
 descriptive,-1,tightensbad,PACENOTE,MODIFIER,RBR,Extended.ini,1,Macht sehr zu,tightensbad.ogg
 descriptive,-1,wideout,PACENOTE,MODIFIER,RBR,Extended.ini,1,Breiter,wideout.ogg
@@ -212,8 +212,8 @@ descriptive,408,in,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,In,in.ogg
 descriptive,409,behind,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,Hinter,behind.ogg
 descriptive,410,for,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,Für,for.ogg
 descriptive,411,inside,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,Innen,inside.ogg
-descriptive,412,outside,PACENOTE,ADDITIONAL,RBR,Extended.ini,1,Aussen,outside.ogg
 descriptive,412,outside,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,Außen,outside.ogg
+descriptive,412,outside,PACENOTE,ADDITIONAL,RBR,Extended.ini,1,Aussen,outside.ogg
 descriptive,430,done,PACENOTE,LINKS,RBR,Extended.ini,1,Ende,done.ogg
 descriptive,431,stop,PACENOTE,LINKS,RBR,Extended.ini,1,Stop,stop.ogg
 descriptive,432,line,PACENOTE,LINE,RBR,Extended.ini,1,Linie,line.ogg
@@ -289,8 +289,8 @@ reversed,-1,long,PACENOTE,MODIFIER,RBR,Extended.ini,1,Lang,long.ogg
 reversed,-1,maybe,PACENOTE,MODIFIER,RBR,Extended.ini,1,Vielleicht,maybe.ogg
 reversed,-1,narrows,PACENOTE,MODIFIER,RBR,Extended.ini,1,Enger,narrows.ogg
 reversed,-1,onto,PACENOTE,LINKS,RBR,Extended.ini,1,Auf,onto.ogg
-reversed,-1,tightens,PACENOTE,MODIFIER,RBR,Extended.ini,1,Macht zu,tightens.ogg
 reversed,-1,tightens,PACENOTE,ADJECTIVES,RBR,Extended.ini,1,Macht Zu,tightens.ogg
+reversed,-1,tightens,PACENOTE,MODIFIER,RBR,Extended.ini,1,Macht zu,tightens.ogg
 reversed,-1,tightensbad,PACENOTE,ADJECTIVES,RBR,Extended.ini,1,Macht Stark Zu,tightensbad.ogg
 reversed,-1,tightensbad,PACENOTE,MODIFIER,RBR,Extended.ini,1,Macht sehr zu,tightensbad.ogg
 reversed,-1,wideout,PACENOTE,MODIFIER,RBR,Extended.ini,1,Breiter,wideout.ogg
@@ -475,8 +475,8 @@ reversed,408,in,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,In,in.ogg
 reversed,409,behind,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,Hinter,behind.ogg
 reversed,410,for,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,Für,for.ogg
 reversed,411,inside,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,Innen,inside.ogg
-reversed,412,outside,PACENOTE,ADDITIONAL,RBR,Extended.ini,1,Aussen,outside.ogg
 reversed,412,outside,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,Außen,outside.ogg
+reversed,412,outside,PACENOTE,ADDITIONAL,RBR,Extended.ini,1,Aussen,outside.ogg
 reversed,430,done,PACENOTE,LINKS,RBR,Extended.ini,1,Ende,done.ogg
 reversed,431,stop,PACENOTE,LINKS,RBR,Extended.ini,1,Stop,stop.ogg
 reversed,432,line,PACENOTE,LINE,RBR,Extended.ini,1,Linie,line.ogg
@@ -554,8 +554,8 @@ numeric,-1,long,PACENOTE,MODIFIER,RBR,Extended.ini,1,Lang,long.ogg
 numeric,-1,maybe,PACENOTE,MODIFIER,RBR,Extended.ini,1,Vielleicht,maybe.ogg
 numeric,-1,narrows,PACENOTE,MODIFIER,RBR,Extended.ini,1,Enger,narrows.ogg
 numeric,-1,onto,PACENOTE,LINKS,RBR,Extended.ini,1,Auf,onto.ogg
-numeric,-1,tightens,PACENOTE,MODIFIER,RBR,Extended.ini,1,Macht zu,tightens.ogg
 numeric,-1,tightens,PACENOTE,ADJECTIVES,RBR,Extended.ini,1,Macht Zu,tightens.ogg
+numeric,-1,tightens,PACENOTE,MODIFIER,RBR,Extended.ini,1,Macht zu,tightens.ogg
 numeric,-1,tightensbad,PACENOTE,ADJECTIVES,RBR,Extended.ini,1,Macht Stark Zu,tightensbad.ogg
 numeric,-1,tightensbad,PACENOTE,MODIFIER,RBR,Extended.ini,1,Macht sehr zu,tightensbad.ogg
 numeric,-1,wideout,PACENOTE,MODIFIER,RBR,Extended.ini,1,Breiter,wideout.ogg
@@ -740,8 +740,8 @@ numeric,408,in,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,In,in.ogg
 numeric,409,behind,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,Hinter,behind.ogg
 numeric,410,for,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,Für,for.ogg
 numeric,411,inside,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,Innen,inside.ogg
-numeric,412,outside,PACENOTE,ADDITIONAL,RBR,Extended.ini,1,Aussen,outside.ogg
 numeric,412,outside,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,Außen,outside.ogg
+numeric,412,outside,PACENOTE,ADDITIONAL,RBR,Extended.ini,1,Aussen,outside.ogg
 numeric,430,done,PACENOTE,LINKS,RBR,Extended.ini,1,Ende,done.ogg
 numeric,431,stop,PACENOTE,LINKS,RBR,Extended.ini,1,Stop,stop.ogg
 numeric,432,line,PACENOTE,LINE,RBR,Extended.ini,1,Linie,line.ogg

@@ -31,9 +31,9 @@ numeric,-1,dontcut,PACENOTE,MODIFIER,RBR,Extended.ini,1,Don't Cut,ala.ogg
 numeric,-1,into,PACENOTE,LINKS,RBR,Extended.ini,2,Into,into1.ogg
 numeric,-1,into,PACENOTE,LINKS,RBR,Extended.ini,2,Into,into2.ogg
 numeric,-1,long,PACENOTE,MODIFIER,RBR,Extended.ini,1,Long,pitka.ogg
-numeric,-1,maybe,PACENOTE,MODIFIER,RBR,Extended.ini,1,Maybe,ehka1.ogg
 numeric,-1,maybe,PACENOTE,ADDITIONAL,RBR,Extended.ini,1,Maybe,ehka1.ogg
 numeric,-1,maybe,PACENOTE,ADDITIONAL,RBR,Extended.ini,1,Maybe,ehka2.ogg
+numeric,-1,maybe,PACENOTE,MODIFIER,RBR,Extended.ini,1,Maybe,ehka1.ogg
 numeric,-1,narrows,PACENOTE,MODIFIER,RBR,Extended.ini,1,Narrows,sumppu.ogg
 numeric,-1,onto,PACENOTE,LINKS,RBR,Extended.ini,1,Onto,onto.ogg
 numeric,-1,tightens,PACENOTE,MODIFIER,RBR,Extended.ini,1,Tightens,kirraa1.ogg
@@ -229,9 +229,9 @@ reversed,-1,dontcut,PACENOTE,MODIFIER,RBR,Extended.ini,1,Don't Cut,ala.ogg
 reversed,-1,into,PACENOTE,LINKS,RBR,Extended.ini,2,Into,into1.ogg
 reversed,-1,into,PACENOTE,LINKS,RBR,Extended.ini,2,Into,into2.ogg
 reversed,-1,long,PACENOTE,MODIFIER,RBR,Extended.ini,1,Long,pitka.ogg
-reversed,-1,maybe,PACENOTE,MODIFIER,RBR,Extended.ini,1,Maybe,ehka1.ogg
 reversed,-1,maybe,PACENOTE,ADDITIONAL,RBR,Extended.ini,1,Maybe,ehka1.ogg
 reversed,-1,maybe,PACENOTE,ADDITIONAL,RBR,Extended.ini,1,Maybe,ehka2.ogg
+reversed,-1,maybe,PACENOTE,MODIFIER,RBR,Extended.ini,1,Maybe,ehka1.ogg
 reversed,-1,narrows,PACENOTE,MODIFIER,RBR,Extended.ini,1,Narrows,sumppu.ogg
 reversed,-1,onto,PACENOTE,LINKS,RBR,Extended.ini,1,Onto,onto.ogg
 reversed,-1,tightens,PACENOTE,MODIFIER,RBR,Extended.ini,1,Tightens,kirraa1.ogg
@@ -427,9 +427,9 @@ descriptive,-1,dontcut,PACENOTE,MODIFIER,RBR,Extended.ini,1,Don't Cut,ala.ogg
 descriptive,-1,into,PACENOTE,LINKS,RBR,Extended.ini,2,Into,into1.ogg
 descriptive,-1,into,PACENOTE,LINKS,RBR,Extended.ini,2,Into,into2.ogg
 descriptive,-1,long,PACENOTE,MODIFIER,RBR,Extended.ini,1,Long,pitka.ogg
-descriptive,-1,maybe,PACENOTE,MODIFIER,RBR,Extended.ini,1,Maybe,ehka1.ogg
 descriptive,-1,maybe,PACENOTE,ADDITIONAL,RBR,Extended.ini,1,Maybe,ehka1.ogg
 descriptive,-1,maybe,PACENOTE,ADDITIONAL,RBR,Extended.ini,1,Maybe,ehka2.ogg
+descriptive,-1,maybe,PACENOTE,MODIFIER,RBR,Extended.ini,1,Maybe,ehka1.ogg
 descriptive,-1,narrows,PACENOTE,MODIFIER,RBR,Extended.ini,1,Narrows,sumppu.ogg
 descriptive,-1,onto,PACENOTE,LINKS,RBR,Extended.ini,1,Onto,onto.ogg
 descriptive,-1,tightens,PACENOTE,MODIFIER,RBR,Extended.ini,1,Tightens,kirraa1.ogg
