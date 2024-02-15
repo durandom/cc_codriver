@@ -1,6 +1,7 @@
 import configparser
 import logging
 import os
+from typing import Optional
 
 
 class RbrPacenote:
@@ -16,23 +17,35 @@ class RbrPacenote:
         self.translation = ''
         self.sounds_dir = ''
 
-    def sound_as_wav(self, sound):
+    def sound_as_wav(self, sound, prefix: Optional['RbrPacenote'] = None):
         ogg = os.path.join(self.sounds_dir, sound)
         if not os.path.exists(ogg):
             raise FileNotFoundError(f'Not found: {ogg}')
 
         # replace .ogg with .wav
-        wav = sound.replace('.ogg', '.wav')
+        wave_filename = sound.replace('.ogg', '.wav')
         # check if the sound file exists
-        sound_file = os.path.join(self.sounds_dir, wav)
-        if not os.path.exists(sound_file):
+        wave_fullname = os.path.join(self.sounds_dir, wave_filename)
+        if not os.path.exists(wave_fullname):
             # convert the sound file from .ogg to .wav
             # convert the sound file
-            logging.debug(f'Converting {ogg} to {sound_file}')
-            rv = os.system(f'ffmpeg -i "{ogg}" "{sound_file}"')
+            logging.debug(f'Converting {ogg} to {wave_fullname}')
+            rv = os.system(f'ffmpeg -i "{ogg}" "{wave_fullname}"')
             if rv != 0:
-                raise Exception(f'Error converting {ogg} to {sound_file}')
-        return wav
+                raise Exception(f'Error converting {ogg} to {wave_fullname}')
+
+        if prefix:
+            prefix_wave_filename = prefix.sound_as_wav(prefix.sounds[0])
+            prefix_wave_fullname = os.path.join(prefix.sounds_dir, prefix_wave_filename)
+            cmp_filename = f'{prefix.name}_{wave_filename}'
+            cmp_fullname = os.path.join(self.sounds_dir, cmp_filename)
+            if not os.path.exists(cmp_fullname):
+                rv = os.system(f'sox "{prefix_wave_fullname}" "{wave_fullname}" "{cmp_fullname}"')
+                if rv != 0:
+                    raise Exception(f'Error merging {prefix_wave_filename} and {wave_filename} to {cmp_filename}')
+            return cmp_filename
+
+        return wave_filename
 
     def __str__(self):
         return f'{self.id}: {self.name} - T: {self.type} - C: {self.category} - P: {self.package} - Sounds: {self.sounds} - Translation: {self.translation} - Ini: {self.ini}'

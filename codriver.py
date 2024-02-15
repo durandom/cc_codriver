@@ -100,9 +100,11 @@ class CoDriver:
                  map_cc_types = {},
                  additional_cc_types = {},
                  skip_notes = {}):
+
         self.cc_pacenotes_types = {}
         self.cc_pacenotes_modifiers = {}
         self.cc_sounds = {}
+        self.cc_sounds_dir = cc_sounds
         self.rbr_sounds = {}
         self.rbr_pacenote_plugins = {}
         self.skip_notes = skip_notes
@@ -112,7 +114,7 @@ class CoDriver:
 
         self.init_cc_pacenotes_types(cc_pacenote_types)
         self.init_cc_pacenotes_modifier(cc_pacenote_modifier)
-        self.init_cc_sounds(cc_sounds)
+        self.init_cc_sounds(self.cc_sounds_dir)
 
         self.mapped_cc_notes : List[CrewChiefNote] = []
 
@@ -339,25 +341,47 @@ class CoDriver:
         if not os.path.exists(directory):
             os.makedirs(directory)
         else:
-            logging.error(f'Directory {directory} already exists')
+            logging.debug(f'Directory {directory} already exists')
 
-        for cc_note in self.mapped_cc_notes:
-            # create the directory for the note
-            path = os.path.join(directory, cc_note.name)
-            if not os.path.exists(path):
-                os.makedirs(path)
+        for cc_note in self.cc_sounds.values():
+            dst_path = os.path.join(directory, cc_note.name)
+            if not os.path.exists(dst_path):
+                os.makedirs(dst_path)
             else:
-                logging.error(f'Directory {path} already exists')
+                logging.debug(f'Directory {dst_path} already exists')
 
+            # find the mapped note
+            mapped_cc_note = next((x for x in self.mapped_cc_notes if x.name == cc_note.name), None)
+
+            if mapped_cc_note and len(mapped_cc_note.notes) == 0:
+                logging.error(f'No sounds for {cc_note.name} in mapped note {mapped_cc_note}')
+                mapped_cc_note = None
+
+            if not mapped_cc_note:
+                logging.error(f'No mapping for {cc_note.name} - using original sound')
+                # just copy the original sound
+                src = os.path.join(self.cc_sounds_dir, cc_note.name)
+                # copy each file from src directory to the destination directory
+                for file in os.listdir(src):
+                    file = os.path.join(src, file)
+                    shutil.copy(file, dst_path)
+                continue
+
+            # process the mapped note
+            cc_note = mapped_cc_note
+            # create the directory for the note
             # copy sound files
             for rbr_note in cc_note.notes:
                 for sound in rbr_note.sounds:
-                    wave_file = rbr_note.sound_as_wav(sound)
+                    prefix = None
+                    if cc_note.prefix:
+                        prefix = cc_note.prefix.notes[0]
+                    wave_file = rbr_note.sound_as_wav(sound, prefix=prefix)
                     wave_file = os.path.join(rbr_note.sounds_dir, wave_file)
-                    shutil.copy(wave_file, path)
+                    shutil.copy(wave_file, dst_path)
 
             # create subtitles.csv
-            with open(os.path.join(path, 'subtitles.csv'), mode='w', encoding='utf-8') as file:
+            with open(os.path.join(dst_path, 'subtitles.csv'), mode='w', encoding='utf-8') as file:
                 csv_writer = csv.writer(file)
                 for sound in rbr_note.sounds:
                     wave_file = rbr_note.sound_as_wav(sound)
