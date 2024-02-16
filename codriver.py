@@ -414,6 +414,9 @@ class CoDriver:
             for note in notes:
                 for sound in note.sounds:
                     error = ''
+                    if sound in note.sounds_mapped.values():
+                        from_sound = next((k for k, v in note.sounds_mapped.items() if v == sound), None)
+                        error = f'file mapped from {note.sounds_mapped[from_sound]}'
                     if sound in note.sounds_not_found:
                         error = 'file missing'
                     csv_writer.writerow([name, note.id, note.name, note.type, note.category, note.package, note.ini, note.sound_count, note.translation, sound, error])
@@ -475,13 +478,14 @@ if __name__ == '__main__':
     )
 
     config_codriver_packages = config['codrivers'][args.codriver]['packages']
+    map_files = config['codrivers'][args.codriver].get('map_files', {})
     if args.rbr_package != 'all':
         # select only the package that is specified
         config_codriver_packages = [ package for package in config_codriver_packages if package['type'] == args.rbr_package]
     for package in config_codriver_packages:
         pacenote_dir_absolute = os.path.join(base_dir, package['base_dir'])
         ini_files = package['ini_files']
-        rbr_pacenote_plugin = RbrPacenotePlugin(pacenote_dir_absolute, ini_files=ini_files)
+        rbr_pacenote_plugin = RbrPacenotePlugin(pacenote_dir_absolute, ini_files=ini_files, map_files=map_files)
         codriver.add_pacenote_plugin(package['type'], rbr_pacenote_plugin)
 
 

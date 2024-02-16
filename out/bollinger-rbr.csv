@@ -40,12 +40,12 @@ descriptive,-1,wideout,PACENOTE,MODIFIER,RBR,Extended.ini,1,Breiter,wideout.ogg,
 descriptive,0,one_left,PACENOTE,CORNERS,RBR,Numeric.ini,1,Kehre Links,hairpin_left.ogg,
 descriptive,1,square_left,PACENOTE,CORNERS,RBR,Numeric.ini,1,90 Links,square_left.ogg,
 descriptive,2,three_left,PACENOTE,CORNERS,RBR,Numeric.ini,1,K Links,kleft.ogg,
-descriptive,3,four_left,PACENOTE,CORNERS,RBR,Numeric.ini,1,Normal Links,medium_left.ogg,file missing
-descriptive,4,five_left,PACENOTE,CORNERS,RBR,Numeric.ini,1,Schnell Links,fast_left.ogg,file missing
-descriptive,5,six_left,PACENOTE,CORNERS,RBR,Numeric.ini,1,Leicht Links,easy_left.ogg,file missing
-descriptive,6,six_right,PACENOTE,CORNERS,RBR,Numeric.ini,1,Leicht Rechts,easy_right.ogg,file missing
-descriptive,7,five_right,PACENOTE,CORNERS,RBR,Numeric.ini,1,Schnell Rechts,fast_right.ogg,file missing
-descriptive,8,four_right,PACENOTE,CORNERS,RBR,Numeric.ini,1,Normal Rechts,medium_right.ogg,file missing
+descriptive,3,four_left,PACENOTE,CORNERS,RBR,Numeric.ini,1,Normal Links,mediumleft.ogg,file mapped from mediumleft.ogg
+descriptive,4,five_left,PACENOTE,CORNERS,RBR,Numeric.ini,1,Schnell Links,fastleft.ogg,file mapped from fastleft.ogg
+descriptive,5,six_left,PACENOTE,CORNERS,RBR,Numeric.ini,1,Leicht Links,easyleft.ogg,file mapped from easyleft.ogg
+descriptive,6,six_right,PACENOTE,CORNERS,RBR,Numeric.ini,1,Leicht Rechts,easyright.ogg,file mapped from easyright.ogg
+descriptive,7,five_right,PACENOTE,CORNERS,RBR,Numeric.ini,1,Schnell Rechts,fastright.ogg,file mapped from fastright.ogg
+descriptive,8,four_right,PACENOTE,CORNERS,RBR,Numeric.ini,1,Normal Rechts,mediumright.ogg,file mapped from mediumright.ogg
 descriptive,9,three_right,PACENOTE,CORNERS,RBR,Numeric.ini,1,K Rechts,kright.ogg,
 descriptive,10,square_right,PACENOTE,CORNERS,RBR,Numeric.ini,1,90 Rechts,square_right.ogg,
 descriptive,11,one_right,PACENOTE,CORNERS,RBR,Numeric.ini,1,Kehre Rechts,hairpin_right.ogg,
@@ -81,7 +81,7 @@ descriptive,201,over_rails,PACENOTE,OBSTACLES,RBR,Extended.ini,1,Über Gleis,ove
 descriptive,202,over_railway,PACENOTE,OBSTACLES,RBR,Extended.ini,1,Über Schienenstrang,over_railway.ogg,
 descriptive,211,deepcut,PACENOTE,LINE,RBR,Extended.ini,1,Cut Tief,deepcut.ogg,
 descriptive,212,fullcut,PACENOTE,LINE,RBR,Extended.ini,1,Cut Voll,fullcut.ogg,
-descriptive,213,keep_centre,PACENOTE,LINE,RBR,Extended.ini,1,Mittig Bleiben,keskelta.ogg,file missing
+descriptive,213,keep_centre,PACENOTE,LINE,RBR,Extended.ini,1,Mittig Bleiben,keep_centre.ogg,file mapped from keep_centre.ogg
 descriptive,214,full,PACENOTE,DRIVING,RBR,Extended.ini,1,Voll,full.ogg,
 descriptive,215,go_full,PACENOTE,DRIVING,RBR,Extended.ini,1,Vollgas,go_full.ogg,
 descriptive,216,flatout,PACENOTE,DRIVING,RBR,Extended.ini,1,Flatout,flatout.ogg,
@@ -152,7 +152,7 @@ descriptive,304,triple_caution,PACENOTE,CAUTIONS,RBR,Extended.ini,1,Höchste Vor
 descriptive,320,gravel,PACENOTE,SURFACE,RBR,Extended.ini,1,Schotter,gravel.ogg,
 descriptive,321,tarmac,PACENOTE,SURFACE,RBR,Extended.ini,1,Asphalt,tarmac.ogg,
 descriptive,322,concrete,PACENOTE,SURFACE,RBR,Extended.ini,1,Beton,concrete.ogg,
-descriptive,323,cobbles,PACENOTE,SURFACE,RBR,Extended.ini,1,Pflaster,cobbles.ogg,file missing
+descriptive,323,cobbles,PACENOTE,SURFACE,RBR,Extended.ini,1,Pflaster,cobble.ogg,file mapped from cobble.ogg
 descriptive,324,grit,PACENOTE,SURFACE,RBR,Extended.ini,1,Kies,grit.ogg,
 descriptive,325,snow,PACENOTE,SURFACE,RBR,Extended.ini,1,Schnee,snow.ogg,
 descriptive,326,onsplit,PACENOTE,SURFACE,RBR,Extended.ini,1,Splitt,onsplit.ogg,
@@ -224,8 +224,8 @@ descriptive,408,in,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,In,in.ogg,
 descriptive,409,behind,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,Hinter,behind.ogg,
 descriptive,410,for,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,Für,for.ogg,
 descriptive,411,inside,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,Innen,inside.ogg,
-descriptive,412,outside,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,Außen,outside.ogg,
 descriptive,412,outside,PACENOTE,ADDITIONAL,RBR,Extended.ini,1,Aussen,outside.ogg,
+descriptive,412,outside,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,Außen,outside.ogg,
 descriptive,413,then,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,,then.ogg,file missing
 descriptive,414,off,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,,off.ogg,file missing
 descriptive,430,done,PACENOTE,LINKS,RBR,Extended.ini,1,Ende,done.ogg,
@@ -356,7 +356,7 @@ reversed,201,over_rails,PACENOTE,OBSTACLES,RBR,Extended.ini,1,Über Gleis,over_r
 reversed,202,over_railway,PACENOTE,OBSTACLES,RBR,Extended.ini,1,Über Schienenstrang,over_railway.ogg,
 reversed,211,deepcut,PACENOTE,LINE,RBR,Extended.ini,1,Cut Tief,deepcut.ogg,
 reversed,212,fullcut,PACENOTE,LINE,RBR,Extended.ini,1,Cut Voll,fullcut.ogg,
-reversed,213,keep_centre,PACENOTE,LINE,RBR,Extended.ini,1,Mittig Bleiben,keskelta.ogg,file missing
+reversed,213,keep_centre,PACENOTE,LINE,RBR,Extended.ini,1,Mittig Bleiben,keep_centre.ogg,file mapped from keep_centre.ogg
 reversed,214,full,PACENOTE,DRIVING,RBR,Extended.ini,1,Voll,full.ogg,
 reversed,215,go_full,PACENOTE,DRIVING,RBR,Extended.ini,1,Vollgas,go_full.ogg,
 reversed,216,flatout,PACENOTE,DRIVING,RBR,Extended.ini,1,Flatout,flatout.ogg,
@@ -427,7 +427,7 @@ reversed,304,triple_caution,PACENOTE,CAUTIONS,RBR,Extended.ini,1,Höchste Vorsic
 reversed,320,gravel,PACENOTE,SURFACE,RBR,Extended.ini,1,Schotter,gravel.ogg,
 reversed,321,tarmac,PACENOTE,SURFACE,RBR,Extended.ini,1,Asphalt,tarmac.ogg,
 reversed,322,concrete,PACENOTE,SURFACE,RBR,Extended.ini,1,Beton,concrete.ogg,
-reversed,323,cobbles,PACENOTE,SURFACE,RBR,Extended.ini,1,Pflaster,cobbles.ogg,file missing
+reversed,323,cobbles,PACENOTE,SURFACE,RBR,Extended.ini,1,Pflaster,cobble.ogg,file mapped from cobble.ogg
 reversed,324,grit,PACENOTE,SURFACE,RBR,Extended.ini,1,Kies,grit.ogg,
 reversed,325,snow,PACENOTE,SURFACE,RBR,Extended.ini,1,Schnee,snow.ogg,
 reversed,326,onsplit,PACENOTE,SURFACE,RBR,Extended.ini,1,Splitt,onsplit.ogg,
@@ -499,8 +499,8 @@ reversed,408,in,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,In,in.ogg,
 reversed,409,behind,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,Hinter,behind.ogg,
 reversed,410,for,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,Für,for.ogg,
 reversed,411,inside,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,Innen,inside.ogg,
-reversed,412,outside,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,Außen,outside.ogg,
 reversed,412,outside,PACENOTE,ADDITIONAL,RBR,Extended.ini,1,Aussen,outside.ogg,
+reversed,412,outside,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,Außen,outside.ogg,
 reversed,413,then,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,,then.ogg,file missing
 reversed,414,off,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,,off.ogg,file missing
 reversed,430,done,PACENOTE,LINKS,RBR,Extended.ini,1,Ende,done.ogg,
@@ -633,7 +633,7 @@ numeric,201,over_rails,PACENOTE,OBSTACLES,RBR,Extended.ini,1,Über Gleis,over_ra
 numeric,202,over_railway,PACENOTE,OBSTACLES,RBR,Extended.ini,1,Über Schienenstrang,over_railway.ogg,
 numeric,211,deepcut,PACENOTE,LINE,RBR,Extended.ini,1,Cut Tief,deepcut.ogg,
 numeric,212,fullcut,PACENOTE,LINE,RBR,Extended.ini,1,Cut Voll,fullcut.ogg,
-numeric,213,keep_centre,PACENOTE,LINE,RBR,Extended.ini,1,Mittig Bleiben,keskelta.ogg,file missing
+numeric,213,keep_centre,PACENOTE,LINE,RBR,Extended.ini,1,Mittig Bleiben,keep_centre.ogg,file mapped from keep_centre.ogg
 numeric,214,full,PACENOTE,DRIVING,RBR,Extended.ini,1,Voll,full.ogg,
 numeric,215,go_full,PACENOTE,DRIVING,RBR,Extended.ini,1,Vollgas,go_full.ogg,
 numeric,216,flatout,PACENOTE,DRIVING,RBR,Extended.ini,1,Flatout,flatout.ogg,
@@ -704,7 +704,7 @@ numeric,304,triple_caution,PACENOTE,CAUTIONS,RBR,Extended.ini,1,Höchste Vorsich
 numeric,320,gravel,PACENOTE,SURFACE,RBR,Extended.ini,1,Schotter,gravel.ogg,
 numeric,321,tarmac,PACENOTE,SURFACE,RBR,Extended.ini,1,Asphalt,tarmac.ogg,
 numeric,322,concrete,PACENOTE,SURFACE,RBR,Extended.ini,1,Beton,concrete.ogg,
-numeric,323,cobbles,PACENOTE,SURFACE,RBR,Extended.ini,1,Pflaster,cobbles.ogg,file missing
+numeric,323,cobbles,PACENOTE,SURFACE,RBR,Extended.ini,1,Pflaster,cobble.ogg,file mapped from cobble.ogg
 numeric,324,grit,PACENOTE,SURFACE,RBR,Extended.ini,1,Kies,grit.ogg,
 numeric,325,snow,PACENOTE,SURFACE,RBR,Extended.ini,1,Schnee,snow.ogg,
 numeric,326,onsplit,PACENOTE,SURFACE,RBR,Extended.ini,1,Splitt,onsplit.ogg,
@@ -776,8 +776,8 @@ numeric,408,in,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,In,in.ogg,
 numeric,409,behind,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,Hinter,behind.ogg,
 numeric,410,for,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,Für,for.ogg,
 numeric,411,inside,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,Innen,inside.ogg,
-numeric,412,outside,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,Außen,outside.ogg,
 numeric,412,outside,PACENOTE,ADDITIONAL,RBR,Extended.ini,1,Aussen,outside.ogg,
+numeric,412,outside,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,Außen,outside.ogg,
 numeric,413,then,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,,then.ogg,file missing
 numeric,414,off,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,,off.ogg,file missing
 numeric,430,done,PACENOTE,LINKS,RBR,Extended.ini,1,Ende,done.ogg,

@@ -444,12 +444,12 @@ rbr,detail_hold,549,pida1.ogg,Hold
 rbr,detail_hold,549,pida2.ogg,Hold
 rbr,detail_hold_rushed,549,pida1.ogg,Hold
 rbr,detail_hold_rushed,549,pida2.ogg,Hold
-cc_rbr_sound_not_found,detail_hole,344,hole.ogg,HOLE
 rbr,detail_hole,344,reika1.ogg,Hole
 rbr,detail_hole,344,reika2.ogg,Hole
-cc_rbr_sound_not_found,detail_hole_rushed,344,hole.ogg,HOLE
+cc_rbr_sound_not_found,detail_hole,344,hole.ogg,HOLE
 rbr,detail_hole_rushed,344,reika1.ogg,Hole
 rbr,detail_hole_rushed,344,reika2.ogg,Hole
+cc_rbr_sound_not_found,detail_hole_rushed,344,hole.ogg,HOLE
 rbr,detail_immediate,2030,heti1.ogg,Immediate
 rbr,detail_immediate,2030,heti2.ogg,Immediate
 rbr,detail_immediate_rushed,2030,heti1.ogg,Immediate

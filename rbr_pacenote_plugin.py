@@ -14,6 +14,7 @@ class RbrPacenote:
         self.ini = ''
         self.sounds = []
         self.sounds_not_found = []
+        self.sounds_mapped = {}
         self.sound_count = 0
         self.translation = ''
         self.sounds_dir = ''
@@ -104,11 +105,12 @@ class RbrPacenote:
 
 
 class RbrPacenotePlugin:
-    def __init__(self, plugin_dir = "Pacenote/", ini_files = ["Rbr.ini", "Rbr-Enhanced.ini"]):
+    def __init__(self, plugin_dir = "Pacenote/", ini_files = ["Rbr.ini", "Rbr-Enhanced.ini"], map_files = {}):
         self.pacenotes = set()
         # self.ini_file = ini_file
         # base_dir is the directory of this file + ini_file
         self.plugin_dir = plugin_dir
+        self.map_files = map_files
 
         # make sure the plugin_dir is a directory
         if not os.path.isdir(plugin_dir):
@@ -263,6 +265,11 @@ class RbrPacenotePlugin:
                 for option in config.options(section):
                     if option.startswith('snd'):
                         sound = config.get(section, option)
+                        # map the sound file
+                        if sound in self.map_files:
+                            new_file = self.map_files[sound]
+                            note.sounds_mapped[sound] = new_file
+                            sound = new_file
                         # check if the sound file exists
                         sound_file = self.sound_file(sound)
                         if not os.path.exists(sound_file):
