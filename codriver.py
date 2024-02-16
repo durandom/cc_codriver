@@ -336,6 +336,16 @@ class CoDriver:
 
         self.mapped_cc_notes = cc_notes
 
+
+    def cc_copy_original_sounds(self, cc_note, dst_path):
+        # just copy the original sound
+        src = os.path.join(self.cc_sounds_dir, cc_note.name)
+        # copy each file from src directory to the destination directory
+        for file in os.listdir(src):
+            file = os.path.join(src, file)
+            shutil.copy(file, dst_path)
+
+
     def cc_create_copilot(self, directory):
         # create the directory
         if not os.path.exists(directory):
@@ -359,26 +369,28 @@ class CoDriver:
 
             if not mapped_cc_note:
                 logging.error(f'No mapping for {cc_note.name} - using original sound')
-                # just copy the original sound
-                src = os.path.join(self.cc_sounds_dir, cc_note.name)
-                # copy each file from src directory to the destination directory
-                for file in os.listdir(src):
-                    file = os.path.join(src, file)
-                    shutil.copy(file, dst_path)
+                self.cc_copy_original_sounds(cc_note, dst_path)
                 continue
 
-            # process the mapped note
+            copied_sound_count = 0
             cc_note = mapped_cc_note
             # create the directory for the note
             # copy sound files
             for rbr_note in cc_note.notes:
                 for sound in rbr_note.sounds:
+                    if sound in rbr_note.sounds_not_found:
+                        continue
                     prefix = None
                     if cc_note.prefix:
                         prefix = cc_note.prefix.notes[0]
                     wave_file = rbr_note.sound_as_wav(sound, prefix=prefix)
                     wave_file = os.path.join(rbr_note.sounds_dir, wave_file)
                     shutil.copy(wave_file, dst_path)
+                    copied_sound_count += 1
+
+            if copied_sound_count == 0:
+                self.cc_copy_original_sounds(cc_note, dst_path)
+                continue
 
             # create subtitles.csv
             with open(os.path.join(dst_path, 'subtitles.csv'), mode='w', encoding='utf-8') as file:
@@ -392,7 +404,7 @@ class CoDriver:
 
     def rbr_list_csv(self):
         csv_writer = csv.writer(sys.stdout)
-        csv_writer.writerow(['style', 'id', 'name', 'type', 'category', 'package', 'ini', 'sound_count', 'translation', 'sound'])
+        csv_writer.writerow(['style', 'id', 'name', 'type', 'category', 'package', 'ini', 'sound_count', 'translation', 'sound', 'error'])
         for name, rbr_pacenote_plugin in self.rbr_pacenote_plugins.items():
             notes = rbr_pacenote_plugin.pacenotes
             # sort notes by id and name
@@ -401,18 +413,40 @@ class CoDriver:
 
             for note in notes:
                 for sound in note.sounds:
-                    csv_writer.writerow([name, note.id, note.name, note.type, note.category, note.package, note.ini, note.sound_count, note.translation, sound])
+                    error = ''
+                    if sound in note.sounds_not_found:
+                        error = 'file missing'
+                    csv_writer.writerow([name, note.id, note.name, note.type, note.category, note.package, note.ini, note.sound_count, note.translation, sound, error])
 
     def cc_list_csv(self):
         csv_writer = csv.writer(sys.stdout)
-        csv_writer.writerow(['type', 'file', 'subtitle'])
-        cc_notes = sorted(self.mapped_cc_notes, key=lambda x: x.name)
-        for cc_note in cc_notes:
-            for rbr_note in cc_note.notes:
+        csv_writer.writerow(['src', 'type', 'rbr_id', 'file', 'subtitle'])
+
+        cc_sounds = sorted(self.cc_sounds.values(), key=lambda x: x.name)
+
+        for cc_note in cc_sounds:
+
+            # find the mapped note
+            mapped_cc_note = next((x for x in self.mapped_cc_notes if x.name == cc_note.name), None)
+
+            if mapped_cc_note and len(mapped_cc_note.notes) == 0:
+                logging.error(f'No sounds for {cc_note.name} in mapped note {mapped_cc_note}')
+                csv_writer.writerow(['cc_no_sound_in_rbr_note', cc_note.name, '', '', ''])
+                continue
+
+            if not mapped_cc_note:
+                csv_writer.writerow(['cc_no_rbr_note', cc_note.name, '', '', ''])
+                continue
+
+            # process the mapped note
+            for rbr_note in mapped_cc_note.notes:
                 for sound in rbr_note.sounds:
                     file = sound
                     subtitle = rbr_note.translation
-                    csv_writer.writerow([cc_note.name, file, subtitle])
+                    if file in rbr_note.sounds_not_found:
+                        csv_writer.writerow(['cc_rbr_sound_not_found', cc_note.name, rbr_note.id, file, subtitle])
+                    else:
+                        csv_writer.writerow(['rbr', cc_note.name, rbr_note.id, file, subtitle])
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.DEBUG)
@@ -420,17 +454,17 @@ if __name__ == '__main__':
 
     # get commandline arguments and parse them
     parser = argparse.ArgumentParser(description='CoDriver')
-    parser.add_argument('--config', help='Configuration file', default='config.json')
-    parser.add_argument('--rbr-list', action='store_true', help='List RBR pacenotes')
-    parser.add_argument('--rbr-list-csv', action='store_true', help='List RBR pacenotes as CSV')
+    parser.add_argument('--codriver', help='Codriver in config.json', default='bollinger')
     parser.add_argument('--rbr-find-note-by-name', help='Find a note by name')
+    parser.add_argument('--rbr-list-csv', action='store_true', help='List RBR pacenotes as CSV')
+    parser.add_argument('--rbr-package', default='all', help='Only list pacenotes for a specific package, defaults to all')
     parser.add_argument('--map-to-cc', help='Map RBR pacenotes to CC pacenotes and create folder structure')
     parser.add_argument('--map-to-cc-csv', action='store_true', help='Map RBR pacenotes to CC pacenotes and write to CSV')
 
     args = parser.parse_args()
 
     # read the configuration file, which is a json file
-    config = json.load(open(args.config))
+    config = json.load(open('config.json'))
 
     codriver = CoDriver(
         cc_sounds=config['cc_sounds'],
@@ -440,21 +474,16 @@ if __name__ == '__main__':
         additional_cc_types=config.get('additional_cc_types', {}),
     )
 
-    for package in config['packages']:
+    config_codriver_packages = config['codrivers'][args.codriver]['packages']
+    if args.rbr_package != 'all':
+        # select only the package that is specified
+        config_codriver_packages = [ package for package in config_codriver_packages if package['type'] == args.rbr_package]
+    for package in config_codriver_packages:
         pacenote_dir_absolute = os.path.join(base_dir, package['base_dir'])
         ini_files = package['ini_files']
         rbr_pacenote_plugin = RbrPacenotePlugin(pacenote_dir_absolute, ini_files=ini_files)
         codriver.add_pacenote_plugin(package['type'], rbr_pacenote_plugin)
 
-
-    # if args.rbr_list:
-    #     notes = rbr_pacenote_plugin.pacenotes.values()
-    #     # sort notes by id
-    #     notes = sorted(notes, key=lambda x: x.id)
-
-    #     for note in notes:
-    #         print(f'{note}')
-    # descriptive,2109,small_crest,PACENOTE,OBSTACLES,RBR_ENHANCED,Extended.ini,2,,pikkunyppy2.ogg
 
     if args.rbr_list_csv:
         codriver.rbr_list_csv()

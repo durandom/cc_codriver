@@ -33,25 +33,68 @@
         "detail_immediate": 2030,
         "detail_slippery": 268
     },
-    "packages":
-    [
-        {
-            "name": "Deskriptiv",
-            "base_dir": "assets/Co_Driver_RBR_Deutsch_Bollinger_V1.1_22-12-03/David_Bollinger_(CH)/Deutsch Numerisch - Deskriptiv/Plugins/Pacenote",
-            "ini_files": ["Rbr.ini", "Rbr-Enhanced.ini"],
-            "type": "descriptive"
+    "codrivers": {
+        "bollinger": {
+            "packages": [
+                {
+                    "name": "Deskriptiv",
+                    "base_dir": "assets/Co_Driver_RBR_Deutsch_Bollinger_V1.1_22-12-03/David_Bollinger_(CH)/Deutsch Numerisch - Deskriptiv/Plugins/Pacenote",
+                    "ini_files": ["Rbr.ini", "Rbr-Enhanced.ini"],
+                    "type": "descriptive"
+                },
+                {
+                    "name": "Direction First",
+                    "base_dir": "assets/Co_Driver_RBR_Deutsch_Bollinger_V1.1_22-12-03/David_Bollinger_(CH)/Deutsch Numerisch - Kurve zuerst/Plugins/Pacenote",
+                    "ini_files": ["Rbr.ini", "Rbr-Enhanced.ini"],
+                    "type": "reversed"
+                },
+                {
+                    "name": "English Descriptive",
+                    "base_dir": "assets/Co_Driver_RBR_Deutsch_Bollinger_V1.1_22-12-03/David_Bollinger_(CH)/Deutsch Numerisch - Nummer zuerst/Plugins/Pacenote",
+                    "ini_files": ["Rbr.ini", "Rbr-Enhanced.ini"],
+                    "type": "numeric"
+                }
+            ]
         },
-        {
-            "name": "Direction First",
-            "base_dir": "assets/Co_Driver_RBR_Deutsch_Bollinger_V1.1_22-12-03/David_Bollinger_(CH)/Deutsch Numerisch - Kurve zuerst/Plugins/Pacenote",
-            "ini_files": ["Rbr.ini", "Rbr-Enhanced.ini"],
-            "type": "reversed"
+        "janne-v2": {
+            "packages":
+            [
+                {
+                    "name": "Number First",
+                    "base_dir": "assets/Janne's Note Pack v2.0/English Numeric - Number First/Plugins/Pacenote",
+                    "ini_files": ["Rbr.ini", "Rbr-Enhanced.ini"],
+                    "type": "numeric"
+                },
+                {
+                    "name": "Direction First",
+                    "base_dir": "assets/Janne's Note Pack v2.0/English Numeric - Direction First/Plugins/Pacenote",
+                    "ini_files": ["Rbr.ini", "Rbr-Enhanced.ini"],
+                    "type": "reversed"
+                },
+                {
+                    "name": "English Descriptive",
+                    "base_dir": "assets/Janne's Note Pack v2.0/English Descriptive/Plugins/Pacenote",
+                    "ini_files": ["Rbr.ini", "Rbr-Enhanced.ini"],
+                    "type": "descriptive"
+                }
+            ]
         },
-        {
-            "name": "English Descriptive",
-            "base_dir": "assets/Co_Driver_RBR_Deutsch_Bollinger_V1.1_22-12-03/David_Bollinger_(CH)/Deutsch Numerisch - Nummer zuerst/Plugins/Pacenote",
-            "ini_files": ["Rbr.ini", "Rbr-Enhanced.ini"],
-            "type": "numeric"
+        "german-tts": {
+            "packages":
+            [
+                {
+                    "name": "Deskriptiv",
+                    "base_dir": "assets/RBR-German-tts-Codriver-main/Plugins/Pacenote",
+                    "ini_files": ["Smo.ini", "Smo-Mix.ini"],
+                    "type": "descriptive"
+                },
+                {
+                    "name": "Direction First",
+                    "base_dir": "assets/RBR-German-tts-Codriver-main/Plugins/Pacenote",
+                    "ini_files": ["Smo.ini", "Smo-Nummern.ini"],
+                    "type": "numeric"
+                }
+            ]
         }
-    ]
+    }
 }

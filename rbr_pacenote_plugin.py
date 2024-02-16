@@ -13,6 +13,7 @@ class RbrPacenote:
         self.package = ''
         self.ini = ''
         self.sounds = []
+        self.sounds_not_found = []
         self.sound_count = 0
         self.translation = ''
         self.sounds_dir = ''
@@ -266,8 +267,8 @@ class RbrPacenotePlugin:
                         sound_file = self.sound_file(sound)
                         if not os.path.exists(sound_file):
                             logging.error(f'Not found: {sound_file}')
-                        else:
-                            note.sounds.append(sound)
+                            note.sounds_not_found.append(sound)
+                        note.sounds.append(sound)
                 if note.sound_count != len(note.sounds):
                     logging.error(f'Invalid sound count: {note.sound_count} - {note}')
                 # for i in range(int(sounds)):
