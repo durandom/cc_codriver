@@ -177,9 +177,9 @@ numeric,328,rubble,PACENOTE,SURFACE,RBR,Extended.ini,1,Rubble,rubble.ogg,file mi
 numeric,329,ice,PACENOTE,SURFACE,RBR,Extended.ini,1,Ice,jaalle.ogg,file missing
 numeric,330,loose_gravel,PACENOTE,SURFACE,RBR,Extended.ini,1,Loose Gravel,loose_gravel.ogg,file missing
 numeric,340,crest,PACENOTE,OBSTACLES,RBR,Extended.ini,1,Crest,nyppy.ogg,
+numeric,344,hole,PACENOTE,CAUTIONS,RBR,Extended.ini,1,HOLE,hole.ogg,file missing
 numeric,344,hole,PACENOTE,OBSTACLES,RBR,Extended.ini,2,Hole,reika1.ogg,
 numeric,344,hole,PACENOTE,OBSTACLES,RBR,Extended.ini,2,Hole,reika2.ogg,
-numeric,344,hole,PACENOTE,CAUTIONS,RBR,Extended.ini,1,HOLE,hole.ogg,file missing
 numeric,345,ruts,PACENOTE,CAUTIONS,RBR,Extended.ini,1,Ruts,urat.ogg,
 numeric,346,deepruts,PACENOTE,CAUTIONS,RBR,Extended.ini,1,DEEP RUTS,urat.ogg,
 numeric,347,border,PACENOTE,CAUTIONS,RBR,Extended.ini,1,BORDER,border.ogg,file missing
@@ -450,9 +450,9 @@ reversed,328,rubble,PACENOTE,SURFACE,RBR,Extended.ini,1,Rubble,rubble.ogg,file m
 reversed,329,ice,PACENOTE,SURFACE,RBR,Extended.ini,1,Ice,jaalle.ogg,file missing
 reversed,330,loose_gravel,PACENOTE,SURFACE,RBR,Extended.ini,1,Loose Gravel,loose_gravel.ogg,file missing
 reversed,340,crest,PACENOTE,OBSTACLES,RBR,Extended.ini,1,Crest,nyppy.ogg,
+reversed,344,hole,PACENOTE,CAUTIONS,RBR,Extended.ini,1,HOLE,hole.ogg,file missing
 reversed,344,hole,PACENOTE,OBSTACLES,RBR,Extended.ini,2,Hole,reika1.ogg,
 reversed,344,hole,PACENOTE,OBSTACLES,RBR,Extended.ini,2,Hole,reika2.ogg,
-reversed,344,hole,PACENOTE,CAUTIONS,RBR,Extended.ini,1,HOLE,hole.ogg,file missing
 reversed,345,ruts,PACENOTE,CAUTIONS,RBR,Extended.ini,1,Ruts,urat.ogg,
 reversed,346,deepruts,PACENOTE,CAUTIONS,RBR,Extended.ini,1,DEEP RUTS,urat.ogg,
 reversed,347,border,PACENOTE,CAUTIONS,RBR,Extended.ini,1,BORDER,border.ogg,file missing
@@ -722,9 +722,9 @@ descriptive,328,rubble,PACENOTE,SURFACE,RBR,Extended.ini,1,Rubble,rubble.ogg,fil
 descriptive,329,ice,PACENOTE,SURFACE,RBR,Extended.ini,1,Ice,jaalle.ogg,file missing
 descriptive,330,loose_gravel,PACENOTE,SURFACE,RBR,Extended.ini,1,Loose Gravel,loose_gravel.ogg,file missing
 descriptive,340,crest,PACENOTE,OBSTACLES,RBR,Extended.ini,1,Crest,nyppy.ogg,
+descriptive,344,hole,PACENOTE,CAUTIONS,RBR,Extended.ini,1,HOLE,hole.ogg,file missing
 descriptive,344,hole,PACENOTE,OBSTACLES,RBR,Extended.ini,2,Hole,reika1.ogg,
 descriptive,344,hole,PACENOTE,OBSTACLES,RBR,Extended.ini,2,Hole,reika2.ogg,
-descriptive,344,hole,PACENOTE,CAUTIONS,RBR,Extended.ini,1,HOLE,hole.ogg,file missing
 descriptive,345,ruts,PACENOTE,CAUTIONS,RBR,Extended.ini,1,Ruts,urat.ogg,
 descriptive,346,deepruts,PACENOTE,CAUTIONS,RBR,Extended.ini,1,DEEP RUTS,urat.ogg,
 descriptive,347,border,PACENOTE,CAUTIONS,RBR,Extended.ini,1,BORDER,border.ogg,file missing

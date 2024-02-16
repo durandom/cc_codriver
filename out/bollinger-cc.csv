@@ -1,46 +1,46 @@
 src,type,rbr_id,file,subtitle
 cc_no_rbr_note,acknowledge_end_recce,,,
 cc_no_rbr_note,acknowledge_start_recce,,,
-rbr,cmp_into_corner_1_left,0,additional/hairpin_left_2.ogg,Kehre Links
-rbr,cmp_into_corner_1_left,0,additional/hairpin_left_3.ogg,Kehre Links
-rbr,cmp_into_corner_1_left,0,hairpin_left.ogg,Kehre Links
+rbr,cmp_into_corner_1_left,102,additional/one_left_2.ogg,1 Links
+rbr,cmp_into_corner_1_left,102,additional/one_left_3.ogg,1 Links
+rbr,cmp_into_corner_1_left,102,one_left.ogg,1 Links
 rbr,cmp_into_corner_1_left_descriptive,0,additional/hairpin_left_2.ogg,Kehre Links
 rbr,cmp_into_corner_1_left_descriptive,0,additional/hairpin_left_3.ogg,Kehre Links
 rbr,cmp_into_corner_1_left_descriptive,0,hairpin_left.ogg,Kehre Links
 rbr,cmp_into_corner_1_left_descriptive_rushed,0,additional/hairpin_left_2.ogg,Kehre Links
 rbr,cmp_into_corner_1_left_descriptive_rushed,0,additional/hairpin_left_3.ogg,Kehre Links
 rbr,cmp_into_corner_1_left_descriptive_rushed,0,hairpin_left.ogg,Kehre Links
-rbr,cmp_into_corner_1_left_rushed,0,additional/hairpin_left_2.ogg,Kehre Links
-rbr,cmp_into_corner_1_left_rushed,0,additional/hairpin_left_3.ogg,Kehre Links
-rbr,cmp_into_corner_1_left_rushed,0,hairpin_left.ogg,Kehre Links
-rbr,cmp_into_corner_1_right,11,additional/hairpin_right_2.ogg,Kehre Rechts
-rbr,cmp_into_corner_1_right,11,additional/hairpin_right_3.ogg,Kehre Rechts
-rbr,cmp_into_corner_1_right,11,hairpin_right.ogg,Kehre Rechts
+rbr,cmp_into_corner_1_left_rushed,102,additional/one_left_2.ogg,1 Links
+rbr,cmp_into_corner_1_left_rushed,102,additional/one_left_3.ogg,1 Links
+rbr,cmp_into_corner_1_left_rushed,102,one_left.ogg,1 Links
+rbr,cmp_into_corner_1_right,112,additional/one_right_2.ogg,1 Rechts
+rbr,cmp_into_corner_1_right,112,additional/one_right_3.ogg,1 Rechts
+rbr,cmp_into_corner_1_right,112,one_right.ogg,1 Rechts
 rbr,cmp_into_corner_1_right_descriptive,11,additional/hairpin_right_2.ogg,Kehre Rechts
 rbr,cmp_into_corner_1_right_descriptive,11,additional/hairpin_right_3.ogg,Kehre Rechts
 rbr,cmp_into_corner_1_right_descriptive,11,hairpin_right.ogg,Kehre Rechts
 rbr,cmp_into_corner_1_right_descriptive_rushed,11,additional/hairpin_right_2.ogg,Kehre Rechts
 rbr,cmp_into_corner_1_right_descriptive_rushed,11,additional/hairpin_right_3.ogg,Kehre Rechts
 rbr,cmp_into_corner_1_right_descriptive_rushed,11,hairpin_right.ogg,Kehre Rechts
-rbr,cmp_into_corner_1_right_rushed,11,additional/hairpin_right_2.ogg,Kehre Rechts
-rbr,cmp_into_corner_1_right_rushed,11,additional/hairpin_right_3.ogg,Kehre Rechts
-rbr,cmp_into_corner_1_right_rushed,11,hairpin_right.ogg,Kehre Rechts
-rbr,cmp_into_corner_2_left,102,additional/one_left_2.ogg,1 Links
-rbr,cmp_into_corner_2_left,102,additional/one_left_3.ogg,1 Links
-rbr,cmp_into_corner_2_left,102,one_left.ogg,1 Links
+rbr,cmp_into_corner_1_right_rushed,112,additional/one_right_2.ogg,1 Rechts
+rbr,cmp_into_corner_1_right_rushed,112,additional/one_right_3.ogg,1 Rechts
+rbr,cmp_into_corner_1_right_rushed,112,one_right.ogg,1 Rechts
+rbr,cmp_into_corner_2_left,1,additional/two_left_de_2.ogg,2 Links
+rbr,cmp_into_corner_2_left,1,additional/two_left_de_3.ogg,2 Links
+rbr,cmp_into_corner_2_left,1,two_left_de.ogg,2 Links
 rbr,cmp_into_corner_2_left_descriptive,102,slowleft.ogg,Langsam Links
 rbr,cmp_into_corner_2_left_descriptive_rushed,102,slowleft.ogg,Langsam Links
-rbr,cmp_into_corner_2_left_rushed,102,additional/one_left_2.ogg,1 Links
-rbr,cmp_into_corner_2_left_rushed,102,additional/one_left_3.ogg,1 Links
-rbr,cmp_into_corner_2_left_rushed,102,one_left.ogg,1 Links
-rbr,cmp_into_corner_2_right,112,additional/one_right_2.ogg,1 Rechts
-rbr,cmp_into_corner_2_right,112,additional/one_right_3.ogg,1 Rechts
-rbr,cmp_into_corner_2_right,112,one_right.ogg,1 Rechts
+rbr,cmp_into_corner_2_left_rushed,1,additional/two_left_de_2.ogg,2 Links
+rbr,cmp_into_corner_2_left_rushed,1,additional/two_left_de_3.ogg,2 Links
+rbr,cmp_into_corner_2_left_rushed,1,two_left_de.ogg,2 Links
+rbr,cmp_into_corner_2_right,10,additional/two_right_de_2.ogg,2 Rechts
+rbr,cmp_into_corner_2_right,10,additional/two_right_de_3.ogg,2 Rechts
+rbr,cmp_into_corner_2_right,10,two_right_de.ogg,2 Rechts
 rbr,cmp_into_corner_2_right_descriptive,112,slowright.ogg,Langsam Rechts
 rbr,cmp_into_corner_2_right_descriptive_rushed,112,slowright.ogg,Langsam Rechts
-rbr,cmp_into_corner_2_right_rushed,112,additional/one_right_2.ogg,1 Rechts
-rbr,cmp_into_corner_2_right_rushed,112,additional/one_right_3.ogg,1 Rechts
-rbr,cmp_into_corner_2_right_rushed,112,one_right.ogg,1 Rechts
+rbr,cmp_into_corner_2_right_rushed,10,additional/two_right_de_2.ogg,2 Rechts
+rbr,cmp_into_corner_2_right_rushed,10,additional/two_right_de_3.ogg,2 Rechts
+rbr,cmp_into_corner_2_right_rushed,10,two_right_de.ogg,2 Rechts
 rbr,cmp_into_corner_3_left,2,additional/three_left_2.ogg,3 Links
 rbr,cmp_into_corner_3_left,2,additional/three_left_3.ogg,3 Links
 rbr,cmp_into_corner_3_left,2,three_left.ogg,3 Links
@@ -173,30 +173,30 @@ rbr,cmp_into_corner_hairpin_right,11,hairpin_right.ogg,Kehre Rechts
 rbr,cmp_into_corner_hairpin_right_rushed,11,additional/hairpin_right_2.ogg,Kehre Rechts
 rbr,cmp_into_corner_hairpin_right_rushed,11,additional/hairpin_right_3.ogg,Kehre Rechts
 rbr,cmp_into_corner_hairpin_right_rushed,11,hairpin_right.ogg,Kehre Rechts
-rbr,cmp_into_corner_square_left,1,additional/two_left_de_2.ogg,2 Links
-rbr,cmp_into_corner_square_left,1,additional/two_left_de_3.ogg,2 Links
-rbr,cmp_into_corner_square_left,1,two_left_de.ogg,2 Links
+rbr,cmp_into_corner_square_left,1,additional/square_left_2.ogg,90 Links
+rbr,cmp_into_corner_square_left,1,additional/square_left_3.ogg,90 Links
+rbr,cmp_into_corner_square_left,1,square_left.ogg,90 Links
 rbr,cmp_into_corner_square_left_descriptive,1,additional/square_left_2.ogg,90 Links
 rbr,cmp_into_corner_square_left_descriptive,1,additional/square_left_3.ogg,90 Links
 rbr,cmp_into_corner_square_left_descriptive,1,square_left.ogg,90 Links
 rbr,cmp_into_corner_square_left_descriptive_rushed,1,additional/square_left_2.ogg,90 Links
 rbr,cmp_into_corner_square_left_descriptive_rushed,1,additional/square_left_3.ogg,90 Links
 rbr,cmp_into_corner_square_left_descriptive_rushed,1,square_left.ogg,90 Links
-rbr,cmp_into_corner_square_left_rushed,1,additional/two_left_de_2.ogg,2 Links
-rbr,cmp_into_corner_square_left_rushed,1,additional/two_left_de_3.ogg,2 Links
-rbr,cmp_into_corner_square_left_rushed,1,two_left_de.ogg,2 Links
-rbr,cmp_into_corner_square_right,10,additional/two_right_de_2.ogg,2 Rechts
-rbr,cmp_into_corner_square_right,10,additional/two_right_de_3.ogg,2 Rechts
-rbr,cmp_into_corner_square_right,10,two_right_de.ogg,2 Rechts
+rbr,cmp_into_corner_square_left_rushed,1,additional/square_left_2.ogg,90 Links
+rbr,cmp_into_corner_square_left_rushed,1,additional/square_left_3.ogg,90 Links
+rbr,cmp_into_corner_square_left_rushed,1,square_left.ogg,90 Links
+rbr,cmp_into_corner_square_right,10,additional/square_right_2.ogg,90 Rechts
+rbr,cmp_into_corner_square_right,10,additional/square_right_3.ogg,90 Rechts
+rbr,cmp_into_corner_square_right,10,square_right.ogg,90 Rechts
 rbr,cmp_into_corner_square_right_descriptive,10,additional/square_right_2.ogg,90 Rechts
 rbr,cmp_into_corner_square_right_descriptive,10,additional/square_right_3.ogg,90 Rechts
 rbr,cmp_into_corner_square_right_descriptive,10,square_right.ogg,90 Rechts
 rbr,cmp_into_corner_square_right_descriptive_rushed,10,additional/square_right_2.ogg,90 Rechts
 rbr,cmp_into_corner_square_right_descriptive_rushed,10,additional/square_right_3.ogg,90 Rechts
 rbr,cmp_into_corner_square_right_descriptive_rushed,10,square_right.ogg,90 Rechts
-rbr,cmp_into_corner_square_right_rushed,10,additional/two_right_de_2.ogg,2 Rechts
-rbr,cmp_into_corner_square_right_rushed,10,additional/two_right_de_3.ogg,2 Rechts
-rbr,cmp_into_corner_square_right_rushed,10,two_right_de.ogg,2 Rechts
+rbr,cmp_into_corner_square_right_rushed,10,additional/square_right_2.ogg,90 Rechts
+rbr,cmp_into_corner_square_right_rushed,10,additional/square_right_3.ogg,90 Rechts
+rbr,cmp_into_corner_square_right_rushed,10,square_right.ogg,90 Rechts
 rbr,cmp_into_detail_bump,19,additional/bump_2.ogg,Schlag
 rbr,cmp_into_detail_bump,19,additional/bump_3.ogg,Schlag
 rbr,cmp_into_detail_bump,19,bump.ogg,Schlag
@@ -221,9 +221,9 @@ rbr,cmp_into_detail_ford,17,ford.ogg,Furt
 rbr,cmp_into_detail_ford_rushed,17,additional/ford_2.ogg,Furt
 rbr,cmp_into_detail_ford_rushed,17,additional/ford_3.ogg,Furt
 rbr,cmp_into_detail_ford_rushed,17,ford.ogg,Furt
-rbr,corner_1_left,0,additional/hairpin_left_2.ogg,Kehre Links
-rbr,corner_1_left,0,additional/hairpin_left_3.ogg,Kehre Links
-rbr,corner_1_left,0,hairpin_left.ogg,Kehre Links
+rbr,corner_1_left,102,additional/one_left_2.ogg,1 Links
+rbr,corner_1_left,102,additional/one_left_3.ogg,1 Links
+rbr,corner_1_left,102,one_left.ogg,1 Links
 rbr,corner_1_left_descriptive,0,additional/hairpin_left_2.ogg,Kehre Links
 rbr,corner_1_left_descriptive,0,additional/hairpin_left_3.ogg,Kehre Links
 rbr,corner_1_left_descriptive,0,hairpin_left.ogg,Kehre Links
@@ -236,12 +236,12 @@ rbr,corner_1_left_reversed,0,hairpin_left.ogg,Kehre Links
 rbr,corner_1_left_reversed_rushed,0,additional/hairpin_left_2.ogg,Kehre Links
 rbr,corner_1_left_reversed_rushed,0,additional/hairpin_left_3.ogg,Kehre Links
 rbr,corner_1_left_reversed_rushed,0,hairpin_left.ogg,Kehre Links
-rbr,corner_1_left_rushed,0,additional/hairpin_left_2.ogg,Kehre Links
-rbr,corner_1_left_rushed,0,additional/hairpin_left_3.ogg,Kehre Links
-rbr,corner_1_left_rushed,0,hairpin_left.ogg,Kehre Links
-rbr,corner_1_right,11,additional/hairpin_right_2.ogg,Kehre Rechts
-rbr,corner_1_right,11,additional/hairpin_right_3.ogg,Kehre Rechts
-rbr,corner_1_right,11,hairpin_right.ogg,Kehre Rechts
+rbr,corner_1_left_rushed,102,additional/one_left_2.ogg,1 Links
+rbr,corner_1_left_rushed,102,additional/one_left_3.ogg,1 Links
+rbr,corner_1_left_rushed,102,one_left.ogg,1 Links
+rbr,corner_1_right,112,additional/one_right_2.ogg,1 Rechts
+rbr,corner_1_right,112,additional/one_right_3.ogg,1 Rechts
+rbr,corner_1_right,112,one_right.ogg,1 Rechts
 rbr,corner_1_right_descriptive,11,additional/hairpin_right_2.ogg,Kehre Rechts
 rbr,corner_1_right_descriptive,11,additional/hairpin_right_3.ogg,Kehre Rechts
 rbr,corner_1_right_descriptive,11,hairpin_right.ogg,Kehre Rechts
@@ -254,29 +254,29 @@ rbr,corner_1_right_reversed,11,hairpin_right.ogg,Kehre Rechts
 rbr,corner_1_right_reversed_rushed,11,additional/hairpin_right_2.ogg,Kehre Rechts
 rbr,corner_1_right_reversed_rushed,11,additional/hairpin_right_3.ogg,Kehre Rechts
 rbr,corner_1_right_reversed_rushed,11,hairpin_right.ogg,Kehre Rechts
-rbr,corner_1_right_rushed,11,additional/hairpin_right_2.ogg,Kehre Rechts
-rbr,corner_1_right_rushed,11,additional/hairpin_right_3.ogg,Kehre Rechts
-rbr,corner_1_right_rushed,11,hairpin_right.ogg,Kehre Rechts
-rbr,corner_2_left,102,additional/one_left_2.ogg,1 Links
-rbr,corner_2_left,102,additional/one_left_3.ogg,1 Links
-rbr,corner_2_left,102,one_left.ogg,1 Links
+rbr,corner_1_right_rushed,112,additional/one_right_2.ogg,1 Rechts
+rbr,corner_1_right_rushed,112,additional/one_right_3.ogg,1 Rechts
+rbr,corner_1_right_rushed,112,one_right.ogg,1 Rechts
+rbr,corner_2_left,1,additional/two_left_de_2.ogg,2 Links
+rbr,corner_2_left,1,additional/two_left_de_3.ogg,2 Links
+rbr,corner_2_left,1,two_left_de.ogg,2 Links
 rbr,corner_2_left_descriptive,102,slowleft.ogg,Langsam Links
 rbr,corner_2_left_descriptive_rushed,102,slowleft.ogg,Langsam Links
 rbr,corner_2_left_reversed,102,left_one.ogg,1 Links
 rbr,corner_2_left_reversed_rushed,102,left_one.ogg,1 Links
-rbr,corner_2_left_rushed,102,additional/one_left_2.ogg,1 Links
-rbr,corner_2_left_rushed,102,additional/one_left_3.ogg,1 Links
-rbr,corner_2_left_rushed,102,one_left.ogg,1 Links
-rbr,corner_2_right,112,additional/one_right_2.ogg,1 Rechts
-rbr,corner_2_right,112,additional/one_right_3.ogg,1 Rechts
-rbr,corner_2_right,112,one_right.ogg,1 Rechts
+rbr,corner_2_left_rushed,1,additional/two_left_de_2.ogg,2 Links
+rbr,corner_2_left_rushed,1,additional/two_left_de_3.ogg,2 Links
+rbr,corner_2_left_rushed,1,two_left_de.ogg,2 Links
+rbr,corner_2_right,10,additional/two_right_de_2.ogg,2 Rechts
+rbr,corner_2_right,10,additional/two_right_de_3.ogg,2 Rechts
+rbr,corner_2_right,10,two_right_de.ogg,2 Rechts
 rbr,corner_2_right_descriptive,112,slowright.ogg,Langsam Rechts
 rbr,corner_2_right_descriptive_rushed,112,slowright.ogg,Langsam Rechts
 rbr,corner_2_right_reversed,112,right_one.ogg,1 Rechts
 rbr,corner_2_right_reversed_rushed,112,right_one.ogg,1 Rechts
-rbr,corner_2_right_rushed,112,additional/one_right_2.ogg,1 Rechts
-rbr,corner_2_right_rushed,112,additional/one_right_3.ogg,1 Rechts
-rbr,corner_2_right_rushed,112,one_right.ogg,1 Rechts
+rbr,corner_2_right_rushed,10,additional/two_right_de_2.ogg,2 Rechts
+rbr,corner_2_right_rushed,10,additional/two_right_de_3.ogg,2 Rechts
+rbr,corner_2_right_rushed,10,two_right_de.ogg,2 Rechts
 rbr,corner_3_left,2,additional/three_left_2.ogg,3 Links
 rbr,corner_3_left,2,additional/three_left_3.ogg,3 Links
 rbr,corner_3_left,2,three_left.ogg,3 Links
@@ -420,18 +420,14 @@ rbr,corner_flat_right_rushed,25,flat_right.ogg,Voll Rechts
 rbr,corner_hairpin_left,0,additional/hairpin_left_2.ogg,Kehre Links
 rbr,corner_hairpin_left,0,additional/hairpin_left_3.ogg,Kehre Links
 rbr,corner_hairpin_left,0,hairpin_left.ogg,Kehre Links
-rbr,corner_hairpin_left_reversed,0,additional/hairpin_left_2.ogg,Kehre Links
-rbr,corner_hairpin_left_reversed,0,additional/hairpin_left_3.ogg,Kehre Links
-rbr,corner_hairpin_left_reversed,0,hairpin_left.ogg,Kehre Links
+cc_no_rbr_note,corner_hairpin_left_reversed,,,
 rbr,corner_hairpin_left_rushed,0,additional/hairpin_left_2.ogg,Kehre Links
 rbr,corner_hairpin_left_rushed,0,additional/hairpin_left_3.ogg,Kehre Links
 rbr,corner_hairpin_left_rushed,0,hairpin_left.ogg,Kehre Links
 rbr,corner_hairpin_right,11,additional/hairpin_right_2.ogg,Kehre Rechts
 rbr,corner_hairpin_right,11,additional/hairpin_right_3.ogg,Kehre Rechts
 rbr,corner_hairpin_right,11,hairpin_right.ogg,Kehre Rechts
-rbr,corner_hairpin_right_reversed,11,additional/hairpin_right_2.ogg,Kehre Rechts
-rbr,corner_hairpin_right_reversed,11,additional/hairpin_right_3.ogg,Kehre Rechts
-rbr,corner_hairpin_right_reversed,11,hairpin_right.ogg,Kehre Rechts
+cc_no_rbr_note,corner_hairpin_right_reversed,,,
 rbr,corner_hairpin_right_rushed,11,additional/hairpin_right_2.ogg,Kehre Rechts
 rbr,corner_hairpin_right_rushed,11,additional/hairpin_right_3.ogg,Kehre Rechts
 rbr,corner_hairpin_right_rushed,11,hairpin_right.ogg,Kehre Rechts
@@ -439,9 +435,9 @@ cc_no_sound_in_rbr_note,corner_open_hairpin_left,40003,,
 cc_no_sound_in_rbr_note,corner_open_hairpin_left_rushed,40003,,
 cc_no_sound_in_rbr_note,corner_open_hairpin_right,40004,,
 cc_no_sound_in_rbr_note,corner_open_hairpin_right_rushed,40004,,
-rbr,corner_square_left,1,additional/two_left_de_2.ogg,2 Links
-rbr,corner_square_left,1,additional/two_left_de_3.ogg,2 Links
-rbr,corner_square_left,1,two_left_de.ogg,2 Links
+rbr,corner_square_left,1,additional/square_left_2.ogg,90 Links
+rbr,corner_square_left,1,additional/square_left_3.ogg,90 Links
+rbr,corner_square_left,1,square_left.ogg,90 Links
 rbr,corner_square_left_descriptive,1,additional/square_left_2.ogg,90 Links
 rbr,corner_square_left_descriptive,1,additional/square_left_3.ogg,90 Links
 rbr,corner_square_left_descriptive,1,square_left.ogg,90 Links
@@ -454,12 +450,12 @@ rbr,corner_square_left_reversed,1,left_two_de.ogg,2 Links
 rbr,corner_square_left_reversed_rushed,1,additional/left_two_de_2.ogg,2 Links
 rbr,corner_square_left_reversed_rushed,1,additional/left_two_de_3.ogg,2 Links
 rbr,corner_square_left_reversed_rushed,1,left_two_de.ogg,2 Links
-rbr,corner_square_left_rushed,1,additional/two_left_de_2.ogg,2 Links
-rbr,corner_square_left_rushed,1,additional/two_left_de_3.ogg,2 Links
-rbr,corner_square_left_rushed,1,two_left_de.ogg,2 Links
-rbr,corner_square_right,10,additional/two_right_de_2.ogg,2 Rechts
-rbr,corner_square_right,10,additional/two_right_de_3.ogg,2 Rechts
-rbr,corner_square_right,10,two_right_de.ogg,2 Rechts
+rbr,corner_square_left_rushed,1,additional/square_left_2.ogg,90 Links
+rbr,corner_square_left_rushed,1,additional/square_left_3.ogg,90 Links
+rbr,corner_square_left_rushed,1,square_left.ogg,90 Links
+rbr,corner_square_right,10,additional/square_right_2.ogg,90 Rechts
+rbr,corner_square_right,10,additional/square_right_3.ogg,90 Rechts
+rbr,corner_square_right,10,square_right.ogg,90 Rechts
 rbr,corner_square_right_descriptive,10,additional/square_right_2.ogg,90 Rechts
 rbr,corner_square_right_descriptive,10,additional/square_right_3.ogg,90 Rechts
 rbr,corner_square_right_descriptive,10,square_right.ogg,90 Rechts
@@ -472,9 +468,9 @@ rbr,corner_square_right_reversed,10,right_two_de.ogg,2 Rechts
 rbr,corner_square_right_reversed_rushed,10,additional/right_two_de_2.ogg,2 Rechts
 rbr,corner_square_right_reversed_rushed,10,additional/right_two_de_3.ogg,2 Rechts
 rbr,corner_square_right_reversed_rushed,10,right_two_de.ogg,2 Rechts
-rbr,corner_square_right_rushed,10,additional/two_right_de_2.ogg,2 Rechts
-rbr,corner_square_right_rushed,10,additional/two_right_de_3.ogg,2 Rechts
-rbr,corner_square_right_rushed,10,two_right_de.ogg,2 Rechts
+rbr,corner_square_right_rushed,10,additional/square_right_2.ogg,90 Rechts
+rbr,corner_square_right_rushed,10,additional/square_right_3.ogg,90 Rechts
+rbr,corner_square_right_rushed,10,square_right.ogg,90 Rechts
 cc_no_rbr_note,correction,,,
 rbr,detail_and,-1,additional/and_2.ogg,Und
 rbr,detail_and,-1,additional/and_3.ogg,Und

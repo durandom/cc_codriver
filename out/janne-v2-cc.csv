@@ -115,14 +115,14 @@ rbr,cmp_into_corner_flat_right_descriptive_rushed,25,oikee_tays1.ogg,Flat Right
 rbr,cmp_into_corner_flat_right_descriptive_rushed,25,oikee_tays2.ogg,Flat Right
 rbr,cmp_into_corner_flat_right_rushed,25,oikee_tays1.ogg,Flat Right
 rbr,cmp_into_corner_flat_right_rushed,25,oikee_tays2.ogg,Flat Right
-rbr,cmp_into_corner_hairpin_left,0,vasen_tiukka1.ogg,HP Left
-rbr,cmp_into_corner_hairpin_left,0,vasen_tiukka2.ogg,HP Left
-rbr,cmp_into_corner_hairpin_left_rushed,0,vasen_tiukka1.ogg,HP Left
-rbr,cmp_into_corner_hairpin_left_rushed,0,vasen_tiukka2.ogg,HP Left
-rbr,cmp_into_corner_hairpin_right,11,oikee_tiukka1.ogg,HP Right
-rbr,cmp_into_corner_hairpin_right,11,oikee_tiukka2.ogg,HP Right
-rbr,cmp_into_corner_hairpin_right_rushed,11,oikee_tiukka1.ogg,HP Right
-rbr,cmp_into_corner_hairpin_right_rushed,11,oikee_tiukka2.ogg,HP Right
+rbr,cmp_into_corner_hairpin_left,0,vasen_serpo1.ogg,HP Left
+rbr,cmp_into_corner_hairpin_left,0,vasen_serpo2.ogg,HP Left
+rbr,cmp_into_corner_hairpin_left_rushed,0,vasen_serpo1.ogg,HP Left
+rbr,cmp_into_corner_hairpin_left_rushed,0,vasen_serpo2.ogg,HP Left
+rbr,cmp_into_corner_hairpin_right,11,oikee_serpo1.ogg,HP Right
+rbr,cmp_into_corner_hairpin_right,11,oikee_serpo2.ogg,HP Right
+rbr,cmp_into_corner_hairpin_right_rushed,11,oikee_serpo1.ogg,HP Right
+rbr,cmp_into_corner_hairpin_right_rushed,11,oikee_serpo2.ogg,HP Right
 rbr,cmp_into_corner_square_left,1,vasen_kaks1.ogg,2 Left
 rbr,cmp_into_corner_square_left,1,vasen_kaks2.ogg,2 Left
 rbr,cmp_into_corner_square_left_descriptive,1,vasen_90_1.ogg,Square Left
@@ -319,18 +319,16 @@ rbr,corner_flat_right_reversed_rushed,25,oikee_tays1.ogg,Right Flat
 rbr,corner_flat_right_reversed_rushed,25,oikee_tays2.ogg,Right Flat
 rbr,corner_flat_right_rushed,25,oikee_tays1.ogg,Flat Right
 rbr,corner_flat_right_rushed,25,oikee_tays2.ogg,Flat Right
-rbr,corner_hairpin_left,0,vasen_tiukka1.ogg,HP Left
-rbr,corner_hairpin_left,0,vasen_tiukka2.ogg,HP Left
-rbr,corner_hairpin_left_reversed,0,vasen_tiukka1.ogg,Left HP
-rbr,corner_hairpin_left_reversed,0,vasen_tiukka2.ogg,Left HP
-rbr,corner_hairpin_left_rushed,0,vasen_tiukka1.ogg,HP Left
-rbr,corner_hairpin_left_rushed,0,vasen_tiukka2.ogg,HP Left
-rbr,corner_hairpin_right,11,oikee_tiukka1.ogg,HP Right
-rbr,corner_hairpin_right,11,oikee_tiukka2.ogg,HP Right
-rbr,corner_hairpin_right_reversed,11,oikee_tiukka1.ogg,Right HP
-rbr,corner_hairpin_right_reversed,11,oikee_tiukka2.ogg,Right HP
-rbr,corner_hairpin_right_rushed,11,oikee_tiukka1.ogg,HP Right
-rbr,corner_hairpin_right_rushed,11,oikee_tiukka2.ogg,HP Right
+rbr,corner_hairpin_left,0,vasen_serpo1.ogg,HP Left
+rbr,corner_hairpin_left,0,vasen_serpo2.ogg,HP Left
+cc_no_rbr_note,corner_hairpin_left_reversed,,,
+rbr,corner_hairpin_left_rushed,0,vasen_serpo1.ogg,HP Left
+rbr,corner_hairpin_left_rushed,0,vasen_serpo2.ogg,HP Left
+rbr,corner_hairpin_right,11,oikee_serpo1.ogg,HP Right
+rbr,corner_hairpin_right,11,oikee_serpo2.ogg,HP Right
+cc_no_rbr_note,corner_hairpin_right_reversed,,,
+rbr,corner_hairpin_right_rushed,11,oikee_serpo1.ogg,HP Right
+rbr,corner_hairpin_right_rushed,11,oikee_serpo2.ogg,HP Right
 cc_no_sound_in_rbr_note,corner_open_hairpin_left,40003,,
 cc_no_sound_in_rbr_note,corner_open_hairpin_left_rushed,40003,,
 cc_no_sound_in_rbr_note,corner_open_hairpin_right,40004,,
@@ -445,12 +443,12 @@ rbr,detail_hold,549,pida1.ogg,Hold
 rbr,detail_hold,549,pida2.ogg,Hold
 rbr,detail_hold_rushed,549,pida1.ogg,Hold
 rbr,detail_hold_rushed,549,pida2.ogg,Hold
-cc_rbr_sound_not_found,detail_hole,344,hole.ogg,HOLE
 rbr,detail_hole,344,reika1.ogg,Hole
 rbr,detail_hole,344,reika2.ogg,Hole
-cc_rbr_sound_not_found,detail_hole_rushed,344,hole.ogg,HOLE
+cc_rbr_sound_not_found,detail_hole,344,hole.ogg,HOLE
 rbr,detail_hole_rushed,344,reika1.ogg,Hole
 rbr,detail_hole_rushed,344,reika2.ogg,Hole
+cc_rbr_sound_not_found,detail_hole_rushed,344,hole.ogg,HOLE
 rbr,detail_immediate,2030,heti1.ogg,Immediate
 rbr,detail_immediate,2030,heti2.ogg,Immediate
 rbr,detail_immediate_rushed,2030,heti1.ogg,Immediate

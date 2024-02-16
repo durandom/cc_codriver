@@ -27,8 +27,8 @@
       }
     ],
     "map_cc_types": {
-        "corner_hairpin_right": "corner_1_right",
-        "corner_hairpin_left": "corner_1_left"
+        "corner_hairpin_right": "corner_1_right_descriptive",
+        "corner_hairpin_left": "corner_1_left_descriptive"
     },
     "_comment": "additional_cc_types are added to cc_pacenote_type.txt",
     "additional_cc_types": {
@@ -67,7 +67,15 @@
                     "name": "English Descriptive",
                     "base_dir": "assets/Co_Driver_RBR_Deutsch_Bollinger_V1.1_22-12-03/David_Bollinger_(CH)/Deutsch Numerisch - Nummer zuerst/Plugins/Pacenote",
                     "ini_files": ["Rbr.ini", "Rbr-Enhanced.ini"],
-                    "type": "numeric"
+                    "type": "numeric",
+                    "map_rbr_ids": {
+                        "0": 102,
+                        "11": 112,
+                        "102": 1,
+                        "112": 10,
+                        "1": ["descriptive", 1],
+                        "10": ["descriptive", 10]
+                    }
                 }
             ]
         },

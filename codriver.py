@@ -113,6 +113,7 @@ class CoDriver:
         self.rbr_pacenote_plugins = {}
         self.skip_notes = skip_notes
         self.map_notes = map_notes
+        self.map_rbr_ids = {}
         self.map_cc_types = map_cc_types
         self.additional_cc_types = additional_cc_types
 
@@ -122,8 +123,9 @@ class CoDriver:
 
         self.mapped_cc_notes : List[CrewChiefNote] = []
 
-    def add_pacenote_plugin(self, type, rbr_pacenote_plugin):
+    def add_pacenote_plugin(self, type, rbr_pacenote_plugin, map_rbr_ids = {}):
         self.rbr_pacenote_plugins[type] = rbr_pacenote_plugin
+        self.map_rbr_ids[type] = map_rbr_ids
 
     # 2. Get the mapping from CC CoDriver.cs
     # public enum PacenoteType
@@ -235,6 +237,17 @@ class CoDriver:
                 id = mapping.get('rbr_id', id)
                 name = mapping.get('rbr_name', name)
 
+        # if mapping for package is configured
+        package_mapping = self.map_rbr_ids.get(package, {})
+        for from_id, to_id in package_mapping.items():
+            if id == from_id:
+                if isinstance(to_id, int):
+                    id = to_id
+                else:
+                    package = to_id[0]
+                    id = to_id[1]
+                break
+
         # check if id is a number
         if not isinstance(id, int):
             logging.error(f'Invalid id: {id}')
@@ -251,10 +264,6 @@ class CoDriver:
         return []
 
     def get_pacenote_type_for_cc_sound(self, sound) -> Union[PacenoteType, PacenoteModifier, PacenoteRange, None]:
-        for src, dst in self.map_cc_types.items():
-            if sound == src:
-                sound = dst
-
         for id, type in self.cc_pacenotes_types.items():
             if type.name.lower() == sound.lower():
                 return type
@@ -268,6 +277,11 @@ class CoDriver:
         return None
 
     def map_package_and_type(self, type = '', package = 'numeric'):
+        for src, dst in self.map_cc_types.items():
+            if type == src:
+                type = dst
+                break
+
         if type.endswith('_descriptive'):
             package = 'descriptive'
             type = type[:-12]
@@ -363,6 +377,10 @@ class CoDriver:
         else:
             logging.debug(f'Directory {directory} already exists')
 
+        # copy terminologies.json
+        src = os.path.join(self.cc_sounds_dir, 'terminologies.json')
+        shutil.copy(src, directory)
+
         for cc_note in self.cc_sounds.values():
             dst_path = os.path.join(directory, cc_note.name)
             if not os.path.exists(dst_path):
@@ -419,7 +437,6 @@ class CoDriver:
             notes = rbr_pacenote_plugin.pacenotes
             # sort notes by id and name
             notes = sorted(notes, key=lambda x: (x.id, x.name))
-
 
             for note in notes:
                 for sound in note.sounds:
@@ -479,25 +496,33 @@ if __name__ == '__main__':
     # read the configuration file, which is a json file
     config = json.load(open('config.json'))
 
+
+    config_codriver_packages = config['codrivers'][args.codriver]['packages']
+    map_files = config['codrivers'][args.codriver].get('map_files', {})
+    additional_sounds_dir = config['codrivers'][args.codriver].get('additional_sounds_dir', '')
+
     codriver = CoDriver(
         cc_sounds=config['cc_sounds'],
         skip_notes=config.get('skip_notes', {}),
         map_notes=config.get('map_notes', []),
         map_cc_types=config.get('map_cc_types', {}),
-        additional_cc_types=config.get('additional_cc_types', {}),
+        additional_cc_types=config.get('additional_cc_types', {})
     )
 
-    config_codriver_packages = config['codrivers'][args.codriver]['packages']
-    map_files = config['codrivers'][args.codriver].get('map_files', {})
-    additional_sounds_dir = config['codrivers'][args.codriver].get('additional_sounds_dir', '')
     if args.rbr_package != 'all':
         # select only the package that is specified
         config_codriver_packages = [ package for package in config_codriver_packages if package['type'] == args.rbr_package]
     for package in config_codriver_packages:
         pacenote_dir_absolute = os.path.join(base_dir, package['base_dir'])
         ini_files = package['ini_files']
-        rbr_pacenote_plugin = RbrPacenotePlugin(pacenote_dir_absolute, ini_files=ini_files, map_files=map_files, additional_sounds_dir=additional_sounds_dir)
-        codriver.add_pacenote_plugin(package['type'], rbr_pacenote_plugin)
+        map_rbr_ids = package.get('map_rbr_ids', {})
+        # convert the keys to int
+        map_rbr_ids = {int(k): v for k, v in map_rbr_ids.items()}
+        rbr_pacenote_plugin = RbrPacenotePlugin(pacenote_dir_absolute,
+                                                ini_files=ini_files,
+                                                map_files=map_files,
+                                                additional_sounds_dir=additional_sounds_dir)
+        codriver.add_pacenote_plugin(package['type'], rbr_pacenote_plugin, map_rbr_ids)
 
 
     if args.rbr_list_csv:

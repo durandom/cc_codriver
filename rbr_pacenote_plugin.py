@@ -108,7 +108,10 @@ class RbrPacenote:
 
 
 class RbrPacenotePlugin:
-    def __init__(self, plugin_dir = "Pacenote/", ini_files = ["Rbr.ini", "Rbr-Enhanced.ini"], map_files = {}, additional_sounds_dir = ''):
+    def __init__(self, plugin_dir = "Pacenote/",
+                 ini_files = ["Rbr.ini", "Rbr-Enhanced.ini"],
+                 map_files = {},
+                 additional_sounds_dir = ''):
         self.pacenotes = set()
         # self.ini_file = ini_file
         # base_dir is the directory of this file + ini_file
