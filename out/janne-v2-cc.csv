@@ -331,10 +331,10 @@ rbr,corner_hairpin_right_reversed,11,oikee_tiukka1.ogg,Right HP
 rbr,corner_hairpin_right_reversed,11,oikee_tiukka2.ogg,Right HP
 rbr,corner_hairpin_right_rushed,11,oikee_tiukka1.ogg,HP Right
 rbr,corner_hairpin_right_rushed,11,oikee_tiukka2.ogg,HP Right
-cc_no_rbr_note,corner_open_hairpin_left,,,
-cc_no_sound_in_rbr_note,corner_open_hairpin_left_rushed,,,
-cc_no_rbr_note,corner_open_hairpin_right,,,
-cc_no_sound_in_rbr_note,corner_open_hairpin_right_rushed,,,
+cc_no_sound_in_rbr_note,corner_open_hairpin_left,40003,,
+cc_no_sound_in_rbr_note,corner_open_hairpin_left_rushed,40003,,
+cc_no_sound_in_rbr_note,corner_open_hairpin_right,40004,,
+cc_no_sound_in_rbr_note,corner_open_hairpin_right_rushed,40004,,
 rbr,corner_square_left,1,vasen_kaks1.ogg,2 Left
 rbr,corner_square_left,1,vasen_kaks2.ogg,2 Left
 rbr,corner_square_left_descriptive,1,vasen_90_1.ogg,Square Left
@@ -360,11 +360,12 @@ rbr,corner_square_right_reversed_rushed,10,oikee_kaks2.ogg,Right 2
 rbr,corner_square_right_rushed,10,oikee_kaks1.ogg,2 Right
 rbr,corner_square_right_rushed,10,oikee_kaks2.ogg,2 Right
 cc_no_rbr_note,correction,,,
-cc_no_rbr_note,detail_and,,,
+rbr,detail_and,-1,jatkuu1.ogg,And
+rbr,detail_and,-1,jatkuu2.ogg,And
 rbr,detail_and_rushed,-1,jatkuu1.ogg,And
 rbr,detail_and_rushed,-1,jatkuu2.ogg,And
-cc_no_rbr_note,detail_bad_camber,,,
-cc_no_rbr_note,detail_big_jump,,,
+cc_no_sound_in_rbr_note,detail_bad_camber,355,,
+cc_no_sound_in_rbr_note,detail_big_jump,40002,,
 rbr,detail_brake,217,jarru1.ogg,Brake
 rbr,detail_brake,217,jarru2.ogg,Brake
 rbr,detail_brake_rushed,217,jarru1.ogg,Brake
@@ -385,7 +386,7 @@ rbr,detail_care_out_rushed,2022,varo_ulkona.ogg,Care Out
 rbr,detail_care_rushed,18,varo1.ogg,Care
 rbr,detail_caution,32,huomio.ogg,Caution
 rbr,detail_caution_rushed,32,huomio.ogg,Caution
-cc_no_rbr_note,detail_caution_water,,,
+rbr,detail_caution_water,-1,huomio_vetta.ogg,Caution Water
 rbr,detail_caution_water_rushed,-1,huomio_vetta.ogg,Caution Water
 rbr,detail_concrete,322,betonille.ogg,Concrete
 rbr,detail_concrete_rushed,322,betonille.ogg,Concrete
@@ -412,8 +413,8 @@ rbr,detail_double_caution_rushed,303,huomio_huomio.ogg,Danger
 rbr,detail_double_rushed,2102,tupla1.ogg,Double
 rbr,detail_double_rushed,2102,tupla2.ogg,Double
 rbr,detail_double_rushed,2102,tupla3.ogg,Double
-cc_no_sound_in_rbr_note,detail_double_tightens,,,
-cc_no_sound_in_rbr_note,detail_double_tightens_rushed,,,
+cc_no_sound_in_rbr_note,detail_double_tightens,4089,,
+cc_no_sound_in_rbr_note,detail_double_tightens_rushed,4089,,
 rbr,detail_downhill,261,alas1.ogg,Down
 rbr,detail_downhill,261,alas2.ogg,Down
 rbr,detail_downhill_rushed,261,alas1.ogg,Down
@@ -444,12 +445,12 @@ rbr,detail_hold,549,pida1.ogg,Hold
 rbr,detail_hold,549,pida2.ogg,Hold
 rbr,detail_hold_rushed,549,pida1.ogg,Hold
 rbr,detail_hold_rushed,549,pida2.ogg,Hold
+cc_rbr_sound_not_found,detail_hole,344,hole.ogg,HOLE
 rbr,detail_hole,344,reika1.ogg,Hole
 rbr,detail_hole,344,reika2.ogg,Hole
-cc_rbr_sound_not_found,detail_hole,344,hole.ogg,HOLE
+cc_rbr_sound_not_found,detail_hole_rushed,344,hole.ogg,HOLE
 rbr,detail_hole_rushed,344,reika1.ogg,Hole
 rbr,detail_hole_rushed,344,reika2.ogg,Hole
-cc_rbr_sound_not_found,detail_hole_rushed,344,hole.ogg,HOLE
 rbr,detail_immediate,2030,heti1.ogg,Immediate
 rbr,detail_immediate,2030,heti2.ogg,Immediate
 rbr,detail_immediate_rushed,2030,heti1.ogg,Immediate
@@ -498,17 +499,21 @@ rbr,detail_left_entry_chicane,392,shikaani_vasemmalta.ogg,Left Entry Chicane
 rbr,detail_left_entry_chicane_rushed,392,shikaani_vasemmalta.ogg,Left Entry Chicane
 rbr,detail_left_foot_braking,551,sido.ogg,Tie
 rbr,detail_left_foot_braking_rushed,551,sido.ogg,Tie
-cc_no_sound_in_rbr_note,detail_logs_inside,,,
-cc_no_sound_in_rbr_note,detail_logs_inside_rushed,,,
-cc_no_sound_in_rbr_note,detail_logs_outside,,,
-cc_no_sound_in_rbr_note,detail_logs_outside_rushed,,,
-cc_no_sound_in_rbr_note,detail_long,,,
-cc_no_sound_in_rbr_note,detail_long_rushed,,,
+cc_no_sound_in_rbr_note,detail_logs_inside,40006,,
+cc_no_sound_in_rbr_note,detail_logs_inside_rushed,40006,,
+cc_no_sound_in_rbr_note,detail_logs_outside,40009,,
+cc_no_sound_in_rbr_note,detail_logs_outside_rushed,40009,,
+rbr,detail_long,-1,pitka.ogg,Long
+rbr,detail_long_rushed,-1,pitka.ogg,Long
 rbr,detail_longlong,263,tosi_pitka.ogg,Very Long
 rbr,detail_longlong_rushed,263,tosi_pitka.ogg,Very Long
 cc_rbr_sound_not_found,detail_loose_gravel,330,loose_gravel.ogg,Loose Gravel
-cc_no_sound_in_rbr_note,detail_maybe,,,
-cc_no_sound_in_rbr_note,detail_maybe_rushed,,,
+rbr,detail_maybe,-1,ehka1.ogg,Maybe
+rbr,detail_maybe,-1,ehka1.ogg,Maybe
+rbr,detail_maybe,-1,ehka2.ogg,Maybe
+rbr,detail_maybe_rushed,-1,ehka1.ogg,Maybe
+rbr,detail_maybe_rushed,-1,ehka1.ogg,Maybe
+rbr,detail_maybe_rushed,-1,ehka2.ogg,Maybe
 rbr,detail_minus,230,miinus.ogg,Minus
 rbr,detail_minus_rushed,230,miinus.ogg,Minus
 rbr,detail_narrows,14,sumppu.ogg,Narrows
@@ -546,10 +551,10 @@ rbr,detail_puddle,389,vetta.ogg,LÄTÄKKÖ
 rbr,detail_rails,384,raiteet.ogg,Rails
 rbr,detail_right_entry_chicane,393,shikaani_oikeelta.ogg,Right Entry Chicane
 rbr,detail_right_entry_chicane_rushed,393,shikaani_oikeelta.ogg,Right Entry Chicane
-cc_no_sound_in_rbr_note,detail_rocks_inside,,,
-cc_no_sound_in_rbr_note,detail_rocks_inside_rushed,,,
-cc_no_sound_in_rbr_note,detail_rocks_outside,,,
-cc_no_sound_in_rbr_note,detail_rocks_outside_rushed,,,
+cc_no_sound_in_rbr_note,detail_rocks_inside,40007,,
+cc_no_sound_in_rbr_note,detail_rocks_inside_rushed,40007,,
+cc_no_sound_in_rbr_note,detail_rocks_outside,40010,,
+cc_no_sound_in_rbr_note,detail_rocks_outside_rushed,40010,,
 rbr,detail_round,250,pyoree.ogg,Round
 rbr,detail_round_rushed,250,pyoree.ogg,Round
 rbr,detail_ruts,345,urat.ogg,Ruts
@@ -570,14 +575,14 @@ rbr,detail_small_crest_rushed,2109,pikkunyppy1.ogg,Small Crest
 rbr,detail_small_crest_rushed,2109,pikkunyppy2.ogg,Small Crest
 rbr,detail_snow,325,lumelle.ogg,Snow
 rbr,detail_snow_rushed,325,lumelle.ogg,Snow
-cc_no_sound_in_rbr_note,detail_split,,,
+cc_no_sound_in_rbr_note,detail_split,23,,
 rbr,detail_stay_out,2020,roiku.ogg,Hang
 rbr,detail_stay_out_rushed,2020,roiku.ogg,Hang
 rbr,detail_tarmac,321,asfaltille.ogg,Tarmac
 rbr,detail_tarmac_rushed,321,asfaltille.ogg,Tarmac
-cc_no_sound_in_rbr_note,detail_then,,,
-cc_no_sound_in_rbr_note,detail_then_rushed,,,
-cc_no_sound_in_rbr_note,detail_through_gate,,,
+cc_no_sound_in_rbr_note,detail_then,413,,
+cc_no_sound_in_rbr_note,detail_then_rushed,413,,
+cc_no_sound_in_rbr_note,detail_through_gate,40001,,
 rbr,detail_tight,251,ahdas.ogg,Tight
 rbr,detail_tight_rushed,251,ahdas.ogg,Tight
 rbr,detail_tightens,4,vasen_viis1.ogg,5 Left
@@ -611,10 +616,10 @@ rbr,detail_to_6,2008,_kuueks.ogg,6
 rbr,detail_to_acute,2014,_tiukaks.ogg,HP
 rbr,detail_to_dip,2024,notko.ogg,TODIP
 rbr,detail_to_finish,2105,maaliin1.ogg,To Finish
-cc_no_sound_in_rbr_note,detail_tree_inside,,,
-cc_no_sound_in_rbr_note,detail_tree_inside_rushed,,,
-cc_no_sound_in_rbr_note,detail_tree_outside,,,
-cc_no_sound_in_rbr_note,detail_tree_outside_rushed,,,
+cc_no_sound_in_rbr_note,detail_tree_inside,40008,,
+cc_no_sound_in_rbr_note,detail_tree_inside_rushed,40008,,
+cc_no_sound_in_rbr_note,detail_tree_outside,40011,,
+cc_no_sound_in_rbr_note,detail_tree_outside_rushed,40011,,
 rbr,detail_triple_caution,304,huomio_huomio.ogg,TRIPLE CAUTION
 rbr,detail_tunnel,381,tunneli.ogg,Tunnel
 rbr,detail_twisty,12,suoraksi.ogg,Twisty
@@ -622,10 +627,10 @@ rbr,detail_uphill,260,ylos1.ogg,Up
 rbr,detail_uphill,260,ylos2.ogg,Up
 rbr,detail_very_long,274,tosi_pitka.ogg,Very Long
 rbr,detail_water,388,vetta.ogg,VETTÄ
-cc_no_sound_in_rbr_note,detail_widens,,,
+cc_no_sound_in_rbr_note,detail_widens,40005,,
 rbr,detail_wideout,15,levenee.ogg,Widens
 cc_no_rbr_note,microphone_check,,,
-cc_no_sound_in_rbr_note,number_1,,,
+cc_no_sound_in_rbr_note,number_1,-1,,
 rbr,number_100,-1,100_1.ogg,100
 rbr,number_1000,-1,1000.ogg,1000
 rbr,number_100_rushed,-1,100_1.ogg,100
@@ -634,10 +639,10 @@ rbr,number_140,-1,140_1.ogg,140
 rbr,number_150,-1,150_1.ogg,150
 rbr,number_160,-1,160_1.ogg,160
 rbr,number_180,-1,180_1.ogg,180
-cc_no_sound_in_rbr_note,number_2,,,
+cc_no_sound_in_rbr_note,number_2,-1,,
 rbr,number_200,-1,200_1.ogg,200
 rbr,number_250,-1,250_1.ogg,250
-cc_no_sound_in_rbr_note,number_3,,,
+cc_no_sound_in_rbr_note,number_3,-1,,
 rbr,number_30,-1,30_1.ogg,30
 rbr,number_300,-1,300_1.ogg,300
 rbr,number_30_rushed,-1,30_1.ogg,30

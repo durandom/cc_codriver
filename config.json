@@ -1,6 +1,6 @@
 {
     "cc_sounds": "assets/codriver",
-    "skip_notes": {
+    "_skip_notes": {
         "acknowledge_end_recce": -1,
         "acknowledge_start_recce": -1,
         "correction": -1,
@@ -16,10 +16,14 @@
         "corner_open_hairpin_left": 40003,
         "corner_open_hairpin_right": 40004
     },
-    "map_notes": [
+    "_map_notes": [
       {
         "cc_id": 64,
         "rbr_name": "cut"
+      },
+      {
+        "cc_id": 8192,
+        "rbr_name": "maybe"
       }
     ],
     "map_cc_types": {

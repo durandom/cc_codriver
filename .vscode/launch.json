@@ -18,7 +18,8 @@
             "request": "launch",
             "program": "codriver.py",
             "console": "integratedTerminal",
-            "args": ["--map-to-cc-csv"]
+            "args": ["--map-to-cc-csv",
+            "--codriver", "bollinger"]
         },
         {
             "name": "map-to-cc out/copilot",

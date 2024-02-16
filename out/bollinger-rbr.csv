@@ -224,8 +224,8 @@ descriptive,408,in,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,In,in.ogg,
 descriptive,409,behind,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,Hinter,behind.ogg,
 descriptive,410,for,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,Für,for.ogg,
 descriptive,411,inside,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,Innen,inside.ogg,
-descriptive,412,outside,PACENOTE,ADDITIONAL,RBR,Extended.ini,1,Aussen,outside.ogg,
 descriptive,412,outside,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,Außen,outside.ogg,
+descriptive,412,outside,PACENOTE,ADDITIONAL,RBR,Extended.ini,1,Aussen,outside.ogg,
 descriptive,413,then,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,,then.ogg,file missing
 descriptive,414,off,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,,off.ogg,file missing
 descriptive,430,done,PACENOTE,LINKS,RBR,Extended.ini,1,Ende,done.ogg,
@@ -499,8 +499,8 @@ reversed,408,in,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,In,in.ogg,
 reversed,409,behind,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,Hinter,behind.ogg,
 reversed,410,for,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,Für,for.ogg,
 reversed,411,inside,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,Innen,inside.ogg,
-reversed,412,outside,PACENOTE,ADDITIONAL,RBR,Extended.ini,1,Aussen,outside.ogg,
 reversed,412,outside,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,Außen,outside.ogg,
+reversed,412,outside,PACENOTE,ADDITIONAL,RBR,Extended.ini,1,Aussen,outside.ogg,
 reversed,413,then,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,,then.ogg,file missing
 reversed,414,off,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,,off.ogg,file missing
 reversed,430,done,PACENOTE,LINKS,RBR,Extended.ini,1,Ende,done.ogg,
@@ -776,8 +776,8 @@ numeric,408,in,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,In,in.ogg,
 numeric,409,behind,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,Hinter,behind.ogg,
 numeric,410,for,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,Für,for.ogg,
 numeric,411,inside,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,Innen,inside.ogg,
-numeric,412,outside,PACENOTE,ADDITIONAL,RBR,Extended.ini,1,Aussen,outside.ogg,
 numeric,412,outside,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,Außen,outside.ogg,
+numeric,412,outside,PACENOTE,ADDITIONAL,RBR,Extended.ini,1,Aussen,outside.ogg,
 numeric,413,then,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,,then.ogg,file missing
 numeric,414,off,PACENOTE,PREPOSITIONS,RBR,Extended.ini,1,,off.ogg,file missing
 numeric,430,done,PACENOTE,LINKS,RBR,Extended.ini,1,Ende,done.ogg,

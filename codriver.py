@@ -16,7 +16,7 @@ class PacenoteModifier:
         self.name = name
         self.id = id
         self.translation_table = {
-            # 'detail_' : '',
+            'detail_' : '',
         }
 
     def rbr_name(self):
@@ -62,6 +62,10 @@ class CrewChiefNote:
         self.notes : List[RbrPacenote] = []
         self.rushed = False
         self.prefix = prefix
+        self.type : Optional[Union[PacenoteType, PacenoteModifier, PacenoteRange]] = None
+
+    def set_type(self, type: Union[PacenoteType, PacenoteModifier, PacenoteRange]):
+        self.type = type
 
     def add_prefix(self, prefix: 'CrewChiefNote'):
         self.prefix = prefix
@@ -286,6 +290,7 @@ class CoDriver:
             logging.error(f'Found {len(notes)} notes for type {type} - {notes}')
             exit(1)
         into = CrewChiefNote('detail_into')
+        into.set_type(type)
         into.add_notes(notes)
 
         for sound in sorted(self.cc_sounds.keys()):
@@ -319,7 +324,12 @@ class CoDriver:
             type = self.get_pacenote_type_for_cc_sound(sound_lookup)
             if not type:
                 logging.error(f'Unknown pacenote type: {sound_lookup}')
-                exit(1)
+                continue
+            cc_note.set_type(type)
+
+            # also set the type for the not mapped note
+            if sound in self.cc_sounds:
+                self.cc_sounds[sound].set_type(type)
 
             # get the rbr pacenote
             notes = self.get_rbr_pacenotes(type=type, package=package)
@@ -434,7 +444,7 @@ class CoDriver:
 
             if mapped_cc_note and len(mapped_cc_note.notes) == 0:
                 logging.error(f'No sounds for {cc_note.name} in mapped note {mapped_cc_note}')
-                csv_writer.writerow(['cc_no_sound_in_rbr_note', cc_note.name, '', '', ''])
+                csv_writer.writerow(['cc_no_sound_in_rbr_note', cc_note.name, cc_note.type.id, '', ''])
                 continue
 
             if not mapped_cc_note:
