@@ -489,13 +489,14 @@ if __name__ == '__main__':
 
     config_codriver_packages = config['codrivers'][args.codriver]['packages']
     map_files = config['codrivers'][args.codriver].get('map_files', {})
+    additional_sounds_dir = config['codrivers'][args.codriver].get('additional_sounds_dir', '')
     if args.rbr_package != 'all':
         # select only the package that is specified
         config_codriver_packages = [ package for package in config_codriver_packages if package['type'] == args.rbr_package]
     for package in config_codriver_packages:
         pacenote_dir_absolute = os.path.join(base_dir, package['base_dir'])
         ini_files = package['ini_files']
-        rbr_pacenote_plugin = RbrPacenotePlugin(pacenote_dir_absolute, ini_files=ini_files, map_files=map_files)
+        rbr_pacenote_plugin = RbrPacenotePlugin(pacenote_dir_absolute, ini_files=ini_files, map_files=map_files, additional_sounds_dir=additional_sounds_dir)
         codriver.add_pacenote_plugin(package['type'], rbr_pacenote_plugin)
 
 

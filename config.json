@@ -49,6 +49,7 @@
                 "keskelta.ogg": "keep_centre.ogg",
                 "cobbles.ogg": "cobble.ogg"
             },
+            "additional_sounds_dir": "additional",
             "packages": [
                 {
                     "name": "Deskriptiv",

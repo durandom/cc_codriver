@@ -1,6 +1,7 @@
 import configparser
 import logging
 import os
+import random
 from typing import Optional
 
 
@@ -37,9 +38,11 @@ class RbrPacenote:
                 raise Exception(f'Error converting {ogg} to {wave_fullname}')
 
         if prefix:
-            prefix_wave_filename = prefix.sound_as_wav(prefix.sounds[0])
+            # pick a random sound from the prefix
+            prefix_sound = random.choice(prefix.sounds)
+            prefix_wave_filename = prefix.sound_as_wav(prefix_sound)
             prefix_wave_fullname = os.path.join(prefix.sounds_dir, prefix_wave_filename)
-            cmp_filename = f'{prefix.name}_{wave_filename}'
+            cmp_filename = f'{prefix.name}_{wave_filename.replace("/", "-")}'
             cmp_fullname = os.path.join(self.sounds_dir, cmp_filename)
             if not os.path.exists(cmp_fullname):
                 rv = os.system(f'sox "{prefix_wave_fullname}" "{wave_fullname}" "{cmp_fullname}"')
@@ -105,12 +108,13 @@ class RbrPacenote:
 
 
 class RbrPacenotePlugin:
-    def __init__(self, plugin_dir = "Pacenote/", ini_files = ["Rbr.ini", "Rbr-Enhanced.ini"], map_files = {}):
+    def __init__(self, plugin_dir = "Pacenote/", ini_files = ["Rbr.ini", "Rbr-Enhanced.ini"], map_files = {}, additional_sounds_dir = ''):
         self.pacenotes = set()
         # self.ini_file = ini_file
         # base_dir is the directory of this file + ini_file
         self.plugin_dir = plugin_dir
         self.map_files = map_files
+        self.additional_sounds_dir = additional_sounds_dir
 
         # make sure the plugin_dir is a directory
         if not os.path.isdir(plugin_dir):
@@ -276,6 +280,18 @@ class RbrPacenotePlugin:
                             logging.error(f'Not found: {sound_file}')
                             note.sounds_not_found.append(sound)
                         note.sounds.append(sound)
+                        # check additional sounds directory
+                        if self.additional_sounds_dir:
+                            # split the extension off the sound file
+                            sound_base, ext = os.path.splitext(sound)
+                            for i in range(0, 5):
+                                add_sound = os.path.join(self.additional_sounds_dir, f'{sound_base}_{i}{ext}')
+                                sound_file = self.sound_file(add_sound)
+                                if os.path.exists(sound_file):
+                                    note.sounds.append(add_sound)
+                                    logging.debug(f'Additional sound: {sound_file}')
+                                else:
+                                    logging.debug(f'Additional sound not found: {sound_file}')
                 if note.sound_count != len(note.sounds):
                     logging.error(f'Invalid sound count: {note.sound_count} - {note}')
                 # for i in range(int(sounds)):
