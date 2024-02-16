@@ -4,7 +4,7 @@ all: out_janne out_bollinger
 	@echo "Done"
 
 cc_bollinger:
-	./codriver.py --codriver bollinger --map-to-cc build/copilot_bollinger
+	./codriver.py --codriver bollinger --map-to-cc "build/codriver_David Bollinger"
 	@echo "Done"
 
 out_janne:

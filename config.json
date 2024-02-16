@@ -28,7 +28,8 @@
     ],
     "map_cc_types": {
         "corner_hairpin_right": "corner_1_right_descriptive",
-        "corner_hairpin_left": "corner_1_left_descriptive"
+        "corner_hairpin_left": "corner_1_left_descriptive",
+        "detail_widens": "detail_wideout"
     },
     "_comment": "additional_cc_types are added to cc_pacenote_type.txt",
     "additional_cc_types": {

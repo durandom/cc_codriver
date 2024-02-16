@@ -787,18 +787,18 @@ rbr,detail_opens_rushed,298,additional/opens_3.ogg,Macht Auf
 rbr,detail_opens_rushed,298,opens.ogg,Macht Auf
 rbr,detail_opens_tightens,2018,openstightens.ogg,Macht Auf und Zu
 rbr,detail_opens_tightens_rushed,2018,openstightens.ogg,Macht Auf und Zu
-rbr,detail_outside,412,additional/outside_2.ogg,Aussen
-rbr,detail_outside,412,additional/outside_3.ogg,Aussen
-rbr,detail_outside,412,outside.ogg,Aussen
 rbr,detail_outside,412,additional/outside_2.ogg,Außen
 rbr,detail_outside,412,additional/outside_3.ogg,Außen
 rbr,detail_outside,412,outside.ogg,Außen
-rbr,detail_outside_rushed,412,additional/outside_2.ogg,Aussen
-rbr,detail_outside_rushed,412,additional/outside_3.ogg,Aussen
-rbr,detail_outside_rushed,412,outside.ogg,Aussen
+rbr,detail_outside,412,additional/outside_2.ogg,Aussen
+rbr,detail_outside,412,additional/outside_3.ogg,Aussen
+rbr,detail_outside,412,outside.ogg,Aussen
 rbr,detail_outside_rushed,412,additional/outside_2.ogg,Außen
 rbr,detail_outside_rushed,412,additional/outside_3.ogg,Außen
 rbr,detail_outside_rushed,412,outside.ogg,Außen
+rbr,detail_outside_rushed,412,additional/outside_2.ogg,Aussen
+rbr,detail_outside_rushed,412,additional/outside_3.ogg,Aussen
+rbr,detail_outside_rushed,412,outside.ogg,Aussen
 rbr,detail_over_bridge,200,over_bridge.ogg,Über Brücke
 rbr,detail_over_bridge_rushed,200,over_bridge.ogg,Über Brücke
 rbr,detail_over_crest,16,additional/overcrest_2.ogg,Über Kuppe
@@ -951,7 +951,9 @@ rbr,detail_very_long,274,very_long.ogg,Sehr Lang
 rbr,detail_water,388,additional/water_2.ogg,Wasser
 rbr,detail_water,388,additional/water_3.ogg,Wasser
 rbr,detail_water,388,water.ogg,Wasser
-cc_no_sound_in_rbr_note,detail_widens,40005,,
+rbr,detail_widens,15,additional/wideout_2.ogg,Breiter
+rbr,detail_widens,15,additional/wideout_3.ogg,Breiter
+rbr,detail_widens,15,wideout.ogg,Breiter
 rbr,detail_wideout,15,additional/wideout_2.ogg,Breiter
 rbr,detail_wideout,15,additional/wideout_3.ogg,Breiter
 rbr,detail_wideout,15,wideout.ogg,Breiter
