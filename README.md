@@ -22,3 +22,4 @@ Tooling to examine RBR Pacenotes and the RBR Pacenotes plugin and conversion to 
 *  https://github.com/rhasspy/tts-prompts/blob/master/en-us/en-us_prompts.csv
 *  https://www.redhat.com/en/blog/a-guide-to-gpu-enhanced-text-to-speech-model-training-with-red-hat-openshift-data-science-and-coqui-tts
 *  https://www.redhat.com/en/blog/voice-cloning-and-tts-with-ims-toucan-and-red-hat-openshift-data-science
+*  [Some AI generated samples in the CC #development channel](https://discord.com/channels/322071247032942592/1088819988917395496/1097596688362917948)
