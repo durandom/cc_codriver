@@ -80,6 +80,16 @@
             ]
         },
         "german-tts": {
+            "map_files": {
+                "medium_left.ogg": "mediumleft.ogg",
+                "medium_right.ogg": "mediumright.ogg",
+                "fast_right.ogg": "fastright.ogg",
+                "fast_left.ogg": "fastleft.ogg",
+                "easy_right.ogg": "easyright.ogg",
+                "easy_left.ogg": "easyleft.ogg",
+                "keskelta.ogg": "keep_centre.ogg",
+                "cobbles.ogg": "cobble.ogg"
+            },
             "packages":
             [
                 {
