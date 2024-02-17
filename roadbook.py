@@ -2,6 +2,7 @@ import configparser
 import csv
 import logging
 import os
+import re
 import sys
 
 
@@ -70,9 +71,14 @@ class Roadbooks:
     def read_roadbooks(self, name):
         # recurse into self.base_path
         logging.info(f"Analyzing {name}")
+        if name.startswith('/'):
+            # name is a regex
+            regex = name.lstrip('/')
+            regex = regex.rstrip('/')
+            name = re.compile(regex)
         for root, dirs, files in os.walk(self.base_path):
             for file in files:
-                if name == file or name == 'all':
+                if name == file or (isinstance(name, re.Pattern) and name.match(file)):
                     if file.endswith('.ini'):
                         self.read_roadbook(file, os.path.join(root, file))
 
