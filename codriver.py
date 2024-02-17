@@ -506,7 +506,8 @@ if __name__ == '__main__':
     if args.roadbook_csv:
         roadbook_dir = config['roadbooks']
         roadbooks = Roadbooks(roadbook_dir)
-        roadbooks.analyze(args.roadbook_name)
+        roadbooks.read_roadbooks(args.roadbook_name)
+        roadbooks.analyze_books()
         exit(0)
 
     config_codriver_packages = config['codrivers'][args.codriver]['packages']

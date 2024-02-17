@@ -45,12 +45,13 @@
             "args": ["--roadbook-csv"]
         },
         {
-            "name": "roadbook-csv Avenhus",
+            "name": "roadbook-csv stage",
             "type": "debugpy",
             "request": "launch",
             "program": "codriver.py",
             "console": "integratedTerminal",
-            "args": ["--roadbook-csv", "--roadbook-name", "Ahvenus I_Luppis_20230228.ini"]
+            // "args": ["--roadbook-csv", "--roadbook-name", "Ahvenus I_Luppis_20230228.ini"]
+            "args": ["--roadbook-csv", "--roadbook-name", "Alpes Rally 20220921_LUPPIS.ini"]
         },
     ]
 }
