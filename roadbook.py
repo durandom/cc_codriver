@@ -1,4 +1,6 @@
 import configparser
+import logging
+import os
 
 
 class Note:
@@ -39,6 +41,26 @@ class Roadbook:
         for note in self.notes.values():
             types.add(note.type)
         return types
+
+class Roadbooks:
+    def __init__(self, path):
+        self.base_path = path
+
+    def analyze(self, name):
+        # recurse into self.base_path
+        logging.info(f"Analyzing {name}")
+        for root, dirs, files in os.walk(self.base_path):
+            for file in files:
+                if name == file or name == 'all':
+                    book = Roadbook(os.path.join(root, file))
+                    print(book.num_notes)
+                    print(book.note_types())
+
+    def read_roadbooks(self, path):
+        pass
+
+    def get_roadbook(self, filename):
+        pass
 
 
 if __name__ == "__main__":

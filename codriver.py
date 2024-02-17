@@ -9,6 +9,7 @@ import shutil
 import sys
 from typing import List, Optional, Union
 from rbr_pacenote_plugin import RbrPacenotePlugin, RbrPacenote
+from roadbook import Roadbooks
 
 
 class PacenoteModifier:
@@ -492,6 +493,8 @@ if __name__ == '__main__':
     parser.add_argument('--rbr-find-note-by-name', help='Find a note by name')
     parser.add_argument('--rbr-list-csv', action='store_true', help='List RBR pacenotes as CSV')
     parser.add_argument('--rbr-package', default='all', help='Only list pacenotes for a specific package, defaults to all')
+    parser.add_argument('--roadbook-csv', action='store_true', help='Analyzes a Roabook file and creates a CSV file')
+    parser.add_argument('--roadbook-name', default='all', help='Which Roabook file to analyze, defaults to all')
     parser.add_argument('--map-to-cc', help='Map RBR pacenotes to CC pacenotes and create folder structure')
     parser.add_argument('--map-to-cc-csv', action='store_true', help='Map RBR pacenotes to CC pacenotes and write to CSV')
 
@@ -499,6 +502,12 @@ if __name__ == '__main__':
 
     # read the configuration file, which is a json file
     config = json.load(open('config.json'))
+
+    if args.roadbook_csv:
+        roadbook_dir = config['roadbooks']
+        roadbooks = Roadbooks(roadbook_dir)
+        roadbooks.analyze(args.roadbook_name)
+        exit(0)
 
     config_codriver_packages = config['codrivers'][args.codriver]['packages']
     map_files = config['codrivers'][args.codriver].get('map_files', {})
