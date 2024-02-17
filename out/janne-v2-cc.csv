@@ -321,12 +321,14 @@ rbr,corner_flat_right_rushed,25,oikee_tays1.ogg,Flat Right
 rbr,corner_flat_right_rushed,25,oikee_tays2.ogg,Flat Right
 rbr,corner_hairpin_left,0,vasen_serpo1.ogg,HP Left
 rbr,corner_hairpin_left,0,vasen_serpo2.ogg,HP Left
-cc_no_rbr_note,corner_hairpin_left_reversed,,,
+rbr,corner_hairpin_left_reversed,0,vasen_serpo1.ogg,HP Left
+rbr,corner_hairpin_left_reversed,0,vasen_serpo2.ogg,HP Left
 rbr,corner_hairpin_left_rushed,0,vasen_serpo1.ogg,HP Left
 rbr,corner_hairpin_left_rushed,0,vasen_serpo2.ogg,HP Left
 rbr,corner_hairpin_right,11,oikee_serpo1.ogg,HP Right
 rbr,corner_hairpin_right,11,oikee_serpo2.ogg,HP Right
-cc_no_rbr_note,corner_hairpin_right_reversed,,,
+rbr,corner_hairpin_right_reversed,11,oikee_serpo1.ogg,HP Right
+rbr,corner_hairpin_right_reversed,11,oikee_serpo2.ogg,HP Right
 rbr,corner_hairpin_right_rushed,11,oikee_serpo1.ogg,HP Right
 rbr,corner_hairpin_right_rushed,11,oikee_serpo2.ogg,HP Right
 cc_no_sound_in_rbr_note,corner_open_hairpin_left,40003,,
@@ -507,11 +509,11 @@ rbr,detail_longlong,263,tosi_pitka.ogg,Very Long
 rbr,detail_longlong_rushed,263,tosi_pitka.ogg,Very Long
 cc_rbr_sound_not_found,detail_loose_gravel,330,loose_gravel.ogg,Loose Gravel
 rbr,detail_maybe,-1,ehka1.ogg,Maybe
-rbr,detail_maybe,-1,ehka1.ogg,Maybe
 rbr,detail_maybe,-1,ehka2.ogg,Maybe
-rbr,detail_maybe_rushed,-1,ehka1.ogg,Maybe
+rbr,detail_maybe,-1,ehka1.ogg,Maybe
 rbr,detail_maybe_rushed,-1,ehka1.ogg,Maybe
 rbr,detail_maybe_rushed,-1,ehka2.ogg,Maybe
+rbr,detail_maybe_rushed,-1,ehka1.ogg,Maybe
 rbr,detail_minus,230,miinus.ogg,Minus
 rbr,detail_minus_rushed,230,miinus.ogg,Minus
 rbr,detail_narrows,14,sumppu.ogg,Narrows
@@ -625,7 +627,7 @@ rbr,detail_uphill,260,ylos1.ogg,Up
 rbr,detail_uphill,260,ylos2.ogg,Up
 rbr,detail_very_long,274,tosi_pitka.ogg,Very Long
 rbr,detail_water,388,vetta.ogg,VETTÄ
-cc_no_sound_in_rbr_note,detail_widens,40005,,
+rbr,detail_widens,15,levenee.ogg,Widens
 rbr,detail_wideout,15,levenee.ogg,Widens
 cc_no_rbr_note,microphone_check,,,
 cc_no_sound_in_rbr_note,number_1,-1,,
@@ -664,3 +666,82 @@ rbr,number_80_rushed,-1,80_1.ogg,80
 rbr,number_900,-1,900.ogg,900
 cc_no_rbr_note,penalty_false_start,,,
 cc_no_rbr_note,we_are_lost,,,
+rbr_note_not_mapped,left,120,left.ogg,Left
+rbr_note_not_mapped,right,121,right.ogg,Right
+rbr_note_not_mapped,right_into,122,right_into.ogg,Right Into
+rbr_note_not_mapped,left_into,123,left_into.ogg,Left Into
+rbr_note_not_mapped,right_left,124,right_left.ogg,Right-Left
+rbr_note_not_mapped,left_right,125,left_right.ogg,Left-Right
+rbr_note_not_mapped,right_around,126,right_around.ogg,Right Around
+rbr_note_not_mapped,left_around,127,left_around.ogg,Left Around
+rbr_note_not_mapped,deepcut,211,deepcut.ogg,DEEP CUT
+rbr_note_not_mapped,keep_centre,213,keskelta.ogg,Keep Centre
+rbr_note_not_mapped,light_cut,218,light_cut.ogg,LIGHTCUT
+rbr_note_not_mapped,clip,223,clip.ogg,Clip
+rbr_note_not_mapped,minusminus,231,minusminus.ogg,MIINUS MIINUS
+rbr_note_not_mapped,plusplus,233,plusplus.ogg,PLUS PLUS
+rbr_note_not_mapped,much,237,much.ogg,Much
+rbr_note_not_mapped,many,238,many.ogg,Many
+rbr_note_not_mapped,very,239,very.ogg,Very
+rbr_note_not_mapped,fast,241,fast.ogg,Fast
+rbr_note_not_mapped,slow,242,slow.ogg,Slow
+rbr_note_not_mapped,exact,243,exact.ogg,Exact
+rbr_note_not_mapped,directly,245,directly.ogg,Directly
+rbr_note_not_mapped,light,246,light.ogg,Light
+rbr_note_not_mapped,big,247,big.ogg,Big
+rbr_note_not_mapped,small,248,small.ogg,Small
+rbr_note_not_mapped,slight,252,slight.ogg,Slight
+rbr_note_not_mapped,good,253,good.ogg,Good
+rbr_note_not_mapped,bad,254,bad.ogg,Bad
+rbr_note_not_mapped,straight,257,straight.ogg,Straight
+rbr_note_not_mapped,shortshort,265,shortshort.ogg,LYHYT LYHYT
+rbr_note_not_mapped,gonarrow,266,gonarrow.ogg,Go Narrow
+rbr_note_not_mapped,gowide,267,gowide.ogg,Go Wide
+rbr_note_not_mapped,sideways,271,sideways.ogg,Sideways
+rbr_note_not_mapped,hook,272,hook.ogg,HOOK
+rbr_note_not_mapped,very_short,275,very_short.ogg,TOSI LYHYT
+rbr_note_not_mapped,positive,294,positive.ogg,Positive
+rbr_note_not_mapped,negative,295,negative.ogg,Negative
+rbr_note_not_mapped,hidden,301,hidden.ogg,HIDDEN
+rbr_note_not_mapped,blind,302,blind.ogg,BLIND
+rbr_note_not_mapped,cobbles,323,cobbles.ogg,Cobbles
+rbr_note_not_mapped,grit,324,grit.ogg,Grit
+rbr_note_not_mapped,onsplit,326,onsplit.ogg,Split
+rbr_note_not_mapped,icy,327,icy.ogg,Icy
+rbr_note_not_mapped,rubble,328,rubble.ogg,Rubble
+rbr_note_not_mapped,ice,329,jaalle.ogg,Ice
+rbr_note_not_mapped,border,347,border.ogg,BORDER
+rbr_note_not_mapped,edge,348,edge.ogg,EDGE
+rbr_note_not_mapped,curb,349,curb.ogg,CURB
+rbr_note_not_mapped,ditch,350,ditch.ogg,DITCH
+rbr_note_not_mapped,steep_drop,354,steep_drop.ogg,STEEP DROP
+rbr_note_not_mapped,shoulder,356,shoulder.ogg,SHOULDER
+rbr_note_not_mapped,steep_hill,357,steep_hill.ogg,STEEP HILL
+rbr_note_not_mapped,steep_incline,358,steep_incline.ogg,STEEP INCLINE
+rbr_note_not_mapped,steep_slope,359,steep_slope.ogg,STEEP SLOPE
+rbr_note_not_mapped,tree,373,tree.ogg,PUU
+rbr_note_not_mapped,stump,374,stump.ogg,KANTO
+rbr_note_not_mapped,stone,379,stone.ogg,KIVI
+rbr_note_not_mapped,rock,380,rock.ogg,KIVI
+rbr_note_not_mapped,sign,385,sign.ogg,KYLTTI
+rbr_note_not_mapped,bush,386,bush.ogg,PUSKA
+rbr_note_not_mapped,netting,390,netting.ogg,VERKKO
+rbr_note_not_mapped,tape,391,tape.ogg,TEIPPI
+rbr_note_not_mapped,tyres,394,tyres.ogg,RENKAITA
+rbr_note_not_mapped,spectators,395,spectators.ogg,KATSOJIA
+rbr_note_not_mapped,marshalls,396,marshalls.ogg,JÄRJESTYKSENVALVOJIA
+rbr_note_not_mapped,barrels,397,barrels.ogg,TYNNYRIT
+rbr_note_not_mapped,done,430,done.ogg,Done
+rbr_note_not_mapped,stop,431,stop.ogg,Stop
+rbr_note_not_mapped,line,432,line.ogg,Line
+rbr_note_not_mapped,onto_cobbles,543,onto_cobbles.ogg,Onto Cobbles
+rbr_note_not_mapped,onto_grit,544,onto_grit.ogg,Onto Grit
+rbr_note_not_mapped,to_sight_distance,555,to_sight_distance.ogg,To Sight Distance
+rbr_note_not_mapped,split_time,556,split_time.ogg,Split Time
+rbr_note_not_mapped,entry,557,entry.ogg,Entry
+rbr_note_not_mapped,left_acute,2040,vasen_tiukka_serpo1.ogg,
+rbr_note_not_mapped,left_acute,2040,vasen_tiukka_serpo2.ogg,
+rbr_note_not_mapped,right_acute,2041,oikee_tiukka_serpo1.ogg,
+rbr_note_not_mapped,right_acute,2041,oikee_tiukka_serpo2.ogg,
+rbr_note_not_mapped,vasemmalta,2100,vasen_laita.ogg,Keep Left
+rbr_note_not_mapped,oikeelta,2101,oikee_laita.ogg,Keep Right

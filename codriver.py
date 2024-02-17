@@ -483,6 +483,31 @@ class CoDriver:
                     else:
                         csv_writer.writerow(['rbr', cc_note.name, rbr_note.id, file, subtitle])
 
+        # now list all the rbr_notes that are not mapped
+        rbr_notes = {}
+        # collect all rbr notes from all plugins
+        for name, rbr_pacenote_plugin in self.rbr_pacenote_plugins.items():
+            for rbr_note in rbr_pacenote_plugin.pacenotes:
+                rbr_notes[rbr_note.id] = rbr_note
+
+        # for each note in rbr_notes we check if it is in the mapped_cc_notes
+        # if it is not, we list it as unmapped
+        rbr_note_ids = [note.id for note in rbr_notes.values()]
+        for rbr_note_id in sorted(rbr_note_ids):
+            # check if the note is in self.mapped_cc_notes
+            rbr_note = rbr_notes[rbr_note_id]
+            found = False
+            for cc_note in self.mapped_cc_notes:
+                mapped_rbr_note_ids = [note.id for note in cc_note.notes]
+                if rbr_note_id in mapped_rbr_note_ids:
+                    logging.debug(f'rbr_note {rbr_note.id} is mapped')
+                    found = True
+                    break
+            if not found:
+                for sound in rbr_note.sounds:
+                    csv_writer.writerow(['rbr_note_not_mapped', rbr_note.name, rbr_note.id, sound, rbr_note.translation])
+
+
 if __name__ == '__main__':
     logging.basicConfig(level=logging.DEBUG)
     base_dir = os.path.dirname(os.path.abspath(__file__))
