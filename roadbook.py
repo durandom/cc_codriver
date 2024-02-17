@@ -51,7 +51,7 @@ class Roadbook:
                 if note.type > 6_000_000:
                     continue
 
-                if note.flag > 6_000_000:
+                if note.flag > 65_000:
                     note.flag = 0
 
                 note_id = int(section[1:])
