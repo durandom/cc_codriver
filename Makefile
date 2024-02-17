@@ -1,6 +1,10 @@
-.PHONY: all out_janne out_bollinger cc_bollinger
+.PHONY: all out_janne out_bollinger cc_bollinger roadbooks
 
 all: out_janne out_bollinger
+	@echo "Done"
+
+roadbooks:
+	./codriver.py --roadbook-csv --roadbook-name '/.*/' > out/roadbooks-luppis-v2.csv
 	@echo "Done"
 
 cc_bollinger:
