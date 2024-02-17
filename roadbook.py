@@ -47,6 +47,13 @@ class Roadbook:
                             config.getfloat(section, 'distance'),
                             config.getint(section, 'flag'))
 
+                # the high notes are not interesting
+                if note.type > 6_000_000:
+                    continue
+
+                if note.flag > 6_000_000:
+                    note.flag = 0
+
                 note_id = int(section[1:])
                 self.notes[note_id] = note
 
@@ -57,11 +64,24 @@ class Roadbook:
                 notes.append(note)
         return notes
 
+    def get_notes_flag(self, note_flag):
+        notes = []
+        for note_id, note in self.notes.items():
+            if note.flag == note_flag:
+                notes.append(note)
+        return notes
+
     def note_types(self):
         types = set()
         for note in self.notes.values():
             types.add(note.type)
         return types
+
+    def note_flags(self):
+        flags = set()
+        for note in self.notes.values():
+            flags.add(note.flag)
+        return flags
 
 class Roadbooks:
     def __init__(self, path):
@@ -89,21 +109,32 @@ class Roadbooks:
     def analyze_books(self):
         # get all note types
         note_types = set()
+        note_flags = set()
         for book in self.books.values():
             note_types |= book.note_types()
+            note_flags |= book.note_flags()
 
+        row = ['name']
         note_types_list = sorted(list(note_types))
+        note_flags_list = sorted(list(note_flags))
+        row.extend(note_types_list)
+        row.extend(note_flags_list)
+
         csv_writer = csv.writer(sys.stdout)
-        row = note_types_list.copy()
-        row.insert(0, 'name')
         csv_writer.writerow(row)
 
-        for name, book in self.books.items():
+        books = self.books.items()
+        # sort by name
+        books = sorted(books, key=lambda x: x[0])
+        for name, book in books:
             row = []
             row.append(name)
             for note_type in note_types_list:
                 book_note_types = book.get_notes(note_type)
                 row.append(len(book_note_types))
+            for note_flag in note_flags_list:
+                book_note_flags = book.get_notes_flag(note_flag)
+                row.append(len(book_note_flags))
             csv_writer.writerow(row)
 
 
