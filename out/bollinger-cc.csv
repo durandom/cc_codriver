@@ -958,7 +958,7 @@ rbr,detail_wideout,15,additional/wideout_2.ogg,Breiter
 rbr,detail_wideout,15,additional/wideout_3.ogg,Breiter
 rbr,detail_wideout,15,wideout.ogg,Breiter
 cc_no_rbr_note,microphone_check,,,
-cc_no_sound_in_rbr_note,number_1,-1,,
+rbr,number_1,-1,Audio/Speech/NumGer/start1.ogg,
 rbr,number_100,-1,100.ogg,100
 rbr,number_100,-1,additional/100_2.ogg,100
 rbr,number_100,-1,additional/100_3.ogg,100
@@ -983,14 +983,14 @@ rbr,number_160,-1,additional/160_3.ogg,160
 rbr,number_180,-1,180.ogg,180
 rbr,number_180,-1,additional/180_2.ogg,180
 rbr,number_180,-1,additional/180_3.ogg,180
-cc_no_sound_in_rbr_note,number_2,-1,,
+rbr,number_2,-1,Audio/Speech/NumGer/start2.ogg,
 rbr,number_200,-1,200.ogg,200
 rbr,number_200,-1,additional/200_2.ogg,200
 rbr,number_200,-1,additional/200_3.ogg,200
 rbr,number_250,-1,250.ogg,250
 rbr,number_250,-1,additional/250_2.ogg,250
 rbr,number_250,-1,additional/250_3.ogg,250
-cc_no_sound_in_rbr_note,number_3,-1,,
+rbr,number_3,-1,Audio/Speech/NumGer/start3.ogg,
 rbr,number_30,-1,30.ogg,30
 rbr,number_30,-1,additional/30_2.ogg,30
 rbr,number_30,-1,additional/30_3.ogg,30

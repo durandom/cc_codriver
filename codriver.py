@@ -77,17 +77,12 @@ class CrewChiefNote:
     def add_note(self, note: RbrPacenote):
         self.notes.append(note)
 
-    # def add_sound(self, file, subtitle):
-    #     if file in self.sounds:
-    #         logging.error(f'Duplicate sound: {file} in {self}')
-    #     self.sounds[file] = subtitle
-
-    #         subtitle = note.translation
-    #         file_with_path = os.path.join(note.sounds_dir, file)
-    #         self.add_sound(file_with_path, subtitle)
-
-    # def create(self):
-    #     print(f'{self.name}')
+    def add_file(self, file, package, sounds_dir):
+        rbr_note = RbrPacenote(file)
+        rbr_note.sounds.append(file)
+        rbr_note.sounds_dir = sounds_dir
+        rbr_note.package = package
+        self.notes.append(rbr_note)
 
     def __str__(self):
         return f'{self.name} - {self.sounds}'
@@ -102,6 +97,7 @@ class CoDriver:
                  cc_sounds = "codriver",
                  map_notes = [],
                  map_cc_types = {},
+                 map_static = {},
                  additional_cc_types = {},
                  skip_notes = {}):
 
@@ -115,6 +111,7 @@ class CoDriver:
         self.map_notes = map_notes
         self.map_rbr_ids = {}
         self.map_cc_types = map_cc_types
+        self.map_static = map_static
         self.additional_cc_types = additional_cc_types
 
         self.init_cc_pacenotes_types(cc_pacenote_types)
@@ -317,6 +314,13 @@ class CoDriver:
             # create a new CrewChiefNote
             cc_note = CrewChiefNote(sound)
 
+            if sound in self.map_static:
+                (package, file) = self.map_static[sound]
+                sound_dir = self.rbr_pacenote_plugins[package].plugin_dir
+                cc_note.add_file(file, package, sound_dir)
+                cc_notes.append(cc_note)
+                continue
+
             if sound.startswith('cmp_'):
                 # remove the cmp_ prefix
                 sound_lookup = sound[4:]
@@ -370,7 +374,7 @@ class CoDriver:
             shutil.copy(file, dst_path)
 
 
-    def cc_create_copilot(self, directory):
+    def create_codriver(self, directory):
         # create the directory
         if not os.path.exists(directory):
             os.makedirs(directory)
@@ -496,17 +500,18 @@ if __name__ == '__main__':
     # read the configuration file, which is a json file
     config = json.load(open('config.json'))
 
-
     config_codriver_packages = config['codrivers'][args.codriver]['packages']
     map_files = config['codrivers'][args.codriver].get('map_files', {})
     additional_sounds_dir = config['codrivers'][args.codriver].get('additional_sounds_dir', '')
+    map_static = config['codrivers'][args.codriver].get('map_static', {})
 
     codriver = CoDriver(
         cc_sounds=config['cc_sounds'],
         skip_notes=config.get('skip_notes', {}),
         map_notes=config.get('map_notes', []),
         map_cc_types=config.get('map_cc_types', {}),
-        additional_cc_types=config.get('additional_cc_types', {})
+        additional_cc_types=config.get('additional_cc_types', {}),
+        map_static=map_static
     )
 
     if args.rbr_package != 'all':
@@ -541,4 +546,4 @@ if __name__ == '__main__':
 
     if args.map_to_cc:
         codriver.map_notes_from_cc()
-        codriver.cc_create_copilot(args.map_to_cc)
+        codriver.create_codriver(args.map_to_cc)
