@@ -575,11 +575,13 @@ class CoDriver:
 
             if note.no_sound_in_rbr_note():
                 logging.error(f'No sounds for {note.type} in mapped note {note.rbr_note}')
+                self.cc_copy_original_sounds(note.type, dst_path)
                 log_writer.writerow(note.as_dict())
                 continue
 
             if note.sound_not_found():
                 logging.error(f'No sound found for {note.type} in mapped note {note.rbr_note}')
+                self.cc_copy_original_sounds(note.type, dst_path)
                 log_writer.writerow(note.as_dict())
                 continue
 
