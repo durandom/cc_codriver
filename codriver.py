@@ -121,6 +121,10 @@ class CoDriver:
 
         self.mapped_cc_notes : List[CrewChiefNote] = []
 
+    def set_base_codriver(self, base_codriver, package):
+        self.base_codriver = base_codriver
+        self.base_codriver_package = package
+
     def add_pacenote_plugin(self, type, rbr_pacenote_plugin, map_rbr_ids = {}):
         self.rbr_pacenote_plugins[type] = rbr_pacenote_plugin
         self.map_rbr_ids[type] = map_rbr_ids
@@ -490,7 +494,38 @@ class CoDriver:
                         csv_writer.writerow(['cc_rbr_sound_not_found', cc_note.name, rbr_note.id, file, subtitle])
                     else:
                         csv_writer.writerow(['rbr', cc_note.name, rbr_note.id, file, subtitle])
+        # self.cc_list_csv_unmapped(csv_writer)
+        self.cc_list_csv_unmapped_base_mod(csv_writer)
 
+
+    def cc_list_csv_unmapped_base_mod(self, csv_writer):
+        # now list all the rbr_notes that are not mapped
+        rbr_notes = {}
+        # collect all rbr notes from all plugins
+        rbr_pacenote_plugin = self.base_codriver.rbr_pacenote_plugins[
+            self.base_codriver_package
+        ]
+        for rbr_note in rbr_pacenote_plugin.pacenotes:
+            rbr_notes[rbr_note.id] = rbr_note
+
+        # for each note in rbr_notes we check if it is in the mapped_cc_notes
+        # if it is not, we list it as unmapped
+        rbr_note_ids = [note.id for note in rbr_notes.values()]
+        for rbr_note_id in sorted(rbr_note_ids):
+            # check if the note is in self.mapped_cc_notes
+            rbr_note = rbr_notes[rbr_note_id]
+            found = False
+            for cc_note in self.mapped_cc_notes:
+                mapped_rbr_note_ids = [note.id for note in cc_note.notes]
+                if rbr_note_id in mapped_rbr_note_ids:
+                    logging.debug(f'rbr_note {rbr_note.id} is mapped')
+                    found = True
+                    break
+            if not found:
+                for sound in rbr_note.sounds:
+                    csv_writer.writerow(['rbr_base_note', rbr_note.name, rbr_note.id, sound, rbr_note.translation])
+
+    def cc_list_csv_unmapped(self, csv_writer):
         # now list all the rbr_notes that are not mapped
         rbr_notes = {}
         # collect all rbr notes from all plugins
@@ -514,9 +549,6 @@ class CoDriver:
             if not found:
                 for sound in rbr_note.sounds:
                     csv_writer.writerow(['rbr_note_not_mapped', rbr_note.name, rbr_note.id, sound, rbr_note.translation])
-
-
-
 
 def make_codriver(name, config, config_package = 'all'):
     config_codriver_packages = config['codrivers'][name]['packages']
@@ -583,6 +615,8 @@ if __name__ == '__main__':
     rbr_base_mod = config['rbr_base_mod']
     rbr_base_package = config['rbr_base_package']
     codriver_base = make_codriver(rbr_base_mod, config, rbr_base_package)
+
+    codriver.set_base_codriver(codriver_base, rbr_base_package)
 
     if args.rbr_list_csv:
         codriver.rbr_list_csv()
