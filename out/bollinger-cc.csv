@@ -575,8 +575,18 @@ rbr,detail_double_caution_rushed,303,0.21,additional/double_caution_2.ogg,Gut Au
 rbr,detail_double_caution_rushed,303,0.21,additional/double_caution_3.ogg,Gut Aufpassen
 rbr,detail_double_caution_rushed,303,0.21,double_caution.ogg,Gut Aufpassen
 no_rbr_note,detail_double_rushed,-1,-1,,
-no_rbr_note,detail_double_tightens,4089,0.04,,
-no_rbr_note,detail_double_tightens_rushed,4089,0.04,,
+rbr,detail_double_tightens,-1,-1,additional/tightensbad_2.ogg,Macht Stark Zu
+rbr,detail_double_tightens,-1,-1,additional/tightensbad_3.ogg,Macht Stark Zu
+rbr,detail_double_tightens,-1,-1,tightensbad.ogg,Macht Stark Zu
+rbr,detail_double_tightens,-1,-1,additional/tightensbad_2.ogg,Macht sehr zu
+rbr,detail_double_tightens,-1,-1,additional/tightensbad_3.ogg,Macht sehr zu
+rbr,detail_double_tightens,-1,-1,tightensbad.ogg,Macht sehr zu
+rbr,detail_double_tightens_rushed,-1,-1,additional/tightensbad_2.ogg,Macht Stark Zu
+rbr,detail_double_tightens_rushed,-1,-1,additional/tightensbad_3.ogg,Macht Stark Zu
+rbr,detail_double_tightens_rushed,-1,-1,tightensbad.ogg,Macht Stark Zu
+rbr,detail_double_tightens_rushed,-1,-1,additional/tightensbad_2.ogg,Macht sehr zu
+rbr,detail_double_tightens_rushed,-1,-1,additional/tightensbad_3.ogg,Macht sehr zu
+rbr,detail_double_tightens_rushed,-1,-1,tightensbad.ogg,Macht sehr zu
 rbr,detail_downhill,261,0.01,additional/downhill_2.ogg,Bergab
 rbr,detail_downhill,261,0.01,additional/downhill_3.ogg,Bergab
 rbr,detail_downhill,261,0.01,downhill.ogg,Bergab
@@ -868,7 +878,9 @@ rbr,detail_snow,325,-1,snow.ogg,Schnee
 rbr,detail_snow_rushed,325,-1,additional/snow_2.ogg,Schnee
 rbr,detail_snow_rushed,325,-1,additional/snow_3.ogg,Schnee
 rbr,detail_snow_rushed,325,-1,snow.ogg,Schnee
-no_rbr_note,detail_split,23,0.99,,
+rbr,detail_split,556,-1,additional/split_time_2.ogg,Zeit
+rbr,detail_split,556,-1,additional/split_time_3.ogg,Zeit
+rbr,detail_split,556,-1,split_time.ogg,Zeit
 no_rbr_note,detail_stay_out,2020,0.01,,
 no_rbr_note,detail_stay_out_rushed,2020,0.01,,
 rbr,detail_tarmac,321,-1,additional/tarmac_2.ogg,Asphalt
@@ -1128,7 +1140,6 @@ rbr_base_note,line,432,0.0,line.ogg,Line
 rbr_base_note,onto_cobbles,543,-1,onto_cobbles.ogg,Onto Cobbles
 rbr_base_note,onto_grit,544,-1,onto_grit.ogg,Onto Grit
 rbr_base_note,to_sight_distance,555,-1,to_sight_distance.ogg,To Sight Distance
-rbr_base_note,split_time,556,-1,split_time.ogg,Split Time
 rbr_base_note,entry,557,-1,entry.ogg,Entry
 rbr_base_note,dontcutearly,2016,0.0,ala_alussa.ogg,Don't Cut Early
 rbr_base_note,dontcutlate,2017,0.05,ala_lopussa.ogg,Don't Cut Late

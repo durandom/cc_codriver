@@ -333,6 +333,10 @@ class CoDriver:
                 else:
                     package = to_id[0]
                     id = to_id[1]
+
+                if isinstance(id, str):
+                    name = id
+                    id = -1
                 break
 
         # check if id is a number
@@ -556,24 +560,6 @@ class CoDriver:
                 continue
 
             self.cc_copy_note(note, dst_path)
-
-            # cc_note = note.get_cc_note()
-            # rbr_note = note.get_rbr_note()
-            # prefix = None
-            # if cc_note.prefix:
-            #     prefix = cc_note.prefix.notes[0]
-            # sound = note.file
-            # wave_file = rbr_note.sound_as_wav(sound, prefix=prefix)
-            # wave_file = os.path.join(rbr_note.sounds_dir, wave_file)
-            # shutil.copy(wave_file, dst_path)
-
-            # # create subtitles.csv
-            # with open(os.path.join(dst_path, 'subtitles.csv'), mode='a+', encoding='utf-8') as file:
-            #     csv_writer = csv.writer(file)
-            #     subtitle = rbr_note.translation
-            #     sound_file_basename = note.file
-            #     csv_writer.writerow([sound_file_basename, subtitle])
-
             log_writer.writerow(note.as_dict())
 
         log_csv_file.close()
