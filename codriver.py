@@ -495,7 +495,7 @@ class CoDriver:
         if cc_note.prefix:
             prefix = cc_note.prefix.notes[0]
         sound = note.file
-        wave_file = rbr_note.sound_as_wav(sound, prefix=prefix)
+        wave_file = rbr_note.sound_as_wav(sound, prefix=prefix, rushed=cc_note.rushed)
         wave_file = os.path.join(rbr_note.sounds_dir, wave_file)
         shutil.copy(wave_file, dst_path)
 

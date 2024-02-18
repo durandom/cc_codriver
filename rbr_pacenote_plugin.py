@@ -20,7 +20,7 @@ class RbrPacenote:
         self.translation = ''
         self.sounds_dir = ''
 
-    def sound_as_wav(self, sound, prefix: Optional['RbrPacenote'] = None):
+    def sound_as_wav(self, sound, prefix: Optional['RbrPacenote'] = None, rushed: bool = False):
         ogg = os.path.join(self.sounds_dir, sound)
         if not os.path.exists(ogg):
             raise FileNotFoundError(f'Not found: {ogg}')
@@ -48,7 +48,18 @@ class RbrPacenote:
                 rv = os.system(f'sox "{prefix_wave_fullname}" "{wave_fullname}" "{cmp_fullname}"')
                 if rv != 0:
                     raise Exception(f'Error merging {prefix_wave_filename} and {wave_filename} to {cmp_filename}')
-            return cmp_filename
+            wave_filename = cmp_filename
+            wave_fullname = cmp_fullname
+
+        if rushed:
+            factor = random.uniform(1.1, 1.5)
+            rushed_filename = f'rushed_{wave_filename}'.replace("/", "-")
+            rushed_fullname = os.path.join(self.sounds_dir, rushed_filename)
+            if not os.path.exists(rushed_fullname):
+                rv = os.system(f'sox "{wave_fullname}" "{rushed_fullname}" tempo {factor}')
+                if rv != 0:
+                    raise Exception(f'Error rushing {wave_filename} to {rushed_filename}')
+            wave_filename = rushed_filename
 
         return wave_filename
 
