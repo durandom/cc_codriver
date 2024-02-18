@@ -13,15 +13,25 @@ from roadbook import Roadbooks
 
 
 class MappedNote:
-    def __init__(self):
-        self.src = ''
-        self.type = ''
-        self.rbr_id = -1
-        self.popularity = -1
-        self.file = ''
-        self.subtitle = ''
-        self.cc_note : Optional[CrewChiefNote] = None
-        self.rbr_note : Optional[RbrPacenote] = None
+    def __init__(self, note = None):
+        if note:
+            self.src = note.src
+            self.type = note.type
+            self.rbr_id = note.rbr_id
+            self.popularity = note.popularity
+            self.file = note.file
+            self.subtitle = note.subtitle
+            self.cc_note = note.cc_note
+            self.rbr_note = note.rbr_note
+        else:
+            self.src = ''
+            self.type = ''
+            self.rbr_id = -1
+            self.popularity = -1
+            self.file = ''
+            self.subtitle = ''
+            self.cc_note : Optional[CrewChiefNote] = None
+            self.rbr_note : Optional[RbrPacenote] = None
 
     def get_rbr_note(self) -> RbrPacenote:
         if not self.rbr_note:
@@ -476,6 +486,9 @@ class CoDriver:
             shutil.copy(file, dst_path)
 
     def cc_copy_note(self, note : MappedNote, dst_path):
+        if not os.path.exists(dst_path):
+            os.makedirs(dst_path)
+
         cc_note = note.get_cc_note()
         rbr_note = note.get_rbr_note()
         prefix = None
@@ -561,6 +574,36 @@ class CoDriver:
 
             self.cc_copy_note(note, dst_path)
             log_writer.writerow(note.as_dict())
+
+        for note in self.unmapped_base_mod_notes():
+            # find the note in our rbr_pacenote_plugins
+            for rbr_note in self.rbr_pacenote_plugins['numeric'].pacenotes:
+                if rbr_note.name == note.type:
+                    if rbr_note.id in self.cc_pacenotes_types:
+                        type = self.cc_pacenotes_types[rbr_note.id]
+                        if type.name.startswith('detail_'):
+                            logging.debug(f'Found {rbr_note.name} in rbr_pacenote_plugins')
+                            dst_path = os.path.join(directory, type.name)
+
+                            copied_from_package = False
+                            for sound in sorted(rbr_note.sounds):
+                                if sound in rbr_note.sounds_not_found:
+                                    log_writer.writerow(note.as_dict())
+                                    continue
+                                copied_from_package = True
+                                mapped_note = MappedNote(note)
+                                mapped_note.cc_note = CrewChiefNote(type.name)
+                                mapped_note.rbr_note = rbr_note
+                                mapped_note.file = sound
+                                mapped_note.subtitle = rbr_note.translation
+                                if mapped_note.file in rbr_note.sounds_mapped:
+                                    mapped_note.file = rbr_note.sounds_mapped[note.file]
+                                log_writer.writerow(note.as_dict())
+                                self.cc_copy_note(mapped_note, dst_path)
+
+                            if not copied_from_package:
+                                note.set_sound_not_found()
+                                log_writer.writerow(note.as_dict())
 
         log_csv_file.close()
 
@@ -677,6 +720,7 @@ class CoDriver:
                     yield_note.popularity = popularity
                     yield_note.file = sound
                     yield_note.subtitle = rbr_note.translation
+                    yield_note.rbr_note = rbr_note
                     yield yield_note
 
     def cc_list_csv(self):
