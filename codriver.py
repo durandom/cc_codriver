@@ -23,6 +23,24 @@ class MappedNote:
         self.cc_note : Optional[CrewChiefNote] = None
         self.rbr_note : Optional[RbrPacenote] = None
 
+    def set_sound_not_found(self):
+        self.src = 'sound_not_found'
+
+    def sound_not_found(self):
+        return self.src == 'sound_not_found'
+
+    def set_no_rbr_note(self):
+        self.src = 'no_rbr_note'
+
+    def no_rbr_note(self):
+        return self.src == 'no_rbr_note'
+
+    def set_no_sound_in_rbr_note(self):
+        self.src = 'no_sound_in_rbr_note'
+
+    def no_sound_in_rbr_note(self):
+        return self.src == 'no_sound_in_rbr_note'
+
     def as_dict(self):
         return {
             'src': self.src,
@@ -567,10 +585,10 @@ class CoDriver:
 
             # create subtitles.csv
             with open(os.path.join(dst_path, 'subtitles.csv'), mode='a+', encoding='utf-8') as file:
-                log_writer = csv.writer(file)
+                csv_writer = csv.writer(file)
                 subtitle = rbr_note.translation
                 sound_file_basename = note.file
-                log_writer.writerow([sound_file_basename, subtitle])
+                csv_writer.writerow([sound_file_basename, subtitle])
 
             log_writer.writerow(note.as_dict())
 
@@ -617,7 +635,7 @@ class CoDriver:
             yield_note.cc_note = mapped_cc_note
 
             if not mapped_cc_note:
-                yield_note.src = 'cc_no_rbr_note'
+                yield_note.set_no_rbr_note()
                 yield_note.type = cc_note.name
                 yield yield_note
                 continue
@@ -626,7 +644,7 @@ class CoDriver:
 
             if mapped_cc_note and len(mapped_cc_note.notes) == 0:
                 logging.error(f'No sounds for {cc_note.name} in mapped note {mapped_cc_note}')
-                yield_note.src = 'cc_no_sound_in_rbr_note'
+                yield_note.set_no_rbr_note()
                 yield_note.rbr_id = mapped_cc_note.type.id
                 popularity = self.get_popularity(mapped_cc_note.type.id)
                 yield_note.popularity = popularity
@@ -640,6 +658,7 @@ class CoDriver:
             rbr_notes = mapped_cc_note.notes
             rbr_notes = sorted(rbr_notes, key=lambda x: (x.id, x.name, x.category, x.translation))
             for rbr_note in rbr_notes:
+                yield_note.rbr_note = rbr_note
                 for sound in sorted(rbr_note.sounds):
                     file = sound
                     subtitle = rbr_note.translation
@@ -650,7 +669,7 @@ class CoDriver:
                     yield_note.file = file
                     yield_note.subtitle = subtitle
                     if file in rbr_note.sounds_not_found:
-                        yield_note.src = 'cc_rbr_sound_not_found'
+                        yield_note.set_sound_not_found()
                     else:
                         yield_note.src = 'rbr'
                     yield yield_note
