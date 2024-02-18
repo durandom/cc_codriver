@@ -20,8 +20,8 @@ class MappedNote:
         self.popularity = -1
         self.file = ''
         self.subtitle = ''
-        self.cc_note = None
-        self.rbr_note = None
+        self.cc_note : Optional[CrewChiefNote] = None
+        self.rbr_note : Optional[RbrPacenote] = None
 
     def as_dict(self):
         return {
@@ -536,7 +536,8 @@ class CoDriver:
         # create csvwriter for logging the mapping
         log_csv_file_name = os.path.join(directory, 'rbr_to_cc_mapping.csv')
         log_csv_file = open(log_csv_file_name, mode='w', encoding='utf-8')
-        log_writer = csv.DictWriter(log_csv_file, self.yield_note.keys())
+        log_writer = csv.DictWriter(log_csv_file, MappedNote().as_dict().keys())
+        log_writer.writeheader()
 
         if fallback_to_base:
             self.base_codriver.map_notes_from_cc()
@@ -551,6 +552,7 @@ class CoDriver:
             if not note.rbr_note:
                 logging.error(f'No mapping for {note.type} - using original sound')
                 self.cc_copy_original_sounds(note.type, dst_path)
+                log_writer.writerow(note.as_dict())
                 continue
 
             cc_note = note.cc_note
@@ -569,6 +571,8 @@ class CoDriver:
                 subtitle = rbr_note.translation
                 sound_file_basename = note.file
                 log_writer.writerow([sound_file_basename, subtitle])
+
+            log_writer.writerow(note.as_dict())
 
         log_csv_file.close()
 
@@ -590,13 +594,15 @@ class CoDriver:
                         error = 'file missing'
                     csv_writer.writerow([name, note.id, note.name, note.type, note.category, note.package, note.ini, note.sound_count, note.translation, sound, error])
 
-    def get_popularity(self, note : Union[RbrPacenote, CrewChiefNote]):
+    def get_popularity(self, note : Union[RbrPacenote, CrewChiefNote, int]):
         popularity = 0
         rbr_id = -1
         if isinstance(note, CrewChiefNote):
             rbr_id = note.type.id
-        else:
+        elif isinstance(note, RbrPacenote):
             rbr_id = note.id
+        else:
+            rbr_id = int(note)
 
         popularity = self.pacenote_stats['popularity'].get(rbr_id, -1)
         return popularity
@@ -608,22 +614,27 @@ class CoDriver:
 
             # find the mapped note
             mapped_cc_note = next((x for x in self.mapped_cc_notes if x.name == cc_note.name), None)
-
-            if mapped_cc_note and len(mapped_cc_note.notes) == 0:
-                logging.error(f'No sounds for {cc_note.name} in mapped note {mapped_cc_note}')
-                popularity = self.get_popularity(cc_note)
-                yield_note.src = 'cc_no_sound_in_rbr_note'
-                yield_note.type = cc_note.name
-                yield_note.rbr_id = cc_note.type.id
-                yield_note.popularity = popularity
-                yield yield_note
-                continue
+            yield_note.cc_note = mapped_cc_note
 
             if not mapped_cc_note:
                 yield_note.src = 'cc_no_rbr_note'
                 yield_note.type = cc_note.name
                 yield yield_note
                 continue
+
+            yield_note.type = mapped_cc_note.name
+
+            if mapped_cc_note and len(mapped_cc_note.notes) == 0:
+                logging.error(f'No sounds for {cc_note.name} in mapped note {mapped_cc_note}')
+                yield_note.src = 'cc_no_sound_in_rbr_note'
+                yield_note.rbr_id = mapped_cc_note.type.id
+                popularity = self.get_popularity(mapped_cc_note.type.id)
+                yield_note.popularity = popularity
+                yield yield_note
+                continue
+
+            if mapped_cc_note.type:
+                yield_note.rbr_id = mapped_cc_note.type.id
 
             # process the mapped note
             rbr_notes = mapped_cc_note.notes
