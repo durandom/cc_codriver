@@ -626,7 +626,7 @@ rbr,detail_full_cut,212,0.0,fullcut.ogg,Cut Voll
 rbr,detail_full_cut_rushed,212,0.0,additional/fullcut_2.ogg,Cut Voll
 rbr,detail_full_cut_rushed,212,0.0,additional/fullcut_3.ogg,Cut Voll
 rbr,detail_full_cut_rushed,212,0.0,fullcut.ogg,Cut Voll
-no_rbr_note,detail_go,-1,-1,,
+rbr,detail_go,-1,-1,../../../../Audio/Game/Go.wav,
 rbr,detail_go_straight,28,0.23,additional/gostraight_2.ogg,Geradeaus
 rbr,detail_go_straight,28,0.23,additional/gostraight_3.ogg,Geradeaus
 rbr,detail_go_straight,28,0.23,gostraight.ogg,Geradeaus

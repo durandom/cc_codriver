@@ -60,6 +60,7 @@
                 "number_1": ["numeric", "../../../../Audio/Speech/NumGer/start1.ogg"],
                 "number_2": ["numeric", "../../../../Audio/Speech/NumGer/start2.ogg"],
                 "number_3": ["numeric", "../../../../Audio/Speech/NumGer/start3.ogg"],
+                "detail_go": ["numeric", "../../../../Audio/Game/Go.wav"],
                 "detail_dont_cut_early": ["numeric", ["dontcut.ogg", "early.ogg"]],
                 "detail_dont_cut_late": ["numeric", ["dontcut.ogg", "late.ogg"]],
                 "detail_dont_cut_early_rushed": ["numeric", ["dontcut.ogg", "early.ogg"]],
