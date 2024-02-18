@@ -567,9 +567,19 @@ class CoDriver:
             else:
                 logging.debug(f'Directory {dst_path} already exists')
 
-            if not note.rbr_note:
+            if note.no_rbr_note():
                 logging.error(f'No mapping for {note.type} - using original sound')
                 self.cc_copy_original_sounds(note.type, dst_path)
+                log_writer.writerow(note.as_dict())
+                continue
+
+            if note.no_sound_in_rbr_note():
+                logging.error(f'No sounds for {note.type} in mapped note {note.rbr_note}')
+                log_writer.writerow(note.as_dict())
+                continue
+
+            if note.sound_not_found():
+                logging.error(f'No sound found for {note.type} in mapped note {note.rbr_note}')
                 log_writer.writerow(note.as_dict())
                 continue
 
