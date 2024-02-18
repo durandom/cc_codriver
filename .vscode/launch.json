@@ -21,12 +21,12 @@
             "args": ["--map-to-cc-csv", "--codriver", "bollinger"]
         },
         {
-            "name": "map-to-cc out/codriver Bollinger",
+            "name": "create-codriver out/codriver Bollinger",
             "type": "debugpy",
             "request": "launch",
             "program": "codriver.py",
             "console": "integratedTerminal",
-            "args": ["--map-to-cc", "build/codriver_David Bollinger"]
+            "args": ["--create-codriver", "build/codriver_David Bollinger"]
         },
         {
             "name": "rbr-list-csv",

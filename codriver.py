@@ -645,7 +645,7 @@ if __name__ == '__main__':
     parser.add_argument('--rbr-package', default='all', help='Only list pacenotes for a specific package, defaults to all')
     parser.add_argument('--roadbook-csv', action='store_true', help='Analyzes a Roabook file and creates a CSV file')
     parser.add_argument('--roadbook-name', default='/.*/', help='Which Roabook file to analyze, defaults to all')
-    parser.add_argument('--map-to-cc', help='Map RBR pacenotes to CC pacenotes and create folder structure')
+    parser.add_argument('--create-codriver', help='Map RBR pacenotes to CC pacenotes and create folder structure')
     parser.add_argument('--map-to-cc-csv', action='store_true', help='Map RBR pacenotes to CC pacenotes and write to CSV')
 
     args = parser.parse_args()
@@ -683,6 +683,6 @@ if __name__ == '__main__':
         codriver.map_notes_from_cc()
         codriver.cc_list_csv()
 
-    if args.map_to_cc:
+    if args.create_codriver:
         codriver.map_notes_from_cc()
         codriver.create_codriver(args.map_to_cc)
