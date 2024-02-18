@@ -26,7 +26,8 @@
             "request": "launch",
             "program": "codriver.py",
             "console": "integratedTerminal",
-            "args": ["--create-codriver", "build/codriver_David Bollinger"]
+            "args": ["--create-codriver", "build/codriver_David Bollinger",
+                     "--codriver-fallback-to-base"]
         },
         {
             "name": "rbr-list-csv",

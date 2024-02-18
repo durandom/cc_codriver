@@ -1,6 +1,6 @@
 src,type,rbr_id,popularity,file,subtitle
-cc_no_rbr_note,acknowledge_end_recce,,,
-cc_no_rbr_note,acknowledge_start_recce,,,
+cc_no_rbr_note,acknowledge_end_recce,-1,-1,,
+cc_no_rbr_note,acknowledge_start_recce,-1,-1,,
 rbr,cmp_into_corner_1_left,102,0.02,additional/one_left_2.ogg,1 Links
 rbr,cmp_into_corner_1_left,102,0.02,additional/one_left_3.ogg,1 Links
 rbr,cmp_into_corner_1_left,102,0.02,one_left.ogg,1 Links
@@ -475,7 +475,7 @@ rbr,corner_square_right_reversed_rushed,10,0.73,right_two_de.ogg,2 Rechts
 rbr,corner_square_right_rushed,10,0.73,additional/square_right_2.ogg,90 Rechts
 rbr,corner_square_right_rushed,10,0.73,additional/square_right_3.ogg,90 Rechts
 rbr,corner_square_right_rushed,10,0.73,square_right.ogg,90 Rechts
-cc_no_rbr_note,correction,,,
+cc_no_rbr_note,correction,-1,-1,,
 rbr,detail_and,-1,-1,additional/and_2.ogg,Und
 rbr,detail_and,-1,-1,additional/and_3.ogg,Und
 rbr,detail_and,-1,-1,and.ogg,Und
@@ -567,14 +567,14 @@ rbr,detail_dont_cut_late_rushed,-1,-1,late.ogg,
 rbr,detail_dont_cut_rushed,32,0.56,additional/caution_2.ogg,Achtung
 rbr,detail_dont_cut_rushed,32,0.56,additional/caution_3.ogg,Achtung
 rbr,detail_dont_cut_rushed,32,0.56,caution.ogg,Achtung
-cc_no_rbr_note,detail_double,,,
+cc_no_rbr_note,detail_double,-1,-1,,
 rbr,detail_double_caution,303,0.21,additional/double_caution_2.ogg,Gut Aufpassen
 rbr,detail_double_caution,303,0.21,additional/double_caution_3.ogg,Gut Aufpassen
 rbr,detail_double_caution,303,0.21,double_caution.ogg,Gut Aufpassen
 rbr,detail_double_caution_rushed,303,0.21,additional/double_caution_2.ogg,Gut Aufpassen
 rbr,detail_double_caution_rushed,303,0.21,additional/double_caution_3.ogg,Gut Aufpassen
 rbr,detail_double_caution_rushed,303,0.21,double_caution.ogg,Gut Aufpassen
-cc_no_rbr_note,detail_double_rushed,,,
+cc_no_rbr_note,detail_double_rushed,-1,-1,,
 cc_no_sound_in_rbr_note,detail_double_tightens,4089,0.04,,
 cc_no_sound_in_rbr_note,detail_double_tightens_rushed,4089,0.04,,
 rbr,detail_downhill,261,0.01,additional/downhill_2.ogg,Bergab
@@ -616,7 +616,7 @@ rbr,detail_full_cut,212,0.0,fullcut.ogg,Cut Voll
 rbr,detail_full_cut_rushed,212,0.0,additional/fullcut_2.ogg,Cut Voll
 rbr,detail_full_cut_rushed,212,0.0,additional/fullcut_3.ogg,Cut Voll
 rbr,detail_full_cut_rushed,212,0.0,fullcut.ogg,Cut Voll
-cc_no_rbr_note,detail_go,,,
+cc_no_rbr_note,detail_go,-1,-1,,
 rbr,detail_go_straight,28,0.23,additional/gostraight_2.ogg,Geradeaus
 rbr,detail_go_straight,28,0.23,additional/gostraight_3.ogg,Geradeaus
 rbr,detail_go_straight,28,0.23,gostraight.ogg,Geradeaus
@@ -629,8 +629,8 @@ rbr,detail_gravel,320,-1,gravel.ogg,Schotter
 rbr,detail_gravel_rushed,320,-1,additional/gravel_2.ogg,Schotter
 rbr,detail_gravel_rushed,320,-1,additional/gravel_3.ogg,Schotter
 rbr,detail_gravel_rushed,320,-1,gravel.ogg,Schotter
-cc_no_rbr_note,detail_half_long,,,
-cc_no_rbr_note,detail_half_long_rushed,,,
+cc_no_rbr_note,detail_half_long,-1,-1,,
+cc_no_rbr_note,detail_half_long_rushed,-1,-1,,
 rbr,detail_hard,240,0.03,additional/hard_2.ogg,Stark
 rbr,detail_hard,240,0.03,additional/hard_3.ogg,Stark
 rbr,detail_hard,240,0.03,hard.ogg,Stark
@@ -649,8 +649,8 @@ rbr,detail_hole,344,-1,hole.ogg,Loch
 rbr,detail_hole_rushed,344,-1,additional/hole_2.ogg,Loch
 rbr,detail_hole_rushed,344,-1,additional/hole_3.ogg,Loch
 rbr,detail_hole_rushed,344,-1,hole.ogg,Loch
-cc_no_rbr_note,detail_immediate,,,
-cc_no_rbr_note,detail_immediate_rushed,,,
+cc_no_rbr_note,detail_immediate,-1,-1,,
+cc_no_rbr_note,detail_immediate_rushed,-1,-1,,
 rbr,detail_inside,411,0.01,additional/inside_2.ogg,Innen
 rbr,detail_inside,411,0.01,additional/inside_3.ogg,Innen
 rbr,detail_inside,411,0.01,inside.ogg,Innen
@@ -791,18 +791,18 @@ rbr,detail_opens_rushed,298,0.22,additional/opens_3.ogg,Macht Auf
 rbr,detail_opens_rushed,298,0.22,opens.ogg,Macht Auf
 rbr,detail_opens_tightens,2018,0.17,openstightens.ogg,Macht Auf und Zu
 rbr,detail_opens_tightens_rushed,2018,0.17,openstightens.ogg,Macht Auf und Zu
-rbr,detail_outside,412,-1,additional/outside_2.ogg,Außen
-rbr,detail_outside,412,-1,additional/outside_3.ogg,Außen
-rbr,detail_outside,412,-1,outside.ogg,Außen
 rbr,detail_outside,412,-1,additional/outside_2.ogg,Aussen
 rbr,detail_outside,412,-1,additional/outside_3.ogg,Aussen
 rbr,detail_outside,412,-1,outside.ogg,Aussen
-rbr,detail_outside_rushed,412,-1,additional/outside_2.ogg,Außen
-rbr,detail_outside_rushed,412,-1,additional/outside_3.ogg,Außen
-rbr,detail_outside_rushed,412,-1,outside.ogg,Außen
+rbr,detail_outside,412,-1,additional/outside_2.ogg,Außen
+rbr,detail_outside,412,-1,additional/outside_3.ogg,Außen
+rbr,detail_outside,412,-1,outside.ogg,Außen
 rbr,detail_outside_rushed,412,-1,additional/outside_2.ogg,Aussen
 rbr,detail_outside_rushed,412,-1,additional/outside_3.ogg,Aussen
 rbr,detail_outside_rushed,412,-1,outside.ogg,Aussen
+rbr,detail_outside_rushed,412,-1,additional/outside_2.ogg,Außen
+rbr,detail_outside_rushed,412,-1,additional/outside_3.ogg,Außen
+rbr,detail_outside_rushed,412,-1,outside.ogg,Außen
 rbr,detail_over_bridge,200,0.0,over_bridge.ogg,Über Brücke
 rbr,detail_over_bridge_rushed,200,0.0,over_bridge.ogg,Über Brücke
 rbr,detail_over_crest,16,0.82,additional/overcrest_2.ogg,Über Kuppe
@@ -856,8 +856,8 @@ rbr,detail_short,264,0.36,short.ogg,Kurz
 rbr,detail_short_rushed,264,0.36,additional/short_2.ogg,Kurz
 rbr,detail_short_rushed,264,0.36,additional/short_3.ogg,Kurz
 rbr,detail_short_rushed,264,0.36,short.ogg,Kurz
-cc_no_rbr_note,detail_slippery,,,
-cc_no_rbr_note,detail_slippery_rushed,,,
+cc_no_rbr_note,detail_slippery,-1,-1,,
+cc_no_rbr_note,detail_slippery_rushed,-1,-1,,
 rbr,detail_slippy,277,0.0,slippy.ogg,Rutschig/Schmiert
 rbr,detail_slippy_rushed,277,0.0,slippy.ogg,Rutschig/Schmiert
 rbr,detail_small_crest,2109,0.01,smallcrest.ogg,Kuppe Klein
@@ -957,7 +957,7 @@ rbr,detail_widens,15,0.09,wideout.ogg,Breiter
 rbr,detail_wideout,15,0.09,additional/wideout_2.ogg,Breiter
 rbr,detail_wideout,15,0.09,additional/wideout_3.ogg,Breiter
 rbr,detail_wideout,15,0.09,wideout.ogg,Breiter
-cc_no_rbr_note,microphone_check,,,
+cc_no_rbr_note,microphone_check,-1,-1,,
 rbr,number_1,-1,-1,../../../../Audio/Speech/NumGer/start1.ogg,
 rbr,number_100,-1,-1,100.ogg,100
 rbr,number_100,-1,-1,additional/100_2.ogg,100
@@ -1054,8 +1054,8 @@ rbr,number_80_rushed,-1,-1,additional/80_3.ogg,80
 rbr,number_900,-1,-1,900.ogg,900
 rbr,number_900,-1,-1,additional/900_2.ogg,900
 rbr,number_900,-1,-1,additional/900_3.ogg,900
-cc_no_rbr_note,penalty_false_start,,,
-cc_no_rbr_note,we_are_lost,,,
+cc_no_rbr_note,penalty_false_start,-1,-1,,
+cc_no_rbr_note,we_are_lost,-1,-1,,
 rbr_base_note,left,120,-1,left.ogg,Left
 rbr_base_note,right,121,-1,right.ogg,Right
 rbr_base_note,right_into,122,-1,right_into.ogg,Right Into
