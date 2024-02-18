@@ -23,6 +23,16 @@ class MappedNote:
         self.cc_note : Optional[CrewChiefNote] = None
         self.rbr_note : Optional[RbrPacenote] = None
 
+    def get_rbr_note(self) -> RbrPacenote:
+        if not self.rbr_note:
+            raise ValueError('No rbr_note set')
+        return self.rbr_note
+
+    def get_cc_note(self) -> 'CrewChiefNote':
+        if not self.cc_note:
+            raise ValueError('No cc_note set')
+        return self.cc_note
+
     def set_sound_not_found(self):
         self.src = 'sound_not_found'
 
@@ -461,6 +471,24 @@ class CoDriver:
             file = os.path.join(src, file)
             shutil.copy(file, dst_path)
 
+    def cc_copy_note(self, note : MappedNote, dst_path):
+        cc_note = note.get_cc_note()
+        rbr_note = note.get_rbr_note()
+        prefix = None
+        if cc_note.prefix:
+            prefix = cc_note.prefix.notes[0]
+        sound = note.file
+        wave_file = rbr_note.sound_as_wav(sound, prefix=prefix)
+        wave_file = os.path.join(rbr_note.sounds_dir, wave_file)
+        shutil.copy(wave_file, dst_path)
+
+        # create subtitles.csv
+        with open(os.path.join(dst_path, 'subtitles.csv'), mode='a+', encoding='utf-8') as file:
+            csv_writer = csv.writer(file)
+            subtitle = rbr_note.translation
+            sound_file_basename = note.file
+            csv_writer.writerow([sound_file_basename, subtitle])
+
     def create_codriver(self, directory, fallback_to_base = False):
         # create the directory
         if not os.path.exists(directory):
@@ -488,6 +516,27 @@ class CoDriver:
             else:
                 logging.debug(f'Directory {dst_path} already exists')
 
+            if fallback_to_base and (
+                note.sound_not_found() or
+                note.no_rbr_note() or
+                note.no_sound_in_rbr_note()
+            ):
+                copied_from_base = False
+                for base_note in self.base_codriver.mapped_notes():
+                    if base_note.type == note.type:
+                        if not(
+                            base_note.no_rbr_note() or
+                            base_note.no_sound_in_rbr_note() or
+                            base_note.sound_not_found()
+                        ):
+                            copied_from_base = True
+                            logging.debug(f'Using base codriver sound for {note.type}')
+                            base_note.src = 'rbr_base_note'
+                            log_writer.writerow(base_note.as_dict())
+                            self.cc_copy_note(base_note, dst_path)
+                if copied_from_base:
+                    continue
+
             if note.no_rbr_note():
                 logging.error(f'No mapping for {note.type} - using original sound')
                 self.cc_copy_original_sounds(note.type, dst_path)
@@ -506,22 +555,24 @@ class CoDriver:
                 log_writer.writerow(note.as_dict())
                 continue
 
-            cc_note = note.cc_note
-            rbr_note = note.rbr_note
-            prefix = None
-            if cc_note.prefix:
-                prefix = cc_note.prefix.notes[0]
-            sound = note.file
-            wave_file = rbr_note.sound_as_wav(sound, prefix=prefix)
-            wave_file = os.path.join(rbr_note.sounds_dir, wave_file)
-            shutil.copy(wave_file, dst_path)
+            self.cc_copy_note(note, dst_path)
 
-            # create subtitles.csv
-            with open(os.path.join(dst_path, 'subtitles.csv'), mode='a+', encoding='utf-8') as file:
-                csv_writer = csv.writer(file)
-                subtitle = rbr_note.translation
-                sound_file_basename = note.file
-                csv_writer.writerow([sound_file_basename, subtitle])
+            # cc_note = note.get_cc_note()
+            # rbr_note = note.get_rbr_note()
+            # prefix = None
+            # if cc_note.prefix:
+            #     prefix = cc_note.prefix.notes[0]
+            # sound = note.file
+            # wave_file = rbr_note.sound_as_wav(sound, prefix=prefix)
+            # wave_file = os.path.join(rbr_note.sounds_dir, wave_file)
+            # shutil.copy(wave_file, dst_path)
+
+            # # create subtitles.csv
+            # with open(os.path.join(dst_path, 'subtitles.csv'), mode='a+', encoding='utf-8') as file:
+            #     csv_writer = csv.writer(file)
+            #     subtitle = rbr_note.translation
+            #     sound_file_basename = note.file
+            #     csv_writer.writerow([sound_file_basename, subtitle])
 
             log_writer.writerow(note.as_dict())
 

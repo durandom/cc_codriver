@@ -8,7 +8,7 @@ roadbooks:
 	@echo "Done"
 
 cc_bollinger:
-	./codriver.py --codriver bollinger --create-codriver "build/codriver_David Bollinger"
+	./codriver.py --codriver bollinger --codriver-fallback-to-base --create-codriver "build/codriver_David Bollinger"
 	@echo "Done"
 
 out_janne:
