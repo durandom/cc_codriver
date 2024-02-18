@@ -685,4 +685,4 @@ if __name__ == '__main__':
 
     if args.create_codriver:
         codriver.map_notes_from_cc()
-        codriver.create_codriver(args.map_to_cc)
+        codriver.create_codriver(args.create_codriver)
