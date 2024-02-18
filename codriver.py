@@ -461,85 +461,6 @@ class CoDriver:
             file = os.path.join(src, file)
             shutil.copy(file, dst_path)
 
-
-    def create_codriver_off(self, directory, fallback_to_base = False):
-        # create the directory
-        if not os.path.exists(directory):
-            os.makedirs(directory)
-        else:
-            logging.debug(f'Directory {directory} already exists')
-
-        # copy terminologies.json
-        src = os.path.join(self.cc_sounds_dir, 'terminologies.json')
-        shutil.copy(src, directory)
-
-        # create csvwriter for logging the mapping
-        csv_file_name = os.path.join(directory, 'rbr_to_cc_mapping.csv')
-        csv_file = open(csv_file_name, mode='w', encoding='utf-8')
-        csv_writer = csv.DictWriter(csv_file, self.yield_note.keys())
-
-        if fallback_to_base:
-            self.base_codriver.map_notes_from_cc()
-
-        for cc_note in self.cc_sounds.values():
-            dst_path = os.path.join(directory, cc_note.name)
-            if not os.path.exists(dst_path):
-                os.makedirs(dst_path)
-            else:
-                logging.debug(f'Directory {dst_path} already exists')
-
-            log_entry = map_log.copy()
-
-            # find the mapped note
-            mapped_cc_note = next((x for x in self.mapped_cc_notes if x.name == cc_note.name), None)
-
-            if mapped_cc_note and len(mapped_cc_note.notes) == 0:
-                logging.error(f'No sounds for {cc_note.name} in mapped note {mapped_cc_note}')
-                mapped_cc_note = None
-
-            if not mapped_cc_note and fallback_to_base:
-                logging.error(f'No mapping for {cc_note.name} - using sound from base')
-                mapped_cc_note = next((x for x in self.base_codriver.mapped_cc_notes if x.name == cc_note.name), None)
-                if mapped_cc_note and len(mapped_cc_note.notes) == 0:
-                    logging.error(f'No sounds for {cc_note.name} in mapped note {mapped_cc_note}')
-                    mapped_cc_note = None
-
-            if not mapped_cc_note:
-                logging.error(f'No mapping for {cc_note.name} - using original sound')
-                self.cc_copy_original_sounds(cc_note, dst_path)
-                continue
-
-            copied_sound_count = 0
-            cc_note = mapped_cc_note
-            # create the directory for the note
-            # copy sound files
-            for rbr_note in cc_note.notes:
-                for sound in rbr_note.sounds:
-                    if sound in rbr_note.sounds_not_found:
-                        continue
-                    prefix = None
-                    if cc_note.prefix:
-                        prefix = cc_note.prefix.notes[0]
-                    wave_file = rbr_note.sound_as_wav(sound, prefix=prefix)
-                    wave_file = os.path.join(rbr_note.sounds_dir, wave_file)
-                    shutil.copy(wave_file, dst_path)
-                    copied_sound_count += 1
-
-            if copied_sound_count == 0:
-                self.cc_copy_original_sounds(cc_note, dst_path)
-                continue
-
-            # create subtitles.csv
-            with open(os.path.join(dst_path, 'subtitles.csv'), mode='w', encoding='utf-8') as file:
-                csv_writer = csv.writer(file)
-                for sound in rbr_note.sounds:
-                    wave_file = rbr_note.sound_as_wav(sound)
-                    sound_file_basename = os.path.basename(wave_file)
-                    subtitle = rbr_note.translation
-                    csv_writer.writerow([sound_file_basename, subtitle])
-
-        csv_file.close()
-
     def create_codriver(self, directory, fallback_to_base = False):
         # create the directory
         if not os.path.exists(directory):
@@ -730,31 +651,6 @@ class CoDriver:
 
         for note in self.unmapped_base_mod_notes():
             csv_writer.writerow(note.as_dict())
-
-    # def cc_list_csv_unmapped(self, csv_writer):
-    #     # now list all the rbr_notes that are not mapped
-    #     rbr_notes = {}
-    #     # collect all rbr notes from all plugins
-    #     for name, rbr_pacenote_plugin in self.rbr_pacenote_plugins.items():
-    #         for rbr_note in rbr_pacenote_plugin.pacenotes:
-    #             rbr_notes[rbr_note.id] = rbr_note
-
-    #     # for each note in rbr_notes we check if it is in the mapped_cc_notes
-    #     # if it is not, we list it as unmapped
-    #     rbr_note_ids = [note.id for note in rbr_notes.values()]
-    #     for rbr_note_id in sorted(rbr_note_ids):
-    #         # check if the note is in self.mapped_cc_notes
-    #         rbr_note = rbr_notes[rbr_note_id]
-    #         found = False
-    #         for cc_note in self.mapped_cc_notes:
-    #             mapped_rbr_note_ids = [note.id for note in cc_note.notes]
-    #             if rbr_note_id in mapped_rbr_note_ids:
-    #                 logging.debug(f'rbr_note {rbr_note.id} is mapped')
-    #                 found = True
-    #                 break
-    #         if not found:
-    #             for sound in rbr_note.sounds:
-    #                 csv_writer.writerow(['rbr_note_not_mapped', rbr_note.name, rbr_note.id, sound, rbr_note.translation])
 
 def make_codriver(name, config, config_package = 'all'):
     config_codriver_packages = config['codrivers'][name]['packages']
