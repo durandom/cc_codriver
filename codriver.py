@@ -100,6 +100,7 @@ class CoDriver:
                  map_cc_types = {},
                  map_static = {},
                  additional_cc_types = {},
+                 pacenote_stats = '',
                  skip_notes = {}):
 
         self.cc_pacenotes_types = {}
@@ -114,6 +115,7 @@ class CoDriver:
         self.map_cc_types = map_cc_types
         self.map_static = map_static
         self.additional_cc_types = additional_cc_types
+        self.pacenote_stats = self.init_pacenote_stats(pacenote_stats)
 
         self.init_cc_pacenotes_types(cc_pacenote_types)
         self.init_cc_pacenotes_modifier(cc_pacenote_modifier)
@@ -147,6 +149,40 @@ class CoDriver:
         lookup = self.parse_cc_types_files(file)
         for id, name in lookup.items():
             self.cc_pacenotes_modifiers[id] = PacenoteModifier(name, id)
+
+    def init_pacenote_stats(self, pacenote_stats):
+        stats = {
+            'count': {},
+            'popularity': {},
+            'seen_per_stage': {},
+            'stages': []
+        }
+        if pacenote_stats:
+            # open pacenote_stats as a csv file
+            with open(pacenote_stats, mode='r', encoding='utf-8') as file:
+                csv_reader = csv.DictReader(file)
+                for row in csv_reader:
+                    stats['stages'].append(row)
+                    for key, value in row.items():
+                        if key.isnumeric():
+                            id = int(key)
+                            count = int(value)
+                            if not id in stats['count']:
+                                stats['count'][id] = 0
+                            stats['count'][id] += count
+
+                            if not id in stats['seen_per_stage']:
+                                stats['seen_per_stage'][id] = 0
+                            if count > 0:
+                                stats['seen_per_stage'][id] += 1
+
+            # calculate popularity
+            # 100 means it is in every stage
+            # 0 means it is in no stage
+            count_stages = len(stats['stages'])
+            for id, count in stats['seen_per_stage'].items():
+                stats['popularity'][id] = round(count / count_stages, 2)
+        return stats
 
     def parse_cc_types_files(self, file):
         # // Weird naming is used to simplify sound reading.
@@ -465,9 +501,20 @@ class CoDriver:
                         error = 'file missing'
                     csv_writer.writerow([name, note.id, note.name, note.type, note.category, note.package, note.ini, note.sound_count, note.translation, sound, error])
 
+    def get_popularity(self, note : Union[RbrPacenote, CrewChiefNote]):
+        popularity = 0
+        rbr_id = -1
+        if isinstance(note, CrewChiefNote):
+            rbr_id = note.type.id
+        else:
+            rbr_id = note.id
+
+        popularity = self.pacenote_stats['popularity'].get(rbr_id, -1)
+        return popularity
+
     def cc_list_csv(self):
         csv_writer = csv.writer(sys.stdout)
-        csv_writer.writerow(['src', 'type', 'rbr_id', 'file', 'subtitle'])
+        csv_writer.writerow(['src', 'type', 'rbr_id', 'popularity', 'file', 'subtitle'])
 
         cc_sounds = sorted(self.cc_sounds.values(), key=lambda x: x.name)
 
@@ -478,7 +525,8 @@ class CoDriver:
 
             if mapped_cc_note and len(mapped_cc_note.notes) == 0:
                 logging.error(f'No sounds for {cc_note.name} in mapped note {mapped_cc_note}')
-                csv_writer.writerow(['cc_no_sound_in_rbr_note', cc_note.name, cc_note.type.id, '', ''])
+                popularity = self.get_popularity(cc_note)
+                csv_writer.writerow(['cc_no_sound_in_rbr_note', cc_note.name, cc_note.type.id, popularity, '', ''])
                 continue
 
             if not mapped_cc_note:
@@ -490,10 +538,11 @@ class CoDriver:
                 for sound in rbr_note.sounds:
                     file = sound
                     subtitle = rbr_note.translation
+                    popularity = self.get_popularity(rbr_note)
                     if file in rbr_note.sounds_not_found:
-                        csv_writer.writerow(['cc_rbr_sound_not_found', cc_note.name, rbr_note.id, file, subtitle])
+                        csv_writer.writerow(['cc_rbr_sound_not_found', cc_note.name, rbr_note.id, popularity, file, subtitle])
                     else:
-                        csv_writer.writerow(['rbr', cc_note.name, rbr_note.id, file, subtitle])
+                        csv_writer.writerow(['rbr', cc_note.name, rbr_note.id, popularity, file, subtitle])
         # self.cc_list_csv_unmapped(csv_writer)
         self.cc_list_csv_unmapped_base_mod(csv_writer)
 
@@ -522,8 +571,9 @@ class CoDriver:
                     found = True
                     break
             if not found:
+                popularity = self.get_popularity(rbr_note)
                 for sound in rbr_note.sounds:
-                    csv_writer.writerow(['rbr_base_note', rbr_note.name, rbr_note.id, sound, rbr_note.translation])
+                    csv_writer.writerow(['rbr_base_note', rbr_note.name, rbr_note.id, popularity, sound, rbr_note.translation])
 
     def cc_list_csv_unmapped(self, csv_writer):
         # now list all the rbr_notes that are not mapped
@@ -562,7 +612,8 @@ def make_codriver(name, config, config_package = 'all'):
         map_notes=config.get('map_notes', []),
         map_cc_types=config.get('map_cc_types', {}),
         additional_cc_types=config.get('additional_cc_types', {}),
-        map_static=map_static
+        map_static=map_static,
+        pacenote_stats=config.get('pacenote_stats', {}),
     )
 
     if config_package != 'all':

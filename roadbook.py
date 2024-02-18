@@ -118,6 +118,8 @@ class Roadbooks:
         note_types_list = sorted(list(note_types))
         note_flags_list = sorted(list(note_flags))
         row.extend(note_types_list)
+        # prepend 'flag_' to note_flags
+        note_flags_list = [f'flag_{x}' for x in note_flags_list]
         row.extend(note_flags_list)
 
         csv_writer = csv.writer(sys.stdout)

@@ -3,6 +3,7 @@
     "cc_sounds": "assets/codriver",
     "rbr_base_mod": "janne-v2",
     "rbr_base_package": "numeric",
+    "pacenote_stats": "out/roadbooks-luppis-v2.csv",
     "_skip_notes": {
         "acknowledge_end_recce": -1,
         "acknowledge_start_recce": -1,
