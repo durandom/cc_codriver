@@ -757,7 +757,8 @@ def make_codriver(name, config, config_package = 'all'):
         ini_files = package['ini_files']
         map_rbr_ids = package.get('map_rbr_ids', {})
         # convert the keys to int
-        map_rbr_ids = {int(k): v for k, v in map_rbr_ids.items()}
+        # remove all keys that are note numeric
+        map_rbr_ids = {int(k): v for k, v in map_rbr_ids.items() if k.isnumeric()}
         rbr_pacenote_plugin = RbrPacenotePlugin(pacenote_dir_absolute,
                                                 ini_files=ini_files,
                                                 map_files=map_files,

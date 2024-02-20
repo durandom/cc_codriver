@@ -676,8 +676,8 @@ rbr,detail_into_rushed,-1,-1,into.ogg,In
 rbr,detail_jump,20,0.54,additional/jump_2.ogg,Sprung
 rbr,detail_jump,20,0.54,additional/jump_3.ogg,Sprung
 rbr,detail_jump,20,0.54,jump.ogg,Sprung
-no_rbr_note,detail_jump_bind,2107,0.08,,
-no_rbr_note,detail_jump_bind_rushed,2107,0.08,,
+rbr,detail_jump_bind,-1,-1,triple_caution.ogg,
+rbr,detail_jump_bind_rushed,-1,-1,triple_caution.ogg,
 rbr,detail_jump_flat,2106,-1,jumpfull.ogg,Sprung Voll
 rbr,detail_jump_flat_rushed,2106,-1,jumpfull.ogg,Sprung Voll
 rbr,detail_jump_rushed,20,0.54,additional/jump_2.ogg,Sprung
@@ -714,7 +714,7 @@ rbr,detail_keep_right_rushed,29,0.46,keepright.ogg,Rechts Halten
 rbr,detail_late,235,0.03,additional/late_2.ogg,Spät
 rbr,detail_late,235,0.03,additional/late_3.ogg,Spät
 rbr,detail_late,235,0.03,late.ogg,Spät
-no_rbr_note,detail_late_apex,2023,0.04,,
+rbr,detail_late_apex,2015,0.21,tightenslate.ogg,Macht Spät Zu
 rbr,detail_late_rushed,235,0.03,additional/late_2.ogg,Spät
 rbr,detail_late_rushed,235,0.03,additional/late_3.ogg,Spät
 rbr,detail_late_rushed,235,0.03,late.ogg,Spät
@@ -881,8 +881,8 @@ rbr,detail_snow_rushed,325,-1,snow.ogg,Schnee
 rbr,detail_split,556,-1,additional/split_time_2.ogg,Zeit
 rbr,detail_split,556,-1,additional/split_time_3.ogg,Zeit
 rbr,detail_split,556,-1,split_time.ogg,Zeit
-no_rbr_note,detail_stay_out,2020,0.01,,
-no_rbr_note,detail_stay_out_rushed,2020,0.01,,
+rbr,detail_stay_out,221,-1,keep_out.ogg,Aussen bleiben
+rbr,detail_stay_out_rushed,221,-1,keep_out.ogg,Aussen bleiben
 rbr,detail_tarmac,321,-1,additional/tarmac_2.ogg,Asphalt
 rbr,detail_tarmac,321,-1,additional/tarmac_3.ogg,Asphalt
 rbr,detail_tarmac,321,-1,tarmac.ogg,Asphalt
@@ -920,8 +920,8 @@ rbr,detail_tightens_to_5,2002,0.01,tightens5.ogg,Macht zu 5*
 rbr,detail_tightens_to_5_rushed,2002,0.01,tightens5.ogg,Macht zu 5*
 rbr,detail_tightens_to_6,2001,-1,tightens6.ogg,Macht zu 6*
 rbr,detail_tightens_to_6_rushed,2001,-1,tightens6.ogg,Macht zu 6*
-sound_not_found,detail_tightens_to_acute,2007,0.02,tightenshp.ogg,Macht zu Kehre*
-sound_not_found,detail_tightens_to_acute_rushed,2007,0.02,tightenshp.ogg,Macht zu Kehre*
+rbr,detail_tightens_to_acute,2006,0.11,tightens1.ogg,Macht zu 1*
+rbr,detail_tightens_to_acute_rushed,2006,0.11,tightens1.ogg,Macht zu 1*
 rbr,detail_to_1,2013,0.01,1.ogg,1*
 rbr,detail_to_1,2013,0.01,additional/1_2.ogg,1*
 rbr,detail_to_1,2013,0.01,additional/1_3.ogg,1*
@@ -941,7 +941,7 @@ rbr,detail_to_6,2008,0.0,6.ogg,6*
 rbr,detail_to_6,2008,0.0,additional/6_2.ogg,6*
 rbr,detail_to_6,2008,0.0,additional/6_3.ogg,6*
 sound_not_found,detail_to_acute,2014,0.0,hairpin.ogg,Kehre*
-no_rbr_note,detail_to_dip,2024,0.03,,
+rbr,detail_to_dip,-1,-1,dip.ogg,
 rbr,detail_to_finish,-1,-1,finish.ogg,
 no_rbr_note,detail_tree_inside,40008,-1,,
 no_rbr_note,detail_tree_inside_rushed,40008,-1,,
@@ -1141,6 +1141,7 @@ rbr_base_note,onto_cobbles,543,-1,onto_cobbles.ogg,Onto Cobbles
 rbr_base_note,onto_grit,544,-1,onto_grit.ogg,Onto Grit
 rbr_base_note,to_sight_distance,555,-1,to_sight_distance.ogg,To Sight Distance
 rbr_base_note,entry,557,-1,entry.ogg,Entry
+rbr_base_note,tightenstoacute,2007,0.02,kirraa_tiukaks.ogg,Tightens HP
 rbr_base_note,dontcutearly,2016,0.0,ala_alussa.ogg,Don't Cut Early
 rbr_base_note,dontcutlate,2017,0.05,ala_lopussa.ogg,Don't Cut Late
 rbr_base_note,roiku,2020,0.01,roiku.ogg,Hang

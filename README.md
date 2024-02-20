@@ -10,6 +10,7 @@ Tooling to examine RBR Pacenotes and the RBR Pacenotes plugin and conversion to 
 *  https://gitlab.com/mr_belowski/CrewChiefV4/-/blob/master/complete-radioerize-from-raw.txt
 *  https://nerdynav.com/best-ai-voice-generators/
 *  https://github.com/Smo-RBR/RBR-German-tts-Codriver
+*  https://racemarket.net/blog/rally-pacenotes-what-why-how
 
 
 ## TTS Links
@@ -23,3 +24,7 @@ Tooling to examine RBR Pacenotes and the RBR Pacenotes plugin and conversion to 
 *  https://www.redhat.com/en/blog/a-guide-to-gpu-enhanced-text-to-speech-model-training-with-red-hat-openshift-data-science-and-coqui-tts
 *  https://www.redhat.com/en/blog/voice-cloning-and-tts-with-ims-toucan-and-red-hat-openshift-data-science
 *  [Some AI generated samples in the CC #development channel](https://discord.com/channels/322071247032942592/1088819988917395496/1097596688362917948)
+*  https://github.com/coqui-ai/TTS/discussions/2507
+*  https://edresson.github.io/YourTTS/
+*  https://sep.com/blog/helpful-tools-to-make-your-first-voice-clone-dataset-easy-to-build/
+*  https://www.reddit.com/r/selfhosted/comments/17oabw3/selfhosted_texttospeech_and_voice_cloning_review/

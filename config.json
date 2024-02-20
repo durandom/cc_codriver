@@ -65,7 +65,10 @@
                 "detail_dont_cut_late": ["numeric", ["dontcut.ogg", "late.ogg"]],
                 "detail_dont_cut_early_rushed": ["numeric", ["dontcut.ogg", "early.ogg"]],
                 "detail_dont_cut_late_rushed": ["numeric", ["dontcut.ogg", "late.ogg"]],
-                "detail_to_finish": ["numeric", ["into.ogg", "finish.ogg"]]
+                "detail_to_finish": ["numeric", ["into.ogg", "finish.ogg"]],
+                "detail_jump_bind": ["numeric", ["jump.ogg", "triple_caution.ogg"]],
+                "detail_jump_bind_rushed": ["numeric", ["jump.ogg", "triple_caution.ogg"]],
+                "detail_to_dip": ["numeric", ["into.ogg", "dip.ogg"]]
             },
             "additional_sounds_dir": "additional",
             "packages": [
@@ -94,7 +97,13 @@
                         "1": ["descriptive", 1],
                         "10": ["descriptive", 10],
                         "4089": ["numeric", "tightensbad"],
-                        "23": 556
+                        "23": 556,
+                        "9999999_late_apex": "tightenslate",
+                        "2023": 2015,
+                        "_stay_out": "aussen bleiben",
+                        "2020": 221,
+                        "_details_to_acute": "tightens1",
+                        "2007": 2006
                     }
                 }
             ]
