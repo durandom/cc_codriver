@@ -20,3 +20,7 @@ out_bollinger:
 	./codriver.py --codriver bollinger --map-to-cc-csv > out/bollinger-cc.csv
 	./codriver.py --codriver bollinger --rbr-list-csv > out/bollinger-rbr.csv
 	@echo "Done"
+
+out_german-tts:
+	./codriver.py --codriver german-tts --rbr-list-csv > out/german-tts-rbr.csv
+	@echo "Done"

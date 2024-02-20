@@ -146,7 +146,11 @@ class RbrPacenotePlugin:
         # get the 'SETTINGS' section
         settings = config['SETTINGS']
         # get the sounds and language
-        self.sounds = settings.get('sounds')
+        self.sounds = settings.get('sounds').replace('\\', '/')
+        # check ig sounds is a valid directory
+        if not os.path.exists(self.sounds_dir()):
+            raise FileNotFoundError(f'Not found: {self.sounds_dir()}')
+
         self.language = settings.get('language')
 
         logging.debug(f'language: {self.language}')
