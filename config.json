@@ -98,11 +98,13 @@
                         "10": ["descriptive", 10],
                         "4089": ["numeric", "tightensbad"],
                         "23": 556,
-                        "9999999_late_apex": "tightenslate",
+                        "_late_apex": "tightenslate",
                         "2023": 2015,
                         "_stay_out": "aussen bleiben",
                         "2020": 221,
-                        "_details_to_acute": "tightens1",
+                        "_to_acute": "eins",
+                        "2014": 2013,
+                        "_tightens_to_acute": "tightens1",
                         "2007": 2006
                     }
                 }

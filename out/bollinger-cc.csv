@@ -940,7 +940,9 @@ rbr,detail_to_5,2009,0.01,additional/5_3.ogg,5*
 rbr,detail_to_6,2008,0.0,6.ogg,6*
 rbr,detail_to_6,2008,0.0,additional/6_2.ogg,6*
 rbr,detail_to_6,2008,0.0,additional/6_3.ogg,6*
-sound_not_found,detail_to_acute,2014,0.0,hairpin.ogg,Kehre*
+rbr,detail_to_acute,2013,0.01,1.ogg,1*
+rbr,detail_to_acute,2013,0.01,additional/1_2.ogg,1*
+rbr,detail_to_acute,2013,0.01,additional/1_3.ogg,1*
 rbr,detail_to_dip,-1,-1,dip.ogg,
 rbr,detail_to_finish,-1,-1,finish.ogg,
 no_rbr_note,detail_tree_inside,40008,-1,,
@@ -1142,6 +1144,7 @@ rbr_base_note,onto_grit,544,-1,onto_grit.ogg,Onto Grit
 rbr_base_note,to_sight_distance,555,-1,to_sight_distance.ogg,To Sight Distance
 rbr_base_note,entry,557,-1,entry.ogg,Entry
 rbr_base_note,tightenstoacute,2007,0.02,kirraa_tiukaks.ogg,Tightens HP
+rbr_base_note,toacute,2014,0.0,_tiukaks.ogg,HP
 rbr_base_note,dontcutearly,2016,0.0,ala_alussa.ogg,Don't Cut Early
 rbr_base_note,dontcutlate,2017,0.05,ala_lopussa.ogg,Don't Cut Late
 rbr_base_note,roiku,2020,0.01,roiku.ogg,Hang
