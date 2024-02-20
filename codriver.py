@@ -620,7 +620,7 @@ class CoDriver:
                     error = ''
                     if sound in note.sounds_mapped.values():
                         from_sound = next((k for k, v in note.sounds_mapped.items() if v == sound), None)
-                        error = f'file mapped from {note.sounds_mapped[from_sound]}'
+                        error = f'file mapped from {from_sound}'
                     if sound in note.sounds_not_found:
                         error = 'file missing'
                     csv_writer.writerow([name, note.id, note.name, note.type, note.category, note.package, note.ini, note.sound_count, note.translation, sound, error])

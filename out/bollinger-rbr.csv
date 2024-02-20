@@ -124,22 +124,22 @@ descriptive,2,three_left,PACENOTE,CORNERS,RBR,Numeric.ini,1,K Links,additional/k
 descriptive,2,three_left,PACENOTE,CORNERS,RBR,Numeric.ini,1,K Links,kleft.ogg,
 descriptive,3,four_left,PACENOTE,CORNERS,RBR,Numeric.ini,1,Normal Links,additional/mediumleft_2.ogg,
 descriptive,3,four_left,PACENOTE,CORNERS,RBR,Numeric.ini,1,Normal Links,additional/mediumleft_3.ogg,
-descriptive,3,four_left,PACENOTE,CORNERS,RBR,Numeric.ini,1,Normal Links,mediumleft.ogg,file mapped from mediumleft.ogg
+descriptive,3,four_left,PACENOTE,CORNERS,RBR,Numeric.ini,1,Normal Links,mediumleft.ogg,file mapped from medium_left.ogg
 descriptive,4,five_left,PACENOTE,CORNERS,RBR,Numeric.ini,1,Schnell Links,additional/fastleft_2.ogg,
 descriptive,4,five_left,PACENOTE,CORNERS,RBR,Numeric.ini,1,Schnell Links,additional/fastleft_3.ogg,
-descriptive,4,five_left,PACENOTE,CORNERS,RBR,Numeric.ini,1,Schnell Links,fastleft.ogg,file mapped from fastleft.ogg
+descriptive,4,five_left,PACENOTE,CORNERS,RBR,Numeric.ini,1,Schnell Links,fastleft.ogg,file mapped from fast_left.ogg
 descriptive,5,six_left,PACENOTE,CORNERS,RBR,Numeric.ini,1,Leicht Links,additional/easyleft_2.ogg,
 descriptive,5,six_left,PACENOTE,CORNERS,RBR,Numeric.ini,1,Leicht Links,additional/easyleft_3.ogg,
-descriptive,5,six_left,PACENOTE,CORNERS,RBR,Numeric.ini,1,Leicht Links,easyleft.ogg,file mapped from easyleft.ogg
+descriptive,5,six_left,PACENOTE,CORNERS,RBR,Numeric.ini,1,Leicht Links,easyleft.ogg,file mapped from easy_left.ogg
 descriptive,6,six_right,PACENOTE,CORNERS,RBR,Numeric.ini,1,Leicht Rechts,additional/easyright_2.ogg,
 descriptive,6,six_right,PACENOTE,CORNERS,RBR,Numeric.ini,1,Leicht Rechts,additional/easyright_3.ogg,
-descriptive,6,six_right,PACENOTE,CORNERS,RBR,Numeric.ini,1,Leicht Rechts,easyright.ogg,file mapped from easyright.ogg
+descriptive,6,six_right,PACENOTE,CORNERS,RBR,Numeric.ini,1,Leicht Rechts,easyright.ogg,file mapped from easy_right.ogg
 descriptive,7,five_right,PACENOTE,CORNERS,RBR,Numeric.ini,1,Schnell Rechts,additional/fastright_2.ogg,
 descriptive,7,five_right,PACENOTE,CORNERS,RBR,Numeric.ini,1,Schnell Rechts,additional/fastright_3.ogg,
-descriptive,7,five_right,PACENOTE,CORNERS,RBR,Numeric.ini,1,Schnell Rechts,fastright.ogg,file mapped from fastright.ogg
+descriptive,7,five_right,PACENOTE,CORNERS,RBR,Numeric.ini,1,Schnell Rechts,fastright.ogg,file mapped from fast_right.ogg
 descriptive,8,four_right,PACENOTE,CORNERS,RBR,Numeric.ini,1,Normal Rechts,additional/mediumright_2.ogg,
 descriptive,8,four_right,PACENOTE,CORNERS,RBR,Numeric.ini,1,Normal Rechts,additional/mediumright_3.ogg,
-descriptive,8,four_right,PACENOTE,CORNERS,RBR,Numeric.ini,1,Normal Rechts,mediumright.ogg,file mapped from mediumright.ogg
+descriptive,8,four_right,PACENOTE,CORNERS,RBR,Numeric.ini,1,Normal Rechts,mediumright.ogg,file mapped from medium_right.ogg
 descriptive,9,three_right,PACENOTE,CORNERS,RBR,Numeric.ini,1,K Rechts,additional/kright_2.ogg,
 descriptive,9,three_right,PACENOTE,CORNERS,RBR,Numeric.ini,1,K Rechts,additional/kright_3.ogg,
 descriptive,9,three_right,PACENOTE,CORNERS,RBR,Numeric.ini,1,K Rechts,kright.ogg,
@@ -235,7 +235,7 @@ descriptive,211,deepcut,PACENOTE,LINE,RBR,Extended.ini,1,Cut Tief,deepcut.ogg,
 descriptive,212,fullcut,PACENOTE,LINE,RBR,Extended.ini,1,Cut Voll,additional/fullcut_2.ogg,
 descriptive,212,fullcut,PACENOTE,LINE,RBR,Extended.ini,1,Cut Voll,additional/fullcut_3.ogg,
 descriptive,212,fullcut,PACENOTE,LINE,RBR,Extended.ini,1,Cut Voll,fullcut.ogg,
-descriptive,213,keep_centre,PACENOTE,LINE,RBR,Extended.ini,1,Mittig Bleiben,keep_centre.ogg,file mapped from keep_centre.ogg
+descriptive,213,keep_centre,PACENOTE,LINE,RBR,Extended.ini,1,Mittig Bleiben,keep_centre.ogg,file mapped from keskelta.ogg
 descriptive,214,full,PACENOTE,DRIVING,RBR,Extended.ini,1,Voll,additional/full_2.ogg,
 descriptive,214,full,PACENOTE,DRIVING,RBR,Extended.ini,1,Voll,additional/full_3.ogg,
 descriptive,214,full,PACENOTE,DRIVING,RBR,Extended.ini,1,Voll,full.ogg,
@@ -427,7 +427,7 @@ descriptive,322,concrete,PACENOTE,SURFACE,RBR,Extended.ini,1,Beton,additional/co
 descriptive,322,concrete,PACENOTE,SURFACE,RBR,Extended.ini,1,Beton,concrete.ogg,
 descriptive,323,cobbles,PACENOTE,SURFACE,RBR,Extended.ini,1,Pflaster,additional/cobble_2.ogg,
 descriptive,323,cobbles,PACENOTE,SURFACE,RBR,Extended.ini,1,Pflaster,additional/cobble_3.ogg,
-descriptive,323,cobbles,PACENOTE,SURFACE,RBR,Extended.ini,1,Pflaster,cobble.ogg,file mapped from cobble.ogg
+descriptive,323,cobbles,PACENOTE,SURFACE,RBR,Extended.ini,1,Pflaster,cobble.ogg,file mapped from cobbles.ogg
 descriptive,324,grit,PACENOTE,SURFACE,RBR,Extended.ini,1,Kies,additional/grit_2.ogg,
 descriptive,324,grit,PACENOTE,SURFACE,RBR,Extended.ini,1,Kies,additional/grit_3.ogg,
 descriptive,324,grit,PACENOTE,SURFACE,RBR,Extended.ini,1,Kies,grit.ogg,
@@ -939,7 +939,7 @@ reversed,211,deepcut,PACENOTE,LINE,RBR,Extended.ini,1,Cut Tief,deepcut.ogg,
 reversed,212,fullcut,PACENOTE,LINE,RBR,Extended.ini,1,Cut Voll,additional/fullcut_2.ogg,
 reversed,212,fullcut,PACENOTE,LINE,RBR,Extended.ini,1,Cut Voll,additional/fullcut_3.ogg,
 reversed,212,fullcut,PACENOTE,LINE,RBR,Extended.ini,1,Cut Voll,fullcut.ogg,
-reversed,213,keep_centre,PACENOTE,LINE,RBR,Extended.ini,1,Mittig Bleiben,keep_centre.ogg,file mapped from keep_centre.ogg
+reversed,213,keep_centre,PACENOTE,LINE,RBR,Extended.ini,1,Mittig Bleiben,keep_centre.ogg,file mapped from keskelta.ogg
 reversed,214,full,PACENOTE,DRIVING,RBR,Extended.ini,1,Voll,additional/full_2.ogg,
 reversed,214,full,PACENOTE,DRIVING,RBR,Extended.ini,1,Voll,additional/full_3.ogg,
 reversed,214,full,PACENOTE,DRIVING,RBR,Extended.ini,1,Voll,full.ogg,
@@ -1131,7 +1131,7 @@ reversed,322,concrete,PACENOTE,SURFACE,RBR,Extended.ini,1,Beton,additional/concr
 reversed,322,concrete,PACENOTE,SURFACE,RBR,Extended.ini,1,Beton,concrete.ogg,
 reversed,323,cobbles,PACENOTE,SURFACE,RBR,Extended.ini,1,Pflaster,additional/cobble_2.ogg,
 reversed,323,cobbles,PACENOTE,SURFACE,RBR,Extended.ini,1,Pflaster,additional/cobble_3.ogg,
-reversed,323,cobbles,PACENOTE,SURFACE,RBR,Extended.ini,1,Pflaster,cobble.ogg,file mapped from cobble.ogg
+reversed,323,cobbles,PACENOTE,SURFACE,RBR,Extended.ini,1,Pflaster,cobble.ogg,file mapped from cobbles.ogg
 reversed,324,grit,PACENOTE,SURFACE,RBR,Extended.ini,1,Kies,additional/grit_2.ogg,
 reversed,324,grit,PACENOTE,SURFACE,RBR,Extended.ini,1,Kies,additional/grit_3.ogg,
 reversed,324,grit,PACENOTE,SURFACE,RBR,Extended.ini,1,Kies,grit.ogg,
@@ -1669,7 +1669,7 @@ numeric,211,deepcut,PACENOTE,LINE,RBR,Extended.ini,1,Cut Tief,deepcut.ogg,
 numeric,212,fullcut,PACENOTE,LINE,RBR,Extended.ini,1,Cut Voll,additional/fullcut_2.ogg,
 numeric,212,fullcut,PACENOTE,LINE,RBR,Extended.ini,1,Cut Voll,additional/fullcut_3.ogg,
 numeric,212,fullcut,PACENOTE,LINE,RBR,Extended.ini,1,Cut Voll,fullcut.ogg,
-numeric,213,keep_centre,PACENOTE,LINE,RBR,Extended.ini,1,Mittig Bleiben,keep_centre.ogg,file mapped from keep_centre.ogg
+numeric,213,keep_centre,PACENOTE,LINE,RBR,Extended.ini,1,Mittig Bleiben,keep_centre.ogg,file mapped from keskelta.ogg
 numeric,214,full,PACENOTE,DRIVING,RBR,Extended.ini,1,Voll,additional/full_2.ogg,
 numeric,214,full,PACENOTE,DRIVING,RBR,Extended.ini,1,Voll,additional/full_3.ogg,
 numeric,214,full,PACENOTE,DRIVING,RBR,Extended.ini,1,Voll,full.ogg,
@@ -1861,7 +1861,7 @@ numeric,322,concrete,PACENOTE,SURFACE,RBR,Extended.ini,1,Beton,additional/concre
 numeric,322,concrete,PACENOTE,SURFACE,RBR,Extended.ini,1,Beton,concrete.ogg,
 numeric,323,cobbles,PACENOTE,SURFACE,RBR,Extended.ini,1,Pflaster,additional/cobble_2.ogg,
 numeric,323,cobbles,PACENOTE,SURFACE,RBR,Extended.ini,1,Pflaster,additional/cobble_3.ogg,
-numeric,323,cobbles,PACENOTE,SURFACE,RBR,Extended.ini,1,Pflaster,cobble.ogg,file mapped from cobble.ogg
+numeric,323,cobbles,PACENOTE,SURFACE,RBR,Extended.ini,1,Pflaster,cobble.ogg,file mapped from cobbles.ogg
 numeric,324,grit,PACENOTE,SURFACE,RBR,Extended.ini,1,Kies,additional/grit_2.ogg,
 numeric,324,grit,PACENOTE,SURFACE,RBR,Extended.ini,1,Kies,additional/grit_3.ogg,
 numeric,324,grit,PACENOTE,SURFACE,RBR,Extended.ini,1,Kies,grit.ogg,
