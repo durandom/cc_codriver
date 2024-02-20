@@ -137,16 +137,22 @@
             "packages":
             [
                 {
-                    "name": "Deskriptiv",
+                    "name": "Mix",
                     "base_dir": "assets/RBR-German-tts-Codriver-main/Plugins/Pacenote",
                     "ini_files": ["Smo.ini", "Smo-Mix.ini"],
-                    "type": "descriptive"
+                    "type": "mix"
                 },
                 {
                     "name": "Direction First",
                     "base_dir": "assets/RBR-German-tts-Codriver-main/Plugins/Pacenote",
                     "ini_files": ["Smo.ini", "Smo-Nummern.ini"],
                     "type": "numeric"
+                },
+                {
+                    "name": "Nummern und 90",
+                    "base_dir": "assets/RBR-German-tts-Codriver-main/Plugins/Pacenote",
+                    "ini_files": ["Smo.ini", "Smo-Nummern_und_90.ini"],
+                    "type": "numeric-90"
                 }
             ]
         }
