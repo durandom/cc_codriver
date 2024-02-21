@@ -7,7 +7,7 @@ import os
 import logging
 import shutil
 import sys
-from typing import List, Optional, Union
+from typing import List, Mapping, Optional, Union
 from rbr_pacenote_plugin import RbrPacenotePlugin, RbrPacenote
 from roadbook import Roadbooks
 
@@ -712,29 +712,34 @@ class CoDriver:
                         yield yield_note
 
     def unmapped_base_mod_notes(self):
-        # now list all the rbr_notes that are not mapped
-        rbr_base_mod_notes = {}
         # collect all rbr notes from all plugins
-        rbr_pacenote_plugin = self.base_codriver.rbr_pacenote_plugins[
+        rbr_base_mod_notes = self.base_codriver.rbr_pacenote_plugins[
             self.base_codriver_package
-        ]
-        for rbr_note in rbr_pacenote_plugin.pacenotes:
-            rbr_base_mod_notes[rbr_note.id] = rbr_note
+        ].pacenotes
 
-        mapped_notes = [note for note in self.mapped_notes()]
+        # collect all mapped notes for this codriver
+        mapped_notes : List[MappedNote] = []
+        for note in self.mapped_notes():
+            mapped_notes.append(note)
 
-        # for each note in rbr_notes we check if it is in the mapped_cc_notes
-        # if it is not, we list it as unmapped
-        rbr_base_mod_ids = [note.id for note in rbr_base_mod_notes.values()]
-        for rbr_note_id in sorted(rbr_base_mod_ids):
+        # iterate through all rbr notes
+        rbr_base_mod_notes = list(rbr_base_mod_notes)
+        rbr_base_mod_notes = sorted(rbr_base_mod_notes, key=lambda x: (x.name, x.id, x.category, x.translation))
+        for rbr_note in rbr_base_mod_notes:
             yield_note = MappedNote()
             # check if the note is in self.mapped_cc_notes
-            rbr_note = rbr_base_mod_notes[rbr_note_id]
             found = False
             for mapped_note in mapped_notes:
-                if rbr_note.id == mapped_note.rbr_id:
-                    found = True
-                    break
+                if mapped_note.rbr_note:
+                    if mapped_note.rbr_id >= 0:
+                        if rbr_note.id == mapped_note.rbr_id:
+                            found = True
+                            break
+                    else:
+                        if rbr_note.name == mapped_note.rbr_note.name:
+                            found = True
+                            break
+
             if not found:
                 popularity = self.get_popularity(rbr_note)
                 # check if id is in pacenote_types or pacenote_modifiers
@@ -753,6 +758,37 @@ class CoDriver:
                     yield_note.subtitle = rbr_note.translation
                     yield_note.rbr_note = rbr_note
                     yield yield_note
+
+        # # for each note in rbr_notes we check if it is in the mapped_cc_notes
+        # # if it is not, we list it as unmapped
+        # rbr_base_mod_ids = [note.id for note in rbr_base_mod_notes.values()]
+        # for rbr_note_id in sorted(rbr_base_mod_ids):
+        #     yield_note = MappedNote()
+        #     # check if the note is in self.mapped_cc_notes
+        #     rbr_note = rbr_base_mod_notes[rbr_note_id]
+        #     found = False
+        #     for mapped_note in mapped_notes:
+        #         if rbr_note.id == mapped_note.rbr_id:
+        #             found = True
+        #             break
+        #     if not found:
+        #         popularity = self.get_popularity(rbr_note)
+        #         # check if id is in pacenote_types or pacenote_modifiers
+        #         if rbr_note.id in self.cc_pacenotes_types:
+        #             yield_note.src = 'rbr_base_note_cc_type'
+        #         elif rbr_note.id in self.cc_pacenotes_modifiers:
+        #             yield_note.src = 'rbr_base_note_cc_modifier'
+        #         else:
+        #             yield_note.src = 'rbr_base_note_not_found'
+
+        #         for sound in rbr_note.sounds:
+        #             yield_note.type = rbr_note.name
+        #             yield_note.rbr_id = rbr_note.id
+        #             yield_note.popularity = popularity
+        #             yield_note.file = sound
+        #             yield_note.subtitle = rbr_note.translation
+        #             yield_note.rbr_note = rbr_note
+        #             yield yield_note
 
     def cc_list_csv(self):
         csv_writer = csv.DictWriter(sys.stdout, MappedNote().as_dict().keys())

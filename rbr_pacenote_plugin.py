@@ -308,28 +308,13 @@ class RbrPacenotePlugin:
                                 if os.path.exists(sound_file):
                                     note.sounds.append(add_sound)
                                     logging.debug(f'Additional sound: {sound_file}')
-                                else:
-                                    logging.debug(f'Additional sound not found: {sound_file}')
                 if note.sound_count != len(note.sounds):
                     logging.error(f'Invalid sound count: {note.sound_count} - {note}')
-                # for i in range(int(sounds)):
-                #     sound = config.get(section, 'Snd%d' % i)
-                #     note.sounds.append(sound)
-                #     # sound = os.path.join(current_base_dir, sound)
 
                 self.add_translation(note)
                 # only add the pacenote if it has sounds
                 if len(note.sounds) > 0:
                     self.pacenotes.add(note)
-
-                # if name not in self.pacenotes:
-                #     # logging.debug('New pacenote id: %s - %s' % (id, section))
-                #     self.pacenotes[name] = note
-                # else:
-                #     existing = self.pacenotes[name]
-                #     if not existing.almost_equal(note):
-                #         logging.error('Conflicting pacenote: \n%s\n%s' % (existing, note))
-
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.DEBUG)
