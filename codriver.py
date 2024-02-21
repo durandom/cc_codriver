@@ -689,21 +689,21 @@ class CoDriver:
 
     def unmapped_base_mod_notes(self):
         # now list all the rbr_notes that are not mapped
-        rbr_notes = {}
+        rbr_base_mod_notes = {}
         # collect all rbr notes from all plugins
         rbr_pacenote_plugin = self.base_codriver.rbr_pacenote_plugins[
             self.base_codriver_package
         ]
         for rbr_note in rbr_pacenote_plugin.pacenotes:
-            rbr_notes[rbr_note.id] = rbr_note
+            rbr_base_mod_notes[rbr_note.id] = rbr_note
 
         # for each note in rbr_notes we check if it is in the mapped_cc_notes
         # if it is not, we list it as unmapped
-        rbr_note_ids = [note.id for note in rbr_notes.values()]
-        for rbr_note_id in sorted(rbr_note_ids):
+        rbr_base_mod_ids = [note.id for note in rbr_base_mod_notes.values()]
+        for rbr_note_id in sorted(rbr_base_mod_ids):
             yield_note = MappedNote()
             # check if the note is in self.mapped_cc_notes
-            rbr_note = rbr_notes[rbr_note_id]
+            rbr_note = rbr_base_mod_notes[rbr_note_id]
             found = False
             for cc_note in self.mapped_cc_notes:
                 mapped_rbr_note_ids = [note.id for note in cc_note.notes]
@@ -713,8 +713,15 @@ class CoDriver:
                     break
             if not found:
                 popularity = self.get_popularity(rbr_note)
+                # check if id is in pacenote_types or pacenote_modifiers
+                if rbr_note.id in self.cc_pacenotes_types:
+                    yield_note.src = 'rbr_base_note_cc_type'
+                elif rbr_note.id in self.cc_pacenotes_modifiers:
+                    yield_note.src = 'rbr_base_note_cc_modifier'
+                else:
+                    yield_note.src = 'rbr_base_note_not_found'
+
                 for sound in rbr_note.sounds:
-                    yield_note.src = 'rbr_base_note'
                     yield_note.type = rbr_note.name
                     yield_note.rbr_id = rbr_note.id
                     yield_note.popularity = popularity

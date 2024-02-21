@@ -1,6 +1,6 @@
-.PHONY: all out_janne out_bollinger cc_bollinger roadbooks
+.PHONY: all janne bollinger german-tts cc_bollinger roadbooks
 
-all: out_janne out_bollinger
+all: janne bollinger german-tts
 	@echo "Done"
 
 roadbooks:
@@ -11,16 +11,16 @@ cc_bollinger:
 	./codriver.py --codriver bollinger --codriver-fallback-to-base --create-codriver "build/codriver_David Bollinger"
 	@echo "Done"
 
-out_janne:
+janne:
 	./codriver.py --codriver janne-v2 --map-to-cc-csv > out/janne-v2-cc.csv
 	./codriver.py --codriver janne-v2 --rbr-list-csv > out/janne-v2-rbr.csv
 	@echo "Done"
 
-out_bollinger:
+bollinger:
 	./codriver.py --codriver bollinger --map-to-cc-csv > out/bollinger-cc.csv
 	./codriver.py --codriver bollinger --rbr-list-csv > out/bollinger-rbr.csv
 	@echo "Done"
 
-out_german-tts:
+german-tts:
 	./codriver.py --codriver german-tts --rbr-list-csv > out/german-tts-rbr.csv
 	@echo "Done"
