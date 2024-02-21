@@ -61,6 +61,15 @@ class MappedNote:
     def no_sound_in_rbr_note(self):
         return self.src == 'no_sound_in_rbr_note'
 
+    def set_src_from_rbr(self):
+        self.src = 'rbr'
+
+    def src_is_rbr(self):
+        return self.src == 'rbr'
+
+    def set_src_from_rbr_base(self):
+        self.src = 'rbr_base_note'
+
     def as_dict(self):
         return {
             'src': self.src,
@@ -160,6 +169,7 @@ class CoDriver:
                  map_static = {},
                  additional_cc_types = {},
                  pacenote_stats = '',
+                 fallback_to_base = False,
                  skip_notes = {}):
 
         self.cc_pacenotes_types = {}
@@ -174,6 +184,7 @@ class CoDriver:
         self.map_cc_types = map_cc_types
         self.map_static = map_static
         self.additional_cc_types = additional_cc_types
+        self.fallback_to_base = fallback_to_base
         self.pacenote_stats = self.init_pacenote_stats(pacenote_stats)
 
         self.init_cc_pacenotes_types(cc_pacenote_types)
@@ -523,36 +534,12 @@ class CoDriver:
         log_writer = csv.DictWriter(log_csv_file, MappedNote().as_dict().keys())
         log_writer.writeheader()
 
-        if fallback_to_base:
-            self.base_codriver.map_notes_from_cc()
-
         for note in self.mapped_notes():
             dst_path = os.path.join(directory, note.type)
             if not os.path.exists(dst_path):
                 os.makedirs(dst_path)
             else:
                 logging.debug(f'Directory {dst_path} already exists')
-
-            if fallback_to_base and (
-                note.sound_not_found() or
-                note.no_rbr_note() or
-                note.no_sound_in_rbr_note()
-            ):
-                copied_from_base = False
-                for base_note in self.base_codriver.mapped_notes():
-                    if base_note.type == note.type:
-                        if not(
-                            base_note.no_rbr_note() or
-                            base_note.no_sound_in_rbr_note() or
-                            base_note.sound_not_found()
-                        ):
-                            copied_from_base = True
-                            logging.debug(f'Using base codriver sound for {note.type}')
-                            base_note.src = 'rbr_base_note'
-                            log_writer.writerow(base_note.as_dict())
-                            self.cc_copy_note(base_note, dst_path)
-                if copied_from_base:
-                    continue
 
             if note.no_rbr_note():
                 logging.error(f'No mapping for {note.type} - using original sound')
@@ -639,6 +626,9 @@ class CoDriver:
         return popularity
 
     def mapped_notes(self):
+        if self.fallback_to_base:
+            self.base_codriver.map_notes_from_cc()
+
         cc_sounds = sorted(self.cc_sounds.values(), key=lambda x: x.name)
         for cc_note in cc_sounds:
             yield_note = MappedNote()
@@ -647,10 +637,21 @@ class CoDriver:
             mapped_cc_note = next((x for x in self.mapped_cc_notes if x.name == cc_note.name), None)
             yield_note.cc_note = mapped_cc_note
 
+            mapped_base_note = None
+            if self.fallback_to_base:
+                for base_note in self.base_codriver.mapped_notes():
+                    if base_note.type == cc_note.name and base_note.src_is_rbr():
+                        base_note.set_src_from_rbr_base()
+                        mapped_base_note = base_note
+                        break
+
             if not mapped_cc_note:
                 yield_note.set_no_rbr_note()
                 yield_note.type = cc_note.name
-                yield yield_note
+                if self.fallback_to_base and mapped_base_note:
+                    yield mapped_base_note
+                else:
+                    yield yield_note
                 continue
 
             yield_note.type = mapped_cc_note.name
@@ -661,11 +662,35 @@ class CoDriver:
                 yield_note.rbr_id = mapped_cc_note.type.id
                 popularity = self.get_popularity(mapped_cc_note.type.id)
                 yield_note.popularity = popularity
-                yield yield_note
+                if self.fallback_to_base and mapped_base_note:
+                    yield mapped_base_note
+                else:
+                    yield yield_note
                 continue
 
             if mapped_cc_note.type:
                 yield_note.rbr_id = mapped_cc_note.type.id
+
+            # if self.fallback_to_base and (
+            #     note.sound_not_found() or
+            #     note.no_rbr_note() or
+            #     note.no_sound_in_rbr_note()
+            # ):
+            #     copied_from_base = False
+            #     for base_note in self.base_codriver.mapped_notes():
+            #         if base_note.type == note.type:
+            #             if not(
+            #                 base_note.no_rbr_note() or
+            #                 base_note.no_sound_in_rbr_note() or
+            #                 base_note.sound_not_found()
+            #             ):
+            #                 copied_from_base = True
+            #                 logging.debug(f'Using base codriver sound for {note.type}')
+            #                 base_note.src = 'rbr_base_note'
+            #                 log_writer.writerow(base_note.as_dict())
+            #                 self.cc_copy_note(base_note, dst_path)
+            #     if copied_from_base:
+            #         continue
 
             # process the mapped note
             rbr_notes = mapped_cc_note.notes
@@ -683,9 +708,13 @@ class CoDriver:
                     yield_note.subtitle = subtitle
                     if file in rbr_note.sounds_not_found:
                         yield_note.set_sound_not_found()
+                        if self.fallback_to_base and mapped_base_note:
+                            yield mapped_base_note
+                        else:
+                            yield yield_note
                     else:
-                        yield_note.src = 'rbr'
-                    yield yield_note
+                        yield_note.set_src_from_rbr()
+                        yield yield_note
 
     def unmapped_base_mod_notes(self):
         # now list all the rbr_notes that are not mapped
@@ -740,7 +769,7 @@ class CoDriver:
         for note in self.unmapped_base_mod_notes():
             csv_writer.writerow(note.as_dict())
 
-def make_codriver(name, config, config_package = 'all'):
+def make_codriver(name, config, config_package = 'all', fallback_to_base = False):
     config_codriver_packages = config['codrivers'][name]['packages']
     map_files = config['codrivers'][name].get('map_files', {})
     additional_sounds_dir = config['codrivers'][name].get('additional_sounds_dir', '')
@@ -753,6 +782,7 @@ def make_codriver(name, config, config_package = 'all'):
         map_cc_types=config.get('map_cc_types', {}),
         additional_cc_types=config.get('additional_cc_types', {}),
         map_static=map_static,
+        fallback_to_base=fallback_to_base,
         pacenote_stats=config.get('pacenote_stats', {}),
     )
 
@@ -803,7 +833,7 @@ if __name__ == '__main__':
         exit(0)
 
     codriver_name = args.codriver
-    codriver = make_codriver(codriver_name, config, args.rbr_package)
+    codriver = make_codriver(codriver_name, config, args.rbr_package, fallback_to_base=args.codriver_fallback_to_base)
 
     rbr_base_mod = config['rbr_base_mod']
     rbr_base_package = config['rbr_base_package']
@@ -827,4 +857,4 @@ if __name__ == '__main__':
 
     if args.create_codriver:
         codriver.map_notes_from_cc()
-        codriver.create_codriver(args.create_codriver, fallback_to_base=args.codriver_fallback_to_base)
+        codriver.create_codriver(args.create_codriver)
