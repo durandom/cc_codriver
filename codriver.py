@@ -662,6 +662,15 @@ class CoDriver:
                             found = True
                             break
 
+            if not found:
+                for package in self.rbr_pacenote_plugins.keys():
+                    package_mapping = self.map_rbr_ids.get(package, {})
+                    for from_id, to_id in package_mapping.items():
+                        if rbr_note.id == from_id:
+                            found = True
+                            break
+
+
             # the note is not mapped
             if not found:
                 base_note = rbr_note

@@ -1138,8 +1138,6 @@ rbr_base_note_cc_type,detail_gowide,267,-1,gowide.ogg,Wird Breiter
 rbr_base_note_cc_type,detail_grit,324,-1,additional/grit_2.ogg,Kies
 rbr_base_note_cc_type,detail_grit,324,-1,additional/grit_3.ogg,Kies
 rbr_base_note_cc_type,detail_grit,324,-1,grit.ogg,Kies
-rbr_base_note_cc_type,detail_hae,2023,0.04,hae1.ogg,Line
-rbr_base_note_cc_type,detail_hae,2023,0.04,hae2.ogg,Line
 rbr_base_note_cc_type,detail_hidden,301,-1,additional/hidden_2.ogg,Versteckt
 rbr_base_note_cc_type,detail_hidden,301,-1,additional/hidden_3.ogg,Versteckt
 rbr_base_note_cc_type,detail_hidden,301,-1,hidden.ogg,Versteckt
@@ -1152,8 +1150,6 @@ rbr_base_note_cc_type,detail_ice,329,-1,ice.ogg,Eis
 rbr_base_note_cc_type,detail_icy,327,-1,additional/icy_2.ogg,Eisig
 rbr_base_note_cc_type,detail_icy,327,-1,additional/icy_3.ogg,Eisig
 rbr_base_note_cc_type,detail_icy,327,-1,icy.ogg,Eisig
-rbr_base_note_cc_type,detail_immediate,2030,-1,heti1.ogg,Immediate
-rbr_base_note_cc_type,detail_immediate,2030,-1,heti2.ogg,Immediate
 rbr_base_note_cc_type,detail_keep_centre,213,0.0,keep_centre.ogg,Mittig Bleiben
 rbr_base_note_cc_type,detail_left,120,-1,additional/left_2.ogg,Links
 rbr_base_note_cc_type,detail_left,120,-1,additional/left_3.ogg,Links
@@ -1222,7 +1218,6 @@ rbr_base_note_cc_type,detail_right_left,124,-1,right_left.ogg,Rechts-Links
 rbr_base_note_cc_type,detail_rock,380,-1,additional/rock_2.ogg,Fels
 rbr_base_note_cc_type,detail_rock,380,-1,additional/rock_3.ogg,Fels
 rbr_base_note_cc_type,detail_rock,380,-1,rock.ogg,Fels
-rbr_base_note_cc_type,detail_roiku,2020,0.01,roiku.ogg,Hang
 rbr_base_note_cc_type,detail_rubble,328,-1,additional/rubble_2.ogg,Geröll
 rbr_base_note_cc_type,detail_rubble,328,-1,additional/rubble_3.ogg,Geröll
 rbr_base_note_cc_type,detail_rubble,328,-1,rubble.ogg,Geröll
@@ -1274,11 +1269,9 @@ sound_not_found,detail_tape,391,-1,tape.ogg,TEIPPI
 rbr_base_note_not_found,detail_tape,-1,-1,additional/tightens_2.ogg,Macht Zu
 rbr_base_note_not_found,detail_tape,-1,-1,additional/tightens_3.ogg,Macht Zu
 rbr_base_note_not_found,detail_tape,-1,-1,tightens.ogg,Macht Zu
-sound_not_found,detail_tightenshp,2007,0.02,tightenshp.ogg,Macht zu Kehre*
 rbr_base_note_cc_type,detail_to_sight_distance,555,-1,additional/to_sight_distance_2.ogg,Bis Sicht
 rbr_base_note_cc_type,detail_to_sight_distance,555,-1,additional/to_sight_distance_3.ogg,Bis Sicht
 rbr_base_note_cc_type,detail_to_sight_distance,555,-1,to_sight_distance.ogg,Bis Sicht
-sound_not_found,detail_tohp,2014,0.0,hairpin.ogg,Kehre*
 rbr_base_note_cc_type,detail_tree,373,-1,additional/tree_2.ogg,Baum
 rbr_base_note_cc_type,detail_tree,373,-1,additional/tree_3.ogg,Baum
 rbr_base_note_cc_type,detail_tree,373,-1,tree.ogg,Baum
