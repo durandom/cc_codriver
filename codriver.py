@@ -70,6 +70,9 @@ class MappedNote:
     def set_src_from_rbr_base(self):
         self.src = 'rbr_base_note'
 
+    def src_is_rbr_base(self):
+        return self.src == 'rbr_base_note'
+
     def as_dict(self):
         return {
             'src': self.src,
@@ -705,6 +708,8 @@ class CoDriver:
         for rbr_note in rbr_pacenote_plugin.pacenotes:
             rbr_base_mod_notes[rbr_note.id] = rbr_note
 
+        mapped_notes = [note for note in self.mapped_notes()]
+
         # for each note in rbr_notes we check if it is in the mapped_cc_notes
         # if it is not, we list it as unmapped
         rbr_base_mod_ids = [note.id for note in rbr_base_mod_notes.values()]
@@ -713,10 +718,8 @@ class CoDriver:
             # check if the note is in self.mapped_cc_notes
             rbr_note = rbr_base_mod_notes[rbr_note_id]
             found = False
-            for cc_note in self.mapped_cc_notes:
-                mapped_rbr_note_ids = [note.id for note in cc_note.notes]
-                if rbr_note_id in mapped_rbr_note_ids:
-                    logging.debug(f'rbr_note {rbr_note.id} is mapped')
+            for mapped_note in mapped_notes:
+                if rbr_note.id == mapped_note.rbr_id:
                     found = True
                     break
             if not found:

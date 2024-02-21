@@ -17,7 +17,7 @@ janne:
 	@echo "Done"
 
 bollinger:
-	./codriver.py --codriver bollinger --map-to-cc-csv > out/bollinger-cc.csv
+	./codriver.py --codriver bollinger --codriver-fallback-to-base --map-to-cc-csv > out/bollinger-cc.csv
 	./codriver.py --codriver bollinger --rbr-list-csv > out/bollinger-rbr.csv
 	@echo "Done"
 
