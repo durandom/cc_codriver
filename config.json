@@ -57,18 +57,19 @@
                 "cobbles.ogg": "cobble.ogg"
             },
             "map_static": {
-                "number_1": ["numeric", "../../../../Audio/Speech/NumGer/start1.ogg"],
-                "number_2": ["numeric", "../../../../Audio/Speech/NumGer/start2.ogg"],
-                "number_3": ["numeric", "../../../../Audio/Speech/NumGer/start3.ogg"],
+                "number_1": ["numeric", "../../../../Audio/Speech/NumGer/start1.ogg", 140],
+                "number_2": ["numeric", "../../../../Audio/Speech/NumGer/start2.ogg", 141],
+                "number_3": ["numeric", "../../../../Audio/Speech/NumGer/start3.ogg", 142],
                 "detail_go": ["numeric", "../../../../Audio/Game/Go.wav"],
-                "detail_dont_cut_early": ["numeric", ["dontcut.ogg", "early.ogg"]],
-                "detail_dont_cut_late": ["numeric", ["dontcut.ogg", "late.ogg"]],
-                "detail_dont_cut_early_rushed": ["numeric", ["dontcut.ogg", "early.ogg"]],
-                "detail_dont_cut_late_rushed": ["numeric", ["dontcut.ogg", "late.ogg"]],
-                "detail_to_finish": ["numeric", ["into.ogg", "finish.ogg"]],
-                "detail_jump_bind": ["numeric", ["jump.ogg", "triple_caution.ogg"]],
-                "detail_jump_bind_rushed": ["numeric", ["jump.ogg", "triple_caution.ogg"]],
-                "detail_to_dip": ["numeric", ["into.ogg", "dip.ogg"]]
+                "detail_dont_cut_early": ["numeric", ["dontcut.ogg", "early.ogg"], 2016],
+                "detail_dont_cut_early_rushed": ["numeric", ["dontcut.ogg", "early.ogg"], 2016],
+                "detail_dont_cut_late": ["numeric", ["dontcut.ogg", "late.ogg"], 2017],
+                "detail_dont_cut_late_rushed": ["numeric", ["dontcut.ogg", "late.ogg"], 2017],
+                "detail_to_finish": ["numeric", ["into.ogg", "finish.ogg"], 2105],
+                "detail_jump_bind": ["numeric", ["jump.ogg", "triple_caution.ogg"], 2107],
+                "detail_jump_bind_rushed": ["numeric", ["jump.ogg", "triple_caution.ogg"], 2107],
+                "detail_to_dip": ["numeric", ["into.ogg", "dip.ogg"], 2024],
+                "detail_to_dip_rushed": ["numeric", ["into.ogg", "dip.ogg"], 2024]
             },
             "additional_sounds_dir": "additional",
             "packages": [

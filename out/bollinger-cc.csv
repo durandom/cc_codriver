@@ -560,10 +560,10 @@ rbr,detail_dip_rushed,361,0.0,dip.ogg,Abhang
 rbr,detail_dont_cut,32,0.56,additional/caution_2.ogg,Achtung
 rbr,detail_dont_cut,32,0.56,additional/caution_3.ogg,Achtung
 rbr,detail_dont_cut,32,0.56,caution.ogg,Achtung
-rbr,detail_dont_cut_early,-1,-1,early.ogg,
-rbr,detail_dont_cut_early_rushed,-1,-1,early.ogg,
-rbr,detail_dont_cut_late,-1,-1,late.ogg,
-rbr,detail_dont_cut_late_rushed,-1,-1,late.ogg,
+rbr,detail_dont_cut_early,2016,0.0,early.ogg,
+rbr,detail_dont_cut_early_rushed,2016,0.0,early.ogg,
+rbr,detail_dont_cut_late,2017,0.05,late.ogg,
+rbr,detail_dont_cut_late_rushed,2017,0.05,late.ogg,
 rbr,detail_dont_cut_rushed,32,0.56,additional/caution_2.ogg,Achtung
 rbr,detail_dont_cut_rushed,32,0.56,additional/caution_3.ogg,Achtung
 rbr,detail_dont_cut_rushed,32,0.56,caution.ogg,Achtung
@@ -680,8 +680,8 @@ rbr,detail_into_rushed,-1,-1,into.ogg,In
 rbr,detail_jump,20,0.54,additional/jump_2.ogg,Sprung
 rbr,detail_jump,20,0.54,additional/jump_3.ogg,Sprung
 rbr,detail_jump,20,0.54,jump.ogg,Sprung
-rbr,detail_jump_bind,-1,-1,triple_caution.ogg,
-rbr,detail_jump_bind_rushed,-1,-1,triple_caution.ogg,
+rbr,detail_jump_bind,2107,0.08,triple_caution.ogg,
+rbr,detail_jump_bind_rushed,2107,0.08,triple_caution.ogg,
 rbr,detail_jump_flat,2106,-1,jumpfull.ogg,Sprung Voll
 rbr,detail_jump_flat_rushed,2106,-1,jumpfull.ogg,Sprung Voll
 rbr,detail_jump_rushed,20,0.54,additional/jump_2.ogg,Sprung
@@ -951,8 +951,8 @@ rbr,detail_to_6,2008,0.0,additional/6_3.ogg,6*
 rbr,detail_to_acute,2013,0.01,1.ogg,1*
 rbr,detail_to_acute,2013,0.01,additional/1_2.ogg,1*
 rbr,detail_to_acute,2013,0.01,additional/1_3.ogg,1*
-rbr,detail_to_dip,-1,-1,dip.ogg,
-rbr,detail_to_finish,-1,-1,finish.ogg,
+rbr,detail_to_dip,2024,0.03,dip.ogg,
+rbr,detail_to_finish,2105,0.05,finish.ogg,
 no_rbr_note,detail_tree_inside,40008,-1,,
 no_rbr_note,detail_tree_inside_rushed,40008,-1,,
 no_rbr_note,detail_tree_outside,40011,-1,,
@@ -980,7 +980,7 @@ rbr,detail_wideout,15,0.09,additional/wideout_2.ogg,Breiter
 rbr,detail_wideout,15,0.09,additional/wideout_3.ogg,Breiter
 rbr,detail_wideout,15,0.09,wideout.ogg,Breiter
 no_rbr_note,microphone_check,-1,-1,,
-rbr,number_1,-1,-1,../../../../Audio/Speech/NumGer/start1.ogg,
+rbr,number_1,140,-1,../../../../Audio/Speech/NumGer/start1.ogg,
 rbr,number_100,-1,-1,100.ogg,100
 rbr,number_100,-1,-1,additional/100_2.ogg,100
 rbr,number_100,-1,-1,additional/100_3.ogg,100
@@ -1005,14 +1005,14 @@ rbr,number_160,-1,-1,additional/160_3.ogg,160
 rbr,number_180,-1,-1,180.ogg,180
 rbr,number_180,-1,-1,additional/180_2.ogg,180
 rbr,number_180,-1,-1,additional/180_3.ogg,180
-rbr,number_2,-1,-1,../../../../Audio/Speech/NumGer/start2.ogg,
+rbr,number_2,141,-1,../../../../Audio/Speech/NumGer/start2.ogg,
 rbr,number_200,-1,-1,200.ogg,200
 rbr,number_200,-1,-1,additional/200_2.ogg,200
 rbr,number_200,-1,-1,additional/200_3.ogg,200
 rbr,number_250,-1,-1,250.ogg,250
 rbr,number_250,-1,-1,additional/250_2.ogg,250
 rbr,number_250,-1,-1,additional/250_3.ogg,250
-rbr,number_3,-1,-1,../../../../Audio/Speech/NumGer/start3.ogg,
+rbr,number_3,142,-1,../../../../Audio/Speech/NumGer/start3.ogg,
 rbr,number_30,-1,-1,30.ogg,30
 rbr,number_30,-1,-1,additional/30_2.ogg,30
 rbr,number_30,-1,-1,additional/30_3.ogg,30
@@ -1151,16 +1151,10 @@ rbr_base_note_cc_type,to_sight_distance,555,-1,to_sight_distance.ogg,To Sight Di
 rbr_base_note_cc_type,entry,557,-1,entry.ogg,Entry
 rbr_base_note_cc_type,tightenstoacute,2007,0.02,kirraa_tiukaks.ogg,Tightens HP
 rbr_base_note_cc_type,toacute,2014,0.0,_tiukaks.ogg,HP
-rbr_base_note_cc_type,dontcutearly,2016,0.0,ala_alussa.ogg,Don't Cut Early
-rbr_base_note_cc_type,dontcutlate,2017,0.05,ala_lopussa.ogg,Don't Cut Late
 rbr_base_note_cc_type,roiku,2020,0.01,roiku.ogg,Hang
 rbr_base_note_cc_type,hae,2023,0.04,hae1.ogg,Line
 rbr_base_note_cc_type,hae,2023,0.04,hae2.ogg,Line
-rbr_base_note_cc_type,todip,2024,0.03,notko.ogg,TODIP
 rbr_base_note_cc_type,immediate,2030,-1,heti1.ogg,Immediate
 rbr_base_note_cc_type,immediate,2030,-1,heti2.ogg,Immediate
 rbr_base_note_cc_type,vasemmalta,2100,0.02,vasen_laita.ogg,Keep Left
 rbr_base_note_cc_type,oikeelta,2101,0.03,oikee_laita.ogg,Keep Right
-rbr_base_note_cc_type,to_finish,2105,0.05,maaliin1.ogg,To Finish
-rbr_base_note_cc_type,jump_bind,2107,0.08,hyppysido1.ogg,Jump Tie
-rbr_base_note_cc_type,jump_bind,2107,0.08,hyppysido2.ogg,Jump Tie

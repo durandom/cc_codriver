@@ -149,8 +149,9 @@ class CrewChiefNote:
     def add_note(self, note: RbrPacenote):
         self.notes.append(note)
 
-    def add_file(self, file, package, sounds_dir):
+    def add_file(self, file, package, sounds_dir, id = -1):
         rbr_note = RbrPacenote(file)
+        rbr_note.id = id
         rbr_note.sounds.append(file)
         rbr_note.sounds_dir = sounds_dir
         rbr_note.package = package
@@ -433,7 +434,14 @@ class CoDriver:
             cc_note = CrewChiefNote(sound)
 
             if sound in self.map_static:
-                (package, file) = self.map_static[sound]
+                rbr_id = -1
+                if len(self.map_static[sound]) == 2:
+                    (package, file) = self.map_static[sound]
+                elif len(self.map_static[sound]) == 3:
+                    (package, file, rbr_id) = self.map_static[sound]
+                else:
+                    raise ValueError(f'Invalid map_static: {self.map_static[sound]}')
+
                 sound_dir = self.rbr_pacenote_plugins[package].sounds_dir()
 
                 if isinstance(file, list):
@@ -443,7 +451,7 @@ class CoDriver:
                     cc_note.add_prefix(prefix_note)
                     file = file[1]
 
-                cc_note.add_file(file, package, sound_dir)
+                cc_note.add_file(file, package, sound_dir, rbr_id)
                 cc_notes.append(cc_note)
                 continue
 
