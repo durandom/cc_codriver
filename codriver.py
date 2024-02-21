@@ -671,27 +671,6 @@ class CoDriver:
             if mapped_cc_note.type:
                 yield_note.rbr_id = mapped_cc_note.type.id
 
-            # if self.fallback_to_base and (
-            #     note.sound_not_found() or
-            #     note.no_rbr_note() or
-            #     note.no_sound_in_rbr_note()
-            # ):
-            #     copied_from_base = False
-            #     for base_note in self.base_codriver.mapped_notes():
-            #         if base_note.type == note.type:
-            #             if not(
-            #                 base_note.no_rbr_note() or
-            #                 base_note.no_sound_in_rbr_note() or
-            #                 base_note.sound_not_found()
-            #             ):
-            #                 copied_from_base = True
-            #                 logging.debug(f'Using base codriver sound for {note.type}')
-            #                 base_note.src = 'rbr_base_note'
-            #                 log_writer.writerow(base_note.as_dict())
-            #                 self.cc_copy_note(base_note, dst_path)
-            #     if copied_from_base:
-            #         continue
-
             # process the mapped note
             rbr_notes = mapped_cc_note.notes
             rbr_notes = sorted(rbr_notes, key=lambda x: (x.id, x.name, x.category, x.translation))
