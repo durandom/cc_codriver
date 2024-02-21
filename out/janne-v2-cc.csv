@@ -565,8 +565,8 @@ rbr,detail_sharp_rushed,249,0.04,terava1.ogg,Sharp
 rbr,detail_sharp_rushed,249,0.04,terava2.ogg,Sharp
 rbr,detail_short,264,0.36,lyhyt.ogg,Short
 rbr,detail_short_rushed,264,0.36,lyhyt.ogg,Short
-no_rbr_note,detail_slippery,-1,-1,,
-no_rbr_note,detail_slippery_rushed,-1,-1,,
+rbr,detail_slippery,268,0.03,liukas.ogg,Slippy
+rbr,detail_slippery_rushed,268,0.03,liukas.ogg,Slippy
 rbr,detail_slippy,277,0.0,liukas.ogg,
 rbr,detail_slippy_rushed,277,0.0,liukas.ogg,
 rbr,detail_small_crest,2109,0.01,pikkunyppy1.ogg,Small Crest
@@ -697,7 +697,6 @@ rbr_base_note_cc_type,straight,257,-1,straight.ogg,Straight
 rbr_base_note_cc_type,shortshort,265,-1,shortshort.ogg,LYHYT LYHYT
 rbr_base_note_cc_type,gonarrow,266,-1,gonarrow.ogg,Go Narrow
 rbr_base_note_cc_type,gowide,267,-1,gowide.ogg,Go Wide
-rbr_base_note_cc_type,slippery,268,0.03,liukas.ogg,Slippy
 rbr_base_note_cc_type,sideways,271,-1,sideways.ogg,Sideways
 rbr_base_note_cc_type,hook,272,-1,hook.ogg,HOOK
 rbr_base_note_cc_type,very_short,275,-1,very_short.ogg,TOSI LYHYT

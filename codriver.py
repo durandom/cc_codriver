@@ -629,8 +629,11 @@ class CoDriver:
         return popularity
 
     def mapped_notes(self):
+        mapped_base_notes = []
         if self.fallback_to_base:
             self.base_codriver.map_notes_from_cc()
+            for base_note in self.base_codriver.mapped_notes():
+                mapped_base_notes.append(base_note)
 
         cc_sounds = sorted(self.cc_sounds.values(), key=lambda x: x.name)
         for cc_note in cc_sounds:
@@ -642,7 +645,7 @@ class CoDriver:
 
             mapped_base_note = None
             if self.fallback_to_base:
-                for base_note in self.base_codriver.mapped_notes():
+                for base_note in mapped_base_notes:
                     if base_note.type == cc_note.name and base_note.src_is_rbr():
                         base_note.set_src_from_rbr_base()
                         mapped_base_note = base_note

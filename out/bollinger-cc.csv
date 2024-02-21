@@ -567,14 +567,14 @@ rbr,detail_dont_cut_late_rushed,-1,-1,late.ogg,
 rbr,detail_dont_cut_rushed,32,0.56,additional/caution_2.ogg,Achtung
 rbr,detail_dont_cut_rushed,32,0.56,additional/caution_3.ogg,Achtung
 rbr,detail_dont_cut_rushed,32,0.56,caution.ogg,Achtung
-rbr_base_note,detail_double,2102,0.0,tupla1.ogg,Double
+rbr_base_note,detail_double,2102,0.0,tupla3.ogg,Double
 rbr,detail_double_caution,303,0.21,additional/double_caution_2.ogg,Gut Aufpassen
 rbr,detail_double_caution,303,0.21,additional/double_caution_3.ogg,Gut Aufpassen
 rbr,detail_double_caution,303,0.21,double_caution.ogg,Gut Aufpassen
 rbr,detail_double_caution_rushed,303,0.21,additional/double_caution_2.ogg,Gut Aufpassen
 rbr,detail_double_caution_rushed,303,0.21,additional/double_caution_3.ogg,Gut Aufpassen
 rbr,detail_double_caution_rushed,303,0.21,double_caution.ogg,Gut Aufpassen
-rbr_base_note,detail_double_rushed,2102,0.0,tupla1.ogg,Double
+rbr_base_note,detail_double_rushed,2102,0.0,tupla3.ogg,Double
 rbr,detail_double_tightens,-1,-1,additional/tightensbad_2.ogg,Macht Stark Zu
 rbr,detail_double_tightens,-1,-1,additional/tightensbad_3.ogg,Macht Stark Zu
 rbr,detail_double_tightens,-1,-1,tightensbad.ogg,Macht Stark Zu
@@ -870,8 +870,12 @@ rbr,detail_short,264,0.36,short.ogg,Kurz
 rbr,detail_short_rushed,264,0.36,additional/short_2.ogg,Kurz
 rbr,detail_short_rushed,264,0.36,additional/short_3.ogg,Kurz
 rbr,detail_short_rushed,264,0.36,short.ogg,Kurz
-no_rbr_note,detail_slippery,-1,-1,,
-no_rbr_note,detail_slippery_rushed,-1,-1,,
+rbr,detail_slippery,268,0.03,additional/slippery_2.ogg,Rutschig/Schmiert
+rbr,detail_slippery,268,0.03,additional/slippery_3.ogg,Rutschig/Schmiert
+rbr,detail_slippery,268,0.03,slippery.ogg,Rutschig/Schmiert
+rbr,detail_slippery_rushed,268,0.03,additional/slippery_2.ogg,Rutschig/Schmiert
+rbr,detail_slippery_rushed,268,0.03,additional/slippery_3.ogg,Rutschig/Schmiert
+rbr,detail_slippery_rushed,268,0.03,slippery.ogg,Rutschig/Schmiert
 rbr,detail_slippy,277,0.0,slippy.ogg,Rutschig/Schmiert
 rbr,detail_slippy_rushed,277,0.0,slippy.ogg,Rutschig/Schmiert
 rbr,detail_small_crest,2109,0.01,smallcrest.ogg,Kuppe Klein
@@ -1104,7 +1108,6 @@ rbr_base_note_cc_type,straight,257,-1,straight.ogg,Straight
 rbr_base_note_cc_type,shortshort,265,-1,shortshort.ogg,LYHYT LYHYT
 rbr_base_note_cc_type,gonarrow,266,-1,gonarrow.ogg,Go Narrow
 rbr_base_note_cc_type,gowide,267,-1,gowide.ogg,Go Wide
-rbr_base_note_cc_type,slippery,268,0.03,liukas.ogg,Slippy
 rbr_base_note_cc_type,sideways,271,-1,sideways.ogg,Sideways
 rbr_base_note_cc_type,hook,272,-1,hook.ogg,HOOK
 rbr_base_note_cc_type,very_short,275,-1,very_short.ogg,TOSI LYHYT
