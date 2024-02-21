@@ -619,7 +619,8 @@ class CoDriver:
         popularity = 0
         rbr_id = -1
         if isinstance(note, CrewChiefNote):
-            rbr_id = note.type.id
+            if note.type:
+                rbr_id = note.type.id
         elif isinstance(note, RbrPacenote):
             rbr_id = note.id
         else:
@@ -665,8 +666,9 @@ class CoDriver:
             if mapped_cc_note and len(mapped_cc_note.notes) == 0:
                 logging.error(f'No sounds for {cc_note.name} in mapped note {mapped_cc_note}')
                 yield_note.set_no_rbr_note()
-                yield_note.rbr_id = mapped_cc_note.type.id
-                popularity = self.get_popularity(mapped_cc_note.type.id)
+                if mapped_cc_note.type:
+                    yield_note.rbr_id = mapped_cc_note.type.id
+                popularity = self.get_popularity(yield_note.rbr_id)
                 yield_note.popularity = popularity
                 if self.fallback_to_base and mapped_base_note:
                     yield mapped_base_note
