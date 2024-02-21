@@ -685,8 +685,12 @@ class CoDriver:
                         break
 
                 popularity = self.get_popularity(rbr_note)
+                yield_note.popularity = popularity
                 # check if id is in pacenote_types or pacenote_modifiers
                 yield_note.rbr_note = rbr_note
+                yield_note.rbr_id = rbr_note.id
+                subtitle = rbr_note.translation
+                yield_note.subtitle = subtitle
                 if rbr_note.id in self.cc_pacenotes_types:
                     cc_note = CrewChiefNote('detail_' + rbr_note.name)
                     cc_note.set_type(self.cc_pacenotes_types[rbr_note.id])
@@ -702,13 +706,7 @@ class CoDriver:
 
                 for sound in sorted(rbr_note.sounds):
                     file = sound
-                    subtitle = rbr_note.translation
-                    popularity = self.get_popularity(rbr_note)
-                    yield_note.type = cc_note.name
-                    yield_note.rbr_id = rbr_note.id
-                    yield_note.popularity = popularity
                     yield_note.file = file
-                    yield_note.subtitle = subtitle
                     if file in rbr_note.sounds_not_found:
                         yield_note.set_sound_not_found()
                         if self.fallback_to_base:
