@@ -7,7 +7,7 @@ import os
 import logging
 import shutil
 import sys
-from typing import List, Mapping, Optional, Union
+from typing import Iterator, List, Mapping, Optional, Union
 from rbr_pacenote_plugin import RbrPacenotePlugin, RbrPacenote
 from roadbook import Roadbooks
 
@@ -64,14 +64,26 @@ class MappedNote:
     def set_src_from_rbr(self):
         self.src = 'rbr'
 
-    def src_is_rbr(self):
+    def is_rbr(self):
         return self.src == 'rbr'
 
     def set_src_from_rbr_base(self):
         self.src = 'rbr_base_note'
 
-    def src_is_rbr_base(self):
+    def is_rbr_base(self):
         return self.src == 'rbr_base_note'
+
+    def set_rbr_base_note_cc_type(self):
+        self.src = 'rbr_base_note_cc_type'
+
+    def is_rbr_base_note_cc_type(self):
+        return self.src == 'rbr_base_note_cc_type'
+
+    def set_rbr_base_note_cc_modifier(self):
+        self.src = 'rbr_base_note_cc_modifier'
+
+    def set_rbr_base_note_not_found(self):
+        self.src = 'rbr_base_note_not_found'
 
     def as_dict(self):
         return {
@@ -560,7 +572,7 @@ class CoDriver:
             mapped_base_note = None
             if self.fallback_to_base:
                 for base_note in mapped_base_notes:
-                    if base_note.type == cc_note.name and base_note.src_is_rbr():
+                    if base_note.type == cc_note.name and base_note.is_rbr():
                         base_note.set_src_from_rbr_base()
                         mapped_base_note = base_note
                         break
@@ -597,10 +609,10 @@ class CoDriver:
             rbr_notes = sorted(rbr_notes, key=lambda x: (x.id, x.name, x.category, x.translation))
             for rbr_note in rbr_notes:
                 yield_note.rbr_note = rbr_note
+                subtitle = rbr_note.translation
+                popularity = self.get_popularity(rbr_note)
                 for sound in sorted(rbr_note.sounds):
                     file = sound
-                    subtitle = rbr_note.translation
-                    popularity = self.get_popularity(rbr_note)
                     yield_note.type = cc_note.name
                     yield_note.rbr_id = rbr_note.id
                     yield_note.popularity = popularity
@@ -616,11 +628,16 @@ class CoDriver:
                         yield_note.set_src_from_rbr()
                         yield yield_note
 
-    def unmapped_base_mod_notes(self):
+    def unmapped_base_mod_notes(self) -> Iterator[MappedNote]:
         # collect all rbr notes from all plugins
         rbr_base_mod_notes = self.base_codriver.rbr_pacenote_plugins[
             self.base_codriver_package
         ].pacenotes
+
+        # collect all rbr notes for this codriver
+        rbr_notes = set()
+        for rbr_pacenote_plugin in self.rbr_pacenote_plugins.values():
+            rbr_notes |= rbr_pacenote_plugin.pacenotes
 
         # collect all mapped notes for this codriver
         mapped_notes : List[MappedNote] = []
@@ -632,7 +649,7 @@ class CoDriver:
         rbr_base_mod_notes = sorted(rbr_base_mod_notes, key=lambda x: (x.name, x.id, x.category, x.translation))
         for rbr_note in rbr_base_mod_notes:
             yield_note = MappedNote()
-            # check if the note is in self.mapped_cc_notes
+            # check if the note is mapped in our codriver
             found = False
             for mapped_note in mapped_notes:
                 if mapped_note.rbr_note:
@@ -645,23 +662,50 @@ class CoDriver:
                             found = True
                             break
 
+            # the note is not mapped
             if not found:
+                base_note = rbr_note
+                # try to find the rbr_note in our rbr_notes
+                for my_rbr_note in rbr_notes:
+                    if rbr_note.id >= 0:
+                        if my_rbr_note.id == rbr_note.id:
+                            rbr_note = my_rbr_note
+                            break
+                    elif my_rbr_note.name == rbr_note.name:
+                        rbr_note = my_rbr_note
+                        break
+
                 popularity = self.get_popularity(rbr_note)
                 # check if id is in pacenote_types or pacenote_modifiers
+                yield_note.rbr_note = rbr_note
                 if rbr_note.id in self.cc_pacenotes_types:
-                    yield_note.src = 'rbr_base_note_cc_type'
+                    cc_note = CrewChiefNote('detail_' + rbr_note.name)
+                    cc_note.set_type(self.cc_pacenotes_types[rbr_note.id])
+                    yield_note.cc_note = cc_note
+                    yield_note.type = cc_note.name
+                    yield_note.set_rbr_base_note_cc_type()
                 elif rbr_note.id in self.cc_pacenotes_modifiers:
-                    yield_note.src = 'rbr_base_note_cc_modifier'
-                else:
-                    yield_note.src = 'rbr_base_note_not_found'
-
-                for sound in rbr_note.sounds:
                     yield_note.type = rbr_note.name
+                    yield_note.set_rbr_base_note_cc_modifier()
+                else:
+                    yield_note.set_rbr_base_note_not_found()
+                    yield_note.type = rbr_note.name
+
+                for sound in sorted(rbr_note.sounds):
+                    file = sound
+                    subtitle = rbr_note.translation
+                    popularity = self.get_popularity(rbr_note)
+                    yield_note.type = cc_note.name
                     yield_note.rbr_id = rbr_note.id
                     yield_note.popularity = popularity
-                    yield_note.file = sound
-                    yield_note.subtitle = rbr_note.translation
-                    yield_note.rbr_note = rbr_note
+                    yield_note.file = file
+                    yield_note.subtitle = subtitle
+                    if file in rbr_note.sounds_not_found:
+                        yield_note.set_sound_not_found()
+                        if self.fallback_to_base:
+                            yield_note.rbr_note = base_note
+                        else:
+                            continue
                     yield yield_note
 
     def cc_list_csv(self):
@@ -738,6 +782,13 @@ class CoDriver:
             log_writer.writerow(note.as_dict())
 
         for note in self.unmapped_base_mod_notes():
+            if note.is_rbr_base_note_cc_type():
+                # prepend 'detail_' to the name
+                dst_path = os.path.join(directory, note.type)
+                log_writer.writerow(note.as_dict())
+                self.cc_copy_note(note, dst_path)
+
+        if False:
             # find the note in our rbr_pacenote_plugins
             for rbr_note in self.rbr_pacenote_plugins['numeric'].pacenotes:
                 if rbr_note.name == note.type:

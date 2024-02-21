@@ -1078,87 +1078,216 @@ rbr,number_900,-1,-1,additional/900_2.ogg,900
 rbr,number_900,-1,-1,additional/900_3.ogg,900
 no_rbr_note,penalty_false_start,-1,-1,,
 no_rbr_note,we_are_lost,-1,-1,,
-rbr_base_note_cc_type,bad,254,-1,bad.ogg,Bad
-rbr_base_note_cc_type,barrels,397,-1,barrels.ogg,TYNNYRIT
-rbr_base_note_cc_type,big,247,-1,big.ogg,Big
-rbr_base_note_cc_type,blind,302,-1,blind.ogg,BLIND
-rbr_base_note_cc_type,border,347,-1,border.ogg,BORDER
-rbr_base_note_cc_type,bush,386,-1,bush.ogg,PUSKA
-rbr_base_note_cc_type,clip,223,-1,clip.ogg,Clip
-rbr_base_note_cc_type,cobbles,323,-1,cobbles.ogg,Cobbles
-rbr_base_note_cc_type,curb,349,-1,curb.ogg,CURB
-rbr_base_note_cc_type,deepcut,211,0.0,deepcut.ogg,DEEP CUT
-rbr_base_note_cc_type,ditch,350,-1,ditch.ogg,DITCH
-rbr_base_note_cc_type,done,430,-1,done.ogg,Done
-rbr_base_note_not_found,dontcut,-1,-1,ala.ogg,Don't Cut
-rbr_base_note_cc_type,edge,348,-1,edge.ogg,EDGE
-rbr_base_note_cc_type,entry,557,-1,entry.ogg,Entry
-rbr_base_note_cc_type,exact,243,-1,exact.ogg,Exact
-rbr_base_note_cc_type,fast,241,-1,fast.ogg,Fast
-rbr_base_note_cc_type,gonarrow,266,-1,gonarrow.ogg,Go Narrow
-rbr_base_note_cc_type,good,253,-1,good.ogg,Good
-rbr_base_note_cc_type,gowide,267,-1,gowide.ogg,Go Wide
-rbr_base_note_cc_type,grit,324,-1,grit.ogg,Grit
-rbr_base_note_cc_type,hae,2023,0.04,hae1.ogg,Line
-rbr_base_note_cc_type,hae,2023,0.04,hae2.ogg,Line
-rbr_base_note_cc_type,hidden,301,-1,hidden.ogg,HIDDEN
-rbr_base_note_cc_type,hook,272,-1,hook.ogg,HOOK
-rbr_base_note_cc_type,ice,329,-1,jaalle.ogg,Ice
-rbr_base_note_cc_type,icy,327,-1,icy.ogg,Icy
-rbr_base_note_cc_type,immediate,2030,-1,heti1.ogg,Immediate
-rbr_base_note_cc_type,immediate,2030,-1,heti2.ogg,Immediate
-rbr_base_note_cc_type,keep_centre,213,0.0,keskelta.ogg,Keep Centre
-rbr_base_note_cc_type,left,120,-1,left.ogg,Left
-rbr_base_note_cc_type,left_around,127,-1,left_around.ogg,Left Around
-rbr_base_note_cc_type,left_into,123,-1,left_into.ogg,Left Into
-rbr_base_note_cc_type,left_right,125,-1,left_right.ogg,Left-Right
-rbr_base_note_cc_type,light,246,-1,light.ogg,Light
-rbr_base_note_cc_type,light_cut,218,0.0,light_cut.ogg,LIGHTCUT
-rbr_base_note_cc_type,line,432,0.0,line.ogg,Line
-rbr_base_note_cc_type,many,238,-1,many.ogg,Many
-rbr_base_note_cc_type,marshalls,396,-1,marshalls.ogg,JÄRJESTYKSENVALVOJIA
-rbr_base_note_cc_type,minusminus,231,-1,minusminus.ogg,MIINUS MIINUS
-rbr_base_note_cc_type,much,237,-1,much.ogg,Much
-rbr_base_note_not_found,narrows,-1,-1,sumppu.ogg,Narrows
-rbr_base_note_cc_type,negative,295,-1,negative.ogg,Negative
-rbr_base_note_cc_type,netting,390,-1,netting.ogg,VERKKO
-rbr_base_note_cc_type,oikeelta,2101,0.03,oikee_laita.ogg,Keep Right
-rbr_base_note_cc_type,onsplit,326,-1,onsplit.ogg,Split
-rbr_base_note_cc_type,onto_cobbles,543,-1,onto_cobbles.ogg,Onto Cobbles
-rbr_base_note_cc_type,onto_grit,544,-1,onto_grit.ogg,Onto Grit
-rbr_base_note_cc_type,plusplus,233,-1,plusplus.ogg,PLUS PLUS
-rbr_base_note_cc_type,positive,294,-1,positive.ogg,Positive
-rbr_base_note_cc_type,right,121,-1,right.ogg,Right
-rbr_base_note_cc_type,right_around,126,-1,right_around.ogg,Right Around
-rbr_base_note_cc_type,right_into,122,-1,right_into.ogg,Right Into
-rbr_base_note_cc_type,right_left,124,-1,right_left.ogg,Right-Left
-rbr_base_note_cc_type,rock,380,-1,rock.ogg,KIVI
-rbr_base_note_cc_type,roiku,2020,0.01,roiku.ogg,Hang
-rbr_base_note_cc_type,rubble,328,-1,rubble.ogg,Rubble
-rbr_base_note_cc_type,shortshort,265,-1,shortshort.ogg,LYHYT LYHYT
-rbr_base_note_cc_type,shoulder,356,-1,shoulder.ogg,SHOULDER
-rbr_base_note_cc_type,sideways,271,-1,sideways.ogg,Sideways
-rbr_base_note_cc_type,sign,385,-1,sign.ogg,KYLTTI
-rbr_base_note_cc_type,slight,252,-1,slight.ogg,Slight
-rbr_base_note_cc_type,slow,242,0.01,slow.ogg,Slow
-rbr_base_note_cc_type,small,248,-1,small.ogg,Small
-rbr_base_note_cc_type,spectators,395,-1,spectators.ogg,KATSOJIA
-rbr_base_note_cc_type,steep_drop,354,-1,steep_drop.ogg,STEEP DROP
-rbr_base_note_cc_type,steep_hill,357,-1,steep_hill.ogg,STEEP HILL
-rbr_base_note_cc_type,steep_incline,358,-1,steep_incline.ogg,STEEP INCLINE
-rbr_base_note_cc_type,steep_slope,359,-1,steep_slope.ogg,STEEP SLOPE
-rbr_base_note_cc_type,stone,379,-1,stone.ogg,KIVI
-rbr_base_note_cc_type,stop,431,-1,stop.ogg,Stop
-rbr_base_note_cc_type,straight,257,-1,straight.ogg,Straight
-rbr_base_note_cc_type,stump,374,-1,stump.ogg,KANTO
-rbr_base_note_cc_type,tape,391,-1,tape.ogg,TEIPPI
-rbr_base_note_not_found,tightens,-1,-1,kirraa1.ogg,Tightens
-rbr_base_note_cc_type,tightenstoacute,2007,0.02,kirraa_tiukaks.ogg,Tightens HP
-rbr_base_note_cc_type,to_sight_distance,555,-1,to_sight_distance.ogg,To Sight Distance
-rbr_base_note_cc_type,toacute,2014,0.0,_tiukaks.ogg,HP
-rbr_base_note_cc_type,tree,373,-1,tree.ogg,PUU
-rbr_base_note_cc_type,tyres,394,-1,tyres.ogg,RENKAITA
-rbr_base_note_cc_type,vasemmalta,2100,0.02,vasen_laita.ogg,Keep Left
-rbr_base_note_cc_type,very,239,-1,very.ogg,Very
-rbr_base_note_cc_type,very_short,275,-1,very_short.ogg,TOSI LYHYT
-rbr_base_note_not_found,wideout,-1,-1,levenee.ogg,Widens
+rbr_base_note_cc_type,detail_bad,254,-1,additional/bad_2.ogg,Schlecht
+rbr_base_note_cc_type,detail_bad,254,-1,additional/bad_3.ogg,Schlecht
+rbr_base_note_cc_type,detail_bad,254,-1,additional/bad_4.ogg,Schlecht
+rbr_base_note_cc_type,detail_bad,254,-1,bad.ogg,Schlecht
+sound_not_found,detail_barrels,397,-1,barrels.ogg,Fässer
+rbr_base_note_cc_type,detail_big,247,-1,additional/big_2.ogg,Groß
+rbr_base_note_cc_type,detail_big,247,-1,additional/big_3.ogg,Groß
+rbr_base_note_cc_type,detail_big,247,-1,big.ogg,Groß
+rbr_base_note_cc_type,detail_blind,302,-1,additional/blind_2.ogg,Blind
+rbr_base_note_cc_type,detail_blind,302,-1,additional/blind_3.ogg,Blind
+rbr_base_note_cc_type,detail_blind,302,-1,blind.ogg,Blind
+rbr_base_note_cc_type,detail_border,347,-1,additional/border_2.ogg,Rand
+rbr_base_note_cc_type,detail_border,347,-1,additional/border_3.ogg,Rand
+rbr_base_note_cc_type,detail_border,347,-1,border.ogg,Rand
+rbr_base_note_cc_type,detail_bush,386,-1,additional/bush_2.ogg,Busch
+rbr_base_note_cc_type,detail_bush,386,-1,additional/bush_3.ogg,Busch
+rbr_base_note_cc_type,detail_bush,386,-1,bush.ogg,Busch
+rbr_base_note_cc_type,detail_clip,223,-1,clip.ogg,Einhängen
+rbr_base_note_cc_type,detail_cobbles,323,-1,additional/cobble_2.ogg,Pflaster
+rbr_base_note_cc_type,detail_cobbles,323,-1,additional/cobble_3.ogg,Pflaster
+rbr_base_note_cc_type,detail_cobbles,323,-1,cobble.ogg,Pflaster
+rbr_base_note_cc_type,detail_curb,349,-1,additional/curb_2.ogg,Bordstein
+rbr_base_note_cc_type,detail_curb,349,-1,additional/curb_3.ogg,Bordstein
+rbr_base_note_cc_type,detail_curb,349,-1,curb.ogg,Bordstein
+rbr_base_note_cc_type,detail_deepcut,211,0.0,additional/deepcut_2.ogg,Cut Tief
+rbr_base_note_cc_type,detail_deepcut,211,0.0,additional/deepcut_3.ogg,Cut Tief
+rbr_base_note_cc_type,detail_deepcut,211,0.0,deepcut.ogg,Cut Tief
+rbr_base_note_cc_type,detail_ditch,350,-1,additional/ditch_2.ogg,Graben
+rbr_base_note_cc_type,detail_ditch,350,-1,additional/ditch_3.ogg,Graben
+rbr_base_note_cc_type,detail_ditch,350,-1,ditch.ogg,Graben
+rbr_base_note_cc_type,detail_done,430,-1,additional/done_2.ogg,Ende
+rbr_base_note_cc_type,detail_done,430,-1,additional/done_3.ogg,Ende
+rbr_base_note_cc_type,detail_done,430,-1,done.ogg,Ende
+rbr_base_note_not_found,detail_done,-1,-1,additional/dontcut_2.ogg,Don't Cut
+rbr_base_note_not_found,detail_done,-1,-1,additional/dontcut_3.ogg,Don't Cut
+rbr_base_note_not_found,detail_done,-1,-1,dontcut.ogg,Don't Cut
+rbr_base_note_cc_type,detail_edge,348,-1,additional/edge_2.ogg,Kante
+rbr_base_note_cc_type,detail_edge,348,-1,additional/edge_3.ogg,Kante
+rbr_base_note_cc_type,detail_edge,348,-1,edge.ogg,Kante
+rbr_base_note_cc_type,detail_entry,557,-1,additional/entry_2.ogg,Eingang
+rbr_base_note_cc_type,detail_entry,557,-1,additional/entry_3.ogg,Eingang
+rbr_base_note_cc_type,detail_entry,557,-1,entry.ogg,Eingang
+rbr_base_note_cc_type,detail_exact,243,-1,additional/exact_2.ogg,Genau
+rbr_base_note_cc_type,detail_exact,243,-1,additional/exact_3.ogg,Genau
+rbr_base_note_cc_type,detail_exact,243,-1,exact.ogg,Genau
+rbr_base_note_cc_type,detail_fast,241,-1,additional/fast_2.ogg,Schnell
+rbr_base_note_cc_type,detail_fast,241,-1,additional/fast_3.ogg,Schnell
+rbr_base_note_cc_type,detail_fast,241,-1,fast.ogg,Schnell
+rbr_base_note_cc_type,detail_gonarrow,266,-1,additional/gonarrow_2.ogg,Wird Enger
+rbr_base_note_cc_type,detail_gonarrow,266,-1,additional/gonarrow_3.ogg,Wird Enger
+rbr_base_note_cc_type,detail_gonarrow,266,-1,gonarrow.ogg,Wird Enger
+rbr_base_note_cc_type,detail_good,253,-1,additional/good_2.ogg,Gut
+rbr_base_note_cc_type,detail_good,253,-1,additional/good_3.ogg,Gut
+rbr_base_note_cc_type,detail_good,253,-1,good.ogg,Gut
+rbr_base_note_cc_type,detail_gowide,267,-1,additional/gowide_2.ogg,Wird Breiter
+rbr_base_note_cc_type,detail_gowide,267,-1,additional/gowide_3.ogg,Wird Breiter
+rbr_base_note_cc_type,detail_gowide,267,-1,gowide.ogg,Wird Breiter
+rbr_base_note_cc_type,detail_grit,324,-1,additional/grit_2.ogg,Kies
+rbr_base_note_cc_type,detail_grit,324,-1,additional/grit_3.ogg,Kies
+rbr_base_note_cc_type,detail_grit,324,-1,grit.ogg,Kies
+rbr_base_note_cc_type,detail_hae,2023,0.04,hae1.ogg,Line
+rbr_base_note_cc_type,detail_hae,2023,0.04,hae2.ogg,Line
+rbr_base_note_cc_type,detail_hidden,301,-1,additional/hidden_2.ogg,Versteckt
+rbr_base_note_cc_type,detail_hidden,301,-1,additional/hidden_3.ogg,Versteckt
+rbr_base_note_cc_type,detail_hidden,301,-1,hidden.ogg,Versteckt
+rbr_base_note_cc_type,detail_hook,272,-1,additional/hook_2.ogg,Einhängen
+rbr_base_note_cc_type,detail_hook,272,-1,additional/hook_3.ogg,Einhängen
+rbr_base_note_cc_type,detail_hook,272,-1,hook.ogg,Einhängen
+rbr_base_note_cc_type,detail_ice,329,-1,additional/ice_2.ogg,Eis
+rbr_base_note_cc_type,detail_ice,329,-1,additional/ice_3.ogg,Eis
+rbr_base_note_cc_type,detail_ice,329,-1,ice.ogg,Eis
+rbr_base_note_cc_type,detail_icy,327,-1,additional/icy_2.ogg,Eisig
+rbr_base_note_cc_type,detail_icy,327,-1,additional/icy_3.ogg,Eisig
+rbr_base_note_cc_type,detail_icy,327,-1,icy.ogg,Eisig
+rbr_base_note_cc_type,detail_immediate,2030,-1,heti1.ogg,Immediate
+rbr_base_note_cc_type,detail_immediate,2030,-1,heti2.ogg,Immediate
+rbr_base_note_cc_type,detail_keep_centre,213,0.0,keep_centre.ogg,Mittig Bleiben
+rbr_base_note_cc_type,detail_left,120,-1,additional/left_2.ogg,Links
+rbr_base_note_cc_type,detail_left,120,-1,additional/left_3.ogg,Links
+rbr_base_note_cc_type,detail_left,120,-1,left.ogg,Links
+rbr_base_note_cc_type,detail_left_around,127,-1,additional/left_around_2.ogg,Links Herum
+rbr_base_note_cc_type,detail_left_around,127,-1,additional/left_around_3.ogg,Links Herum
+rbr_base_note_cc_type,detail_left_around,127,-1,left_around.ogg,Links Herum
+rbr_base_note_cc_type,detail_left_into,123,-1,additional/left_into_2.ogg,Links In
+rbr_base_note_cc_type,detail_left_into,123,-1,additional/left_into_3.ogg,Links In
+rbr_base_note_cc_type,detail_left_into,123,-1,left_into.ogg,Links In
+rbr_base_note_cc_type,detail_left_right,125,-1,additional/left_right_2.ogg,Links-Rechts
+rbr_base_note_cc_type,detail_left_right,125,-1,additional/left_right_3.ogg,Links-Rechts
+rbr_base_note_cc_type,detail_left_right,125,-1,left_right.ogg,Links-Rechts
+rbr_base_note_cc_type,detail_light,246,-1,additional/light_2.ogg,Leicht
+rbr_base_note_cc_type,detail_light,246,-1,additional/light_3.ogg,Leicht
+rbr_base_note_cc_type,detail_light,246,-1,light.ogg,Leicht
+rbr_base_note_cc_type,detail_light_cut,218,0.0,additional/light_cut_2.ogg,Cut Leicht
+rbr_base_note_cc_type,detail_light_cut,218,0.0,additional/light_cut_3.ogg,Cut Leicht
+rbr_base_note_cc_type,detail_light_cut,218,0.0,light_cut.ogg,Cut Leicht
+rbr_base_note_cc_type,detail_line,432,0.0,additional/line_2.ogg,Linie
+rbr_base_note_cc_type,detail_line,432,0.0,additional/line_3.ogg,Linie
+rbr_base_note_cc_type,detail_line,432,0.0,line.ogg,Linie
+rbr_base_note_cc_type,detail_many,238,-1,additional/many_2.ogg,Viele
+rbr_base_note_cc_type,detail_many,238,-1,additional/many_3.ogg,Viele
+rbr_base_note_cc_type,detail_many,238,-1,many.ogg,Viele
+sound_not_found,detail_marshalls,396,-1,marshalls.ogg,JÄRJESTYKSENVALVOJIA
+rbr_base_note_cc_type,detail_minusminus,231,-1,additional/minusminus_2.ogg,MinusMinus
+rbr_base_note_cc_type,detail_minusminus,231,-1,additional/minusminus_3.ogg,MinusMinus
+rbr_base_note_cc_type,detail_minusminus,231,-1,minusminus.ogg,MinusMinus
+rbr_base_note_cc_type,detail_much,237,-1,additional/much_2.ogg,Viel
+rbr_base_note_cc_type,detail_much,237,-1,additional/much_3.ogg,Viel
+rbr_base_note_cc_type,detail_much,237,-1,much.ogg,Viel
+rbr_base_note_not_found,detail_much,-1,-1,additional/narrows_2.ogg,Enger
+rbr_base_note_not_found,detail_much,-1,-1,additional/narrows_3.ogg,Enger
+rbr_base_note_not_found,detail_much,-1,-1,narrows.ogg,Enger
+rbr_base_note_cc_type,detail_negative,295,-1,additional/negative_2.ogg,Negativ
+rbr_base_note_cc_type,detail_negative,295,-1,additional/negative_3.ogg,Negativ
+rbr_base_note_cc_type,detail_negative,295,-1,negative.ogg,Negativ
+sound_not_found,detail_netting,390,-1,netting.ogg,VERKKO
+rbr_base_note_cc_type,detail_oikeelta,2101,0.03,oikee_laita.ogg,Keep Right
+rbr_base_note_cc_type,detail_onsplit,326,-1,additional/onsplit_2.ogg,Splitt
+rbr_base_note_cc_type,detail_onsplit,326,-1,additional/onsplit_3.ogg,Splitt
+rbr_base_note_cc_type,detail_onsplit,326,-1,onsplit.ogg,Splitt
+sound_not_found,detail_onto_cobbles,543,-1,onto_cobbles.ogg,Auf Pflaster
+rbr_base_note_cc_type,detail_onto_grit,544,-1,additional/onto_grit_2.ogg,Auf Kies
+rbr_base_note_cc_type,detail_onto_grit,544,-1,additional/onto_grit_3.ogg,Auf Kies
+rbr_base_note_cc_type,detail_onto_grit,544,-1,onto_grit.ogg,Auf Kies
+rbr_base_note_cc_type,detail_plusplus,233,-1,additional/plusplus_2.ogg,PlusPlus
+rbr_base_note_cc_type,detail_plusplus,233,-1,additional/plusplus_3.ogg,PlusPlus
+rbr_base_note_cc_type,detail_plusplus,233,-1,plusplus.ogg,PlusPlus
+rbr_base_note_cc_type,detail_positive,294,-1,additional/positive_2.ogg,Positiv
+rbr_base_note_cc_type,detail_positive,294,-1,additional/positive_3.ogg,Positiv
+rbr_base_note_cc_type,detail_positive,294,-1,positive.ogg,Positiv
+rbr_base_note_cc_type,detail_right,121,-1,additional/right_2.ogg,Rechts
+rbr_base_note_cc_type,detail_right,121,-1,additional/right_3.ogg,Rechts
+rbr_base_note_cc_type,detail_right,121,-1,right.ogg,Rechts
+rbr_base_note_cc_type,detail_right_around,126,-1,additional/right_around_2.ogg,Rechts Herum
+rbr_base_note_cc_type,detail_right_around,126,-1,additional/right_around_3.ogg,Rechts Herum
+rbr_base_note_cc_type,detail_right_around,126,-1,right_around.ogg,Rechts Herum
+rbr_base_note_cc_type,detail_right_into,122,-1,additional/right_into_2.ogg,Rechts In
+rbr_base_note_cc_type,detail_right_into,122,-1,additional/right_into_3.ogg,Rechts In
+rbr_base_note_cc_type,detail_right_into,122,-1,right_into.ogg,Rechts In
+rbr_base_note_cc_type,detail_right_left,124,-1,additional/right_left_2.ogg,Rechts-Links
+rbr_base_note_cc_type,detail_right_left,124,-1,additional/right_left_3.ogg,Rechts-Links
+rbr_base_note_cc_type,detail_right_left,124,-1,right_left.ogg,Rechts-Links
+rbr_base_note_cc_type,detail_rock,380,-1,additional/rock_2.ogg,Fels
+rbr_base_note_cc_type,detail_rock,380,-1,additional/rock_3.ogg,Fels
+rbr_base_note_cc_type,detail_rock,380,-1,rock.ogg,Fels
+rbr_base_note_cc_type,detail_roiku,2020,0.01,roiku.ogg,Hang
+rbr_base_note_cc_type,detail_rubble,328,-1,additional/rubble_2.ogg,Geröll
+rbr_base_note_cc_type,detail_rubble,328,-1,additional/rubble_3.ogg,Geröll
+rbr_base_note_cc_type,detail_rubble,328,-1,rubble.ogg,Geröll
+rbr_base_note_cc_type,detail_shortshort,265,-1,additional/shortshort_2.ogg,KurzKurz
+rbr_base_note_cc_type,detail_shortshort,265,-1,additional/shortshort_3.ogg,KurzKurz
+rbr_base_note_cc_type,detail_shortshort,265,-1,shortshort.ogg,KurzKurz
+rbr_base_note_cc_type,detail_shoulder,356,-1,additional/shoulder_2.ogg,Bankett
+rbr_base_note_cc_type,detail_shoulder,356,-1,additional/shoulder_3.ogg,Bankett
+rbr_base_note_cc_type,detail_shoulder,356,-1,shoulder.ogg,Bankett
+rbr_base_note_cc_type,detail_sideways,271,-1,additional/sideways_2.ogg,Versetzt
+rbr_base_note_cc_type,detail_sideways,271,-1,additional/sideways_3.ogg,Versetzt
+rbr_base_note_cc_type,detail_sideways,271,-1,sideways.ogg,Versetzt
+rbr_base_note_cc_type,detail_sign,385,-1,additional/sign_2.ogg,Schild
+rbr_base_note_cc_type,detail_sign,385,-1,additional/sign_3.ogg,Schild
+rbr_base_note_cc_type,detail_sign,385,-1,sign.ogg,Schild
+rbr_base_note_cc_type,detail_slight,252,-1,additional/slight_2.ogg,Etwas
+rbr_base_note_cc_type,detail_slight,252,-1,additional/slight_3.ogg,Etwas
+rbr_base_note_cc_type,detail_slight,252,-1,slight.ogg,Etwas
+rbr_base_note_cc_type,detail_slow,242,0.01,additional/slow_2.ogg,Langsam
+rbr_base_note_cc_type,detail_slow,242,0.01,additional/slow_3.ogg,Langsam
+rbr_base_note_cc_type,detail_slow,242,0.01,slow.ogg,Langsam
+rbr_base_note_cc_type,detail_small,248,-1,additional/small_2.ogg,Klein
+rbr_base_note_cc_type,detail_small,248,-1,additional/small_3.ogg,Klein
+rbr_base_note_cc_type,detail_small,248,-1,small.ogg,Klein
+sound_not_found,detail_spectators,395,-1,spectators.ogg,KATSOJIA
+rbr_base_note_cc_type,detail_steep_drop,354,-1,additional/steep_drop_2.ogg,Steiler Abhang
+rbr_base_note_cc_type,detail_steep_drop,354,-1,additional/steep_drop_3.ogg,Steiler Abhang
+rbr_base_note_cc_type,detail_steep_drop,354,-1,steep_drop.ogg,Steiler Abhang
+rbr_base_note_cc_type,detail_steep_hill,357,-1,additional/steep_hill_2.ogg,Steiles Gefälle
+rbr_base_note_cc_type,detail_steep_hill,357,-1,additional/steep_hill_3.ogg,Steiles Gefälle
+rbr_base_note_cc_type,detail_steep_hill,357,-1,steep_hill.ogg,Steiles Gefälle
+rbr_base_note_cc_type,detail_steep_incline,358,-1,additional/steep_incline_2.ogg,Steiler Anstieg
+rbr_base_note_cc_type,detail_steep_incline,358,-1,additional/steep_incline_3.ogg,Steiler Anstieg
+rbr_base_note_cc_type,detail_steep_incline,358,-1,steep_incline.ogg,Steiler Anstieg
+rbr_base_note_cc_type,detail_steep_slope,359,-1,additional/steep_slope_2.ogg,Steilhang
+rbr_base_note_cc_type,detail_steep_slope,359,-1,additional/steep_slope_3.ogg,Steilhang
+rbr_base_note_cc_type,detail_steep_slope,359,-1,steep_slope.ogg,Steilhang
+rbr_base_note_cc_type,detail_stone,379,-1,additional/stone_2.ogg,Stein
+rbr_base_note_cc_type,detail_stone,379,-1,additional/stone_3.ogg,Stein
+rbr_base_note_cc_type,detail_stone,379,-1,stone.ogg,Stein
+rbr_base_note_cc_type,detail_stop,431,-1,additional/stop_2.ogg,Stop
+rbr_base_note_cc_type,detail_stop,431,-1,additional/stop_3.ogg,Stop
+rbr_base_note_cc_type,detail_stop,431,-1,stop.ogg,Stop
+rbr_base_note_cc_type,detail_straight,257,-1,straight.ogg,Gerade
+rbr_base_note_cc_type,detail_stump,374,-1,additional/stump_2.ogg,Stumpf
+rbr_base_note_cc_type,detail_stump,374,-1,additional/stump_3.ogg,Stumpf
+rbr_base_note_cc_type,detail_stump,374,-1,stump.ogg,Stumpf
+sound_not_found,detail_tape,391,-1,tape.ogg,TEIPPI
+rbr_base_note_not_found,detail_tape,-1,-1,additional/tightens_2.ogg,Macht Zu
+rbr_base_note_not_found,detail_tape,-1,-1,additional/tightens_3.ogg,Macht Zu
+rbr_base_note_not_found,detail_tape,-1,-1,tightens.ogg,Macht Zu
+sound_not_found,detail_tightenshp,2007,0.02,tightenshp.ogg,Macht zu Kehre*
+rbr_base_note_cc_type,detail_to_sight_distance,555,-1,additional/to_sight_distance_2.ogg,Bis Sicht
+rbr_base_note_cc_type,detail_to_sight_distance,555,-1,additional/to_sight_distance_3.ogg,Bis Sicht
+rbr_base_note_cc_type,detail_to_sight_distance,555,-1,to_sight_distance.ogg,Bis Sicht
+sound_not_found,detail_tohp,2014,0.0,hairpin.ogg,Kehre*
+rbr_base_note_cc_type,detail_tree,373,-1,additional/tree_2.ogg,Baum
+rbr_base_note_cc_type,detail_tree,373,-1,additional/tree_3.ogg,Baum
+rbr_base_note_cc_type,detail_tree,373,-1,tree.ogg,Baum
+sound_not_found,detail_tyres,394,-1,tyres.ogg,RENKAITA
+rbr_base_note_cc_type,detail_vasemmalta,2100,0.02,vasen_laita.ogg,Keep Left
+rbr_base_note_cc_type,detail_very,239,-1,additional/very_2.ogg,Sehr
+rbr_base_note_cc_type,detail_very,239,-1,additional/very_3.ogg,Sehr
+rbr_base_note_cc_type,detail_very,239,-1,very.ogg,Sehr
+rbr_base_note_cc_type,detail_very_short,275,-1,very_short.ogg,Sehr Kurz
+rbr_base_note_not_found,detail_very_short,-1,-1,additional/wideout_2.ogg,Breiter
+rbr_base_note_not_found,detail_very_short,-1,-1,additional/wideout_3.ogg,Breiter
+rbr_base_note_not_found,detail_very_short,-1,-1,wideout.ogg,Breiter
