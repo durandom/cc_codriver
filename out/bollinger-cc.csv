@@ -567,14 +567,14 @@ rbr,detail_dont_cut_late_rushed,-1,-1,late.ogg,
 rbr,detail_dont_cut_rushed,32,0.56,additional/caution_2.ogg,Achtung
 rbr,detail_dont_cut_rushed,32,0.56,additional/caution_3.ogg,Achtung
 rbr,detail_dont_cut_rushed,32,0.56,caution.ogg,Achtung
-no_rbr_note,detail_double,-1,-1,,
+no_rbr_note,detail_double,2102,0.0,,
 rbr,detail_double_caution,303,0.21,additional/double_caution_2.ogg,Gut Aufpassen
 rbr,detail_double_caution,303,0.21,additional/double_caution_3.ogg,Gut Aufpassen
 rbr,detail_double_caution,303,0.21,double_caution.ogg,Gut Aufpassen
 rbr,detail_double_caution_rushed,303,0.21,additional/double_caution_2.ogg,Gut Aufpassen
 rbr,detail_double_caution_rushed,303,0.21,additional/double_caution_3.ogg,Gut Aufpassen
 rbr,detail_double_caution_rushed,303,0.21,double_caution.ogg,Gut Aufpassen
-no_rbr_note,detail_double_rushed,-1,-1,,
+no_rbr_note,detail_double_rushed,2102,0.0,,
 rbr,detail_double_tightens,-1,-1,additional/tightensbad_2.ogg,Macht Stark Zu
 rbr,detail_double_tightens,-1,-1,additional/tightensbad_3.ogg,Macht Stark Zu
 rbr,detail_double_tightens,-1,-1,tightensbad.ogg,Macht Stark Zu
@@ -639,8 +639,8 @@ rbr,detail_gravel,320,-1,gravel.ogg,Schotter
 rbr,detail_gravel_rushed,320,-1,additional/gravel_2.ogg,Schotter
 rbr,detail_gravel_rushed,320,-1,additional/gravel_3.ogg,Schotter
 rbr,detail_gravel_rushed,320,-1,gravel.ogg,Schotter
-no_rbr_note,detail_half_long,-1,-1,,
-no_rbr_note,detail_half_long_rushed,-1,-1,,
+sound_not_found,detail_half_long,2103,0.3,half_long.ogg,HalbLang
+sound_not_found,detail_half_long_rushed,2103,0.3,half_long.ogg,HalbLang
 rbr,detail_hard,240,0.03,additional/hard_2.ogg,Stark
 rbr,detail_hard,240,0.03,additional/hard_3.ogg,Stark
 rbr,detail_hard,240,0.03,hard.ogg,Stark
@@ -659,8 +659,12 @@ rbr,detail_hole,344,-1,hole.ogg,Loch
 rbr,detail_hole_rushed,344,-1,additional/hole_2.ogg,Loch
 rbr,detail_hole_rushed,344,-1,additional/hole_3.ogg,Loch
 rbr,detail_hole_rushed,344,-1,hole.ogg,Loch
-no_rbr_note,detail_immediate,-1,-1,,
-no_rbr_note,detail_immediate_rushed,-1,-1,,
+rbr,detail_immediate,245,-1,additional/directly_2.ogg,Sofort
+rbr,detail_immediate,245,-1,additional/directly_3.ogg,Sofort
+rbr,detail_immediate,245,-1,directly.ogg,Sofort
+rbr,detail_immediate_rushed,245,-1,additional/directly_2.ogg,Sofort
+rbr,detail_immediate_rushed,245,-1,additional/directly_3.ogg,Sofort
+rbr,detail_immediate_rushed,245,-1,directly.ogg,Sofort
 rbr,detail_inside,411,0.01,additional/inside_2.ogg,Innen
 rbr,detail_inside,411,0.01,additional/inside_3.ogg,Innen
 rbr,detail_inside,411,0.01,inside.ogg,Innen
@@ -1090,7 +1094,6 @@ rbr_base_note_cc_type,very,239,-1,very.ogg,Very
 rbr_base_note_cc_type,fast,241,-1,fast.ogg,Fast
 rbr_base_note_cc_type,slow,242,0.01,slow.ogg,Slow
 rbr_base_note_cc_type,exact,243,-1,exact.ogg,Exact
-rbr_base_note_cc_type,directly,245,-1,directly.ogg,Directly
 rbr_base_note_cc_type,light,246,-1,light.ogg,Light
 rbr_base_note_cc_type,big,247,-1,big.ogg,Big
 rbr_base_note_cc_type,small,248,-1,small.ogg,Small
@@ -1151,14 +1154,13 @@ rbr_base_note_cc_type,roiku,2020,0.01,roiku.ogg,Hang
 rbr_base_note_cc_type,hae,2023,0.04,hae1.ogg,Line
 rbr_base_note_cc_type,hae,2023,0.04,hae2.ogg,Line
 rbr_base_note_cc_type,todip,2024,0.03,notko.ogg,TODIP
-rbr_base_note_not_found,immediate,2030,-1,heti1.ogg,Immediate
-rbr_base_note_not_found,immediate,2030,-1,heti2.ogg,Immediate
-rbr_base_note_not_found,vasemmalta,2100,0.02,vasen_laita.ogg,Keep Left
-rbr_base_note_not_found,oikeelta,2101,0.03,oikee_laita.ogg,Keep Right
-rbr_base_note_not_found,double,2102,0.0,tupla1.ogg,Double
-rbr_base_note_not_found,double,2102,0.0,tupla2.ogg,Double
-rbr_base_note_not_found,double,2102,0.0,tupla3.ogg,Double
-rbr_base_note_not_found,half_long,2103,0.3,puolipitka1.ogg,Half Long
+rbr_base_note_cc_type,immediate,2030,-1,heti1.ogg,Immediate
+rbr_base_note_cc_type,immediate,2030,-1,heti2.ogg,Immediate
+rbr_base_note_cc_type,vasemmalta,2100,0.02,vasen_laita.ogg,Keep Left
+rbr_base_note_cc_type,oikeelta,2101,0.03,oikee_laita.ogg,Keep Right
+rbr_base_note_cc_type,double,2102,0.0,tupla1.ogg,Double
+rbr_base_note_cc_type,double,2102,0.0,tupla2.ogg,Double
+rbr_base_note_cc_type,double,2102,0.0,tupla3.ogg,Double
 rbr_base_note_cc_type,to_finish,2105,0.05,maaliin1.ogg,To Finish
 rbr_base_note_cc_type,jump_bind,2107,0.08,hyppysido1.ogg,Jump Tie
 rbr_base_note_cc_type,jump_bind,2107,0.08,hyppysido2.ogg,Jump Tie
