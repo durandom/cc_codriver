@@ -667,7 +667,7 @@ rbr,number_900,-1,-1,900.ogg,900
 no_rbr_note,penalty_false_start,-1,-1,,
 no_rbr_note,we_are_lost,-1,-1,,
 rbr_base_note_not_found,dontcut,-1,-1,ala.ogg,Don't Cut
-rbr_base_note_cc_type,detail_narrows,14,0.32,sumppu.ogg,Narrows
+rbr_base_note_not_found,narrows,-1,-1,sumppu.ogg,Narrows
 rbr_base_note_cc_type,detail_oikeelta,2101,0.03,oikee_laita.ogg,Keep Right
 rbr_base_note_not_found,tightens,-1,-1,kirraa1.ogg,Tightens
 rbr_base_note_not_found,tightensbad,-1,-1,kirraa_kirraa.ogg,Tightens Bad

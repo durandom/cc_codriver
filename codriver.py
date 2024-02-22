@@ -727,13 +727,14 @@ class CoDriver:
 
     def rbr_list_csv(self):
         csv_writer = csv.writer(sys.stdout)
-        csv_writer.writerow(['style', 'id', 'name', 'type', 'category', 'package', 'ini', 'sound_count', 'translation', 'sound', 'error'])
+        csv_writer.writerow(['style', 'id', 'name', 'type', 'category', 'package', 'ini', 'sound_count', 'translation', 'sound', 'popularity', 'error'])
         for name, rbr_pacenote_plugin in self.rbr_pacenote_plugins.items():
             notes = rbr_pacenote_plugin.pacenotes
             # sort notes by id and name
             notes = sorted(notes, key=lambda x: (x.id, x.name, x.category))
 
             for note in notes:
+                popularity = self.get_popularity(note)
                 for sound in note.sounds:
                     error = ''
                     if sound in note.sounds_mapped.values():
@@ -741,7 +742,7 @@ class CoDriver:
                         error = f'file mapped from {from_sound}'
                     if sound in note.sounds_not_found:
                         error = 'file missing'
-                    csv_writer.writerow([name, note.id, note.name, note.type, note.category, note.package, note.ini, note.sound_count, note.translation, sound, error])
+                    csv_writer.writerow([name, note.id, note.name, note.type, note.category, note.package, note.ini, note.sound_count, note.translation, sound, popularity, error])
 
     def create_codriver(self, directory):
         # create the directory
