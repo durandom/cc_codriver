@@ -13,12 +13,20 @@
             "args": "${command:pickArgs}"
         },
         {
-            "name": "map-to-cc-csv",
+            "name": "map-to-cc-csv bollinger",
             "type": "debugpy",
             "request": "launch",
             "program": "codriver.py",
             "console": "integratedTerminal",
             "args": ["--map-to-cc-csv", "--codriver", "bollinger", "--codriver-fallback-to-base"]
+        },
+        {
+            "name": "map-to-cc-csv german-tts",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "codriver.py",
+            "console": "integratedTerminal",
+            "args": ["--map-to-cc-csv", "--codriver", "german-tts", "--codriver-fallback-to-base"]
         },
         {
             "name": "create-codriver out/codriver Bollinger",

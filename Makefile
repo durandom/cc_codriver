@@ -22,5 +22,6 @@ bollinger:
 	@echo "Done"
 
 german-tts:
+	./codriver.py --codriver german-tts --codriver-fallback-to-base --map-to-cc-csv > out/german-tts-cc.csv
 	./codriver.py --codriver german-tts --rbr-list-csv > out/german-tts-rbr.csv
 	@echo "Done"

@@ -489,6 +489,9 @@ class CoDriver:
             if not type:
                 logging.error(f'Unknown pacenote type: {sound_lookup}')
                 continue
+            if package not in self.rbr_pacenote_plugins:
+                logging.error(f'Unknown package: {package}')
+                continue
             cc_note.set_type(type)
 
             # also set the type for the not mapped note
