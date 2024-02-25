@@ -726,6 +726,12 @@ class CoDriver:
             csv_writer.writerow(note.as_dict())
 
     def rbr_list_csv(self):
+        rbr_base_mod_notes = self.base_codriver.rbr_pacenote_plugins[
+            self.base_codriver_package
+        ].pacenotes
+        rbr_base_mod_notes = list(rbr_base_mod_notes)
+        rbr_base_mod_notes = sorted(rbr_base_mod_notes, key=lambda x: (x.name, x.id, x.category, x.translation))
+
         csv_writer = csv.writer(sys.stdout)
         csv_writer.writerow(['style', 'id', 'name', 'type', 'category', 'package', 'ini', 'sound_count', 'translation', 'sound', 'popularity', 'error'])
         for name, rbr_pacenote_plugin in self.rbr_pacenote_plugins.items():
@@ -743,6 +749,30 @@ class CoDriver:
                     if sound in note.sounds_not_found:
                         error = 'file missing'
                     csv_writer.writerow([name, note.id, note.name, note.type, note.category, note.package, note.ini, note.sound_count, note.translation, sound, popularity, error])
+
+            name = 'base_mod'
+            for base_note in rbr_base_mod_notes:
+                found = False
+                for note in notes:
+                    if note.id >= 0:
+                        if note.id == base_note.id:
+                            found = True
+                            break
+                    elif note.name == base_note.name:
+                        found = True
+                        break
+
+                if not found:
+                    note = base_note
+                    popularity = self.get_popularity(note)
+                    for sound in note.sounds:
+                        error = ''
+                        if sound in note.sounds_mapped.values():
+                            from_sound = next((k for k, v in note.sounds_mapped.items() if v == sound), None)
+                            error = f'file mapped from {from_sound}'
+                        if sound in note.sounds_not_found:
+                            error = 'file missing'
+                        csv_writer.writerow([name, note.id, note.name, note.type, note.category, note.package, note.ini, note.sound_count, note.translation, sound, popularity, error])
 
     def create_codriver(self, directory):
         # create the directory

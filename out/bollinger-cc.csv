@@ -1182,9 +1182,9 @@ rbr_base_note_cc_type,detail_minusminus,231,-1,minusminus.ogg,MinusMinus
 rbr_base_note_cc_type,detail_much,237,-1,additional/much_2.ogg,Viel
 rbr_base_note_cc_type,detail_much,237,-1,additional/much_3.ogg,Viel
 rbr_base_note_cc_type,detail_much,237,-1,much.ogg,Viel
-rbr_base_note_not_found,narrows,-1,-1,additional/narrows_2.ogg,Enger
-rbr_base_note_not_found,narrows,-1,-1,additional/narrows_3.ogg,Enger
-rbr_base_note_not_found,narrows,-1,-1,narrows.ogg,Enger
+rbr_base_note_cc_type,detail_narrows,14,0.32,additional/narrows_2.ogg,Enger
+rbr_base_note_cc_type,detail_narrows,14,0.32,additional/narrows_3.ogg,Enger
+rbr_base_note_cc_type,detail_narrows,14,0.32,narrows.ogg,Enger
 rbr_base_note_cc_type,detail_negative,295,-1,additional/negative_2.ogg,Negativ
 rbr_base_note_cc_type,detail_negative,295,-1,additional/negative_3.ogg,Negativ
 rbr_base_note_cc_type,detail_negative,295,-1,negative.ogg,Negativ
@@ -1266,9 +1266,9 @@ rbr_base_note_cc_type,detail_stump,374,-1,additional/stump_2.ogg,Stumpf
 rbr_base_note_cc_type,detail_stump,374,-1,additional/stump_3.ogg,Stumpf
 rbr_base_note_cc_type,detail_stump,374,-1,stump.ogg,Stumpf
 sound_not_found,detail_tape,391,-1,tape.ogg,TEIPPI
-rbr_base_note_not_found,tightens,-1,-1,additional/tightens_2.ogg,Macht Zu
-rbr_base_note_not_found,tightens,-1,-1,additional/tightens_3.ogg,Macht Zu
-rbr_base_note_not_found,tightens,-1,-1,tightens.ogg,Macht Zu
+rbr_base_note_not_found,tightens,-1,-1,additional/tightens_2.ogg,Macht zu
+rbr_base_note_not_found,tightens,-1,-1,additional/tightens_3.ogg,Macht zu
+rbr_base_note_not_found,tightens,-1,-1,tightens.ogg,Macht zu
 rbr_base_note_cc_type,detail_to_sight_distance,555,-1,additional/to_sight_distance_2.ogg,Bis Sicht
 rbr_base_note_cc_type,detail_to_sight_distance,555,-1,additional/to_sight_distance_3.ogg,Bis Sicht
 rbr_base_note_cc_type,detail_to_sight_distance,555,-1,to_sight_distance.ogg,Bis Sicht

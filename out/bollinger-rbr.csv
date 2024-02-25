@@ -723,6 +723,27 @@ descriptive,2103,half_long,PACENOTE,ADDITIONAL,RBR,Extended.ini,1,HalbLang,half_
 descriptive,2106,jumpfull,PACENOTE,OBSTACLES,RBR,Extended.ini,1,Sprung Voll,jumpfull.ogg,-1,
 descriptive,2108,overjump,PACENOTE,OBSTACLES,RBR,Extended.ini,1,Über Sprung,overjump.ogg,0.02,
 descriptive,2109,smallcrest,PACENOTE,OBSTACLES,RBR,Extended.ini,1,Kuppe Klein,smallcrest.ogg,0.01,
+base_mod,2016,dontcutearly,PACENOTE,LINE,RBR,Extended.ini,1,Don't Cut Early,ala_alussa.ogg,0.0,
+base_mod,2017,dontcutlate,PACENOTE,LINE,RBR,Extended.ini,1,Don't Cut Late,ala_lopussa.ogg,0.05,
+base_mod,2102,double,PACENOTE,ADDITIONAL,RBR,Extended.ini,3,Double,tupla1.ogg,0.0,
+base_mod,2102,double,PACENOTE,ADDITIONAL,RBR,Extended.ini,3,Double,tupla2.ogg,0.0,
+base_mod,2102,double,PACENOTE,ADDITIONAL,RBR,Extended.ini,3,Double,tupla3.ogg,0.0,
+base_mod,2023,hae,PACENOTE,LINE,RBR,Extended.ini,2,Line,hae1.ogg,0.04,
+base_mod,2023,hae,PACENOTE,LINE,RBR,Extended.ini,2,Line,hae2.ogg,0.04,
+base_mod,2030,immediate,PACENOTE,LINKS,RBR,Extended.ini,2,Immediate,heti1.ogg,-1,
+base_mod,2030,immediate,PACENOTE,LINKS,RBR,Extended.ini,2,Immediate,heti2.ogg,-1,
+base_mod,2107,jump_bind,PACENOTE,OBSTACLES,RBR,Extended.ini,2,Jump Tie,hyppysido1.ogg,0.08,
+base_mod,2107,jump_bind,PACENOTE,OBSTACLES,RBR,Extended.ini,2,Jump Tie,hyppysido2.ogg,0.08,
+base_mod,396,marshalls,PACENOTE,OBSTACLES,RBR,Extended.ini,1,JÄRJESTYKSENVALVOJIA,marshalls.ogg,-1,file missing
+base_mod,390,netting,PACENOTE,OBSTACLES,RBR,Extended.ini,1,VERKKO,netting.ogg,-1,file missing
+base_mod,2101,oikeelta,PACENOTE,LINE,RBR,Extended.ini,1,Keep Right,oikee_laita.ogg,0.03,
+base_mod,2020,roiku,PACENOTE,LINE,RBR,Extended.ini,1,Hang,roiku.ogg,0.01,
+base_mod,395,spectators,PACENOTE,OBSTACLES,RBR,Extended.ini,1,KATSOJIA,spectators.ogg,-1,file missing
+base_mod,391,tape,PACENOTE,OBSTACLES,RBR,Extended.ini,1,TEIPPI,tape.ogg,-1,file missing
+base_mod,2105,to_finish,PACENOTE,LINKS,RBR,Extended.ini,1,To Finish,maaliin1.ogg,0.05,
+base_mod,2024,todip,PACENOTE,OBSTACLES,RBR,Extended.ini,1,TODIP,notko.ogg,0.03,
+base_mod,394,tyres,PACENOTE,OBSTACLES,RBR,Extended.ini,1,RENKAITA,tyres.ogg,-1,file missing
+base_mod,2100,vasemmalta,PACENOTE,LINE,RBR,Extended.ini,1,Keep Left,vasen_laita.ogg,0.02,
 reversed,-1,100,RANGE,EXTENDED,RBR,Extended.ini,1,100,100.ogg,-1,
 reversed,-1,100,RANGE,EXTENDED,RBR,Extended.ini,1,100,additional/100_2.ogg,-1,
 reversed,-1,100,RANGE,EXTENDED,RBR,Extended.ini,1,100,additional/100_3.ogg,-1,
@@ -1429,6 +1450,27 @@ reversed,2108,overjump,PACENOTE,OBSTACLES,RBR,Extended.ini,1,Über Sprung,overju
 reversed,2109,smallcrest,PACENOTE,OBSTACLES,RBR,Extended.ini,1,Kuppe Klein,smallcrest.ogg,0.01,
 reversed,3001,90_links,PACENOTE,CORNERS,RBR,Numeric.ini,1,90 Links*,left_square.ogg,-1,
 reversed,3010,90_rechts,PACENOTE,CORNERS,RBR,Numeric.ini,1,90 Rechts*,right_square.ogg,-1,
+base_mod,2016,dontcutearly,PACENOTE,LINE,RBR,Extended.ini,1,Don't Cut Early,ala_alussa.ogg,0.0,
+base_mod,2017,dontcutlate,PACENOTE,LINE,RBR,Extended.ini,1,Don't Cut Late,ala_lopussa.ogg,0.05,
+base_mod,2102,double,PACENOTE,ADDITIONAL,RBR,Extended.ini,3,Double,tupla1.ogg,0.0,
+base_mod,2102,double,PACENOTE,ADDITIONAL,RBR,Extended.ini,3,Double,tupla2.ogg,0.0,
+base_mod,2102,double,PACENOTE,ADDITIONAL,RBR,Extended.ini,3,Double,tupla3.ogg,0.0,
+base_mod,2023,hae,PACENOTE,LINE,RBR,Extended.ini,2,Line,hae1.ogg,0.04,
+base_mod,2023,hae,PACENOTE,LINE,RBR,Extended.ini,2,Line,hae2.ogg,0.04,
+base_mod,2030,immediate,PACENOTE,LINKS,RBR,Extended.ini,2,Immediate,heti1.ogg,-1,
+base_mod,2030,immediate,PACENOTE,LINKS,RBR,Extended.ini,2,Immediate,heti2.ogg,-1,
+base_mod,2107,jump_bind,PACENOTE,OBSTACLES,RBR,Extended.ini,2,Jump Tie,hyppysido1.ogg,0.08,
+base_mod,2107,jump_bind,PACENOTE,OBSTACLES,RBR,Extended.ini,2,Jump Tie,hyppysido2.ogg,0.08,
+base_mod,396,marshalls,PACENOTE,OBSTACLES,RBR,Extended.ini,1,JÄRJESTYKSENVALVOJIA,marshalls.ogg,-1,file missing
+base_mod,390,netting,PACENOTE,OBSTACLES,RBR,Extended.ini,1,VERKKO,netting.ogg,-1,file missing
+base_mod,2101,oikeelta,PACENOTE,LINE,RBR,Extended.ini,1,Keep Right,oikee_laita.ogg,0.03,
+base_mod,2020,roiku,PACENOTE,LINE,RBR,Extended.ini,1,Hang,roiku.ogg,0.01,
+base_mod,395,spectators,PACENOTE,OBSTACLES,RBR,Extended.ini,1,KATSOJIA,spectators.ogg,-1,file missing
+base_mod,391,tape,PACENOTE,OBSTACLES,RBR,Extended.ini,1,TEIPPI,tape.ogg,-1,file missing
+base_mod,2105,to_finish,PACENOTE,LINKS,RBR,Extended.ini,1,To Finish,maaliin1.ogg,0.05,
+base_mod,2024,todip,PACENOTE,OBSTACLES,RBR,Extended.ini,1,TODIP,notko.ogg,0.03,
+base_mod,394,tyres,PACENOTE,OBSTACLES,RBR,Extended.ini,1,RENKAITA,tyres.ogg,-1,file missing
+base_mod,2100,vasemmalta,PACENOTE,LINE,RBR,Extended.ini,1,Keep Left,vasen_laita.ogg,0.02,
 numeric,-1,100,RANGE,EXTENDED,RBR,Extended.ini,1,100,100.ogg,-1,
 numeric,-1,100,RANGE,EXTENDED,RBR,Extended.ini,1,100,additional/100_2.ogg,-1,
 numeric,-1,100,RANGE,EXTENDED,RBR,Extended.ini,1,100,additional/100_3.ogg,-1,
@@ -2163,3 +2205,24 @@ numeric,3001,90_links,PACENOTE,CORNERS,RBR,Numeric.ini,1,90 Links*,additional/90
 numeric,3010,90_rechts,PACENOTE,CORNERS,RBR,Numeric.ini,1,90 Rechts*,90_right.ogg,-1,
 numeric,3010,90_rechts,PACENOTE,CORNERS,RBR,Numeric.ini,1,90 Rechts*,additional/90_right_2.ogg,-1,
 numeric,3010,90_rechts,PACENOTE,CORNERS,RBR,Numeric.ini,1,90 Rechts*,additional/90_right_3.ogg,-1,
+base_mod,2016,dontcutearly,PACENOTE,LINE,RBR,Extended.ini,1,Don't Cut Early,ala_alussa.ogg,0.0,
+base_mod,2017,dontcutlate,PACENOTE,LINE,RBR,Extended.ini,1,Don't Cut Late,ala_lopussa.ogg,0.05,
+base_mod,2102,double,PACENOTE,ADDITIONAL,RBR,Extended.ini,3,Double,tupla1.ogg,0.0,
+base_mod,2102,double,PACENOTE,ADDITIONAL,RBR,Extended.ini,3,Double,tupla2.ogg,0.0,
+base_mod,2102,double,PACENOTE,ADDITIONAL,RBR,Extended.ini,3,Double,tupla3.ogg,0.0,
+base_mod,2023,hae,PACENOTE,LINE,RBR,Extended.ini,2,Line,hae1.ogg,0.04,
+base_mod,2023,hae,PACENOTE,LINE,RBR,Extended.ini,2,Line,hae2.ogg,0.04,
+base_mod,2030,immediate,PACENOTE,LINKS,RBR,Extended.ini,2,Immediate,heti1.ogg,-1,
+base_mod,2030,immediate,PACENOTE,LINKS,RBR,Extended.ini,2,Immediate,heti2.ogg,-1,
+base_mod,2107,jump_bind,PACENOTE,OBSTACLES,RBR,Extended.ini,2,Jump Tie,hyppysido1.ogg,0.08,
+base_mod,2107,jump_bind,PACENOTE,OBSTACLES,RBR,Extended.ini,2,Jump Tie,hyppysido2.ogg,0.08,
+base_mod,396,marshalls,PACENOTE,OBSTACLES,RBR,Extended.ini,1,JÄRJESTYKSENVALVOJIA,marshalls.ogg,-1,file missing
+base_mod,390,netting,PACENOTE,OBSTACLES,RBR,Extended.ini,1,VERKKO,netting.ogg,-1,file missing
+base_mod,2101,oikeelta,PACENOTE,LINE,RBR,Extended.ini,1,Keep Right,oikee_laita.ogg,0.03,
+base_mod,2020,roiku,PACENOTE,LINE,RBR,Extended.ini,1,Hang,roiku.ogg,0.01,
+base_mod,395,spectators,PACENOTE,OBSTACLES,RBR,Extended.ini,1,KATSOJIA,spectators.ogg,-1,file missing
+base_mod,391,tape,PACENOTE,OBSTACLES,RBR,Extended.ini,1,TEIPPI,tape.ogg,-1,file missing
+base_mod,2105,to_finish,PACENOTE,LINKS,RBR,Extended.ini,1,To Finish,maaliin1.ogg,0.05,
+base_mod,2024,todip,PACENOTE,OBSTACLES,RBR,Extended.ini,1,TODIP,notko.ogg,0.03,
+base_mod,394,tyres,PACENOTE,OBSTACLES,RBR,Extended.ini,1,RENKAITA,tyres.ogg,-1,file missing
+base_mod,2100,vasemmalta,PACENOTE,LINE,RBR,Extended.ini,1,Keep Left,vasen_laita.ogg,0.02,
