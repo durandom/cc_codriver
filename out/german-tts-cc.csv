@@ -1,22 +1,22 @@
 src,type,rbr_id,popularity,file,subtitle
 no_rbr_note,acknowledge_end_recce,-1,-1,,
 no_rbr_note,acknowledge_start_recce,-1,-1,,
-rbr,cmp_into_corner_1_left,0,0.63,hairpin_left.ogg,Kehre Links
+rbr,cmp_into_corner_1_left,102,0.02,one_left.ogg,1 Links
 rbr,cmp_into_corner_1_left_descriptive,0,0.63,hairpin_left.ogg,Kehre Links
 rbr,cmp_into_corner_1_left_descriptive_rushed,0,0.63,hairpin_left.ogg,Kehre Links
-rbr,cmp_into_corner_1_left_rushed,0,0.63,hairpin_left.ogg,Kehre Links
-rbr,cmp_into_corner_1_right,11,0.6,hairpin_right.ogg,Kehre Rechts
+rbr,cmp_into_corner_1_left_rushed,102,0.02,one_left.ogg,1 Links
+rbr,cmp_into_corner_1_right,112,0.02,one_right.ogg,1 Rechts
 rbr,cmp_into_corner_1_right_descriptive,11,0.6,hairpin_right.ogg,Kehre Rechts
 rbr,cmp_into_corner_1_right_descriptive_rushed,11,0.6,hairpin_right.ogg,Kehre Rechts
-rbr,cmp_into_corner_1_right_rushed,11,0.6,hairpin_right.ogg,Kehre Rechts
-rbr,cmp_into_corner_2_left,102,0.02,one_left.ogg,1 Links
+rbr,cmp_into_corner_1_right_rushed,112,0.02,one_right.ogg,1 Rechts
+rbr,cmp_into_corner_2_left,1,0.74,two_left.ogg,2 Links
 rbr,cmp_into_corner_2_left_descriptive,102,0.02,sharp_left.ogg,Scharf Links
 rbr,cmp_into_corner_2_left_descriptive_rushed,102,0.02,sharp_left.ogg,Scharf Links
-rbr,cmp_into_corner_2_left_rushed,102,0.02,one_left.ogg,1 Links
-rbr,cmp_into_corner_2_right,112,0.02,one_right.ogg,1 Rechts
+rbr,cmp_into_corner_2_left_rushed,1,0.74,two_left.ogg,2 Links
+rbr,cmp_into_corner_2_right,10,0.73,two_right.ogg,2 Rechts
 rbr,cmp_into_corner_2_right_descriptive,112,0.02,sharp_right.ogg,Scharf Rechts
 rbr,cmp_into_corner_2_right_descriptive_rushed,112,0.02,sharp_right.ogg,Scharf Rechts
-rbr,cmp_into_corner_2_right_rushed,112,0.02,one_right.ogg,1 Rechts
+rbr,cmp_into_corner_2_right_rushed,10,0.73,two_right.ogg,2 Rechts
 rbr,cmp_into_corner_3_left,2,0.88,three_left.ogg,3 Links
 rbr,cmp_into_corner_3_left_descriptive,2,0.88,three_left.ogg,3 Links
 rbr,cmp_into_corner_3_left_descriptive_rushed,2,0.88,three_left.ogg,3 Links
@@ -77,30 +77,30 @@ rbr,cmp_into_detail_caution,32,0.56,caution.ogg,Achtung
 rbr,cmp_into_detail_caution_rushed,32,0.56,caution.ogg,Achtung
 rbr,cmp_into_detail_ford,17,0.1,ford.ogg,Furt
 rbr,cmp_into_detail_ford_rushed,17,0.1,ford.ogg,Furt
-rbr,corner_1_left,0,0.63,hairpin_left.ogg,Kehre Links
+rbr,corner_1_left,102,0.02,one_left.ogg,1 Links
 rbr,corner_1_left_descriptive,0,0.63,hairpin_left.ogg,Kehre Links
 rbr,corner_1_left_descriptive_rushed,0,0.63,hairpin_left.ogg,Kehre Links
 rbr_base_note,corner_1_left_reversed,0,0.63,vasen_tiukka2.ogg,Left HP
 rbr_base_note,corner_1_left_reversed_rushed,0,0.63,vasen_tiukka2.ogg,Left HP
-rbr,corner_1_left_rushed,0,0.63,hairpin_left.ogg,Kehre Links
-rbr,corner_1_right,11,0.6,hairpin_right.ogg,Kehre Rechts
+rbr,corner_1_left_rushed,102,0.02,one_left.ogg,1 Links
+rbr,corner_1_right,112,0.02,one_right.ogg,1 Rechts
 rbr,corner_1_right_descriptive,11,0.6,hairpin_right.ogg,Kehre Rechts
 rbr,corner_1_right_descriptive_rushed,11,0.6,hairpin_right.ogg,Kehre Rechts
 rbr_base_note,corner_1_right_reversed,11,0.6,oikee_tiukka2.ogg,Right HP
 rbr_base_note,corner_1_right_reversed_rushed,11,0.6,oikee_tiukka2.ogg,Right HP
-rbr,corner_1_right_rushed,11,0.6,hairpin_right.ogg,Kehre Rechts
-rbr,corner_2_left,102,0.02,one_left.ogg,1 Links
+rbr,corner_1_right_rushed,112,0.02,one_right.ogg,1 Rechts
+rbr,corner_2_left,1,0.74,two_left.ogg,2 Links
 rbr,corner_2_left_descriptive,102,0.02,sharp_left.ogg,Scharf Links
 rbr,corner_2_left_descriptive_rushed,102,0.02,sharp_left.ogg,Scharf Links
 rbr_base_note,corner_2_left_reversed,102,0.02,vasen_yks2.ogg,Left 1
 rbr_base_note,corner_2_left_reversed_rushed,102,0.02,vasen_yks2.ogg,Left 1
-rbr,corner_2_left_rushed,102,0.02,one_left.ogg,1 Links
-rbr,corner_2_right,112,0.02,one_right.ogg,1 Rechts
+rbr,corner_2_left_rushed,1,0.74,two_left.ogg,2 Links
+rbr,corner_2_right,10,0.73,two_right.ogg,2 Rechts
 rbr,corner_2_right_descriptive,112,0.02,sharp_right.ogg,Scharf Rechts
 rbr,corner_2_right_descriptive_rushed,112,0.02,sharp_right.ogg,Scharf Rechts
 rbr_base_note,corner_2_right_reversed,112,0.02,oikee_yks2.ogg,Right 1
 rbr_base_note,corner_2_right_reversed_rushed,112,0.02,oikee_yks2.ogg,Right 1
-rbr,corner_2_right_rushed,112,0.02,one_right.ogg,1 Rechts
+rbr,corner_2_right_rushed,10,0.73,two_right.ogg,2 Rechts
 rbr,corner_3_left,2,0.88,three_left.ogg,3 Links
 rbr,corner_3_left_descriptive,2,0.88,three_left.ogg,3 Links
 rbr,corner_3_left_descriptive_rushed,2,0.88,three_left.ogg,3 Links
@@ -482,7 +482,7 @@ rbr_base_note_cc_type,detail_many,238,-1,many.ogg,Viele
 rbr_base_note_cc_type,detail_marshalls,396,-1,marshalls.ogg,Marschalls
 rbr_base_note_cc_type,detail_minusminus,231,-1,minusminus.ogg,MinusMinus
 rbr_base_note_cc_type,detail_much,237,-1,much.ogg,Viel
-rbr_base_note_not_found,narrows,-1,-1,narrows.ogg,Enger
+rbr_base_note_cc_type,detail_narrows,14,0.32,narrows.ogg,Enger
 rbr_base_note_cc_type,detail_negative,295,-1,negative.ogg,Negativ
 rbr_base_note_cc_type,detail_netting,390,-1,netting.ogg,Netz
 rbr_base_note_cc_type,detail_oikeelta,2101,0.03,keepright.ogg,Rechts halten
@@ -505,7 +505,7 @@ rbr_base_note_cc_type,detail_slight,252,-1,slight.ogg,Etwas
 rbr_base_note_cc_type,detail_slow,242,0.01,slow.ogg,Langsam
 rbr_base_note_cc_type,detail_small,248,-1,small.ogg,Klein
 rbr_base_note_cc_type,detail_spectators,395,-1,spectators.ogg,Zuschauer
-rbr_base_note_cc_type,detail_split-time,556,-1,split_time.ogg,Zwischenzeit
+rbr_base_note_cc_type,detail_split_time,556,-1,split_time.ogg,
 rbr_base_note_cc_type,detail_steep_drop,354,-1,steep_drop.ogg,Steil runter
 rbr_base_note_cc_type,detail_steep_hill,357,-1,steep_hill.ogg,Starkes Gefälle
 rbr_base_note_cc_type,detail_steep_incline,358,-1,steep_incline.ogg,Starke Steigung
@@ -524,4 +524,4 @@ rbr_base_note_cc_type,detail_tyres,394,-1,tyres.ogg,Reifen
 rbr_base_note_cc_type,detail_vasemmalta,2100,0.02,keepleft.ogg,Links halten
 rbr_base_note_cc_type,detail_very,239,-1,very.ogg,Sehr
 rbr_base_note_cc_type,detail_very_short,275,-1,very_short.ogg,Sehr Kurz
-rbr_base_note_not_found,wideout,-1,-1,wideout.ogg,Breiter
+rbr_base_note_cc_type,detail_wideout,15,0.09,wideout.ogg,Breiter

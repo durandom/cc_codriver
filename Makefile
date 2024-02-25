@@ -7,8 +7,12 @@ roadbooks:
 	./codriver.py --roadbook-csv --roadbook-name '/.*/' > out/roadbooks-luppis-v2.csv
 	@echo "Done"
 
-cc_bollinger:
+codriver_bollinger:
 	./codriver.py --codriver bollinger --codriver-fallback-to-base --create-codriver "build/codriver_David Bollinger"
+	@echo "Done"
+
+codriver_german_tts:
+	./codriver.py --codriver german-tts --codriver-fallback-to-base --create-codriver "build/codriver_Hans Juchard"
 	@echo "Done"
 
 janne:

@@ -121,14 +121,7 @@
                     "name": "Number First",
                     "base_dir": "assets/Janne's Note Pack v2.0/English Numeric - Number First/Plugins/Pacenote",
                     "ini_files": ["Rbr.ini", "Rbr-Enhanced.ini"],
-                    "type": "numeric",
-                    "map_rbr_ids": {
-                        "_one_left": "two_left",
-                        "0": 102,
-                        "11": 112,
-                        "102": 1,
-                        "112": 10
-                    }
+                    "type": "numeric"
                 },
                 {
                     "name": "Direction First",
@@ -157,7 +150,14 @@
                     "name": "Nummern",
                     "base_dir": "assets/RBR-German-tts-Codriver-main/Plugins/Pacenote",
                     "ini_files": ["Smo.ini", "Smo-Nummern.ini"],
-                    "type": "numeric"
+                    "type": "numeric",
+                    "map_rbr_ids": {
+                        "_one_left": "two_left",
+                        "0": 102,
+                        "11": 112,
+                        "102": 1,
+                        "112": 10
+                    }
                 },
                 {
                     "name": "Nummern und 90",
