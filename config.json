@@ -144,7 +144,22 @@
                 "number_1": ["numeric", "../../../../../../Audio/Speech/NumGer/start1.ogg", 140],
                 "number_2": ["numeric", "../../../../../../Audio/Speech/NumGer/start2.ogg", 141],
                 "number_3": ["numeric", "../../../../../../Audio/Speech/NumGer/start3.ogg", 142],
-                "detail_go": ["numeric", "../../../../../../Audio/Game/Go.wav"]
+                "number_4": ["numeric", "../../../../../../Audio/Speech/NumGer/start4.ogg", 143],
+                "detail_go": ["numeric", "../../../../../../Audio/Game/Go.wav"],
+                "corner_1_left_reversed": ["reversed", "../../../../../../../Hans Juchard Reverse/left_one.ogg"],
+                "corner_2_left_reversed": ["reversed", "../../../../../../../Hans Juchard Reverse/left_two.ogg"],
+                "corner_3_left_reversed": ["reversed", "../../../../../../../Hans Juchard Reverse/left_three.ogg"],
+                "corner_4_left_reversed": ["reversed", "../../../../../../../Hans Juchard Reverse/left_four.ogg"],
+                "corner_5_left_reversed": ["reversed", "../../../../../../../Hans Juchard Reverse/left_five.ogg"],
+                "corner_6_left_reversed": ["reversed", "../../../../../../../Hans Juchard Reverse/left_six.ogg"],
+                "corner_flat_left_reversed": ["reversed", "../../../../../../../Hans Juchard Reverse/left_full.ogg"],
+                "corner_1_right_reversed": ["reversed", "../../../../../../../Hans Juchard Reverse/right_one.ogg"],
+                "corner_2_right_reversed": ["reversed", "../../../../../../../Hans Juchard Reverse/right_two.ogg"],
+                "corner_3_right_reversed": ["reversed", "../../../../../../../Hans Juchard Reverse/right_three.ogg"],
+                "corner_4_right_reversed": ["reversed", "../../../../../../../Hans Juchard Reverse/right_four.ogg"],
+                "corner_5_right_reversed": ["reversed", "../../../../../../../Hans Juchard Reverse/right_five.ogg"],
+                "corner_6_right_reversed": ["reversed", "../../../../../../../Hans Juchard Reverse/right_six.ogg"],
+                "corner_flat_right_reversed": ["reversed", "../../../../../../../Hans Juchard Reverse/right_full.ogg"]
             },
             "packages":
             [
@@ -175,7 +190,7 @@
                     "name": "Nummern und 90",
                     "base_dir": "assets/RBR-German-tts-Codriver-main/Plugins/Pacenote",
                     "ini_files": ["Smo.ini", "Smo-Nummern_und_90.ini"],
-                    "type": "numeric-90"
+                    "type": "reversed"
                 }
             ]
         }
