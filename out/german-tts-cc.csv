@@ -81,85 +81,85 @@ rbr,corner_1_left,102,0.02,one_left.ogg,1 Links
 rbr,corner_1_left_descriptive,0,0.63,hairpin_left.ogg,Kehre Links
 rbr,corner_1_left_descriptive_rushed,0,0.63,hairpin_left.ogg,Kehre Links
 rbr,corner_1_left_reversed,-1,-1,../../../../../../../Hans Juchard Reverse/left_one.ogg,
-rbr,corner_1_left_reversed_rushed,0,0.63,hairpin_left.ogg,Kehre Links
+rbr,corner_1_left_reversed_rushed,-1,-1,../../../../../../../Hans Juchard Reverse/left_one.ogg,
 rbr,corner_1_left_rushed,102,0.02,one_left.ogg,1 Links
 rbr,corner_1_right,112,0.02,one_right.ogg,1 Rechts
 rbr,corner_1_right_descriptive,11,0.6,hairpin_right.ogg,Kehre Rechts
 rbr,corner_1_right_descriptive_rushed,11,0.6,hairpin_right.ogg,Kehre Rechts
 rbr,corner_1_right_reversed,-1,-1,../../../../../../../Hans Juchard Reverse/right_one.ogg,
-rbr,corner_1_right_reversed_rushed,11,0.6,hairpin_right.ogg,Kehre Rechts
+rbr,corner_1_right_reversed_rushed,-1,-1,../../../../../../../Hans Juchard Reverse/right_one.ogg,
 rbr,corner_1_right_rushed,112,0.02,one_right.ogg,1 Rechts
 rbr,corner_2_left,1,0.74,two_left.ogg,2 Links
 rbr,corner_2_left_descriptive,102,0.02,sharp_left.ogg,Scharf Links
 rbr,corner_2_left_descriptive_rushed,102,0.02,sharp_left.ogg,Scharf Links
 rbr,corner_2_left_reversed,-1,-1,../../../../../../../Hans Juchard Reverse/left_two.ogg,
-rbr,corner_2_left_reversed_rushed,102,0.02,two_left.ogg,2 Links
+rbr,corner_2_left_reversed_rushed,-1,-1,../../../../../../../Hans Juchard Reverse/left_two.ogg,
 rbr,corner_2_left_rushed,1,0.74,two_left.ogg,2 Links
 rbr,corner_2_right,10,0.73,two_right.ogg,2 Rechts
 rbr,corner_2_right_descriptive,112,0.02,sharp_right.ogg,Scharf Rechts
 rbr,corner_2_right_descriptive_rushed,112,0.02,sharp_right.ogg,Scharf Rechts
 rbr,corner_2_right_reversed,-1,-1,../../../../../../../Hans Juchard Reverse/right_two.ogg,
-rbr,corner_2_right_reversed_rushed,112,0.02,two_right.ogg,2 Rechts
+rbr,corner_2_right_reversed_rushed,-1,-1,../../../../../../../Hans Juchard Reverse/right_two.ogg,
 rbr,corner_2_right_rushed,10,0.73,two_right.ogg,2 Rechts
 rbr,corner_3_left,2,0.88,three_left.ogg,3 Links
 rbr,corner_3_left_descriptive,2,0.88,three_left.ogg,3 Links
 rbr,corner_3_left_descriptive_rushed,2,0.88,three_left.ogg,3 Links
 rbr,corner_3_left_reversed,-1,-1,../../../../../../../Hans Juchard Reverse/left_three.ogg,
-rbr,corner_3_left_reversed_rushed,2,0.88,three_left.ogg,3 Links
+rbr,corner_3_left_reversed_rushed,-1,-1,../../../../../../../Hans Juchard Reverse/left_three.ogg,
 rbr,corner_3_left_rushed,2,0.88,three_left.ogg,3 Links
 rbr,corner_3_right,9,0.86,three_right.ogg,3 Rechts
 rbr,corner_3_right_descriptive,9,0.86,three_right.ogg,3 Rechts
 rbr,corner_3_right_descriptive_rushed,9,0.86,three_right.ogg,3 Rechts
 rbr,corner_3_right_reversed,-1,-1,../../../../../../../Hans Juchard Reverse/right_three.ogg,
-rbr,corner_3_right_reversed_rushed,9,0.86,three_right.ogg,3 Rechts
+rbr,corner_3_right_reversed_rushed,-1,-1,../../../../../../../Hans Juchard Reverse/right_three.ogg,
 rbr,corner_3_right_rushed,9,0.86,three_right.ogg,3 Rechts
 rbr,corner_4_left,3,0.94,four_left.ogg,4 Links
 rbr,corner_4_left_descriptive,3,0.94,four_left.ogg,4 Links
 rbr,corner_4_left_descriptive_rushed,3,0.94,four_left.ogg,4 Links
 rbr,corner_4_left_reversed,-1,-1,../../../../../../../Hans Juchard Reverse/left_four.ogg,
-rbr,corner_4_left_reversed_rushed,3,0.94,four_left.ogg,4 Links
+rbr,corner_4_left_reversed_rushed,-1,-1,../../../../../../../Hans Juchard Reverse/left_four.ogg,
 rbr,corner_4_left_rushed,3,0.94,four_left.ogg,4 Links
 rbr,corner_4_right,8,0.94,four_right.ogg,4 Rechts
 rbr,corner_4_right_descriptive,8,0.94,four_right.ogg,4 Rechts
 rbr,corner_4_right_descriptive_rushed,8,0.94,four_right.ogg,4 Rechts
 rbr,corner_4_right_reversed,-1,-1,../../../../../../../Hans Juchard Reverse/right_four.ogg,
-rbr,corner_4_right_reversed_rushed,8,0.94,four_right.ogg,4 Rechts
+rbr,corner_4_right_reversed_rushed,-1,-1,../../../../../../../Hans Juchard Reverse/right_four.ogg,
 rbr,corner_4_right_rushed,8,0.94,four_right.ogg,4 Rechts
 rbr,corner_5_left,4,0.93,five_left.ogg,5 Links
 rbr,corner_5_left_descriptive,4,0.93,five_left.ogg,5 Links
 rbr,corner_5_left_descriptive_rushed,4,0.93,five_left.ogg,5 Links
 rbr,corner_5_left_reversed,-1,-1,../../../../../../../Hans Juchard Reverse/left_five.ogg,
-rbr,corner_5_left_reversed_rushed,4,0.93,five_left.ogg,5 Links
+rbr,corner_5_left_reversed_rushed,-1,-1,../../../../../../../Hans Juchard Reverse/left_five.ogg,
 rbr,corner_5_left_rushed,4,0.93,five_left.ogg,5 Links
 rbr,corner_5_right,7,0.94,five_right.ogg,5 Rechts
 rbr,corner_5_right_descriptive,7,0.94,five_right.ogg,5 Rechts
 rbr,corner_5_right_descriptive_rushed,7,0.94,five_right.ogg,5 Rechts
 rbr,corner_5_right_reversed,-1,-1,../../../../../../../Hans Juchard Reverse/right_five.ogg,
-rbr,corner_5_right_reversed_rushed,7,0.94,five_right.ogg,5 Rechts
+rbr,corner_5_right_reversed_rushed,-1,-1,../../../../../../../Hans Juchard Reverse/right_five.ogg,
 rbr,corner_5_right_rushed,7,0.94,five_right.ogg,5 Rechts
 rbr,corner_6_left,5,0.87,six_left.ogg,6 Links
 rbr,corner_6_left_descriptive,5,0.87,easy_left.ogg,Leicht Links
 rbr,corner_6_left_descriptive_rushed,5,0.87,easy_left.ogg,Leicht Links
 rbr,corner_6_left_reversed,-1,-1,../../../../../../../Hans Juchard Reverse/left_six.ogg,
-rbr,corner_6_left_reversed_rushed,5,0.87,six_left.ogg,6 Links
+rbr,corner_6_left_reversed_rushed,-1,-1,../../../../../../../Hans Juchard Reverse/left_six.ogg,
 rbr,corner_6_left_rushed,5,0.87,six_left.ogg,6 Links
 rbr,corner_6_right,6,0.88,six_right.ogg,6 Rechts
 rbr,corner_6_right_descriptive,6,0.88,easy_right.ogg,Leicht Rechts
 rbr,corner_6_right_descriptive_rushed,6,0.88,easy_right.ogg,Leicht Rechts
 rbr,corner_6_right_reversed,-1,-1,../../../../../../../Hans Juchard Reverse/right_six.ogg,
-rbr,corner_6_right_reversed_rushed,6,0.88,six_right.ogg,6 Rechts
+rbr,corner_6_right_reversed_rushed,-1,-1,../../../../../../../Hans Juchard Reverse/right_six.ogg,
 rbr,corner_6_right_rushed,6,0.88,six_right.ogg,6 Rechts
 rbr,corner_flat_left,26,0.59,flat_left.ogg,Voll Links
 rbr,corner_flat_left_descriptive,26,0.59,flat_left.ogg,Voll Links
 rbr,corner_flat_left_descriptive_rushed,26,0.59,flat_left.ogg,Voll Links
 rbr,corner_flat_left_reversed,-1,-1,../../../../../../../Hans Juchard Reverse/left_full.ogg,
-rbr,corner_flat_left_reversed_rushed,26,0.59,flat_left.ogg,Voll Links
+rbr,corner_flat_left_reversed_rushed,-1,-1,../../../../../../../Hans Juchard Reverse/left_full.ogg,
 rbr,corner_flat_left_rushed,26,0.59,flat_left.ogg,Voll Links
 rbr,corner_flat_right,25,0.59,flat_right.ogg,Voll Rechts
 rbr,corner_flat_right_descriptive,25,0.59,flat_right.ogg,Voll Rechts
 rbr,corner_flat_right_descriptive_rushed,25,0.59,flat_right.ogg,Voll Rechts
 rbr,corner_flat_right_reversed,-1,-1,../../../../../../../Hans Juchard Reverse/right_full.ogg,
-rbr,corner_flat_right_reversed_rushed,25,0.59,flat_right.ogg,Voll Rechts
+rbr,corner_flat_right_reversed_rushed,-1,-1,../../../../../../../Hans Juchard Reverse/right_full.ogg,
 rbr,corner_flat_right_rushed,25,0.59,flat_right.ogg,Voll Rechts
 rbr,corner_hairpin_left,0,0.63,hairpin_left.ogg,Kehre Links
 rbr,corner_hairpin_left_reversed,0,0.63,hairpin_left.ogg,Kehre Links
@@ -482,7 +482,7 @@ rbr_base_note_cc_type,detail_many,238,-1,many.ogg,Viele
 rbr_base_note_cc_type,detail_marshalls,396,-1,marshalls.ogg,Marschalls
 rbr_base_note_cc_type,detail_minusminus,231,-1,minusminus.ogg,MinusMinus
 rbr_base_note_cc_type,detail_much,237,-1,much.ogg,Viel
-rbr_base_note_not_found,narrows,-1,-1,narrows.ogg,Enger
+rbr_base_note_cc_type,detail_narrows,14,0.32,narrows.ogg,Enger
 rbr_base_note_cc_type,detail_negative,295,-1,negative.ogg,Negativ
 rbr_base_note_cc_type,detail_netting,390,-1,netting.ogg,Netz
 rbr_base_note_cc_type,detail_oikeelta,2101,0.03,keepright.ogg,Rechts halten
@@ -505,7 +505,7 @@ rbr_base_note_cc_type,detail_slight,252,-1,slight.ogg,Etwas
 rbr_base_note_cc_type,detail_slow,242,0.01,slow.ogg,Langsam
 rbr_base_note_cc_type,detail_small,248,-1,small.ogg,Klein
 rbr_base_note_cc_type,detail_spectators,395,-1,spectators.ogg,Zuschauer
-rbr_base_note_cc_type,detail_split_time,556,-1,split_time.ogg,
+rbr_base_note_cc_type,detail_split-time,556,-1,split_time.ogg,Zwischenzeit
 rbr_base_note_cc_type,detail_steep_drop,354,-1,steep_drop.ogg,Steil runter
 rbr_base_note_cc_type,detail_steep_hill,357,-1,steep_hill.ogg,Starkes Gefälle
 rbr_base_note_cc_type,detail_steep_incline,358,-1,steep_incline.ogg,Starke Steigung

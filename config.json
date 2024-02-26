@@ -159,7 +159,21 @@
                 "corner_4_right_reversed": ["reversed", "../../../../../../../Hans Juchard Reverse/right_four.ogg"],
                 "corner_5_right_reversed": ["reversed", "../../../../../../../Hans Juchard Reverse/right_five.ogg"],
                 "corner_6_right_reversed": ["reversed", "../../../../../../../Hans Juchard Reverse/right_six.ogg"],
-                "corner_flat_right_reversed": ["reversed", "../../../../../../../Hans Juchard Reverse/right_full.ogg"]
+                "corner_flat_right_reversed": ["reversed", "../../../../../../../Hans Juchard Reverse/right_full.ogg"],
+                "corner_1_left_reversed_rushed": ["reversed", "../../../../../../../Hans Juchard Reverse/left_one.ogg"],
+                "corner_2_left_reversed_rushed": ["reversed", "../../../../../../../Hans Juchard Reverse/left_two.ogg"],
+                "corner_3_left_reversed_rushed": ["reversed", "../../../../../../../Hans Juchard Reverse/left_three.ogg"],
+                "corner_4_left_reversed_rushed": ["reversed", "../../../../../../../Hans Juchard Reverse/left_four.ogg"],
+                "corner_5_left_reversed_rushed": ["reversed", "../../../../../../../Hans Juchard Reverse/left_five.ogg"],
+                "corner_6_left_reversed_rushed": ["reversed", "../../../../../../../Hans Juchard Reverse/left_six.ogg"],
+                "corner_flat_left_reversed_rushed": ["reversed", "../../../../../../../Hans Juchard Reverse/left_full.ogg"],
+                "corner_1_right_reversed_rushed": ["reversed", "../../../../../../../Hans Juchard Reverse/right_one.ogg"],
+                "corner_2_right_reversed_rushed": ["reversed", "../../../../../../../Hans Juchard Reverse/right_two.ogg"],
+                "corner_3_right_reversed_rushed": ["reversed", "../../../../../../../Hans Juchard Reverse/right_three.ogg"],
+                "corner_4_right_reversed_rushed": ["reversed", "../../../../../../../Hans Juchard Reverse/right_four.ogg"],
+                "corner_5_right_reversed_rushed": ["reversed", "../../../../../../../Hans Juchard Reverse/right_five.ogg"],
+                "corner_6_right_reversed_rushed": ["reversed", "../../../../../../../Hans Juchard Reverse/right_six.ogg"],
+                "corner_flat_right_reversed_rushed": ["reversed", "../../../../../../../Hans Juchard Reverse/right_full.ogg"]
             },
             "packages":
             [
