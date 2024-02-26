@@ -28,3 +28,36 @@ Tooling to examine RBR Pacenotes and the RBR Pacenotes plugin and conversion to 
 *  https://edresson.github.io/YourTTS/
 *  https://sep.com/blog/helpful-tools-to-make-your-first-voice-clone-dataset-easy-to-build/
 *  https://www.reddit.com/r/selfhosted/comments/17oabw3/selfhosted_texttospeech_and_voice_cloning_review/
+*
+
+```
+sox input.wav output.wav \
+compand 0.2,1 6:-70,-60,-20 5 -90 0.2 \
+equalizer 100 0.707 -5 highpass 300 lowpass 3000 equalizer 1000 0.707 3 \
+gain 2.3 \
+compand 0.2,1.0 6:-60,-1,-1 -5 -90 0.2
+
+sox input.wav output.wav \
+compand 0.2,1 6:-70,-60,-20 5 -90 0.2 \
+equalizer 100 0.707 -5 highpass 300 lowpass 3000 equalizer 1000 0.707 3
+
+sox input.wav output.wav \
+highpass 300 lowpass 3000 \
+compand 0.3,1 6:-70,-60,-20 5 -90 0.2 \
+overdrive 10 \
+equalizer 1000 0.707 3
+
+
+sox input.wav output.wav \
+highpass 300 lowpass 3000 \
+compand 0.3,1.5 6:-60,-30 5 -90 0.2 \
+overdrive 10 \
+equalizer 1000 0.707 3
+
+
+sox input.wav output.wav \
+highpass 300 lowpass 3000 \
+compand 0.3,2.5 6:-30,-40 5 -90 0.2 \
+overdrive 10 \
+equalizer 1000 0.707 3
+```

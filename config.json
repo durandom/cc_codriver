@@ -94,8 +94,10 @@
                         "_one_left": "two_left",
                         "0": 102,
                         "11": 112,
+                        "_two_left": "square_left",
                         "102": 1,
                         "112": 10,
+                        "_square_left": "hairpin_left",
                         "1": ["descriptive", 1],
                         "10": ["descriptive", 10],
                         "4089": ["numeric", "tightensbad"],
@@ -138,6 +140,12 @@
             ]
         },
         "german-tts": {
+            "map_static": {
+                "number_1": ["numeric", "../../../../../../Audio/Speech/NumGer/start1.ogg", 140],
+                "number_2": ["numeric", "../../../../../../Audio/Speech/NumGer/start2.ogg", 141],
+                "number_3": ["numeric", "../../../../../../Audio/Speech/NumGer/start3.ogg", 142],
+                "detail_go": ["numeric", "../../../../../../Audio/Game/Go.wav"]
+            },
             "packages":
             [
                 {
@@ -155,8 +163,12 @@
                         "_one_left": "two_left",
                         "0": 102,
                         "11": 112,
+                        "_two_left": "square_left",
                         "102": 1,
-                        "112": 10
+                        "112": 10,
+                        "_square_left": "hairpin_left",
+                        "1": ["descriptive", 1],
+                        "10": ["descriptive", 10]
                     }
                 },
                 {

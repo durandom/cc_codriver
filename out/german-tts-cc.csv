@@ -61,14 +61,14 @@ rbr,cmp_into_corner_hairpin_left,0,0.63,hairpin_left.ogg,Kehre Links
 rbr,cmp_into_corner_hairpin_left_rushed,0,0.63,hairpin_left.ogg,Kehre Links
 rbr,cmp_into_corner_hairpin_right,11,0.6,hairpin_right.ogg,Kehre Rechts
 rbr,cmp_into_corner_hairpin_right_rushed,11,0.6,hairpin_right.ogg,Kehre Rechts
-rbr,cmp_into_corner_square_left,1,0.74,two_left.ogg,2 Links
+rbr,cmp_into_corner_square_left,1,0.74,square_left.ogg,90 Links
 rbr,cmp_into_corner_square_left_descriptive,1,0.74,square_left.ogg,90 Links
 rbr,cmp_into_corner_square_left_descriptive_rushed,1,0.74,square_left.ogg,90 Links
-rbr,cmp_into_corner_square_left_rushed,1,0.74,two_left.ogg,2 Links
-rbr,cmp_into_corner_square_right,10,0.73,two_right.ogg,2 Rechts
+rbr,cmp_into_corner_square_left_rushed,1,0.74,square_left.ogg,90 Links
+rbr,cmp_into_corner_square_right,10,0.73,square_right.ogg,90 Rechts
 rbr,cmp_into_corner_square_right_descriptive,10,0.73,square_right.ogg,90 Rechts
 rbr,cmp_into_corner_square_right_descriptive_rushed,10,0.73,square_right.ogg,90 Rechts
-rbr,cmp_into_corner_square_right_rushed,10,0.73,two_right.ogg,2 Rechts
+rbr,cmp_into_corner_square_right_rushed,10,0.73,square_right.ogg,90 Rechts
 rbr,cmp_into_detail_bump,19,0.53,bump.ogg,Schlag
 rbr,cmp_into_detail_bump_rushed,19,0.53,bump.ogg,Schlag
 rbr,cmp_into_detail_care,18,0.49,care.ogg,Vorsicht
@@ -171,18 +171,18 @@ no_rbr_note,corner_open_hairpin_left,40003,-1,,
 no_rbr_note,corner_open_hairpin_left_rushed,40003,-1,,
 no_rbr_note,corner_open_hairpin_right,40004,-1,,
 no_rbr_note,corner_open_hairpin_right_rushed,40004,-1,,
-rbr,corner_square_left,1,0.74,two_left.ogg,2 Links
+rbr,corner_square_left,1,0.74,square_left.ogg,90 Links
 rbr,corner_square_left_descriptive,1,0.74,square_left.ogg,90 Links
 rbr,corner_square_left_descriptive_rushed,1,0.74,square_left.ogg,90 Links
 rbr_base_note,corner_square_left_reversed,1,0.74,vasen_kaks2.ogg,Left 2
 rbr_base_note,corner_square_left_reversed_rushed,1,0.74,vasen_kaks2.ogg,Left 2
-rbr,corner_square_left_rushed,1,0.74,two_left.ogg,2 Links
-rbr,corner_square_right,10,0.73,two_right.ogg,2 Rechts
+rbr,corner_square_left_rushed,1,0.74,square_left.ogg,90 Links
+rbr,corner_square_right,10,0.73,square_right.ogg,90 Rechts
 rbr,corner_square_right_descriptive,10,0.73,square_right.ogg,90 Rechts
 rbr,corner_square_right_descriptive_rushed,10,0.73,square_right.ogg,90 Rechts
 rbr_base_note,corner_square_right_reversed,10,0.73,oikee_kaks2.ogg,Right 2
 rbr_base_note,corner_square_right_reversed_rushed,10,0.73,oikee_kaks2.ogg,Right 2
-rbr,corner_square_right_rushed,10,0.73,two_right.ogg,2 Rechts
+rbr,corner_square_right_rushed,10,0.73,square_right.ogg,90 Rechts
 no_rbr_note,correction,-1,-1,,
 rbr,detail_and,-1,-1,and.ogg,Und
 rbr,detail_and_rushed,-1,-1,and.ogg,Und
@@ -242,7 +242,7 @@ rbr,detail_ford,17,0.1,ford.ogg,Furt
 rbr,detail_ford_rushed,17,0.1,ford.ogg,Furt
 rbr,detail_full_cut,212,0.0,fullcut.ogg,Stark schneiden
 rbr,detail_full_cut_rushed,212,0.0,fullcut.ogg,Stark schneiden
-no_rbr_note,detail_go,-1,-1,,
+rbr,detail_go,-1,-1,../../../../../../Audio/Game/Go.wav,
 rbr,detail_go_straight,28,0.23,gostraight.ogg,Geradeaus
 rbr,detail_go_straight_rushed,28,0.23,gostraight.ogg,Geradeaus
 rbr,detail_gravel,320,-1,gravel.ogg,Schotter
@@ -408,7 +408,7 @@ rbr,detail_water,388,-1,water.ogg,Wasser
 rbr,detail_widens,15,0.09,wideout.ogg,Breiter
 rbr,detail_wideout,15,0.09,wideout.ogg,Breiter
 no_rbr_note,microphone_check,-1,-1,,
-no_rbr_note,number_1,-1,-1,,
+rbr,number_1,140,-1,../../../../../../Audio/Speech/NumGer/start1.ogg,
 rbr,number_100,-1,-1,100.ogg,100
 rbr,number_1000,-1,-1,1000.ogg,1000
 rbr,number_100_rushed,-1,-1,100.ogg,100
@@ -417,10 +417,10 @@ rbr,number_140,-1,-1,140.ogg,140
 rbr,number_150,-1,-1,150.ogg,150
 rbr,number_160,-1,-1,160.ogg,160
 rbr,number_180,-1,-1,180.ogg,180
-no_rbr_note,number_2,-1,-1,,
+rbr,number_2,141,-1,../../../../../../Audio/Speech/NumGer/start2.ogg,
 rbr,number_200,-1,-1,200.ogg,200
 rbr,number_250,-1,-1,250.ogg,250
-no_rbr_note,number_3,-1,-1,,
+rbr,number_3,142,-1,../../../../../../Audio/Speech/NumGer/start3.ogg,
 rbr,number_30,-1,-1,30.ogg,30
 rbr,number_300,-1,-1,300.ogg,300
 rbr,number_30_rushed,-1,-1,30.ogg,30
@@ -482,7 +482,7 @@ rbr_base_note_cc_type,detail_many,238,-1,many.ogg,Viele
 rbr_base_note_cc_type,detail_marshalls,396,-1,marshalls.ogg,Marschalls
 rbr_base_note_cc_type,detail_minusminus,231,-1,minusminus.ogg,MinusMinus
 rbr_base_note_cc_type,detail_much,237,-1,much.ogg,Viel
-rbr_base_note_cc_type,detail_narrows,14,0.32,narrows.ogg,Enger
+rbr_base_note_not_found,narrows,-1,-1,narrows.ogg,Enger
 rbr_base_note_cc_type,detail_negative,295,-1,negative.ogg,Negativ
 rbr_base_note_cc_type,detail_netting,390,-1,netting.ogg,Netz
 rbr_base_note_cc_type,detail_oikeelta,2101,0.03,keepright.ogg,Rechts halten
@@ -505,7 +505,7 @@ rbr_base_note_cc_type,detail_slight,252,-1,slight.ogg,Etwas
 rbr_base_note_cc_type,detail_slow,242,0.01,slow.ogg,Langsam
 rbr_base_note_cc_type,detail_small,248,-1,small.ogg,Klein
 rbr_base_note_cc_type,detail_spectators,395,-1,spectators.ogg,Zuschauer
-rbr_base_note_cc_type,detail_split_time,556,-1,split_time.ogg,
+rbr_base_note_cc_type,detail_split-time,556,-1,split_time.ogg,Zwischenzeit
 rbr_base_note_cc_type,detail_steep_drop,354,-1,steep_drop.ogg,Steil runter
 rbr_base_note_cc_type,detail_steep_hill,357,-1,steep_hill.ogg,Starkes Gefälle
 rbr_base_note_cc_type,detail_steep_incline,358,-1,steep_incline.ogg,Starke Steigung
