@@ -1,6 +1,6 @@
 .PHONY: all janne bollinger german-tts cc_bollinger roadbooks
 
-all: janne bollinger german-tts
+all: janne-v2 janne-v3 bollinger german-tts
 	@echo "Done"
 
 roadbooks:
@@ -15,9 +15,14 @@ codriver_german_tts:
 	./codriver.py --codriver german-tts --codriver-fallback-to-base --create-codriver "build/codriver_Hans Juchard"
 	@echo "Done"
 
-janne:
+janne-v2:
 	./codriver.py --codriver janne-v2 --map-to-cc-csv > out/janne-v2-cc.csv
 	./codriver.py --codriver janne-v2 --rbr-list-csv > out/janne-v2-rbr.csv
+	@echo "Done"
+
+janne-v3:
+	./codriver.py --codriver janne-v3 --map-to-cc-csv > out/janne-v3-cc.csv
+	./codriver.py --codriver janne-v3 --rbr-list-csv > out/janne-v3-rbr.csv
 	@echo "Done"
 
 bollinger:

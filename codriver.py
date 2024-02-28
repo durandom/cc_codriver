@@ -82,8 +82,8 @@ class MappedNote:
     def set_rbr_base_note_cc_modifier(self):
         self.src = 'rbr_base_note_cc_modifier'
 
-    def set_rbr_base_note_not_found(self):
-        self.src = 'rbr_base_note_not_found'
+    def rbr_base_note_no_cc_type(self):
+        self.src = 'rbr_base_note_no_cc_type'
 
     def as_dict(self):
         return {
@@ -463,6 +463,9 @@ class CoDriver:
                     cc_note.add_prefix(prefix_note)
                     file = file[1]
 
+                if sound_lookup.endswith('_rushed'):
+                    cc_note.rushed = True
+
                 cc_note.add_file(file, package, sound_dir, rbr_id)
                 cc_notes.append(cc_note)
                 continue
@@ -649,7 +652,7 @@ class CoDriver:
 
         # iterate through all rbr notes
         rbr_base_mod_notes = list(rbr_base_mod_notes)
-        rbr_base_mod_notes = sorted(rbr_base_mod_notes, key=lambda x: (x.name, x.id, x.category, x.translation))
+        rbr_base_mod_notes = sorted(rbr_base_mod_notes, key=lambda x: (x.id, x.name, x.category, x.translation))
         for rbr_note in rbr_base_mod_notes:
             yield_note = MappedNote()
             # check if the note is mapped in our codriver
@@ -704,7 +707,7 @@ class CoDriver:
                     yield_note.type = rbr_note.name
                     yield_note.set_rbr_base_note_cc_modifier()
                 else:
-                    yield_note.set_rbr_base_note_not_found()
+                    yield_note.rbr_base_note_no_cc_type()
                     yield_note.type = rbr_note.name
 
                 for sound in sorted(rbr_note.sounds):

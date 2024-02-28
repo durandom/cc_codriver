@@ -1,7 +1,7 @@
 {
     "roadbooks": "assets/Luppis Pacenote Pack V2 [26.1.2024]/ALL PACENOTES/PACENOTE WITH FOLDER STRUCTURE/Plugins/NGPCarMenu",
     "cc_sounds": "assets/codriver",
-    "rbr_base_mod": "janne-v2",
+    "rbr_base_mod": "janne-v3",
     "rbr_base_package": "numeric",
     "pacenote_stats": "out/roadbooks-luppis-v2.csv",
     "_skip_notes": {
@@ -45,6 +45,52 @@
         "detail_slippery": 268
     },
     "codrivers": {
+        "janne-v2": {
+            "packages":
+            [
+                {
+                    "name": "Number First",
+                    "base_dir": "assets/Janne's Note Pack v2.0/English Numeric - Number First/Plugins/Pacenote",
+                    "ini_files": ["Rbr.ini", "Rbr-Enhanced.ini"],
+                    "type": "numeric"
+                },
+                {
+                    "name": "Direction First",
+                    "base_dir": "assets/Janne's Note Pack v2.0/English Numeric - Direction First/Plugins/Pacenote",
+                    "ini_files": ["Rbr.ini", "Rbr-Enhanced.ini"],
+                    "type": "reversed"
+                },
+                {
+                    "name": "English Descriptive",
+                    "base_dir": "assets/Janne's Note Pack v2.0/English Descriptive/Plugins/Pacenote",
+                    "ini_files": ["Rbr.ini", "Rbr-Enhanced.ini"],
+                    "type": "descriptive"
+                }
+            ]
+        },
+        "janne-v3": {
+            "packages":
+            [
+                {
+                    "name": "Numeric A",
+                    "base_dir": "assets/Jannemod V3 - Public test_v1.1/English/English Numeric A/Plugins/Pacenote",
+                    "ini_files": ["Rbr.ini", "Rbr-Enhanced.ini"],
+                    "type": "numeric"
+                },
+                {
+                    "name": "Numeric B",
+                    "base_dir": "assets/Jannemod V3 - Public test_v1.1/English/English Numeric B/Plugins/Pacenote",
+                    "ini_files": ["Rbr.ini", "Rbr-Enhanced.ini"],
+                    "type": "reversed"
+                },
+                {
+                    "name": "English Descriptive",
+                    "base_dir": "assets/Jannemod V3 - Public test_v1.1/English/English Descriptive A/Plugins/Pacenote",
+                    "ini_files": ["Rbr.ini", "Rbr-Enhanced.ini"],
+                    "type": "descriptive"
+                }
+            ]
+        },
         "bollinger": {
             "map_files": {
                 "medium_left.ogg": "mediumleft.ogg",
@@ -113,29 +159,6 @@
                         "_immediate": "directly",
                         "2030": 245
                     }
-                }
-            ]
-        },
-        "janne-v2": {
-            "packages":
-            [
-                {
-                    "name": "Number First",
-                    "base_dir": "assets/Janne's Note Pack v2.0/English Numeric - Number First/Plugins/Pacenote",
-                    "ini_files": ["Rbr.ini", "Rbr-Enhanced.ini"],
-                    "type": "numeric"
-                },
-                {
-                    "name": "Direction First",
-                    "base_dir": "assets/Janne's Note Pack v2.0/English Numeric - Direction First/Plugins/Pacenote",
-                    "ini_files": ["Rbr.ini", "Rbr-Enhanced.ini"],
-                    "type": "reversed"
-                },
-                {
-                    "name": "English Descriptive",
-                    "base_dir": "assets/Janne's Note Pack v2.0/English Descriptive/Plugins/Pacenote",
-                    "ini_files": ["Rbr.ini", "Rbr-Enhanced.ini"],
-                    "type": "descriptive"
                 }
             ]
         },
