@@ -1,10 +1,14 @@
-.PHONY: all janne bollinger german-tts cc_bollinger roadbooks
+.PHONY: all janne bollinger german-tts cc_bollinger roadbooks roadbooks-v3
 
 all: janne-v2 janne-v3 bollinger german-tts
 	@echo "Done"
 
 roadbooks:
 	./codriver.py --roadbook-csv --roadbook-name '/.*/' > out/roadbooks-luppis-v2.csv
+	@echo "Done"
+
+roadbooks-v3:
+	./codriver.py --roadbook-csv-v3 --roadbook-name '/.*/' > out/roadbooks-luppis-v3.csv
 	@echo "Done"
 
 codriver_bollinger:

@@ -1,9 +1,10 @@
 {
-    "roadbooks": "assets/Luppis Pacenote Pack V2 [26.1.2024]/ALL PACENOTES/PACENOTE WITH FOLDER STRUCTURE/Plugins/NGPCarMenu",
+    "roadbooks": "assets/Luppis Pacenote Pack V2 [25.2.2024]/ALL PACENOTES/PACENOTE WITH FOLDER STRUCTURE/Plugins/NGPCarMenu",
+    "roadbooks_v3": "assets/LuppisV3 Pacenote Pack [25.2.2024]/ALL PACENOTES/PACENOTES WITH FOLDER STRUCTURE/Plugins/NGPCarMenu/MyPacenotes",
     "cc_sounds": "assets/codriver",
     "rbr_base_mod": "janne-v3",
     "rbr_base_package": "numeric",
-    "pacenote_stats": "out/roadbooks-luppis-v2.csv",
+    "pacenote_stats": "out/roadbooks-luppis-v3.csv",
     "_skip_notes": {
         "acknowledge_end_recce": -1,
         "acknowledge_start_recce": -1,
@@ -35,7 +36,7 @@
         "corner_hairpin_left": "corner_1_left_descriptive",
         "corner_hairpin_left_reversed": "corner_1_left_descriptive",
         "corner_hairpin_right_reversed": "corner_1_right_descriptive",
-        "detail_widens": "detail_wideout"
+        "_detail_widens": "detail_wideout"
     },
     "_comment": "additional_cc_types are added to cc_pacenote_type.txt",
     "_additional_cc_types": {

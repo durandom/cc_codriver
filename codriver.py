@@ -910,6 +910,7 @@ if __name__ == '__main__':
     parser.add_argument('--rbr-list-csv', action='store_true', help='List RBR pacenotes as CSV')
     parser.add_argument('--rbr-package', default='all', help='Only list pacenotes for a specific package, defaults to all')
     parser.add_argument('--roadbook-csv', action='store_true', help='Analyzes a Roabook file and creates a CSV file')
+    parser.add_argument('--roadbook-csv-v3', action='store_true', help='Analyzes a Roabook file and creates a CSV file')
     parser.add_argument('--roadbook-name', default='/.*/', help='Which Roabook file to analyze, defaults to all')
     parser.add_argument('--create-codriver', help='Map RBR pacenotes to CC pacenotes and create folder structure')
     parser.add_argument('--codriver-fallback-to-base', action='store_true', help='Use sound from base codriver if not found')
@@ -922,6 +923,13 @@ if __name__ == '__main__':
 
     if args.roadbook_csv:
         roadbook_dir = config['roadbooks']
+        roadbooks = Roadbooks(roadbook_dir)
+        roadbooks.read_roadbooks(args.roadbook_name)
+        roadbooks.analyze_books()
+        exit(0)
+
+    if args.roadbook_csv_v3:
+        roadbook_dir = config['roadbooks_v3']
         roadbooks = Roadbooks(roadbook_dir)
         roadbooks.read_roadbooks(args.roadbook_name)
         roadbooks.analyze_books()
