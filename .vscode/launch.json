@@ -21,6 +21,14 @@
             "args": ["--map-to-cc-csv", "--codriver", "bollinger", "--codriver-fallback-to-base"]
         },
         {
+            "name": "map-to-cc-csv janne-v3",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "codriver.py",
+            "console": "integratedTerminal",
+            "args": ["--map-to-cc-csv", "--codriver", "janne-v3", "--codriver-fallback-to-base"]
+        },
+        {
             "name": "map-to-cc-csv german-tts",
             "type": "debugpy",
             "request": "launch",

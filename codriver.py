@@ -788,7 +788,7 @@ class CoDriver:
             logging.debug(f'Directory {directory} already exists')
 
         # copy terminologies.json
-        src = os.path.join(self.cc_sounds_dir, 'terminologies.json')
+        src = os.path.join('terminologies.json')
         shutil.copy(src, directory)
 
         # create csvwriter for logging the mapping
