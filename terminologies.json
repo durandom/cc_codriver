@@ -31,7 +31,9 @@
         "corner_left_acute": "corner_hairpin_left",
         "corner_right_acute": "corner_hairpin_right",
         "detail_keep_left_rbr": "detail_keep_left",
-        "detail_keep_right_rbr": "detail_keep_right"
+        "detail_keep_right_rbr": "detail_keep_right",
+        "corner_open_hairpin_right_rbr": "corner_open_hairpin_right",
+        "corner_open_hairpin_left_rbr": "corner_open_hairpin_left"
       }
     },
     "DIRECTION_FIRST": {
@@ -39,13 +41,17 @@
         "corner_left_acute": "corner_hairpin_left",
         "corner_right_acute": "corner_hairpin_right",
         "detail_keep_left_rbr": "detail_keep_left",
-        "detail_keep_right_rbr": "detail_keep_right"
+        "detail_keep_right_rbr": "detail_keep_right",
+        "corner_open_hairpin_right_rbr": "corner_open_hairpin_right",
+        "corner_open_hairpin_left_rbr": "corner_open_hairpin_left"
       }
     },
     "DESCRIPTIVE": {
       "terminology": {
         "detail_keep_left_rbr": "detail_keep_left",
-        "detail_keep_right_rbr": "detail_keep_right"
+        "detail_keep_right_rbr": "detail_keep_right",
+        "corner_open_hairpin_right_rbr": "corner_open_hairpin_right",
+        "corner_open_hairpin_left_rbr": "corner_open_hairpin_left"
       }
     },
     "NUMBER_FIRST_REVERSED": {
@@ -53,7 +59,9 @@
         "corner_left_acute": "corner_hairpin_left",
         "corner_right_acute": "corner_hairpin_right",
         "detail_keep_left_rbr": "detail_keep_left",
-        "detail_keep_right_rbr": "detail_keep_right"
+        "detail_keep_right_rbr": "detail_keep_right",
+        "corner_open_hairpin_right_rbr": "corner_open_hairpin_right",
+        "corner_open_hairpin_left_rbr": "corner_open_hairpin_left"
       }
     },
     "DIRECTION_FIRST_REVERSED": {
@@ -61,7 +69,9 @@
         "corner_left_acute": "corner_hairpin_left",
         "corner_right_acute": "corner_hairpin_right",
         "detail_keep_left_rbr": "detail_keep_left",
-        "detail_keep_right_rbr": "detail_keep_right"
+        "detail_keep_right_rbr": "detail_keep_right",
+        "corner_open_hairpin_right_rbr": "corner_open_hairpin_right",
+        "corner_open_hairpin_left_rbr": "corner_open_hairpin_left"
       }
     }
   },
