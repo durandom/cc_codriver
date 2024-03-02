@@ -28,18 +28,16 @@
   "termininologies": {
     "NUMBER_FIRST": {
       "terminology": {
-        "corner_left_acute": "corner_hairpin_left",
-        "corner_right_acute": "corner_hairpin_right",
         "detail_keep_left_rbr": "detail_keep_left",
         "detail_keep_right_rbr": "detail_keep_right",
         "corner_open_hairpin_right_rbr": "corner_open_hairpin_right",
-        "corner_open_hairpin_left_rbr": "corner_open_hairpin_left"
+        "corner_open_hairpin_left_rbr": "corner_open_hairpin_left",
+        "corner_1_left": "corner_hairpin_left",
+        "corner_1_right": "corner_hairpin_right"
       }
     },
     "DIRECTION_FIRST": {
       "terminology": {
-        "corner_left_acute": "corner_hairpin_left",
-        "corner_right_acute": "corner_hairpin_right",
         "detail_keep_left_rbr": "detail_keep_left",
         "detail_keep_right_rbr": "detail_keep_right",
         "corner_open_hairpin_right_rbr": "corner_open_hairpin_right",
@@ -56,8 +54,6 @@
     },
     "NUMBER_FIRST_REVERSED": {
       "terminology": {
-        "corner_left_acute": "corner_hairpin_left",
-        "corner_right_acute": "corner_hairpin_right",
         "detail_keep_left_rbr": "detail_keep_left",
         "detail_keep_right_rbr": "detail_keep_right",
         "corner_open_hairpin_right_rbr": "corner_open_hairpin_right",
@@ -66,8 +62,6 @@
     },
     "DIRECTION_FIRST_REVERSED": {
       "terminology": {
-        "corner_left_acute": "corner_hairpin_left",
-        "corner_right_acute": "corner_hairpin_right",
         "detail_keep_left_rbr": "detail_keep_left",
         "detail_keep_right_rbr": "detail_keep_right",
         "corner_open_hairpin_right_rbr": "corner_open_hairpin_right",
@@ -92,6 +86,20 @@
     "corner_flat_left",
     "corner_2_left",
     "corner_2_right",
+    "corner_1_left_plus",
+    "corner_square_left_plus",
+    "corner_3_left_plus",
+    "corner_4_left_plus",
+    "corner_5_left_plus",
+    "corner_6_left_plus",
+    "corner_6_right_plus",
+    "corner_5_right_plus",
+    "corner_4_right_plus",
+    "corner_3_right_plus",
+    "corner_square_right_plus",
+    "corner_1_right_plus",
+    "corner_2_left_plus",
+    "corner_2_right_plus",
     "corner_left",
     "corner_right",
     "corner_right_into",

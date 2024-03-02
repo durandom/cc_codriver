@@ -311,6 +311,15 @@ class CoDriver:
                         # logging.debug(f'Adding {name} - {note.sounds}')
                         self.cc_sounds[name] = note
 
+        # also add all sounds from self.cc_pacenotes_types
+        for id, type in self.cc_pacenotes_types.items():
+            # check if the name is already in the cc_sounds
+            if type.name in self.cc_sounds:
+                continue
+            note = CrewChiefNote(type.name)
+            note.set_type(type)
+            self.cc_sounds[type.name] = note
+
     def init_rbr_sounds(self, sounds_dir = "sounds"):
         # open the codriver directory and get all the subdirectories
 
@@ -520,6 +529,9 @@ class CoDriver:
     def cc_copy_original_sounds(self, type, dst_path):
         # just copy the original sound
         src = os.path.join(self.cc_sounds_dir, type)
+        # if src doesnt exist, just return
+        if not os.path.exists(src):
+            return
         # copy each file from src directory to the destination directory
         for file in os.listdir(src):
             file = os.path.join(src, file)
@@ -543,7 +555,7 @@ class CoDriver:
         with open(os.path.join(dst_path, 'subtitles.csv'), mode='a+', encoding='utf-8') as file:
             csv_writer = csv.writer(file)
             subtitle = rbr_note.translation
-            sound_file_basename = note.file
+            sound_file_basename = os.path.basename(wave_file)
             csv_writer.writerow([sound_file_basename, subtitle])
 
     def get_popularity(self, note : Union[RbrPacenote, CrewChiefNote, int]):
