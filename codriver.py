@@ -581,6 +581,10 @@ class CoDriver:
 
         cc_sounds = sorted(self.cc_sounds.values(), key=lambda x: x.name)
         for cc_note in cc_sounds:
+            if cc_note.name in self.skip_notes.keys():
+                logging.debug(f'ignoring {cc_note.name}')
+                continue
+
             yield_note = MappedNote()
 
             # find the mapped note

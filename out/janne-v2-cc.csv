@@ -1,70 +1,68 @@
 src,type,rbr_id,popularity,file,subtitle
-no_rbr_note,acknowledge_end_recce,-1,-1,,
-no_rbr_note,acknowledge_start_recce,-1,-1,,
-rbr,cmp_into_corner_1_left,0,0.63,vasen_tiukka1.ogg,HP Left
-rbr,cmp_into_corner_1_left,0,0.63,vasen_tiukka2.ogg,HP Left
-rbr,cmp_into_corner_1_left_descriptive,0,0.63,vasen_serpo1.ogg,HP Left
-rbr,cmp_into_corner_1_left_descriptive,0,0.63,vasen_serpo2.ogg,HP Left
-rbr,cmp_into_corner_1_left_descriptive_rushed,0,0.63,vasen_serpo1.ogg,HP Left
-rbr,cmp_into_corner_1_left_descriptive_rushed,0,0.63,vasen_serpo2.ogg,HP Left
-rbr,cmp_into_corner_1_left_rushed,0,0.63,vasen_tiukka1.ogg,HP Left
-rbr,cmp_into_corner_1_left_rushed,0,0.63,vasen_tiukka2.ogg,HP Left
-rbr,cmp_into_corner_1_right,11,0.6,oikee_tiukka1.ogg,HP Right
-rbr,cmp_into_corner_1_right,11,0.6,oikee_tiukka2.ogg,HP Right
-rbr,cmp_into_corner_1_right_descriptive,11,0.6,oikee_serpo1.ogg,HP Right
-rbr,cmp_into_corner_1_right_descriptive,11,0.6,oikee_serpo2.ogg,HP Right
-rbr,cmp_into_corner_1_right_descriptive_rushed,11,0.6,oikee_serpo1.ogg,HP Right
-rbr,cmp_into_corner_1_right_descriptive_rushed,11,0.6,oikee_serpo2.ogg,HP Right
-rbr,cmp_into_corner_1_right_rushed,11,0.6,oikee_tiukka1.ogg,HP Right
-rbr,cmp_into_corner_1_right_rushed,11,0.6,oikee_tiukka2.ogg,HP Right
-rbr,cmp_into_corner_2_left,102,0.02,vasen_yks1.ogg,1 Left
-rbr,cmp_into_corner_2_left,102,0.02,vasen_yks2.ogg,1 Left
-rbr,cmp_into_corner_2_left_descriptive,102,0.02,vasen_hidas1.ogg,Slow Left
-rbr,cmp_into_corner_2_left_descriptive,102,0.02,vasen_hidas2.ogg,Slow Left
-rbr,cmp_into_corner_2_left_descriptive_rushed,102,0.02,vasen_hidas1.ogg,Slow Left
-rbr,cmp_into_corner_2_left_descriptive_rushed,102,0.02,vasen_hidas2.ogg,Slow Left
-rbr,cmp_into_corner_2_left_rushed,102,0.02,vasen_yks1.ogg,1 Left
-rbr,cmp_into_corner_2_left_rushed,102,0.02,vasen_yks2.ogg,1 Left
-rbr,cmp_into_corner_2_right,112,0.02,oikee_yks1.ogg,1 Right
-rbr,cmp_into_corner_2_right,112,0.02,oikee_yks2.ogg,1 Right
-rbr,cmp_into_corner_2_right_descriptive,112,0.02,oikee_hidas1.ogg,Slow Right
-rbr,cmp_into_corner_2_right_descriptive,112,0.02,oikee_hidas2.ogg,Slow Right
-rbr,cmp_into_corner_2_right_descriptive_rushed,112,0.02,oikee_hidas1.ogg,Slow Right
-rbr,cmp_into_corner_2_right_descriptive_rushed,112,0.02,oikee_hidas2.ogg,Slow Right
-rbr,cmp_into_corner_2_right_rushed,112,0.02,oikee_yks1.ogg,1 Right
-rbr,cmp_into_corner_2_right_rushed,112,0.02,oikee_yks2.ogg,1 Right
-rbr,cmp_into_corner_3_left,2,0.88,vasen_kolme1.ogg,3 Left
-rbr,cmp_into_corner_3_left,2,0.88,vasen_kolme2.ogg,3 Left
-rbr,cmp_into_corner_3_left_descriptive,2,0.88,vasen_koo1.ogg,K Left
-rbr,cmp_into_corner_3_left_descriptive,2,0.88,vasen_koo2.ogg,K Left
-rbr,cmp_into_corner_3_left_descriptive_rushed,2,0.88,vasen_koo1.ogg,K Left
-rbr,cmp_into_corner_3_left_descriptive_rushed,2,0.88,vasen_koo2.ogg,K Left
-rbr,cmp_into_corner_3_left_rushed,2,0.88,vasen_kolme1.ogg,3 Left
-rbr,cmp_into_corner_3_left_rushed,2,0.88,vasen_kolme2.ogg,3 Left
-rbr,cmp_into_corner_3_right,9,0.86,oikee_kolme1.ogg,3 Right
-rbr,cmp_into_corner_3_right,9,0.86,oikee_kolme2.ogg,3 Right
-rbr,cmp_into_corner_3_right_descriptive,9,0.86,oikee_koo1.ogg,K Right
-rbr,cmp_into_corner_3_right_descriptive,9,0.86,oikee_koo2.ogg,K Right
-rbr,cmp_into_corner_3_right_descriptive_rushed,9,0.86,oikee_koo1.ogg,K Right
-rbr,cmp_into_corner_3_right_descriptive_rushed,9,0.86,oikee_koo2.ogg,K Right
-rbr,cmp_into_corner_3_right_rushed,9,0.86,oikee_kolme1.ogg,3 Right
-rbr,cmp_into_corner_3_right_rushed,9,0.86,oikee_kolme2.ogg,3 Right
-rbr,cmp_into_corner_4_left,3,0.94,vasen_nelja1.ogg,4 Left
-rbr,cmp_into_corner_4_left,3,0.94,vasen_nelja2.ogg,4 Left
-rbr,cmp_into_corner_4_left_descriptive,3,0.94,vasen_nopee1.ogg,Medium Left
-rbr,cmp_into_corner_4_left_descriptive,3,0.94,vasen_nopee2.ogg,Medium Left
-rbr,cmp_into_corner_4_left_descriptive_rushed,3,0.94,vasen_nopee1.ogg,Medium Left
-rbr,cmp_into_corner_4_left_descriptive_rushed,3,0.94,vasen_nopee2.ogg,Medium Left
-rbr,cmp_into_corner_4_left_rushed,3,0.94,vasen_nelja1.ogg,4 Left
-rbr,cmp_into_corner_4_left_rushed,3,0.94,vasen_nelja2.ogg,4 Left
-rbr,cmp_into_corner_4_right,8,0.94,oikee_nelja1.ogg,4 Right
-rbr,cmp_into_corner_4_right,8,0.94,oikee_nelja2.ogg,4 Right
-rbr,cmp_into_corner_4_right_descriptive,8,0.94,oikee_nopee1.ogg,Medium Right
-rbr,cmp_into_corner_4_right_descriptive,8,0.94,oikee_nopee2.ogg,Medium Right
-rbr,cmp_into_corner_4_right_descriptive_rushed,8,0.94,oikee_nopee1.ogg,Medium Right
-rbr,cmp_into_corner_4_right_descriptive_rushed,8,0.94,oikee_nopee2.ogg,Medium Right
-rbr,cmp_into_corner_4_right_rushed,8,0.94,oikee_nelja1.ogg,4 Right
-rbr,cmp_into_corner_4_right_rushed,8,0.94,oikee_nelja2.ogg,4 Right
+rbr,cmp_into_corner_1_left,0,0.53,vasen_tiukka1.ogg,HP Left
+rbr,cmp_into_corner_1_left,0,0.53,vasen_tiukka2.ogg,HP Left
+rbr,cmp_into_corner_1_left_descriptive,0,0.53,vasen_serpo1.ogg,HP Left
+rbr,cmp_into_corner_1_left_descriptive,0,0.53,vasen_serpo2.ogg,HP Left
+rbr,cmp_into_corner_1_left_descriptive_rushed,0,0.53,vasen_serpo1.ogg,HP Left
+rbr,cmp_into_corner_1_left_descriptive_rushed,0,0.53,vasen_serpo2.ogg,HP Left
+rbr,cmp_into_corner_1_left_rushed,0,0.53,vasen_tiukka1.ogg,HP Left
+rbr,cmp_into_corner_1_left_rushed,0,0.53,vasen_tiukka2.ogg,HP Left
+rbr,cmp_into_corner_1_right,11,0.53,oikee_tiukka1.ogg,HP Right
+rbr,cmp_into_corner_1_right,11,0.53,oikee_tiukka2.ogg,HP Right
+rbr,cmp_into_corner_1_right_descriptive,11,0.53,oikee_serpo1.ogg,HP Right
+rbr,cmp_into_corner_1_right_descriptive,11,0.53,oikee_serpo2.ogg,HP Right
+rbr,cmp_into_corner_1_right_descriptive_rushed,11,0.53,oikee_serpo1.ogg,HP Right
+rbr,cmp_into_corner_1_right_descriptive_rushed,11,0.53,oikee_serpo2.ogg,HP Right
+rbr,cmp_into_corner_1_right_rushed,11,0.53,oikee_tiukka1.ogg,HP Right
+rbr,cmp_into_corner_1_right_rushed,11,0.53,oikee_tiukka2.ogg,HP Right
+rbr,cmp_into_corner_2_left,102,0.63,vasen_yks1.ogg,1 Left
+rbr,cmp_into_corner_2_left,102,0.63,vasen_yks2.ogg,1 Left
+rbr,cmp_into_corner_2_left_descriptive,102,0.63,vasen_hidas1.ogg,Slow Left
+rbr,cmp_into_corner_2_left_descriptive,102,0.63,vasen_hidas2.ogg,Slow Left
+rbr,cmp_into_corner_2_left_descriptive_rushed,102,0.63,vasen_hidas1.ogg,Slow Left
+rbr,cmp_into_corner_2_left_descriptive_rushed,102,0.63,vasen_hidas2.ogg,Slow Left
+rbr,cmp_into_corner_2_left_rushed,102,0.63,vasen_yks1.ogg,1 Left
+rbr,cmp_into_corner_2_left_rushed,102,0.63,vasen_yks2.ogg,1 Left
+rbr,cmp_into_corner_2_right,112,0.6,oikee_yks1.ogg,1 Right
+rbr,cmp_into_corner_2_right,112,0.6,oikee_yks2.ogg,1 Right
+rbr,cmp_into_corner_2_right_descriptive,112,0.6,oikee_hidas1.ogg,Slow Right
+rbr,cmp_into_corner_2_right_descriptive,112,0.6,oikee_hidas2.ogg,Slow Right
+rbr,cmp_into_corner_2_right_descriptive_rushed,112,0.6,oikee_hidas1.ogg,Slow Right
+rbr,cmp_into_corner_2_right_descriptive_rushed,112,0.6,oikee_hidas2.ogg,Slow Right
+rbr,cmp_into_corner_2_right_rushed,112,0.6,oikee_yks1.ogg,1 Right
+rbr,cmp_into_corner_2_right_rushed,112,0.6,oikee_yks2.ogg,1 Right
+rbr,cmp_into_corner_3_left,2,0.97,vasen_kolme1.ogg,3 Left
+rbr,cmp_into_corner_3_left,2,0.97,vasen_kolme2.ogg,3 Left
+rbr,cmp_into_corner_3_left_descriptive,2,0.97,vasen_koo1.ogg,K Left
+rbr,cmp_into_corner_3_left_descriptive,2,0.97,vasen_koo2.ogg,K Left
+rbr,cmp_into_corner_3_left_descriptive_rushed,2,0.97,vasen_koo1.ogg,K Left
+rbr,cmp_into_corner_3_left_descriptive_rushed,2,0.97,vasen_koo2.ogg,K Left
+rbr,cmp_into_corner_3_left_rushed,2,0.97,vasen_kolme1.ogg,3 Left
+rbr,cmp_into_corner_3_left_rushed,2,0.97,vasen_kolme2.ogg,3 Left
+rbr,cmp_into_corner_3_right,9,0.97,oikee_kolme1.ogg,3 Right
+rbr,cmp_into_corner_3_right,9,0.97,oikee_kolme2.ogg,3 Right
+rbr,cmp_into_corner_3_right_descriptive,9,0.97,oikee_koo1.ogg,K Right
+rbr,cmp_into_corner_3_right_descriptive,9,0.97,oikee_koo2.ogg,K Right
+rbr,cmp_into_corner_3_right_descriptive_rushed,9,0.97,oikee_koo1.ogg,K Right
+rbr,cmp_into_corner_3_right_descriptive_rushed,9,0.97,oikee_koo2.ogg,K Right
+rbr,cmp_into_corner_3_right_rushed,9,0.97,oikee_kolme1.ogg,3 Right
+rbr,cmp_into_corner_3_right_rushed,9,0.97,oikee_kolme2.ogg,3 Right
+rbr,cmp_into_corner_4_left,3,0.96,vasen_nelja1.ogg,4 Left
+rbr,cmp_into_corner_4_left,3,0.96,vasen_nelja2.ogg,4 Left
+rbr,cmp_into_corner_4_left_descriptive,3,0.96,vasen_nopee1.ogg,Medium Left
+rbr,cmp_into_corner_4_left_descriptive,3,0.96,vasen_nopee2.ogg,Medium Left
+rbr,cmp_into_corner_4_left_descriptive_rushed,3,0.96,vasen_nopee1.ogg,Medium Left
+rbr,cmp_into_corner_4_left_descriptive_rushed,3,0.96,vasen_nopee2.ogg,Medium Left
+rbr,cmp_into_corner_4_left_rushed,3,0.96,vasen_nelja1.ogg,4 Left
+rbr,cmp_into_corner_4_left_rushed,3,0.96,vasen_nelja2.ogg,4 Left
+rbr,cmp_into_corner_4_right,8,0.97,oikee_nelja1.ogg,4 Right
+rbr,cmp_into_corner_4_right,8,0.97,oikee_nelja2.ogg,4 Right
+rbr,cmp_into_corner_4_right_descriptive,8,0.97,oikee_nopee1.ogg,Medium Right
+rbr,cmp_into_corner_4_right_descriptive,8,0.97,oikee_nopee2.ogg,Medium Right
+rbr,cmp_into_corner_4_right_descriptive_rushed,8,0.97,oikee_nopee1.ogg,Medium Right
+rbr,cmp_into_corner_4_right_descriptive_rushed,8,0.97,oikee_nopee2.ogg,Medium Right
+rbr,cmp_into_corner_4_right_rushed,8,0.97,oikee_nelja1.ogg,4 Right
+rbr,cmp_into_corner_4_right_rushed,8,0.97,oikee_nelja2.ogg,4 Right
 rbr,cmp_into_corner_5_left,4,0.93,vasen_viis1.ogg,5 Left
 rbr,cmp_into_corner_5_left,4,0.93,vasen_viis2.ogg,5 Left
 rbr,cmp_into_corner_5_left_descriptive,4,0.93,vasen_eri1.ogg,Fast Left
@@ -73,176 +71,180 @@ rbr,cmp_into_corner_5_left_descriptive_rushed,4,0.93,vasen_eri1.ogg,Fast Left
 rbr,cmp_into_corner_5_left_descriptive_rushed,4,0.93,vasen_eri2.ogg,Fast Left
 rbr,cmp_into_corner_5_left_rushed,4,0.93,vasen_viis1.ogg,5 Left
 rbr,cmp_into_corner_5_left_rushed,4,0.93,vasen_viis2.ogg,5 Left
-rbr,cmp_into_corner_5_right,7,0.94,oikee_viis1.ogg,5 Right
-rbr,cmp_into_corner_5_right,7,0.94,oikee_viis2.ogg,5 Right
-rbr,cmp_into_corner_5_right_descriptive,7,0.94,oikee_eri1.ogg,Fast Right
-rbr,cmp_into_corner_5_right_descriptive,7,0.94,oikee_eri2.ogg,Fast Right
-rbr,cmp_into_corner_5_right_descriptive_rushed,7,0.94,oikee_eri1.ogg,Fast Right
-rbr,cmp_into_corner_5_right_descriptive_rushed,7,0.94,oikee_eri2.ogg,Fast Right
-rbr,cmp_into_corner_5_right_rushed,7,0.94,oikee_viis1.ogg,5 Right
-rbr,cmp_into_corner_5_right_rushed,7,0.94,oikee_viis2.ogg,5 Right
-rbr,cmp_into_corner_6_left,5,0.87,vasen_kuus1.ogg,6 Left
-rbr,cmp_into_corner_6_left,5,0.87,vasen_kuus2.ogg,6 Left
-rbr,cmp_into_corner_6_left,5,0.87,vasen_kuus3.ogg,6 Left
-rbr,cmp_into_corner_6_left_descriptive,5,0.87,vasen_helppo1.ogg,Slight Left
-rbr,cmp_into_corner_6_left_descriptive,5,0.87,vasen_helppo2.ogg,Slight Left
-rbr,cmp_into_corner_6_left_descriptive_rushed,5,0.87,vasen_helppo1.ogg,Slight Left
-rbr,cmp_into_corner_6_left_descriptive_rushed,5,0.87,vasen_helppo2.ogg,Slight Left
-rbr,cmp_into_corner_6_left_rushed,5,0.87,vasen_kuus1.ogg,6 Left
-rbr,cmp_into_corner_6_left_rushed,5,0.87,vasen_kuus2.ogg,6 Left
-rbr,cmp_into_corner_6_left_rushed,5,0.87,vasen_kuus3.ogg,6 Left
-rbr,cmp_into_corner_6_right,6,0.88,oikee_kuus1.ogg,6 Right
-rbr,cmp_into_corner_6_right,6,0.88,oikee_kuus2.ogg,6 Right
-rbr,cmp_into_corner_6_right_descriptive,6,0.88,oikee_helppo1.ogg,Slight Right
-rbr,cmp_into_corner_6_right_descriptive,6,0.88,oikee_helppo2.ogg,Slight Right
-rbr,cmp_into_corner_6_right_descriptive_rushed,6,0.88,oikee_helppo1.ogg,Slight Right
-rbr,cmp_into_corner_6_right_descriptive_rushed,6,0.88,oikee_helppo2.ogg,Slight Right
-rbr,cmp_into_corner_6_right_rushed,6,0.88,oikee_kuus1.ogg,6 Right
-rbr,cmp_into_corner_6_right_rushed,6,0.88,oikee_kuus2.ogg,6 Right
-rbr,cmp_into_corner_flat_left,26,0.59,vasen_tays1.ogg,Flat Left
-rbr,cmp_into_corner_flat_left,26,0.59,vasen_tays2.ogg,Flat Left
-rbr,cmp_into_corner_flat_left_descriptive,26,0.59,vasen_tays1.ogg,Flat Left
-rbr,cmp_into_corner_flat_left_descriptive,26,0.59,vasen_tays2.ogg,Flat Left
-rbr,cmp_into_corner_flat_left_descriptive_rushed,26,0.59,vasen_tays1.ogg,Flat Left
-rbr,cmp_into_corner_flat_left_descriptive_rushed,26,0.59,vasen_tays2.ogg,Flat Left
-rbr,cmp_into_corner_flat_left_rushed,26,0.59,vasen_tays1.ogg,Flat Left
-rbr,cmp_into_corner_flat_left_rushed,26,0.59,vasen_tays2.ogg,Flat Left
-rbr,cmp_into_corner_flat_right,25,0.59,oikee_tays1.ogg,Flat Right
-rbr,cmp_into_corner_flat_right,25,0.59,oikee_tays2.ogg,Flat Right
-rbr,cmp_into_corner_flat_right_descriptive,25,0.59,oikee_tays1.ogg,Flat Right
-rbr,cmp_into_corner_flat_right_descriptive,25,0.59,oikee_tays2.ogg,Flat Right
-rbr,cmp_into_corner_flat_right_descriptive_rushed,25,0.59,oikee_tays1.ogg,Flat Right
-rbr,cmp_into_corner_flat_right_descriptive_rushed,25,0.59,oikee_tays2.ogg,Flat Right
-rbr,cmp_into_corner_flat_right_rushed,25,0.59,oikee_tays1.ogg,Flat Right
-rbr,cmp_into_corner_flat_right_rushed,25,0.59,oikee_tays2.ogg,Flat Right
-rbr,cmp_into_corner_hairpin_left,0,0.63,vasen_serpo1.ogg,HP Left
-rbr,cmp_into_corner_hairpin_left,0,0.63,vasen_serpo2.ogg,HP Left
-rbr,cmp_into_corner_hairpin_left_rushed,0,0.63,vasen_serpo1.ogg,HP Left
-rbr,cmp_into_corner_hairpin_left_rushed,0,0.63,vasen_serpo2.ogg,HP Left
-rbr,cmp_into_corner_hairpin_right,11,0.6,oikee_serpo1.ogg,HP Right
-rbr,cmp_into_corner_hairpin_right,11,0.6,oikee_serpo2.ogg,HP Right
-rbr,cmp_into_corner_hairpin_right_rushed,11,0.6,oikee_serpo1.ogg,HP Right
-rbr,cmp_into_corner_hairpin_right_rushed,11,0.6,oikee_serpo2.ogg,HP Right
-rbr,cmp_into_corner_square_left,1,0.74,vasen_kaks1.ogg,2 Left
-rbr,cmp_into_corner_square_left,1,0.74,vasen_kaks2.ogg,2 Left
-rbr,cmp_into_corner_square_left_descriptive,1,0.74,vasen_90_1.ogg,Square Left
-rbr,cmp_into_corner_square_left_descriptive,1,0.74,vasen_90_2.ogg,Square Left
-rbr,cmp_into_corner_square_left_descriptive_rushed,1,0.74,vasen_90_1.ogg,Square Left
-rbr,cmp_into_corner_square_left_descriptive_rushed,1,0.74,vasen_90_2.ogg,Square Left
-rbr,cmp_into_corner_square_left_rushed,1,0.74,vasen_kaks1.ogg,2 Left
-rbr,cmp_into_corner_square_left_rushed,1,0.74,vasen_kaks2.ogg,2 Left
-rbr,cmp_into_corner_square_right,10,0.73,oikee_kaks1.ogg,2 Right
-rbr,cmp_into_corner_square_right,10,0.73,oikee_kaks2.ogg,2 Right
-rbr,cmp_into_corner_square_right_descriptive,10,0.73,oikee_90_1.ogg,Square Right
-rbr,cmp_into_corner_square_right_descriptive,10,0.73,oikee_90_2.ogg,Square Right
-rbr,cmp_into_corner_square_right_descriptive_rushed,10,0.73,oikee_90_1.ogg,Square Right
-rbr,cmp_into_corner_square_right_descriptive_rushed,10,0.73,oikee_90_2.ogg,Square Right
-rbr,cmp_into_corner_square_right_rushed,10,0.73,oikee_kaks1.ogg,2 Right
-rbr,cmp_into_corner_square_right_rushed,10,0.73,oikee_kaks2.ogg,2 Right
+rbr,cmp_into_corner_5_right,7,0.93,oikee_viis1.ogg,5 Right
+rbr,cmp_into_corner_5_right,7,0.93,oikee_viis2.ogg,5 Right
+rbr,cmp_into_corner_5_right_descriptive,7,0.93,oikee_eri1.ogg,Fast Right
+rbr,cmp_into_corner_5_right_descriptive,7,0.93,oikee_eri2.ogg,Fast Right
+rbr,cmp_into_corner_5_right_descriptive_rushed,7,0.93,oikee_eri1.ogg,Fast Right
+rbr,cmp_into_corner_5_right_descriptive_rushed,7,0.93,oikee_eri2.ogg,Fast Right
+rbr,cmp_into_corner_5_right_rushed,7,0.93,oikee_viis1.ogg,5 Right
+rbr,cmp_into_corner_5_right_rushed,7,0.93,oikee_viis2.ogg,5 Right
+rbr,cmp_into_corner_6_left,5,0.83,vasen_kuus1.ogg,6 Left
+rbr,cmp_into_corner_6_left,5,0.83,vasen_kuus2.ogg,6 Left
+rbr,cmp_into_corner_6_left,5,0.83,vasen_kuus3.ogg,6 Left
+rbr,cmp_into_corner_6_left_descriptive,5,0.83,vasen_helppo1.ogg,Slight Left
+rbr,cmp_into_corner_6_left_descriptive,5,0.83,vasen_helppo2.ogg,Slight Left
+rbr,cmp_into_corner_6_left_descriptive_rushed,5,0.83,vasen_helppo1.ogg,Slight Left
+rbr,cmp_into_corner_6_left_descriptive_rushed,5,0.83,vasen_helppo2.ogg,Slight Left
+rbr,cmp_into_corner_6_left_rushed,5,0.83,vasen_kuus1.ogg,6 Left
+rbr,cmp_into_corner_6_left_rushed,5,0.83,vasen_kuus2.ogg,6 Left
+rbr,cmp_into_corner_6_left_rushed,5,0.83,vasen_kuus3.ogg,6 Left
+rbr,cmp_into_corner_6_right,6,0.87,oikee_kuus1.ogg,6 Right
+rbr,cmp_into_corner_6_right,6,0.87,oikee_kuus2.ogg,6 Right
+rbr,cmp_into_corner_6_right_descriptive,6,0.87,oikee_helppo1.ogg,Slight Right
+rbr,cmp_into_corner_6_right_descriptive,6,0.87,oikee_helppo2.ogg,Slight Right
+rbr,cmp_into_corner_6_right_descriptive_rushed,6,0.87,oikee_helppo1.ogg,Slight Right
+rbr,cmp_into_corner_6_right_descriptive_rushed,6,0.87,oikee_helppo2.ogg,Slight Right
+rbr,cmp_into_corner_6_right_rushed,6,0.87,oikee_kuus1.ogg,6 Right
+rbr,cmp_into_corner_6_right_rushed,6,0.87,oikee_kuus2.ogg,6 Right
+rbr,cmp_into_corner_flat_left,26,0.3,vasen_tays1.ogg,Flat Left
+rbr,cmp_into_corner_flat_left,26,0.3,vasen_tays2.ogg,Flat Left
+rbr,cmp_into_corner_flat_left_descriptive,26,0.3,vasen_tays1.ogg,Flat Left
+rbr,cmp_into_corner_flat_left_descriptive,26,0.3,vasen_tays2.ogg,Flat Left
+rbr,cmp_into_corner_flat_left_descriptive_rushed,26,0.3,vasen_tays1.ogg,Flat Left
+rbr,cmp_into_corner_flat_left_descriptive_rushed,26,0.3,vasen_tays2.ogg,Flat Left
+rbr,cmp_into_corner_flat_left_rushed,26,0.3,vasen_tays1.ogg,Flat Left
+rbr,cmp_into_corner_flat_left_rushed,26,0.3,vasen_tays2.ogg,Flat Left
+rbr,cmp_into_corner_flat_right,25,0.3,oikee_tays1.ogg,Flat Right
+rbr,cmp_into_corner_flat_right,25,0.3,oikee_tays2.ogg,Flat Right
+rbr,cmp_into_corner_flat_right_descriptive,25,0.3,oikee_tays1.ogg,Flat Right
+rbr,cmp_into_corner_flat_right_descriptive,25,0.3,oikee_tays2.ogg,Flat Right
+rbr,cmp_into_corner_flat_right_descriptive_rushed,25,0.3,oikee_tays1.ogg,Flat Right
+rbr,cmp_into_corner_flat_right_descriptive_rushed,25,0.3,oikee_tays2.ogg,Flat Right
+rbr,cmp_into_corner_flat_right_rushed,25,0.3,oikee_tays1.ogg,Flat Right
+rbr,cmp_into_corner_flat_right_rushed,25,0.3,oikee_tays2.ogg,Flat Right
+no_rbr_note,cmp_into_corner_hairpin_left,-1,-1,,
+no_rbr_note,cmp_into_corner_hairpin_left_rushed,-1,-1,,
+no_rbr_note,cmp_into_corner_hairpin_right,-1,-1,,
+no_rbr_note,cmp_into_corner_hairpin_right_rushed,-1,-1,,
+rbr,cmp_into_corner_square_left,1,0.89,vasen_kaks1.ogg,2 Left
+rbr,cmp_into_corner_square_left,1,0.89,vasen_kaks2.ogg,2 Left
+rbr,cmp_into_corner_square_left_descriptive,1,0.89,vasen_90_1.ogg,Square Left
+rbr,cmp_into_corner_square_left_descriptive,1,0.89,vasen_90_2.ogg,Square Left
+rbr,cmp_into_corner_square_left_descriptive_rushed,1,0.89,vasen_90_1.ogg,Square Left
+rbr,cmp_into_corner_square_left_descriptive_rushed,1,0.89,vasen_90_2.ogg,Square Left
+rbr,cmp_into_corner_square_left_rushed,1,0.89,vasen_kaks1.ogg,2 Left
+rbr,cmp_into_corner_square_left_rushed,1,0.89,vasen_kaks2.ogg,2 Left
+rbr,cmp_into_corner_square_right,10,0.91,oikee_kaks1.ogg,2 Right
+rbr,cmp_into_corner_square_right,10,0.91,oikee_kaks2.ogg,2 Right
+rbr,cmp_into_corner_square_right_descriptive,10,0.91,oikee_90_1.ogg,Square Right
+rbr,cmp_into_corner_square_right_descriptive,10,0.91,oikee_90_2.ogg,Square Right
+rbr,cmp_into_corner_square_right_descriptive_rushed,10,0.91,oikee_90_1.ogg,Square Right
+rbr,cmp_into_corner_square_right_descriptive_rushed,10,0.91,oikee_90_2.ogg,Square Right
+rbr,cmp_into_corner_square_right_rushed,10,0.91,oikee_kaks1.ogg,2 Right
+rbr,cmp_into_corner_square_right_rushed,10,0.91,oikee_kaks2.ogg,2 Right
 rbr,cmp_into_detail_bump,19,0.53,pomppu.ogg,Bump
 rbr,cmp_into_detail_bump_rushed,19,0.53,pomppu.ogg,Bump
-rbr,cmp_into_detail_care,18,0.49,varo1.ogg,Care
-rbr,cmp_into_detail_care_rushed,18,0.49,varo1.ogg,Care
-rbr,cmp_into_detail_caution,32,0.56,huomio.ogg,Caution
-rbr,cmp_into_detail_caution_rushed,32,0.56,huomio.ogg,Caution
-rbr,cmp_into_detail_ford,17,0.1,vetta.ogg,Water
-rbr,cmp_into_detail_ford_rushed,17,0.1,vetta.ogg,Water
-rbr,corner_1_left,0,0.63,vasen_tiukka1.ogg,HP Left
-rbr,corner_1_left,0,0.63,vasen_tiukka2.ogg,HP Left
-rbr,corner_1_left_descriptive,0,0.63,vasen_serpo1.ogg,HP Left
-rbr,corner_1_left_descriptive,0,0.63,vasen_serpo2.ogg,HP Left
-rbr,corner_1_left_descriptive_rushed,0,0.63,vasen_serpo1.ogg,HP Left
-rbr,corner_1_left_descriptive_rushed,0,0.63,vasen_serpo2.ogg,HP Left
-rbr,corner_1_left_reversed,0,0.63,vasen_tiukka1.ogg,Left HP
-rbr,corner_1_left_reversed,0,0.63,vasen_tiukka2.ogg,Left HP
-rbr,corner_1_left_reversed_rushed,0,0.63,vasen_tiukka1.ogg,Left HP
-rbr,corner_1_left_reversed_rushed,0,0.63,vasen_tiukka2.ogg,Left HP
-rbr,corner_1_left_rushed,0,0.63,vasen_tiukka1.ogg,HP Left
-rbr,corner_1_left_rushed,0,0.63,vasen_tiukka2.ogg,HP Left
-rbr,corner_1_right,11,0.6,oikee_tiukka1.ogg,HP Right
-rbr,corner_1_right,11,0.6,oikee_tiukka2.ogg,HP Right
-rbr,corner_1_right_descriptive,11,0.6,oikee_serpo1.ogg,HP Right
-rbr,corner_1_right_descriptive,11,0.6,oikee_serpo2.ogg,HP Right
-rbr,corner_1_right_descriptive_rushed,11,0.6,oikee_serpo1.ogg,HP Right
-rbr,corner_1_right_descriptive_rushed,11,0.6,oikee_serpo2.ogg,HP Right
-rbr,corner_1_right_reversed,11,0.6,oikee_tiukka1.ogg,Right HP
-rbr,corner_1_right_reversed,11,0.6,oikee_tiukka2.ogg,Right HP
-rbr,corner_1_right_reversed_rushed,11,0.6,oikee_tiukka1.ogg,Right HP
-rbr,corner_1_right_reversed_rushed,11,0.6,oikee_tiukka2.ogg,Right HP
-rbr,corner_1_right_rushed,11,0.6,oikee_tiukka1.ogg,HP Right
-rbr,corner_1_right_rushed,11,0.6,oikee_tiukka2.ogg,HP Right
-rbr,corner_2_left,102,0.02,vasen_yks1.ogg,1 Left
-rbr,corner_2_left,102,0.02,vasen_yks2.ogg,1 Left
-rbr,corner_2_left_descriptive,102,0.02,vasen_hidas1.ogg,Slow Left
-rbr,corner_2_left_descriptive,102,0.02,vasen_hidas2.ogg,Slow Left
-rbr,corner_2_left_descriptive_rushed,102,0.02,vasen_hidas1.ogg,Slow Left
-rbr,corner_2_left_descriptive_rushed,102,0.02,vasen_hidas2.ogg,Slow Left
-rbr,corner_2_left_reversed,102,0.02,vasen_yks1.ogg,Left 1
-rbr,corner_2_left_reversed,102,0.02,vasen_yks2.ogg,Left 1
-rbr,corner_2_left_reversed_rushed,102,0.02,vasen_yks1.ogg,Left 1
-rbr,corner_2_left_reversed_rushed,102,0.02,vasen_yks2.ogg,Left 1
-rbr,corner_2_left_rushed,102,0.02,vasen_yks1.ogg,1 Left
-rbr,corner_2_left_rushed,102,0.02,vasen_yks2.ogg,1 Left
-rbr,corner_2_right,112,0.02,oikee_yks1.ogg,1 Right
-rbr,corner_2_right,112,0.02,oikee_yks2.ogg,1 Right
-rbr,corner_2_right_descriptive,112,0.02,oikee_hidas1.ogg,Slow Right
-rbr,corner_2_right_descriptive,112,0.02,oikee_hidas2.ogg,Slow Right
-rbr,corner_2_right_descriptive_rushed,112,0.02,oikee_hidas1.ogg,Slow Right
-rbr,corner_2_right_descriptive_rushed,112,0.02,oikee_hidas2.ogg,Slow Right
-rbr,corner_2_right_reversed,112,0.02,oikee_yks1.ogg,Right 1
-rbr,corner_2_right_reversed,112,0.02,oikee_yks2.ogg,Right 1
-rbr,corner_2_right_reversed_rushed,112,0.02,oikee_yks1.ogg,Right 1
-rbr,corner_2_right_reversed_rushed,112,0.02,oikee_yks2.ogg,Right 1
-rbr,corner_2_right_rushed,112,0.02,oikee_yks1.ogg,1 Right
-rbr,corner_2_right_rushed,112,0.02,oikee_yks2.ogg,1 Right
-rbr,corner_3_left,2,0.88,vasen_kolme1.ogg,3 Left
-rbr,corner_3_left,2,0.88,vasen_kolme2.ogg,3 Left
-rbr,corner_3_left_descriptive,2,0.88,vasen_koo1.ogg,K Left
-rbr,corner_3_left_descriptive,2,0.88,vasen_koo2.ogg,K Left
-rbr,corner_3_left_descriptive_rushed,2,0.88,vasen_koo1.ogg,K Left
-rbr,corner_3_left_descriptive_rushed,2,0.88,vasen_koo2.ogg,K Left
-rbr,corner_3_left_reversed,2,0.88,vasen_kolme1.ogg,Left 3
-rbr,corner_3_left_reversed,2,0.88,vasen_kolme2.ogg,Left 3
-rbr,corner_3_left_reversed_rushed,2,0.88,vasen_kolme1.ogg,Left 3
-rbr,corner_3_left_reversed_rushed,2,0.88,vasen_kolme2.ogg,Left 3
-rbr,corner_3_left_rushed,2,0.88,vasen_kolme1.ogg,3 Left
-rbr,corner_3_left_rushed,2,0.88,vasen_kolme2.ogg,3 Left
-rbr,corner_3_right,9,0.86,oikee_kolme1.ogg,3 Right
-rbr,corner_3_right,9,0.86,oikee_kolme2.ogg,3 Right
-rbr,corner_3_right_descriptive,9,0.86,oikee_koo1.ogg,K Right
-rbr,corner_3_right_descriptive,9,0.86,oikee_koo2.ogg,K Right
-rbr,corner_3_right_descriptive_rushed,9,0.86,oikee_koo1.ogg,K Right
-rbr,corner_3_right_descriptive_rushed,9,0.86,oikee_koo2.ogg,K Right
-rbr,corner_3_right_reversed,9,0.86,oikee_kolme1.ogg,Right 3
-rbr,corner_3_right_reversed,9,0.86,oikee_kolme2.ogg,Right 3
-rbr,corner_3_right_reversed_rushed,9,0.86,oikee_kolme1.ogg,Right 3
-rbr,corner_3_right_reversed_rushed,9,0.86,oikee_kolme2.ogg,Right 3
-rbr,corner_3_right_rushed,9,0.86,oikee_kolme1.ogg,3 Right
-rbr,corner_3_right_rushed,9,0.86,oikee_kolme2.ogg,3 Right
-rbr,corner_4_left,3,0.94,vasen_nelja1.ogg,4 Left
-rbr,corner_4_left,3,0.94,vasen_nelja2.ogg,4 Left
-rbr,corner_4_left_descriptive,3,0.94,vasen_nopee1.ogg,Medium Left
-rbr,corner_4_left_descriptive,3,0.94,vasen_nopee2.ogg,Medium Left
-rbr,corner_4_left_descriptive_rushed,3,0.94,vasen_nopee1.ogg,Medium Left
-rbr,corner_4_left_descriptive_rushed,3,0.94,vasen_nopee2.ogg,Medium Left
-rbr,corner_4_left_reversed,3,0.94,vasen_nelja1.ogg,Left 4
-rbr,corner_4_left_reversed,3,0.94,vasen_nelja2.ogg,Left 4
-rbr,corner_4_left_reversed_rushed,3,0.94,vasen_nelja1.ogg,Left 4
-rbr,corner_4_left_reversed_rushed,3,0.94,vasen_nelja2.ogg,Left 4
-rbr,corner_4_left_rushed,3,0.94,vasen_nelja1.ogg,4 Left
-rbr,corner_4_left_rushed,3,0.94,vasen_nelja2.ogg,4 Left
-rbr,corner_4_right,8,0.94,oikee_nelja1.ogg,4 Right
-rbr,corner_4_right,8,0.94,oikee_nelja2.ogg,4 Right
-rbr,corner_4_right_descriptive,8,0.94,oikee_nopee1.ogg,Medium Right
-rbr,corner_4_right_descriptive,8,0.94,oikee_nopee2.ogg,Medium Right
-rbr,corner_4_right_descriptive_rushed,8,0.94,oikee_nopee1.ogg,Medium Right
-rbr,corner_4_right_descriptive_rushed,8,0.94,oikee_nopee2.ogg,Medium Right
-rbr,corner_4_right_reversed,8,0.94,oikee_nelja1.ogg,Right 4
-rbr,corner_4_right_reversed,8,0.94,oikee_nelja2.ogg,Right 4
-rbr,corner_4_right_reversed_rushed,8,0.94,oikee_nelja1.ogg,Right 4
-rbr,corner_4_right_reversed_rushed,8,0.94,oikee_nelja2.ogg,Right 4
-rbr,corner_4_right_rushed,8,0.94,oikee_nelja1.ogg,4 Right
-rbr,corner_4_right_rushed,8,0.94,oikee_nelja2.ogg,4 Right
+rbr,cmp_into_detail_care,18,0.01,varo1.ogg,Care
+rbr,cmp_into_detail_care_rushed,18,0.01,varo1.ogg,Care
+rbr,cmp_into_detail_caution,32,0.02,huomio.ogg,Caution
+rbr,cmp_into_detail_caution_rushed,32,0.02,huomio.ogg,Caution
+rbr,cmp_into_detail_ford,17,0.11,vetta.ogg,Water
+rbr,cmp_into_detail_ford_rushed,17,0.11,vetta.ogg,Water
+rbr,corner_1_left,0,0.53,vasen_tiukka1.ogg,HP Left
+rbr,corner_1_left,0,0.53,vasen_tiukka2.ogg,HP Left
+rbr,corner_1_left_descriptive,0,0.53,vasen_serpo1.ogg,HP Left
+rbr,corner_1_left_descriptive,0,0.53,vasen_serpo2.ogg,HP Left
+rbr,corner_1_left_descriptive_rushed,0,0.53,vasen_serpo1.ogg,HP Left
+rbr,corner_1_left_descriptive_rushed,0,0.53,vasen_serpo2.ogg,HP Left
+rbr,corner_1_left_reversed,0,0.53,vasen_tiukka1.ogg,Left HP
+rbr,corner_1_left_reversed,0,0.53,vasen_tiukka2.ogg,Left HP
+rbr,corner_1_left_reversed_rushed,0,0.53,vasen_tiukka1.ogg,Left HP
+rbr,corner_1_left_reversed_rushed,0,0.53,vasen_tiukka2.ogg,Left HP
+rbr,corner_1_left_rushed,0,0.53,vasen_tiukka1.ogg,HP Left
+rbr,corner_1_left_rushed,0,0.53,vasen_tiukka2.ogg,HP Left
+no_rbr_note,corner_1_plus_left,2060,0.01,,
+no_rbr_note,corner_1_plus_right,2054,0.02,,
+rbr,corner_1_right,11,0.53,oikee_tiukka1.ogg,HP Right
+rbr,corner_1_right,11,0.53,oikee_tiukka2.ogg,HP Right
+rbr,corner_1_right_descriptive,11,0.53,oikee_serpo1.ogg,HP Right
+rbr,corner_1_right_descriptive,11,0.53,oikee_serpo2.ogg,HP Right
+rbr,corner_1_right_descriptive_rushed,11,0.53,oikee_serpo1.ogg,HP Right
+rbr,corner_1_right_descriptive_rushed,11,0.53,oikee_serpo2.ogg,HP Right
+rbr,corner_1_right_reversed,11,0.53,oikee_tiukka1.ogg,Right HP
+rbr,corner_1_right_reversed,11,0.53,oikee_tiukka2.ogg,Right HP
+rbr,corner_1_right_reversed_rushed,11,0.53,oikee_tiukka1.ogg,Right HP
+rbr,corner_1_right_reversed_rushed,11,0.53,oikee_tiukka2.ogg,Right HP
+rbr,corner_1_right_rushed,11,0.53,oikee_tiukka1.ogg,HP Right
+rbr,corner_1_right_rushed,11,0.53,oikee_tiukka2.ogg,HP Right
+rbr,corner_2_left,102,0.63,vasen_yks1.ogg,1 Left
+rbr,corner_2_left,102,0.63,vasen_yks2.ogg,1 Left
+rbr,corner_2_left_descriptive,102,0.63,vasen_hidas1.ogg,Slow Left
+rbr,corner_2_left_descriptive,102,0.63,vasen_hidas2.ogg,Slow Left
+rbr,corner_2_left_descriptive_rushed,102,0.63,vasen_hidas1.ogg,Slow Left
+rbr,corner_2_left_descriptive_rushed,102,0.63,vasen_hidas2.ogg,Slow Left
+rbr,corner_2_left_reversed,102,0.63,vasen_yks1.ogg,Left 1
+rbr,corner_2_left_reversed,102,0.63,vasen_yks2.ogg,Left 1
+rbr,corner_2_left_reversed_rushed,102,0.63,vasen_yks1.ogg,Left 1
+rbr,corner_2_left_reversed_rushed,102,0.63,vasen_yks2.ogg,Left 1
+rbr,corner_2_left_rushed,102,0.63,vasen_yks1.ogg,1 Left
+rbr,corner_2_left_rushed,102,0.63,vasen_yks2.ogg,1 Left
+no_rbr_note,corner_2_plus_left,2263,0.06,,
+no_rbr_note,corner_2_plus_right,2262,0.06,,
+rbr,corner_2_right,112,0.6,oikee_yks1.ogg,1 Right
+rbr,corner_2_right,112,0.6,oikee_yks2.ogg,1 Right
+rbr,corner_2_right_descriptive,112,0.6,oikee_hidas1.ogg,Slow Right
+rbr,corner_2_right_descriptive,112,0.6,oikee_hidas2.ogg,Slow Right
+rbr,corner_2_right_descriptive_rushed,112,0.6,oikee_hidas1.ogg,Slow Right
+rbr,corner_2_right_descriptive_rushed,112,0.6,oikee_hidas2.ogg,Slow Right
+rbr,corner_2_right_reversed,112,0.6,oikee_yks1.ogg,Right 1
+rbr,corner_2_right_reversed,112,0.6,oikee_yks2.ogg,Right 1
+rbr,corner_2_right_reversed_rushed,112,0.6,oikee_yks1.ogg,Right 1
+rbr,corner_2_right_reversed_rushed,112,0.6,oikee_yks2.ogg,Right 1
+rbr,corner_2_right_rushed,112,0.6,oikee_yks1.ogg,1 Right
+rbr,corner_2_right_rushed,112,0.6,oikee_yks2.ogg,1 Right
+rbr,corner_3_left,2,0.97,vasen_kolme1.ogg,3 Left
+rbr,corner_3_left,2,0.97,vasen_kolme2.ogg,3 Left
+rbr,corner_3_left_descriptive,2,0.97,vasen_koo1.ogg,K Left
+rbr,corner_3_left_descriptive,2,0.97,vasen_koo2.ogg,K Left
+rbr,corner_3_left_descriptive_rushed,2,0.97,vasen_koo1.ogg,K Left
+rbr,corner_3_left_descriptive_rushed,2,0.97,vasen_koo2.ogg,K Left
+rbr,corner_3_left_reversed,2,0.97,vasen_kolme1.ogg,Left 3
+rbr,corner_3_left_reversed,2,0.97,vasen_kolme2.ogg,Left 3
+rbr,corner_3_left_reversed_rushed,2,0.97,vasen_kolme1.ogg,Left 3
+rbr,corner_3_left_reversed_rushed,2,0.97,vasen_kolme2.ogg,Left 3
+rbr,corner_3_left_rushed,2,0.97,vasen_kolme1.ogg,3 Left
+rbr,corner_3_left_rushed,2,0.97,vasen_kolme2.ogg,3 Left
+no_rbr_note,corner_3_plus_left,2059,0.08,,
+no_rbr_note,corner_3_plus_right,2053,0.08,,
+rbr,corner_3_right,9,0.97,oikee_kolme1.ogg,3 Right
+rbr,corner_3_right,9,0.97,oikee_kolme2.ogg,3 Right
+rbr,corner_3_right_descriptive,9,0.97,oikee_koo1.ogg,K Right
+rbr,corner_3_right_descriptive,9,0.97,oikee_koo2.ogg,K Right
+rbr,corner_3_right_descriptive_rushed,9,0.97,oikee_koo1.ogg,K Right
+rbr,corner_3_right_descriptive_rushed,9,0.97,oikee_koo2.ogg,K Right
+rbr,corner_3_right_reversed,9,0.97,oikee_kolme1.ogg,Right 3
+rbr,corner_3_right_reversed,9,0.97,oikee_kolme2.ogg,Right 3
+rbr,corner_3_right_reversed_rushed,9,0.97,oikee_kolme1.ogg,Right 3
+rbr,corner_3_right_reversed_rushed,9,0.97,oikee_kolme2.ogg,Right 3
+rbr,corner_3_right_rushed,9,0.97,oikee_kolme1.ogg,3 Right
+rbr,corner_3_right_rushed,9,0.97,oikee_kolme2.ogg,3 Right
+rbr,corner_4_left,3,0.96,vasen_nelja1.ogg,4 Left
+rbr,corner_4_left,3,0.96,vasen_nelja2.ogg,4 Left
+rbr,corner_4_left_descriptive,3,0.96,vasen_nopee1.ogg,Medium Left
+rbr,corner_4_left_descriptive,3,0.96,vasen_nopee2.ogg,Medium Left
+rbr,corner_4_left_descriptive_rushed,3,0.96,vasen_nopee1.ogg,Medium Left
+rbr,corner_4_left_descriptive_rushed,3,0.96,vasen_nopee2.ogg,Medium Left
+rbr,corner_4_left_reversed,3,0.96,vasen_nelja1.ogg,Left 4
+rbr,corner_4_left_reversed,3,0.96,vasen_nelja2.ogg,Left 4
+rbr,corner_4_left_reversed_rushed,3,0.96,vasen_nelja1.ogg,Left 4
+rbr,corner_4_left_reversed_rushed,3,0.96,vasen_nelja2.ogg,Left 4
+rbr,corner_4_left_rushed,3,0.96,vasen_nelja1.ogg,4 Left
+rbr,corner_4_left_rushed,3,0.96,vasen_nelja2.ogg,4 Left
+no_rbr_note,corner_4_plus_left,2058,0.06,,
+no_rbr_note,corner_4_plus_right,2052,0.06,,
+rbr,corner_4_right,8,0.97,oikee_nelja1.ogg,4 Right
+rbr,corner_4_right,8,0.97,oikee_nelja2.ogg,4 Right
+rbr,corner_4_right_descriptive,8,0.97,oikee_nopee1.ogg,Medium Right
+rbr,corner_4_right_descriptive,8,0.97,oikee_nopee2.ogg,Medium Right
+rbr,corner_4_right_descriptive_rushed,8,0.97,oikee_nopee1.ogg,Medium Right
+rbr,corner_4_right_descriptive_rushed,8,0.97,oikee_nopee2.ogg,Medium Right
+rbr,corner_4_right_reversed,8,0.97,oikee_nelja1.ogg,Right 4
+rbr,corner_4_right_reversed,8,0.97,oikee_nelja2.ogg,Right 4
+rbr,corner_4_right_reversed_rushed,8,0.97,oikee_nelja1.ogg,Right 4
+rbr,corner_4_right_reversed_rushed,8,0.97,oikee_nelja2.ogg,Right 4
+rbr,corner_4_right_rushed,8,0.97,oikee_nelja1.ogg,4 Right
+rbr,corner_4_right_rushed,8,0.97,oikee_nelja2.ogg,4 Right
 rbr,corner_5_left,4,0.93,vasen_viis1.ogg,5 Left
 rbr,corner_5_left,4,0.93,vasen_viis2.ogg,5 Left
 rbr,corner_5_left_descriptive,4,0.93,vasen_eri1.ogg,Fast Left
@@ -255,382 +257,544 @@ rbr,corner_5_left_reversed_rushed,4,0.93,vasen_viis1.ogg,Left 5
 rbr,corner_5_left_reversed_rushed,4,0.93,vasen_viis2.ogg,Left 5
 rbr,corner_5_left_rushed,4,0.93,vasen_viis1.ogg,5 Left
 rbr,corner_5_left_rushed,4,0.93,vasen_viis2.ogg,5 Left
-rbr,corner_5_right,7,0.94,oikee_viis1.ogg,5 Right
-rbr,corner_5_right,7,0.94,oikee_viis2.ogg,5 Right
-rbr,corner_5_right_descriptive,7,0.94,oikee_eri1.ogg,Fast Right
-rbr,corner_5_right_descriptive,7,0.94,oikee_eri2.ogg,Fast Right
-rbr,corner_5_right_descriptive_rushed,7,0.94,oikee_eri1.ogg,Fast Right
-rbr,corner_5_right_descriptive_rushed,7,0.94,oikee_eri2.ogg,Fast Right
-rbr,corner_5_right_reversed,7,0.94,oikee_viis1.ogg,Right 5
-rbr,corner_5_right_reversed,7,0.94,oikee_viis2.ogg,Right 5
-rbr,corner_5_right_reversed_rushed,7,0.94,oikee_viis1.ogg,Right 5
-rbr,corner_5_right_reversed_rushed,7,0.94,oikee_viis2.ogg,Right 5
-rbr,corner_5_right_rushed,7,0.94,oikee_viis1.ogg,5 Right
-rbr,corner_5_right_rushed,7,0.94,oikee_viis2.ogg,5 Right
-rbr,corner_6_left,5,0.87,vasen_kuus1.ogg,6 Left
-rbr,corner_6_left,5,0.87,vasen_kuus2.ogg,6 Left
-rbr,corner_6_left,5,0.87,vasen_kuus3.ogg,6 Left
-rbr,corner_6_left_descriptive,5,0.87,vasen_helppo1.ogg,Slight Left
-rbr,corner_6_left_descriptive,5,0.87,vasen_helppo2.ogg,Slight Left
-rbr,corner_6_left_descriptive_rushed,5,0.87,vasen_helppo1.ogg,Slight Left
-rbr,corner_6_left_descriptive_rushed,5,0.87,vasen_helppo2.ogg,Slight Left
-rbr,corner_6_left_reversed,5,0.87,vasen_kuus1.ogg,Left 6
-rbr,corner_6_left_reversed,5,0.87,vasen_kuus2.ogg,Left 6
-rbr,corner_6_left_reversed,5,0.87,vasen_kuus3.ogg,Left 6
-rbr,corner_6_left_reversed_rushed,5,0.87,vasen_kuus1.ogg,Left 6
-rbr,corner_6_left_reversed_rushed,5,0.87,vasen_kuus2.ogg,Left 6
-rbr,corner_6_left_reversed_rushed,5,0.87,vasen_kuus3.ogg,Left 6
-rbr,corner_6_left_rushed,5,0.87,vasen_kuus1.ogg,6 Left
-rbr,corner_6_left_rushed,5,0.87,vasen_kuus2.ogg,6 Left
-rbr,corner_6_left_rushed,5,0.87,vasen_kuus3.ogg,6 Left
-rbr,corner_6_right,6,0.88,oikee_kuus1.ogg,6 Right
-rbr,corner_6_right,6,0.88,oikee_kuus2.ogg,6 Right
-rbr,corner_6_right_descriptive,6,0.88,oikee_helppo1.ogg,Slight Right
-rbr,corner_6_right_descriptive,6,0.88,oikee_helppo2.ogg,Slight Right
-rbr,corner_6_right_descriptive_rushed,6,0.88,oikee_helppo1.ogg,Slight Right
-rbr,corner_6_right_descriptive_rushed,6,0.88,oikee_helppo2.ogg,Slight Right
-rbr,corner_6_right_reversed,6,0.88,oikee_kuus1.ogg,Right 6
-rbr,corner_6_right_reversed,6,0.88,oikee_kuus2.ogg,Right 6
-rbr,corner_6_right_reversed_rushed,6,0.88,oikee_kuus1.ogg,Right 6
-rbr,corner_6_right_reversed_rushed,6,0.88,oikee_kuus2.ogg,Right 6
-rbr,corner_6_right_rushed,6,0.88,oikee_kuus1.ogg,6 Right
-rbr,corner_6_right_rushed,6,0.88,oikee_kuus2.ogg,6 Right
-rbr,corner_flat_left,26,0.59,vasen_tays1.ogg,Flat Left
-rbr,corner_flat_left,26,0.59,vasen_tays2.ogg,Flat Left
-rbr,corner_flat_left_descriptive,26,0.59,vasen_tays1.ogg,Flat Left
-rbr,corner_flat_left_descriptive,26,0.59,vasen_tays2.ogg,Flat Left
-rbr,corner_flat_left_descriptive_rushed,26,0.59,vasen_tays1.ogg,Flat Left
-rbr,corner_flat_left_descriptive_rushed,26,0.59,vasen_tays2.ogg,Flat Left
-rbr,corner_flat_left_reversed,26,0.59,vasen_tays1.ogg,Left Flat
-rbr,corner_flat_left_reversed,26,0.59,vasen_tays2.ogg,Left Flat
-rbr,corner_flat_left_reversed_rushed,26,0.59,vasen_tays1.ogg,Left Flat
-rbr,corner_flat_left_reversed_rushed,26,0.59,vasen_tays2.ogg,Left Flat
-rbr,corner_flat_left_rushed,26,0.59,vasen_tays1.ogg,Flat Left
-rbr,corner_flat_left_rushed,26,0.59,vasen_tays2.ogg,Flat Left
-rbr,corner_flat_right,25,0.59,oikee_tays1.ogg,Flat Right
-rbr,corner_flat_right,25,0.59,oikee_tays2.ogg,Flat Right
-rbr,corner_flat_right_descriptive,25,0.59,oikee_tays1.ogg,Flat Right
-rbr,corner_flat_right_descriptive,25,0.59,oikee_tays2.ogg,Flat Right
-rbr,corner_flat_right_descriptive_rushed,25,0.59,oikee_tays1.ogg,Flat Right
-rbr,corner_flat_right_descriptive_rushed,25,0.59,oikee_tays2.ogg,Flat Right
-rbr,corner_flat_right_reversed,25,0.59,oikee_tays1.ogg,Right Flat
-rbr,corner_flat_right_reversed,25,0.59,oikee_tays2.ogg,Right Flat
-rbr,corner_flat_right_reversed_rushed,25,0.59,oikee_tays1.ogg,Right Flat
-rbr,corner_flat_right_reversed_rushed,25,0.59,oikee_tays2.ogg,Right Flat
-rbr,corner_flat_right_rushed,25,0.59,oikee_tays1.ogg,Flat Right
-rbr,corner_flat_right_rushed,25,0.59,oikee_tays2.ogg,Flat Right
-rbr,corner_hairpin_left,0,0.63,vasen_serpo1.ogg,HP Left
-rbr,corner_hairpin_left,0,0.63,vasen_serpo2.ogg,HP Left
-rbr,corner_hairpin_left_reversed,0,0.63,vasen_serpo1.ogg,HP Left
-rbr,corner_hairpin_left_reversed,0,0.63,vasen_serpo2.ogg,HP Left
-rbr,corner_hairpin_left_rushed,0,0.63,vasen_serpo1.ogg,HP Left
-rbr,corner_hairpin_left_rushed,0,0.63,vasen_serpo2.ogg,HP Left
-rbr,corner_hairpin_right,11,0.6,oikee_serpo1.ogg,HP Right
-rbr,corner_hairpin_right,11,0.6,oikee_serpo2.ogg,HP Right
-rbr,corner_hairpin_right_reversed,11,0.6,oikee_serpo1.ogg,HP Right
-rbr,corner_hairpin_right_reversed,11,0.6,oikee_serpo2.ogg,HP Right
-rbr,corner_hairpin_right_rushed,11,0.6,oikee_serpo1.ogg,HP Right
-rbr,corner_hairpin_right_rushed,11,0.6,oikee_serpo2.ogg,HP Right
+no_rbr_note,corner_5_plus_left,2057,0.04,,
+no_rbr_note,corner_5_plus_right,2051,0.03,,
+rbr,corner_5_right,7,0.93,oikee_viis1.ogg,5 Right
+rbr,corner_5_right,7,0.93,oikee_viis2.ogg,5 Right
+rbr,corner_5_right_descriptive,7,0.93,oikee_eri1.ogg,Fast Right
+rbr,corner_5_right_descriptive,7,0.93,oikee_eri2.ogg,Fast Right
+rbr,corner_5_right_descriptive_rushed,7,0.93,oikee_eri1.ogg,Fast Right
+rbr,corner_5_right_descriptive_rushed,7,0.93,oikee_eri2.ogg,Fast Right
+rbr,corner_5_right_reversed,7,0.93,oikee_viis1.ogg,Right 5
+rbr,corner_5_right_reversed,7,0.93,oikee_viis2.ogg,Right 5
+rbr,corner_5_right_reversed_rushed,7,0.93,oikee_viis1.ogg,Right 5
+rbr,corner_5_right_reversed_rushed,7,0.93,oikee_viis2.ogg,Right 5
+rbr,corner_5_right_rushed,7,0.93,oikee_viis1.ogg,5 Right
+rbr,corner_5_right_rushed,7,0.93,oikee_viis2.ogg,5 Right
+rbr,corner_6_left,5,0.83,vasen_kuus1.ogg,6 Left
+rbr,corner_6_left,5,0.83,vasen_kuus2.ogg,6 Left
+rbr,corner_6_left,5,0.83,vasen_kuus3.ogg,6 Left
+rbr,corner_6_left_descriptive,5,0.83,vasen_helppo1.ogg,Slight Left
+rbr,corner_6_left_descriptive,5,0.83,vasen_helppo2.ogg,Slight Left
+rbr,corner_6_left_descriptive_rushed,5,0.83,vasen_helppo1.ogg,Slight Left
+rbr,corner_6_left_descriptive_rushed,5,0.83,vasen_helppo2.ogg,Slight Left
+rbr,corner_6_left_reversed,5,0.83,vasen_kuus1.ogg,Left 6
+rbr,corner_6_left_reversed,5,0.83,vasen_kuus2.ogg,Left 6
+rbr,corner_6_left_reversed,5,0.83,vasen_kuus3.ogg,Left 6
+rbr,corner_6_left_reversed_rushed,5,0.83,vasen_kuus1.ogg,Left 6
+rbr,corner_6_left_reversed_rushed,5,0.83,vasen_kuus2.ogg,Left 6
+rbr,corner_6_left_reversed_rushed,5,0.83,vasen_kuus3.ogg,Left 6
+rbr,corner_6_left_rushed,5,0.83,vasen_kuus1.ogg,6 Left
+rbr,corner_6_left_rushed,5,0.83,vasen_kuus2.ogg,6 Left
+rbr,corner_6_left_rushed,5,0.83,vasen_kuus3.ogg,6 Left
+no_rbr_note,corner_6_plus_left,2056,0.03,,
+no_rbr_note,corner_6_plus_right,2050,0.03,,
+rbr,corner_6_right,6,0.87,oikee_kuus1.ogg,6 Right
+rbr,corner_6_right,6,0.87,oikee_kuus2.ogg,6 Right
+rbr,corner_6_right_descriptive,6,0.87,oikee_helppo1.ogg,Slight Right
+rbr,corner_6_right_descriptive,6,0.87,oikee_helppo2.ogg,Slight Right
+rbr,corner_6_right_descriptive_rushed,6,0.87,oikee_helppo1.ogg,Slight Right
+rbr,corner_6_right_descriptive_rushed,6,0.87,oikee_helppo2.ogg,Slight Right
+rbr,corner_6_right_reversed,6,0.87,oikee_kuus1.ogg,Right 6
+rbr,corner_6_right_reversed,6,0.87,oikee_kuus2.ogg,Right 6
+rbr,corner_6_right_reversed_rushed,6,0.87,oikee_kuus1.ogg,Right 6
+rbr,corner_6_right_reversed_rushed,6,0.87,oikee_kuus2.ogg,Right 6
+rbr,corner_6_right_rushed,6,0.87,oikee_kuus1.ogg,6 Right
+rbr,corner_6_right_rushed,6,0.87,oikee_kuus2.ogg,6 Right
+rbr,corner_flat_left,26,0.3,vasen_tays1.ogg,Flat Left
+rbr,corner_flat_left,26,0.3,vasen_tays2.ogg,Flat Left
+rbr,corner_flat_left_descriptive,26,0.3,vasen_tays1.ogg,Flat Left
+rbr,corner_flat_left_descriptive,26,0.3,vasen_tays2.ogg,Flat Left
+rbr,corner_flat_left_descriptive_rushed,26,0.3,vasen_tays1.ogg,Flat Left
+rbr,corner_flat_left_descriptive_rushed,26,0.3,vasen_tays2.ogg,Flat Left
+rbr,corner_flat_left_reversed,26,0.3,vasen_tays1.ogg,Left Flat
+rbr,corner_flat_left_reversed,26,0.3,vasen_tays2.ogg,Left Flat
+rbr,corner_flat_left_reversed_rushed,26,0.3,vasen_tays1.ogg,Left Flat
+rbr,corner_flat_left_reversed_rushed,26,0.3,vasen_tays2.ogg,Left Flat
+rbr,corner_flat_left_rushed,26,0.3,vasen_tays1.ogg,Flat Left
+rbr,corner_flat_left_rushed,26,0.3,vasen_tays2.ogg,Flat Left
+rbr,corner_flat_right,25,0.3,oikee_tays1.ogg,Flat Right
+rbr,corner_flat_right,25,0.3,oikee_tays2.ogg,Flat Right
+rbr,corner_flat_right_descriptive,25,0.3,oikee_tays1.ogg,Flat Right
+rbr,corner_flat_right_descriptive,25,0.3,oikee_tays2.ogg,Flat Right
+rbr,corner_flat_right_descriptive_rushed,25,0.3,oikee_tays1.ogg,Flat Right
+rbr,corner_flat_right_descriptive_rushed,25,0.3,oikee_tays2.ogg,Flat Right
+rbr,corner_flat_right_reversed,25,0.3,oikee_tays1.ogg,Right Flat
+rbr,corner_flat_right_reversed,25,0.3,oikee_tays2.ogg,Right Flat
+rbr,corner_flat_right_reversed_rushed,25,0.3,oikee_tays1.ogg,Right Flat
+rbr,corner_flat_right_reversed_rushed,25,0.3,oikee_tays2.ogg,Right Flat
+rbr,corner_flat_right_rushed,25,0.3,oikee_tays1.ogg,Flat Right
+rbr,corner_flat_right_rushed,25,0.3,oikee_tays2.ogg,Flat Right
+no_rbr_note,corner_hairpin_left,-1,-1,,
+no_rbr_note,corner_hairpin_left_reversed,-1,-1,,
+no_rbr_note,corner_hairpin_left_rushed,-1,-1,,
+no_rbr_note,corner_hairpin_right,-1,-1,,
+no_rbr_note,corner_hairpin_right_reversed,-1,-1,,
+no_rbr_note,corner_hairpin_right_rushed,-1,-1,,
+sound_not_found,corner_left,120,-1,left.ogg,Left
+no_rbr_note,corner_left_acute,2040,0.03,,
+sound_not_found,corner_left_around,127,0.0,left_around.ogg,Left Around
+sound_not_found,corner_left_into,123,-1,left_into.ogg,Left Into
+sound_not_found,corner_left_right,125,-1,left_right.ogg,Left-Right
 no_rbr_note,corner_open_hairpin_left,40003,-1,,
 no_rbr_note,corner_open_hairpin_left_rushed,40003,-1,,
 no_rbr_note,corner_open_hairpin_right,40004,-1,,
 no_rbr_note,corner_open_hairpin_right_rushed,40004,-1,,
-rbr,corner_square_left,1,0.74,vasen_kaks1.ogg,2 Left
-rbr,corner_square_left,1,0.74,vasen_kaks2.ogg,2 Left
-rbr,corner_square_left_descriptive,1,0.74,vasen_90_1.ogg,Square Left
-rbr,corner_square_left_descriptive,1,0.74,vasen_90_2.ogg,Square Left
-rbr,corner_square_left_descriptive_rushed,1,0.74,vasen_90_1.ogg,Square Left
-rbr,corner_square_left_descriptive_rushed,1,0.74,vasen_90_2.ogg,Square Left
-rbr,corner_square_left_reversed,1,0.74,vasen_kaks1.ogg,Left 2
-rbr,corner_square_left_reversed,1,0.74,vasen_kaks2.ogg,Left 2
-rbr,corner_square_left_reversed_rushed,1,0.74,vasen_kaks1.ogg,Left 2
-rbr,corner_square_left_reversed_rushed,1,0.74,vasen_kaks2.ogg,Left 2
-rbr,corner_square_left_rushed,1,0.74,vasen_kaks1.ogg,2 Left
-rbr,corner_square_left_rushed,1,0.74,vasen_kaks2.ogg,2 Left
-rbr,corner_square_right,10,0.73,oikee_kaks1.ogg,2 Right
-rbr,corner_square_right,10,0.73,oikee_kaks2.ogg,2 Right
-rbr,corner_square_right_descriptive,10,0.73,oikee_90_1.ogg,Square Right
-rbr,corner_square_right_descriptive,10,0.73,oikee_90_2.ogg,Square Right
-rbr,corner_square_right_descriptive_rushed,10,0.73,oikee_90_1.ogg,Square Right
-rbr,corner_square_right_descriptive_rushed,10,0.73,oikee_90_2.ogg,Square Right
-rbr,corner_square_right_reversed,10,0.73,oikee_kaks1.ogg,Right 2
-rbr,corner_square_right_reversed,10,0.73,oikee_kaks2.ogg,Right 2
-rbr,corner_square_right_reversed_rushed,10,0.73,oikee_kaks1.ogg,Right 2
-rbr,corner_square_right_reversed_rushed,10,0.73,oikee_kaks2.ogg,Right 2
-rbr,corner_square_right_rushed,10,0.73,oikee_kaks1.ogg,2 Right
-rbr,corner_square_right_rushed,10,0.73,oikee_kaks2.ogg,2 Right
-no_rbr_note,correction,-1,-1,,
+sound_not_found,corner_right,121,-1,right.ogg,Right
+no_rbr_note,corner_right_acute,2041,0.03,,
+sound_not_found,corner_right_around,126,-1,right_around.ogg,Right Around
+sound_not_found,corner_right_into,122,-1,right_into.ogg,Right Into
+sound_not_found,corner_right_left,124,0.01,right_left.ogg,Right-Left
+rbr,corner_square_left,1,0.89,vasen_kaks1.ogg,2 Left
+rbr,corner_square_left,1,0.89,vasen_kaks2.ogg,2 Left
+rbr,corner_square_left_descriptive,1,0.89,vasen_90_1.ogg,Square Left
+rbr,corner_square_left_descriptive,1,0.89,vasen_90_2.ogg,Square Left
+rbr,corner_square_left_descriptive_rushed,1,0.89,vasen_90_1.ogg,Square Left
+rbr,corner_square_left_descriptive_rushed,1,0.89,vasen_90_2.ogg,Square Left
+rbr,corner_square_left_reversed,1,0.89,vasen_kaks1.ogg,Left 2
+rbr,corner_square_left_reversed,1,0.89,vasen_kaks2.ogg,Left 2
+rbr,corner_square_left_reversed_rushed,1,0.89,vasen_kaks1.ogg,Left 2
+rbr,corner_square_left_reversed_rushed,1,0.89,vasen_kaks2.ogg,Left 2
+rbr,corner_square_left_rushed,1,0.89,vasen_kaks1.ogg,2 Left
+rbr,corner_square_left_rushed,1,0.89,vasen_kaks2.ogg,2 Left
+rbr,corner_square_right,10,0.91,oikee_kaks1.ogg,2 Right
+rbr,corner_square_right,10,0.91,oikee_kaks2.ogg,2 Right
+rbr,corner_square_right_descriptive,10,0.91,oikee_90_1.ogg,Square Right
+rbr,corner_square_right_descriptive,10,0.91,oikee_90_2.ogg,Square Right
+rbr,corner_square_right_descriptive_rushed,10,0.91,oikee_90_1.ogg,Square Right
+rbr,corner_square_right_descriptive_rushed,10,0.91,oikee_90_2.ogg,Square Right
+rbr,corner_square_right_reversed,10,0.91,oikee_kaks1.ogg,Right 2
+rbr,corner_square_right_reversed,10,0.91,oikee_kaks2.ogg,Right 2
+rbr,corner_square_right_reversed_rushed,10,0.91,oikee_kaks1.ogg,Right 2
+rbr,corner_square_right_reversed_rushed,10,0.91,oikee_kaks2.ogg,Right 2
+rbr,corner_square_right_rushed,10,0.91,oikee_kaks1.ogg,2 Right
+rbr,corner_square_right_rushed,10,0.91,oikee_kaks2.ogg,2 Right
+no_rbr_note,detail_after,401,-1,,
 rbr,detail_and,-1,-1,jatkuu1.ogg,And
 rbr,detail_and,-1,-1,jatkuu2.ogg,And
 rbr,detail_and_rushed,-1,-1,jatkuu1.ogg,And
 rbr,detail_and_rushed,-1,-1,jatkuu2.ogg,And
-no_rbr_note,detail_bad_camber,355,-1,,
+no_rbr_note,detail_at,405,-1,,
+sound_not_found,detail_bad,254,-1,bad.ogg,Bad
+no_rbr_note,detail_bad_camber,355,0.05,,
+sound_not_found,detail_barrels,397,-1,barrels.ogg,TYNNYRIT
+no_rbr_note,detail_before,406,-1,,
+no_rbr_note,detail_behind,409,-1,,
+sound_not_found,detail_big,247,-1,big.ogg,Big
 no_rbr_note,detail_big_jump,40002,-1,,
-rbr,detail_brake,217,0.18,jarru1.ogg,Brake
-rbr,detail_brake,217,0.18,jarru2.ogg,Brake
-rbr,detail_brake_rushed,217,0.18,jarru1.ogg,Brake
-rbr,detail_brake_rushed,217,0.18,jarru2.ogg,Brake
-rbr,detail_bridge,27,0.34,silta.ogg,Bridge
-rbr,detail_bridge_rushed,27,0.34,silta.ogg,Bridge
+sound_not_found,detail_blind,302,-1,blind.ogg,BLIND
+sound_not_found,detail_border,347,-1,border.ogg,BORDER
+rbr,detail_brake,217,0.41,jarru1.ogg,Brake
+rbr,detail_brake,217,0.41,jarru2.ogg,Brake
+rbr,detail_brake_rushed,217,0.41,jarru1.ogg,Brake
+rbr,detail_brake_rushed,217,0.41,jarru2.ogg,Brake
+rbr,detail_bridge,27,0.33,silta.ogg,Bridge
+rbr,detail_bridge_rushed,27,0.33,silta.ogg,Bridge
 rbr,detail_bump,19,0.53,pomppu.ogg,Bump
 rbr,detail_bump_rushed,19,0.53,pomppu.ogg,Bump
-rbr,detail_bumps,300,0.0,pomppuja1.ogg,Bumps
-rbr,detail_bumps,300,0.0,pomppuja2.ogg,Bumps
-rbr,detail_bumps_rushed,300,0.0,pomppuja1.ogg,Bumps
-rbr,detail_bumps_rushed,300,0.0,pomppuja2.ogg,Bumps
-rbr,detail_care,18,0.49,varo1.ogg,Care
-rbr,detail_care_in,2021,0.08,varo_sisalla.ogg,Care In
-rbr,detail_care_in_rushed,2021,0.08,varo_sisalla.ogg,Care In
-rbr,detail_care_out,2022,0.05,varo_ulkona.ogg,Care Out
-rbr,detail_care_out_rushed,2022,0.05,varo_ulkona.ogg,Care Out
-rbr,detail_care_rushed,18,0.49,varo1.ogg,Care
-rbr,detail_caution,32,0.56,huomio.ogg,Caution
-rbr,detail_caution_rushed,32,0.56,huomio.ogg,Caution
+rbr,detail_bumps,300,0.2,pomppuja1.ogg,Bumps
+rbr,detail_bumps,300,0.2,pomppuja2.ogg,Bumps
+rbr,detail_bumps_rushed,300,0.2,pomppuja1.ogg,Bumps
+rbr,detail_bumps_rushed,300,0.2,pomppuja2.ogg,Bumps
+no_rbr_note,detail_bumpy,292,-1,,
+sound_not_found,detail_bush,386,-1,bush.ogg,PUSKA
+no_rbr_note,detail_callout_adjust,10012,-1,,
+no_rbr_note,detail_callout_distance,10007,-1,,
+no_rbr_note,detail_callout_time,10006,-1,,
+no_rbr_note,detail_camber,342,0.03,,
+rbr,detail_care,18,0.01,varo1.ogg,Care
+rbr,detail_care_in,2021,0.15,varo_sisalla.ogg,Care In
+rbr,detail_care_in_rushed,2021,0.15,varo_sisalla.ogg,Care In
+rbr,detail_care_out,2022,0.09,varo_ulkona.ogg,Care Out
+rbr,detail_care_out_rushed,2022,0.09,varo_ulkona.ogg,Care Out
+rbr,detail_care_rushed,18,0.01,varo1.ogg,Care
+rbr,detail_caution,32,0.02,huomio.ogg,Caution
+rbr,detail_caution_rushed,32,0.02,huomio.ogg,Caution
 rbr,detail_caution_water,-1,-1,huomio_vetta.ogg,Caution Water
 rbr,detail_caution_water_rushed,-1,-1,huomio_vetta.ogg,Caution Water
+no_rbr_note,detail_checkpoint,558,-1,,
+no_rbr_note,detail_chicane,378,-1,,
+sound_not_found,detail_clip,223,-1,clip.ogg,Clip
+sound_not_found,detail_cobbles,323,-1,cobbles.ogg,Cobbles
+no_rbr_note,detail_compression,369,-1,,
 rbr,detail_concrete,322,-1,betonille.ogg,Concrete
 rbr,detail_concrete_rushed,322,-1,betonille.ogg,Concrete
-rbr,detail_continues_over_crest,2029,-1,jatkuu_yli_nypyn.ogg,Continues Over Crest
-rbr,detail_continues_over_crest_rushed,2029,-1,jatkuu_yli_nypyn.ogg,Continues Over Crest
-rbr,detail_crest,340,0.0,nyppy.ogg,Crest
-rbr,detail_crest_rushed,340,0.0,nyppy.ogg,Crest
+rbr,detail_continues_over_crest,2029,0.23,jatkuu_yli_nypyn.ogg,Continues Over Crest
+rbr,detail_continues_over_crest_rushed,2029,0.23,jatkuu_yli_nypyn.ogg,Continues Over Crest
+no_rbr_note,detail_cramped,293,0.13,,
+rbr,detail_crest,340,0.45,nyppy.ogg,Crest
+rbr,detail_crest_rushed,340,0.45,nyppy.ogg,Crest
+sound_not_found,detail_curb,349,-1,curb.ogg,CURB
+no_rbr_note,detail_curbside,276,-1,,
+no_rbr_note,detail_curve,352,-1,,
 rbr,detail_cut,-1,-1,sisalta.ogg,Cut
-rbr,detail_deepruts,346,-1,urat.ogg,DEEP RUTS
-rbr,detail_deepruts_rushed,346,-1,urat.ogg,DEEP RUTS
-rbr,detail_dip,361,0.0,notko.ogg,Dip
-rbr,detail_dip_rushed,361,0.0,notko.ogg,Dip
-rbr,detail_dont_cut,32,0.56,huomio.ogg,Caution
-rbr,detail_dont_cut_early,2016,0.0,ala_alussa.ogg,Don't Cut Early
-rbr,detail_dont_cut_early_rushed,2016,0.0,ala_alussa.ogg,Don't Cut Early
-rbr,detail_dont_cut_late,2017,0.05,ala_lopussa.ogg,Don't Cut Late
-rbr,detail_dont_cut_late_rushed,2017,0.05,ala_lopussa.ogg,Don't Cut Late
-rbr,detail_dont_cut_rushed,32,0.56,huomio.ogg,Caution
+no_rbr_note,detail_damp,548,-1,,
+sound_not_found,detail_deep_cut,211,-1,deepcut.ogg,DEEP CUT
+rbr,detail_deepruts,346,0.0,urat.ogg,DEEP RUTS
+rbr,detail_deepruts_rushed,346,0.0,urat.ogg,DEEP RUTS
+rbr,detail_dip,361,0.01,notko.ogg,Dip
+rbr,detail_dip_rushed,361,0.01,notko.ogg,Dip
+sound_not_found,detail_directly,245,-1,directly.ogg,Directly
+no_rbr_note,detail_dirt,296,-1,,
+no_rbr_note,detail_dirty,291,-1,,
+no_rbr_note,detail_distance_call,13,1.0,,
+sound_not_found,detail_ditch,350,-1,ditch.ogg,DITCH
+sound_not_found,detail_done,430,-1,done.ogg,Done
+rbr,detail_dont_cut,32,0.02,huomio.ogg,Caution
+rbr,detail_dont_cut_early,2016,0.01,ala_alussa.ogg,Don't Cut Early
+rbr,detail_dont_cut_early_rushed,2016,0.01,ala_alussa.ogg,Don't Cut Early
+rbr,detail_dont_cut_late,2017,0.11,ala_lopussa.ogg,Don't Cut Late
+rbr,detail_dont_cut_late_rushed,2017,0.11,ala_lopussa.ogg,Don't Cut Late
+rbr,detail_dont_cut_rushed,32,0.02,huomio.ogg,Caution
 rbr,detail_double,2102,0.0,tupla1.ogg,Double
 rbr,detail_double,2102,0.0,tupla2.ogg,Double
 rbr,detail_double,2102,0.0,tupla3.ogg,Double
-rbr,detail_double_caution,303,0.21,huomio_huomio.ogg,Danger
-rbr,detail_double_caution_rushed,303,0.21,huomio_huomio.ogg,Danger
+rbr,detail_double_caution,303,0.47,huomio_huomio.ogg,Danger
+rbr,detail_double_caution_rushed,303,0.47,huomio_huomio.ogg,Danger
 rbr,detail_double_rushed,2102,0.0,tupla1.ogg,Double
 rbr,detail_double_rushed,2102,0.0,tupla2.ogg,Double
 rbr,detail_double_rushed,2102,0.0,tupla3.ogg,Double
-no_rbr_note,detail_double_tightens,4089,0.04,,
-no_rbr_note,detail_double_tightens_rushed,4089,0.04,,
-rbr,detail_downhill,261,0.01,alas1.ogg,Down
-rbr,detail_downhill,261,0.01,alas2.ogg,Down
-rbr,detail_downhill_rushed,261,0.01,alas1.ogg,Down
-rbr,detail_downhill_rushed,261,0.01,alas2.ogg,Down
+no_rbr_note,detail_double_tightens,4089,0.16,,
+no_rbr_note,detail_double_tightens_rushed,4089,0.16,,
+rbr,detail_downhill,261,0.04,alas1.ogg,Down
+rbr,detail_downhill,261,0.04,alas2.ogg,Down
+rbr,detail_downhill_rushed,261,0.04,alas1.ogg,Down
+rbr,detail_downhill_rushed,261,0.04,alas2.ogg,Down
+no_rbr_note,detail_draws_in,273,-1,,
+no_rbr_note,detail_drops,362,0.01,,
+no_rbr_note,detail_drops_left,363,-1,,
+no_rbr_note,detail_drops_right,364,-1,,
+no_rbr_note,detail_dry,547,-1,,
 rbr,detail_early,234,-1,alussa.ogg,Early
 rbr,detail_early_rushed,234,-1,alussa.ogg,Early
-rbr,detail_easy,236,0.01,helppo1.ogg,Easy
-rbr,detail_easy_rushed,236,0.01,helppo1.ogg,Easy
-rbr,detail_fakes,299,0.02,hamaa.ogg,Deceptive
-rbr,detail_fakes_rushed,299,0.02,hamaa.ogg,Deceptive
+rbr,detail_easy,236,0.02,helppo1.ogg,Easy
+rbr,detail_easy_rushed,236,0.02,helppo1.ogg,Easy
+sound_not_found,detail_edge,348,-1,edge.ogg,EDGE
+no_rbr_note,detail_empty_call,4075,0.39,,
+no_rbr_note,detail_end_of_track,24,0.93,,
+sound_not_found,detail_entry,557,-1,entry.ogg,Entry
+sound_not_found,detail_exact,243,-1,exact.ogg,Exact
+no_rbr_note,detail_extra,258,-1,,
+rbr,detail_fakes,299,0.05,hamaa.ogg,Deceptive
+rbr,detail_fakes_rushed,299,0.05,hamaa.ogg,Deceptive
+sound_not_found,detail_fast,241,-1,fast.ogg,Fast
+no_rbr_note,detail_fence,370,-1,,
 rbr,detail_finish,22,1.0,maali.ogg,Finish
-rbr,detail_ford,17,0.1,vetta.ogg,Water
-rbr,detail_ford_rushed,17,0.1,vetta.ogg,Water
-rbr,detail_full_cut,212,0.0,leikkaa.ogg,Full Cut
-rbr,detail_full_cut_rushed,212,0.0,leikkaa.ogg,Full Cut
+no_rbr_note,detail_flatout,216,-1,,
+no_rbr_note,detail_for,410,-1,,
+rbr,detail_ford,17,0.11,vetta.ogg,Water
+rbr,detail_ford_rushed,17,0.11,vetta.ogg,Water
+no_rbr_note,detail_fork_left,365,-1,,
+no_rbr_note,detail_fork_right,366,-1,,
+no_rbr_note,detail_from,415,-1,,
+no_rbr_note,detail_from_right,224,-1,,
+no_rbr_note,detail_full,214,-1,,
+rbr,detail_full_cut,212,0.01,leikkaa.ogg,Full Cut
+rbr,detail_full_cut_rushed,212,0.01,leikkaa.ogg,Full Cut
 no_rbr_note,detail_go,-1,-1,,
-rbr,detail_go_straight,28,0.23,suoraan.ogg,Go Straight
-rbr,detail_go_straight_rushed,28,0.23,suoraan.ogg,Go Straight
-rbr,detail_gravel,320,-1,soralle.ogg,Gravel
-rbr,detail_gravel_rushed,320,-1,soralle.ogg,Gravel
-rbr,detail_half_long,2103,0.3,puolipitka1.ogg,Half Long
-rbr,detail_half_long_rushed,2103,0.3,puolipitka1.ogg,Half Long
-rbr,detail_hard,240,0.03,paha1.ogg,Hard
-rbr,detail_hard,240,0.03,paha2.ogg,Hard
-rbr,detail_hard_rushed,240,0.03,paha1.ogg,Hard
-rbr,detail_hard_rushed,240,0.03,paha2.ogg,Hard
-rbr,detail_hold,549,0.08,pida1.ogg,Hold
-rbr,detail_hold,549,0.08,pida2.ogg,Hold
-rbr,detail_hold_rushed,549,0.08,pida1.ogg,Hold
-rbr,detail_hold_rushed,549,0.08,pida2.ogg,Hold
-sound_not_found,detail_hole,344,-1,hole.ogg,HOLE
-rbr,detail_hole,344,-1,reika1.ogg,Hole
-rbr,detail_hole,344,-1,reika2.ogg,Hole
-sound_not_found,detail_hole_rushed,344,-1,hole.ogg,HOLE
-rbr,detail_hole_rushed,344,-1,reika1.ogg,Hole
-rbr,detail_hole_rushed,344,-1,reika2.ogg,Hole
+no_rbr_note,detail_go_full,215,0.0,,
+sound_not_found,detail_go_narrow,266,-1,gonarrow.ogg,Go Narrow
+rbr,detail_go_straight,28,0.19,suoraan.ogg,Go Straight
+rbr,detail_go_straight_rushed,28,0.19,suoraan.ogg,Go Straight
+sound_not_found,detail_go_wide,267,-1,gowide.ogg,Go Wide
+sound_not_found,detail_good,253,-1,good.ogg,Good
+no_rbr_note,detail_good_grip,554,-1,,
+rbr,detail_gravel,320,0.0,soralle.ogg,Gravel
+rbr,detail_gravel_rushed,320,0.0,soralle.ogg,Gravel
+no_rbr_note,detail_grip,553,-1,,
+no_rbr_note,detail_grip_off,552,-1,,
+sound_not_found,detail_grit,324,-1,grit.ogg,Grit
+rbr,detail_half_long,2103,0.67,puolipitka1.ogg,Half Long
+rbr,detail_half_long_rushed,2103,0.67,puolipitka1.ogg,Half Long
+no_rbr_note,detail_handbrake,219,-1,,
+rbr,detail_hard,240,0.07,paha1.ogg,Hard
+rbr,detail_hard,240,0.07,paha2.ogg,Hard
+rbr,detail_hard_rushed,240,0.07,paha1.ogg,Hard
+rbr,detail_hard_rushed,240,0.07,paha2.ogg,Hard
+sound_not_found,detail_hidden,301,0.0,hidden.ogg,HIDDEN
+rbr,detail_hold,549,-1,pida1.ogg,Hold
+rbr,detail_hold,549,-1,pida2.ogg,Hold
+rbr,detail_hold_rushed,549,-1,pida1.ogg,Hold
+rbr,detail_hold_rushed,549,-1,pida2.ogg,Hold
+sound_not_found,detail_hole,344,0.04,hole.ogg,HOLE
+rbr,detail_hole,344,0.04,reika1.ogg,Hole
+rbr,detail_hole,344,0.04,reika2.ogg,Hole
+sound_not_found,detail_hole_rushed,344,0.04,hole.ogg,HOLE
+rbr,detail_hole_rushed,344,0.04,reika1.ogg,Hole
+rbr,detail_hole_rushed,344,0.04,reika2.ogg,Hole
+no_rbr_note,detail_hollow,341,-1,,
+sound_not_found,detail_hook,272,0.0,hook.ogg,HOOK
+no_rbr_note,detail_house,372,-1,,
+sound_not_found,detail_ice,329,0.0,jaalle.ogg,Ice
+sound_not_found,detail_icy,327,-1,icy.ogg,Icy
 rbr,detail_immediate,2030,-1,heti1.ogg,Immediate
 rbr,detail_immediate,2030,-1,heti2.ogg,Immediate
 rbr,detail_immediate_rushed,2030,-1,heti1.ogg,Immediate
 rbr,detail_immediate_rushed,2030,-1,heti2.ogg,Immediate
-rbr,detail_inside,411,0.01,sisalla.ogg,Inside
-rbr,detail_inside_rushed,411,0.01,sisalla.ogg,Inside
+no_rbr_note,detail_in,408,-1,,
+no_rbr_note,detail_in_de,416,-1,,
+rbr,detail_inside,411,0.03,sisalla.ogg,Inside
+rbr,detail_inside_rushed,411,0.03,sisalla.ogg,Inside
 rbr,detail_into,-1,-1,into1.ogg,Into
 rbr,detail_into,-1,-1,into2.ogg,Into
 rbr,detail_into_rushed,-1,-1,into1.ogg,Into
 rbr,detail_into_rushed,-1,-1,into2.ogg,Into
-rbr,detail_jump,20,0.54,hyppy1.ogg,Jump
-rbr,detail_jump,20,0.54,hyppy2.ogg,Jump
-rbr,detail_jump_bind,2107,0.08,hyppysido1.ogg,Jump Tie
-rbr,detail_jump_bind,2107,0.08,hyppysido2.ogg,Jump Tie
-rbr,detail_jump_bind_rushed,2107,0.08,hyppysido1.ogg,Jump Tie
-rbr,detail_jump_bind_rushed,2107,0.08,hyppysido2.ogg,Jump Tie
+no_rbr_note,detail_island,377,-1,,
+rbr,detail_jump,20,0.5,hyppy1.ogg,Jump
+rbr,detail_jump,20,0.5,hyppy2.ogg,Jump
+rbr,detail_jump_bind,2107,0.18,hyppysido1.ogg,Jump Tie
+rbr,detail_jump_bind,2107,0.18,hyppysido2.ogg,Jump Tie
+rbr,detail_jump_bind_rushed,2107,0.18,hyppysido1.ogg,Jump Tie
+rbr,detail_jump_bind_rushed,2107,0.18,hyppysido2.ogg,Jump Tie
 rbr,detail_jump_flat,2106,-1,hyppytays1.ogg,Jump Flat
 rbr,detail_jump_flat,2106,-1,hyppytays2.ogg,Jump Flat
 rbr,detail_jump_flat_rushed,2106,-1,hyppytays1.ogg,Jump Flat
 rbr,detail_jump_flat_rushed,2106,-1,hyppytays2.ogg,Jump Flat
-rbr,detail_jump_rushed,20,0.54,hyppy1.ogg,Jump
-rbr,detail_jump_rushed,20,0.54,hyppy2.ogg,Jump
-rbr,detail_junction,351,0.04,risteys1.ogg,Junction
-rbr,detail_junction,351,0.04,risteys2.ogg,Junction
-rbr,detail_junction_rushed,351,0.04,risteys1.ogg,Junction
-rbr,detail_junction_rushed,351,0.04,risteys2.ogg,Junction
-rbr,detail_keep_in,220,0.01,pida1.ogg,Keep In
-rbr,detail_keep_in,220,0.01,pida2.ogg,Keep In
-rbr,detail_keep_in_rushed,220,0.01,pida1.ogg,Keep In
-rbr,detail_keep_in_rushed,220,0.01,pida2.ogg,Keep In
-rbr,detail_keep_left,30,0.44,vasen_laita.ogg,Keep Left
-rbr,detail_keep_left_rushed,30,0.44,vasen_laita.ogg,Keep Left
-rbr,detail_keep_middle,31,0.45,keskelta1.ogg,Keep Middle
-rbr,detail_keep_middle,31,0.45,keskelta2.ogg,Keep Middle
-rbr,detail_keep_middle_rushed,31,0.45,keskelta1.ogg,Keep Middle
-rbr,detail_keep_middle_rushed,31,0.45,keskelta2.ogg,Keep Middle
-rbr,detail_keep_out,221,-1,ulkoo.ogg,Keep Out
-rbr,detail_keep_out_rushed,221,-1,ulkoo.ogg,Keep Out
-rbr,detail_keep_right,29,0.46,oikee_laita.ogg,Keep Right
-rbr,detail_keep_right_rushed,29,0.46,oikee_laita.ogg,Keep Right
-rbr,detail_late,235,0.03,lopussa.ogg,Late
-rbr,detail_late_apex,2023,0.04,hae1.ogg,Line
-rbr,detail_late_apex,2023,0.04,hae2.ogg,Line
-rbr,detail_late_rushed,235,0.03,lopussa.ogg,Late
-rbr,detail_left_entry_chicane,392,0.05,shikaani_vasemmalta.ogg,Left Entry Chicane
-rbr,detail_left_entry_chicane_rushed,392,0.05,shikaani_vasemmalta.ogg,Left Entry Chicane
-rbr,detail_left_foot_braking,551,0.08,sido.ogg,Tie
-rbr,detail_left_foot_braking_rushed,551,0.08,sido.ogg,Tie
+rbr,detail_jump_rushed,20,0.5,hyppy1.ogg,Jump
+rbr,detail_jump_rushed,20,0.5,hyppy2.ogg,Jump
+rbr,detail_junction,351,0.06,risteys1.ogg,Junction
+rbr,detail_junction,351,0.06,risteys2.ogg,Junction
+rbr,detail_junction_rushed,351,0.06,risteys1.ogg,Junction
+rbr,detail_junction_rushed,351,0.06,risteys2.ogg,Junction
+sound_not_found,detail_keep_centre,213,-1,keskelta.ogg,Keep Centre
+rbr,detail_keep_in,220,0.22,pida1.ogg,Keep In
+rbr,detail_keep_in,220,0.22,pida2.ogg,Keep In
+rbr,detail_keep_in_rushed,220,0.22,pida1.ogg,Keep In
+rbr,detail_keep_in_rushed,220,0.22,pida2.ogg,Keep In
+rbr,detail_keep_left,30,0.4,vasen_laita.ogg,Keep Left
+rbr,detail_keep_left_rushed,30,0.4,vasen_laita.ogg,Keep Left
+rbr,detail_keep_middle,31,0.44,keskelta1.ogg,Keep Middle
+rbr,detail_keep_middle,31,0.44,keskelta2.ogg,Keep Middle
+rbr,detail_keep_middle_rushed,31,0.44,keskelta1.ogg,Keep Middle
+rbr,detail_keep_middle_rushed,31,0.44,keskelta2.ogg,Keep Middle
+rbr,detail_keep_out,221,0.02,ulkoo.ogg,Keep Out
+rbr,detail_keep_out_rushed,221,0.02,ulkoo.ogg,Keep Out
+rbr,detail_keep_right,29,0.43,oikee_laita.ogg,Keep Right
+rbr,detail_keep_right_rushed,29,0.43,oikee_laita.ogg,Keep Right
+rbr,detail_late,235,0.04,lopussa.ogg,Late
+rbr,detail_late_apex,2023,-1,hae1.ogg,Line
+rbr,detail_late_apex,2023,-1,hae2.ogg,Line
+rbr,detail_late_rushed,235,0.04,lopussa.ogg,Late
+rbr,detail_left_entry_chicane,392,0.11,shikaani_vasemmalta.ogg,Left Entry Chicane
+rbr,detail_left_entry_chicane_rushed,392,0.11,shikaani_vasemmalta.ogg,Left Entry Chicane
+rbr,detail_left_foot_braking,551,0.17,sido.ogg,Tie
+rbr,detail_left_foot_braking_rushed,551,0.17,sido.ogg,Tie
+no_rbr_note,detail_lifts,433,-1,,
+sound_not_found,detail_light,246,-1,light.ogg,Light
+sound_not_found,detail_light_cut,218,0.01,light_cut.ogg,LIGHTCUT
+sound_not_found,detail_line,432,0.1,line.ogg,Line
 no_rbr_note,detail_logs_inside,40006,-1,,
 no_rbr_note,detail_logs_inside_rushed,40006,-1,,
 no_rbr_note,detail_logs_outside,40009,-1,,
 no_rbr_note,detail_logs_outside_rushed,40009,-1,,
 rbr,detail_long,-1,-1,pitka.ogg,Long
 rbr,detail_long_rushed,-1,-1,pitka.ogg,Long
-rbr,detail_longlong,263,0.01,tosi_pitka.ogg,Very Long
-rbr,detail_longlong_rushed,263,0.01,tosi_pitka.ogg,Very Long
+rbr,detail_longlong,263,-1,tosi_pitka.ogg,Very Long
+rbr,detail_longlong_rushed,263,-1,tosi_pitka.ogg,Very Long
 sound_not_found,detail_loose_gravel,330,-1,loose_gravel.ogg,Loose Gravel
+sound_not_found,detail_many,238,-1,many.ogg,Many
+sound_not_found,detail_marshalls,396,-1,marshalls.ogg,JÄRJESTYKSENVALVOJIA
+no_rbr_note,detail_mast,375,-1,,
 rbr,detail_maybe,-1,-1,ehka1.ogg,Maybe
 rbr,detail_maybe,-1,-1,ehka2.ogg,Maybe
 rbr,detail_maybe,-1,-1,ehka1.ogg,Maybe
 rbr,detail_maybe_rushed,-1,-1,ehka1.ogg,Maybe
 rbr,detail_maybe_rushed,-1,-1,ehka2.ogg,Maybe
 rbr,detail_maybe_rushed,-1,-1,ehka1.ogg,Maybe
-rbr,detail_minus,230,0.08,miinus.ogg,Minus
-rbr,detail_minus_rushed,230,0.08,miinus.ogg,Minus
-rbr,detail_narrows,14,0.32,sumppu.ogg,Narrows
-rbr,detail_narrows_rushed,14,0.32,sumppu.ogg,Narrows
+rbr,detail_minus,230,0.1,miinus.ogg,Minus
+rbr,detail_minus_rushed,230,0.1,miinus.ogg,Minus
+sound_not_found,detail_minusminus,231,-1,minusminus.ogg,MIINUS MIINUS
+sound_not_found,detail_much,237,-1,much.ogg,Much
+no_rbr_note,detail_muddy,290,-1,,
+no_rbr_note,detail_narrow,255,0.0,,
+rbr,detail_narrows,14,0.0,sumppu.ogg,Narrows
+rbr,detail_narrows_rushed,14,0.0,sumppu.ogg,Narrows
+no_rbr_note,detail_near,402,-1,,
+sound_not_found,detail_negative,295,-1,negative.ogg,Negative
+no_rbr_note,detail_negative_camber,367,-1,,
+sound_not_found,detail_netting,390,-1,netting.ogg,VERKKO
+no_rbr_note,detail_next_lap,435,-1,,
+no_rbr_note,detail_off,414,-1,,
+no_rbr_note,detail_on,403,-1,,
+sound_not_found,detail_onsplit,326,-1,onsplit.ogg,Split
 rbr,detail_onto,-1,-1,onto.ogg,Onto
+sound_not_found,detail_onto_cobbles,543,0.0,onto_cobbles.ogg,Onto Cobbles
 rbr,detail_onto_concrete,542,-1,betonille.ogg,On Concrete
 rbr,detail_onto_concrete_rushed,542,-1,betonille.ogg,On Concrete
-rbr,detail_onto_gravel,540,0.04,soralle.ogg,On Gravel
-rbr,detail_onto_gravel_rushed,540,0.04,soralle.ogg,On Gravel
+rbr,detail_onto_gravel,540,0.1,soralle.ogg,On Gravel
+rbr,detail_onto_gravel_rushed,540,0.1,soralle.ogg,On Gravel
+sound_not_found,detail_onto_grit,544,-1,onto_grit.ogg,Onto Grit
 rbr,detail_onto_rushed,-1,-1,onto.ogg,Onto
 rbr,detail_onto_snow,545,0.01,lumelle.ogg,On Snow
 rbr,detail_onto_snow_rushed,545,0.01,lumelle.ogg,On Snow
-rbr,detail_onto_tarmac,541,0.02,asfaltille.ogg,On Tarmac
-rbr,detail_onto_tarmac_rushed,541,0.02,asfaltille.ogg,On Tarmac
-rbr,detail_opens,298,0.22,aukee1.ogg,Opens
-rbr,detail_opens_rushed,298,0.22,aukee1.ogg,Opens
-rbr,detail_opens_tightens,2018,0.17,aukee_kirraa.ogg,Opens Tightens
-rbr,detail_opens_tightens_rushed,2018,0.17,aukee_kirraa.ogg,Opens Tightens
+rbr,detail_onto_tarmac,541,0.06,asfaltille.ogg,On Tarmac
+rbr,detail_onto_tarmac_rushed,541,0.06,asfaltille.ogg,On Tarmac
+rbr,detail_opens,298,0.45,aukee1.ogg,Opens
+rbr,detail_opens_rushed,298,0.45,aukee1.ogg,Opens
+rbr,detail_opens_tightens,2018,0.37,aukee_kirraa.ogg,Opens Tightens
+rbr,detail_opens_tightens_rushed,2018,0.37,aukee_kirraa.ogg,Opens Tightens
 rbr,detail_outside,412,-1,ulkona.ogg,Outside
 rbr,detail_outside_rushed,412,-1,ulkona.ogg,Outside
+no_rbr_note,detail_over,407,-1,,
 rbr,detail_over_bridge,200,0.0,silta.ogg,SILLAN YLI
 rbr,detail_over_bridge_rushed,200,0.0,silta.ogg,SILLAN YLI
-rbr,detail_over_crest,16,0.82,yli_nypyn.ogg,Over Crest
-rbr,detail_over_crest_rushed,16,0.82,yli_nypyn.ogg,Over Crest
-rbr,detail_over_jump,2108,0.02,hypynyli1.ogg,Over Jump
-rbr,detail_over_jump,2108,0.02,hypynyli2.ogg,Over Jump
-rbr,detail_over_jump_rushed,2108,0.02,hypynyli1.ogg,Over Jump
-rbr,detail_over_jump_rushed,2108,0.02,hypynyli2.ogg,Over Jump
+rbr,detail_over_crest,16,0.02,yli_nypyn.ogg,Over Crest
+rbr,detail_over_crest_rushed,16,0.02,yli_nypyn.ogg,Over Crest
+rbr,detail_over_jump,2108,0.06,hypynyli1.ogg,Over Jump
+rbr,detail_over_jump,2108,0.06,hypynyli2.ogg,Over Jump
+rbr,detail_over_jump_rushed,2108,0.06,hypynyli1.ogg,Over Jump
+rbr,detail_over_jump_rushed,2108,0.06,hypynyli2.ogg,Over Jump
 rbr,detail_over_rails,201,-1,raiteet.ogg,RAITEIDEN YLI
 rbr,detail_over_rails_rushed,201,-1,raiteet.ogg,RAITEIDEN YLI
 rbr,detail_over_railway,202,-1,raiteet.ogg,RAITEIDEN YLI
 rbr,detail_over_railway_rushed,202,-1,raiteet.ogg,RAITEIDEN YLI
-rbr,detail_plus,232,0.04,plus.ogg,Plus
+no_rbr_note,detail_path,387,-1,,
+no_rbr_note,detail_place_holder,10005,-1,,
+rbr,detail_plus,232,0.06,plus.ogg,Plus
+sound_not_found,detail_plus_plus,233,-1,plusplus.ogg,PLUS PLUS
+sound_not_found,detail_positive,294,-1,positive.ogg,Positive
+no_rbr_note,detail_positive_camber,368,-1,,
+no_rbr_note,detail_post,376,-1,,
 rbr,detail_puddle,389,-1,vetta.ogg,LÄTÄKKÖ
 rbr,detail_rails,384,0.0,raiteet.ogg,Rails
-rbr,detail_right_entry_chicane,393,0.04,shikaani_oikeelta.ogg,Right Entry Chicane
-rbr,detail_right_entry_chicane_rushed,393,0.04,shikaani_oikeelta.ogg,Right Entry Chicane
+no_rbr_note,detail_reverse_camber,343,-1,,
+rbr,detail_right_entry_chicane,393,0.08,shikaani_oikeelta.ogg,Right Entry Chicane
+rbr,detail_right_entry_chicane_rushed,393,0.08,shikaani_oikeelta.ogg,Right Entry Chicane
+no_rbr_note,detail_road,382,-1,,
+sound_not_found,detail_rock,380,-1,rock.ogg,KIVI
 no_rbr_note,detail_rocks_inside,40007,-1,,
 no_rbr_note,detail_rocks_inside_rushed,40007,-1,,
 no_rbr_note,detail_rocks_outside,40010,-1,,
 no_rbr_note,detail_rocks_outside_rushed,40010,-1,,
-rbr,detail_round,250,0.25,pyoree.ogg,Round
-rbr,detail_round_rushed,250,0.25,pyoree.ogg,Round
-rbr,detail_ruts,345,0.04,urat.ogg,Ruts
-rbr,detail_ruts_rushed,345,0.04,urat.ogg,Ruts
-rbr,detail_sharp,249,0.04,terava1.ogg,Sharp
-rbr,detail_sharp,249,0.04,terava2.ogg,Sharp
-rbr,detail_sharp_rushed,249,0.04,terava1.ogg,Sharp
-rbr,detail_sharp_rushed,249,0.04,terava2.ogg,Sharp
-rbr,detail_short,264,0.36,lyhyt.ogg,Short
-rbr,detail_short_rushed,264,0.36,lyhyt.ogg,Short
-rbr,detail_slippery,268,0.03,liukas.ogg,Slippy
-rbr,detail_slippery_rushed,268,0.03,liukas.ogg,Slippy
-rbr,detail_slippy,277,0.0,liukas.ogg,
-rbr,detail_slippy_rushed,277,0.0,liukas.ogg,
-rbr,detail_small_crest,2109,0.01,pikkunyppy1.ogg,Small Crest
-rbr,detail_small_crest,2109,0.01,pikkunyppy2.ogg,Small Crest
-rbr,detail_small_crest_rushed,2109,0.01,pikkunyppy1.ogg,Small Crest
-rbr,detail_small_crest_rushed,2109,0.01,pikkunyppy2.ogg,Small Crest
+rbr,detail_round,250,0.52,pyoree.ogg,Round
+rbr,detail_round_rushed,250,0.52,pyoree.ogg,Round
+no_rbr_note,detail_roundabout,399,-1,,
+sound_not_found,detail_rubble,328,-1,rubble.ogg,Rubble
+rbr,detail_ruts,345,0.08,urat.ogg,Ruts
+rbr,detail_ruts_rushed,345,0.08,urat.ogg,Ruts
+rbr,detail_sharp,249,0.08,terava1.ogg,Sharp
+rbr,detail_sharp,249,0.08,terava2.ogg,Sharp
+rbr,detail_sharp_rushed,249,0.08,terava1.ogg,Sharp
+rbr,detail_sharp_rushed,249,0.08,terava2.ogg,Sharp
+rbr,detail_short,264,0.79,lyhyt.ogg,Short
+rbr,detail_short_rushed,264,0.79,lyhyt.ogg,Short
+sound_not_found,detail_short_short,265,-1,shortshort.ogg,LYHYT LYHYT
+sound_not_found,detail_shoulder,356,-1,shoulder.ogg,SHOULDER
+sound_not_found,detail_sideways,271,-1,sideways.ogg,Sideways
+sound_not_found,detail_sign,385,-1,sign.ogg,KYLTTI
+no_rbr_note,detail_slide,269,-1,,
+sound_not_found,detail_slight,252,-1,slight.ogg,Slight
+rbr,detail_slippery,268,0.06,liukas.ogg,Slippy
+rbr,detail_slippery_rushed,268,0.06,liukas.ogg,Slippy
+rbr,detail_slippy,277,-1,liukas.ogg,
+rbr,detail_slippy_rushed,277,-1,liukas.ogg,
+sound_not_found,detail_slow,242,0.0,slow.ogg,Slow
+no_rbr_note,detail_slowing,244,-1,,
+sound_not_found,detail_small,248,-1,small.ogg,Small
+rbr,detail_small_crest,2109,0.26,pikkunyppy1.ogg,Small Crest
+rbr,detail_small_crest,2109,0.26,pikkunyppy2.ogg,Small Crest
+rbr,detail_small_crest_rushed,2109,0.26,pikkunyppy1.ogg,Small Crest
+rbr,detail_small_crest_rushed,2109,0.26,pikkunyppy2.ogg,Small Crest
 rbr,detail_snow,325,-1,lumelle.ogg,Snow
+no_rbr_note,detail_snow_border,360,-1,,
 rbr,detail_snow_rushed,325,-1,lumelle.ogg,Snow
-no_rbr_note,detail_split,23,0.99,,
-rbr,detail_stay_out,2020,0.01,roiku.ogg,Hang
-rbr,detail_stay_out_rushed,2020,0.01,roiku.ogg,Hang
+no_rbr_note,detail_sound_file,10008,-1,,
+no_rbr_note,detail_sound_index,10010,-1,,
+sound_not_found,detail_spectators,395,-1,spectators.ogg,KATSOJIA
+no_rbr_note,detail_speed,559,-1,,
+no_rbr_note,detail_split,23,1.0,,
+sound_not_found,detail_split_time,556,-1,split_time.ogg,Split Time
+no_rbr_note,detail_standard_call,10009,-1,,
+no_rbr_note,detail_start,21,0.97,,
+rbr,detail_stay_out,2020,-1,roiku.ogg,Hang
+rbr,detail_stay_out_rushed,2020,-1,roiku.ogg,Hang
+sound_not_found,detail_steep_drop,354,-1,steep_drop.ogg,STEEP DROP
+sound_not_found,detail_steep_hill,357,-1,steep_hill.ogg,STEEP HILL
+sound_not_found,detail_steep_incline,358,-1,steep_incline.ogg,STEEP INCLINE
+sound_not_found,detail_steep_slope,359,-1,steep_slope.ogg,STEEP SLOPE
+sound_not_found,detail_stone,379,-1,stone.ogg,KIVI
+sound_not_found,detail_stop,431,0.01,stop.ogg,Stop
+sound_not_found,detail_straight,257,-1,straight.ogg,Straight
+sound_not_found,detail_stump,374,-1,stump.ogg,KANTO
+no_rbr_note,detail_take_exit,436,0.01,,
+no_rbr_note,detail_take_speed,550,-1,,
+sound_not_found,detail_tape,391,-1,tape.ogg,TEIPPI
 rbr,detail_tarmac,321,-1,asfaltille.ogg,Tarmac
 rbr,detail_tarmac_rushed,321,-1,asfaltille.ogg,Tarmac
 no_rbr_note,detail_then,413,-1,,
 no_rbr_note,detail_then_rushed,413,-1,,
+no_rbr_note,detail_thightens,4088,0.97,,
+no_rbr_note,detail_through,400,-1,,
 no_rbr_note,detail_through_gate,40001,-1,,
-rbr,detail_tight,251,0.07,ahdas.ogg,Tight
-rbr,detail_tight_rushed,251,0.07,ahdas.ogg,Tight
+rbr,detail_tight,251,-1,ahdas.ogg,Tight
+rbr,detail_tight_rushed,251,-1,ahdas.ogg,Tight
 rbr,detail_tightens,4,0.93,vasen_viis1.ogg,5 Left
 rbr,detail_tightens,4,0.93,vasen_viis2.ogg,5 Left
-rbr,detail_tightens_late,2015,0.21,kirraa_lopussa.ogg,Tightens Late
-rbr,detail_tightens_late_rushed,2015,0.21,kirraa_lopussa.ogg,Tightens Late
-rbr,detail_tightens_opens,2019,0.03,kirraa_aukee.ogg,Tightens Opens
-rbr,detail_tightens_opens_rushed,2019,0.03,kirraa_aukee.ogg,Tightens Opens
+rbr,detail_tightens_late,2015,0.45,kirraa_lopussa.ogg,Tightens Late
+rbr,detail_tightens_late_rushed,2015,0.45,kirraa_lopussa.ogg,Tightens Late
+rbr,detail_tightens_opens,2019,0.08,kirraa_aukee.ogg,Tightens Opens
+rbr,detail_tightens_opens_rushed,2019,0.08,kirraa_aukee.ogg,Tightens Opens
 rbr,detail_tightens_rushed,4,0.93,vasen_viis1.ogg,5 Left
 rbr,detail_tightens_rushed,4,0.93,vasen_viis2.ogg,5 Left
-rbr,detail_tightens_to_1,2006,0.11,kirraa_yheks.ogg,Tightens 1
-rbr,detail_tightens_to_1_rushed,2006,0.11,kirraa_yheks.ogg,Tightens 1
-rbr,detail_tightens_to_2,2005,0.2,kirraa_kaheks.ogg,Tightens 2
-rbr,detail_tightens_to_2_rushed,2005,0.2,kirraa_kaheks.ogg,Tightens 2
-rbr,detail_tightens_to_3,2004,0.22,kirraa_kolmeks.ogg,Tightens 3
-rbr,detail_tightens_to_3_rushed,2004,0.22,kirraa_kolmeks.ogg,Tightens 3
-rbr,detail_tightens_to_4,2003,0.09,kirraa_neljaks.ogg,Tightens 4
-rbr,detail_tightens_to_4_rushed,2003,0.09,kirraa_neljaks.ogg,Tightens 4
-rbr,detail_tightens_to_5,2002,0.01,kirraa_viieks.ogg,Tightens 5
-rbr,detail_tightens_to_5_rushed,2002,0.01,kirraa_viieks.ogg,Tightens 5
+rbr,detail_tightens_to_1,2006,0.24,kirraa_yheks.ogg,Tightens 1
+no_rbr_note,detail_tightens_to_1_plus,2067,-1,,
+rbr,detail_tightens_to_1_rushed,2006,0.24,kirraa_yheks.ogg,Tightens 1
+rbr,detail_tightens_to_2,2005,0.45,kirraa_kaheks.ogg,Tightens 2
+no_rbr_note,detail_tightens_to_2_plus,2264,0.03,,
+rbr,detail_tightens_to_2_rushed,2005,0.45,kirraa_kaheks.ogg,Tightens 2
+rbr,detail_tightens_to_3,2004,0.51,kirraa_kolmeks.ogg,Tightens 3
+no_rbr_note,detail_tightens_to_3_plus,2065,0.02,,
+rbr,detail_tightens_to_3_rushed,2004,0.51,kirraa_kolmeks.ogg,Tightens 3
+rbr,detail_tightens_to_4,2003,0.18,kirraa_neljaks.ogg,Tightens 4
+no_rbr_note,detail_tightens_to_4_plus,2064,0.0,,
+rbr,detail_tightens_to_4_rushed,2003,0.18,kirraa_neljaks.ogg,Tightens 4
+rbr,detail_tightens_to_5,2002,0.02,kirraa_viieks.ogg,Tightens 5
+no_rbr_note,detail_tightens_to_5_plus,2063,-1,,
+rbr,detail_tightens_to_5_rushed,2002,0.02,kirraa_viieks.ogg,Tightens 5
 rbr,detail_tightens_to_6,2001,-1,kirraa_kuueks.ogg,Tightens 6
+no_rbr_note,detail_tightens_to_6_plus,2062,-1,,
 rbr,detail_tightens_to_6_rushed,2001,-1,kirraa_kuueks.ogg,Tightens 6
-rbr,detail_tightens_to_acute,2007,0.02,kirraa_tiukaks.ogg,Tightens HP
-rbr,detail_tightens_to_acute_rushed,2007,0.02,kirraa_tiukaks.ogg,Tightens HP
-rbr,detail_to_1,2013,0.01,_yheks.ogg,1
-rbr,detail_to_2,2012,0.03,_kaheks.ogg,2
-rbr,detail_to_3,2011,0.04,_kolmeks.ogg,3
-rbr,detail_to_4,2010,0.02,_neljaks.ogg,4
-rbr,detail_to_5,2009,0.01,_viieks.ogg,5
-rbr,detail_to_6,2008,0.0,_kuueks.ogg,6
+no_rbr_note,detail_tightens_to_acute,2027,0.01,,
+no_rbr_note,detail_tightens_to_acute_rushed,2027,0.01,,
+rbr,detail_tightens_to_hairpin,2007,0.03,kirraa_tiukaks.ogg,Tightens HP
+rbr,detail_to_1,2013,0.03,_yheks.ogg,1
+rbr,detail_to_2,2012,0.06,_kaheks.ogg,2
+rbr,detail_to_3,2011,0.08,_kolmeks.ogg,3
+rbr,detail_to_4,2010,0.03,_neljaks.ogg,4
+rbr,detail_to_5,2009,0.02,_viieks.ogg,5
+rbr,detail_to_6,2008,-1,_kuueks.ogg,6
 rbr,detail_to_acute,2014,0.0,_tiukaks.ogg,HP
-rbr,detail_to_dip,2024,0.03,notko.ogg,TODIP
-rbr,detail_to_finish,2105,0.05,maaliin1.ogg,To Finish
+rbr,detail_to_dip,2024,0.07,notko.ogg,TODIP
+rbr,detail_to_finish,2105,0.11,maaliin1.ogg,To Finish
+sound_not_found,detail_to_sight_distance,555,-1,to_sight_distance.ogg,To Sight Distance
+sound_not_found,detail_tree,373,-1,tree.ogg,PUU
 no_rbr_note,detail_tree_inside,40008,-1,,
 no_rbr_note,detail_tree_inside_rushed,40008,-1,,
 no_rbr_note,detail_tree_outside,40011,-1,,
 no_rbr_note,detail_tree_outside_rushed,40011,-1,,
-rbr,detail_triple_caution,304,0.0,huomio_huomio.ogg,TRIPLE CAUTION
-rbr,detail_tunnel,381,0.01,tunneli.ogg,Tunnel
-rbr,detail_twisty,12,0.32,suoraksi.ogg,Twisty
-rbr,detail_uphill,260,0.01,ylos1.ogg,Up
-rbr,detail_uphill,260,0.01,ylos2.ogg,Up
-rbr,detail_very_long,274,0.11,tosi_pitka.ogg,Very Long
+rbr,detail_triple_caution,304,-1,huomio_huomio.ogg,TRIPLE CAUTION
+rbr,detail_tunnel,381,0.02,tunneli.ogg,Tunnel
+no_rbr_note,detail_turn,353,0.01,,
+rbr,detail_twisty,12,0.35,suoraksi.ogg,Twisty
+sound_not_found,detail_tyres,394,-1,tyres.ogg,RENKAITA
+no_rbr_note,detail_understeer,270,-1,,
+no_rbr_note,detail_until,404,-1,,
+rbr,detail_uphill,260,0.02,ylos1.ogg,Up
+rbr,detail_uphill,260,0.02,ylos2.ogg,Up
+sound_not_found,detail_very,239,-1,very.ogg,Very
+rbr,detail_very_long,274,0.25,tosi_pitka.ogg,Very Long
+sound_not_found,detail_very_short,275,-1,very_short.ogg,TOSI LYHYT
+no_rbr_note,detail_walk,383,-1,,
+no_rbr_note,detail_wall,371,-1,,
 rbr,detail_water,388,-1,vetta.ogg,VETTÄ
-rbr,detail_widens,15,0.09,levenee.ogg,Widens
-rbr,detail_wideout,15,0.09,levenee.ogg,Widens
-no_rbr_note,microphone_check,-1,-1,,
+no_rbr_note,detail_wet,546,-1,,
+no_rbr_note,detail_wide,256,-1,,
+no_rbr_note,detail_wide_d_e,434,-1,,
+no_rbr_note,detail_widens,40005,-1,,
+rbr,detail_wideout,15,0.22,levenee.ogg,Widens
+no_rbr_note,detail_wooden_fence,443,-1,,
 no_rbr_note,number_1,-1,-1,,
+no_rbr_note,number_10,-1,-1,,
 rbr,number_100,-1,-1,100_1.ogg,100
 rbr,number_1000,-1,-1,1000.ogg,1000
 rbr,number_100_rushed,-1,-1,100_1.ogg,100
@@ -640,6 +804,7 @@ rbr,number_150,-1,-1,150_1.ogg,150
 rbr,number_160,-1,-1,160_1.ogg,160
 rbr,number_180,-1,-1,180_1.ogg,180
 no_rbr_note,number_2,-1,-1,,
+no_rbr_note,number_20,-1,-1,,
 rbr,number_200,-1,-1,200_1.ogg,200
 rbr,number_250,-1,-1,250_1.ogg,250
 no_rbr_note,number_3,-1,-1,,
@@ -647,32 +812,753 @@ rbr,number_30,-1,-1,30_1.ogg,30
 rbr,number_300,-1,-1,300_1.ogg,300
 rbr,number_30_rushed,-1,-1,30_1.ogg,30
 rbr,number_350,-1,-1,350_1.ogg,350
+no_rbr_note,number_4,-1,-1,,
 rbr,number_40,-1,-1,40_1.ogg,40
 rbr,number_400,-1,-1,400_1.ogg,400
 rbr,number_40_rushed,-1,-1,40_1.ogg,40
 rbr,number_450,-1,-1,450_1.ogg,450
+no_rbr_note,number_5,-1,-1,,
 rbr,number_50,-1,-1,50_1.ogg,50
 rbr,number_500,-1,-1,500_1.ogg,500
 rbr,number_50_rushed,-1,-1,50_1.ogg,50
+no_rbr_note,number_6,-1,-1,,
 rbr,number_60,-1,-1,60_1.ogg,60
 rbr,number_600,-1,-1,600.ogg,600
 rbr,number_60_rushed,-1,-1,60_1.ogg,60
+no_rbr_note,number_7,-1,-1,,
 rbr,number_70,-1,-1,70_1.ogg,70
 rbr,number_700,-1,-1,700.ogg,700
 rbr,number_70_rushed,-1,-1,70_1.ogg,70
+no_rbr_note,number_8,-1,-1,,
 rbr,number_80,-1,-1,80_1.ogg,80
 rbr,number_800,-1,-1,800.ogg,800
 rbr,number_80_rushed,-1,-1,80_1.ogg,80
+no_rbr_note,number_9,-1,-1,,
+no_rbr_note,number_90,-1,-1,,
 rbr,number_900,-1,-1,900.ogg,900
-no_rbr_note,penalty_false_start,-1,-1,,
-no_rbr_note,we_are_lost,-1,-1,,
-rbr_base_note_not_found,dontcut,-1,-1,ala.ogg,Don't Cut
-rbr_base_note_cc_type,detail_narrows,14,0.32,sumppu.ogg,Narrows
-rbr_base_note_cc_type,detail_oikeelta,2101,0.03,oikee_laita.ogg,Keep Right
-rbr_base_note_not_found,tightens,-1,-1,kirraa1.ogg,Tightens
-rbr_base_note_not_found,tightensbad,-1,-1,kirraa_kirraa.ogg,Double Tightens
-rbr_base_note_not_found,tightensbad,-1,-1,kirraa_kirraa_2.ogg,Double Tightens
-rbr_base_note_not_found,tightensbad,-1,-1,kirraa_kirraa.ogg,Double Tightens
-rbr_base_note_not_found,tightensbad,-1,-1,kirraa_kirraa_2.ogg,Double Tightens
-rbr_base_note_cc_type,detail_vasemmalta,2100,0.02,vasen_laita.ogg,Keep Left
-rbr_base_note_not_found,wideout,-1,-1,levenee.ogg,Widens
+no_rbr_note,unknown,20000,-1,,
+rbr_base_note_no_cc_type,dontcut,-1,-1,ala.ogg,Don't Cut
+rbr_base_note_cc_type,detail_narrows,14,0.0,sumppu.ogg,Narrows
+rbr_base_note_no_cc_type,tightens,-1,-1,kirraa1.ogg,Tightens
+rbr_base_note_no_cc_type,tightensbad,-1,-1,kirraa_kirraa.ogg,Tightens Bad
+rbr_base_note_no_cc_type,tightensbad,-1,-1,kirraa_kirraa_2.ogg,Tightens Bad
+rbr_base_note_cc_type,detail_wideout,15,0.22,levenee.ogg,Widens
+rbr_base_note_cc_type,detail_10,149,-1,10_1.ogg,10
+rbr_base_note_cc_type,detail_10,149,-1,10_2.ogg,10
+rbr_base_note_cc_type,detail_10,149,-1,10_3.ogg,10
+rbr_base_note_cc_type,detail_10,149,-1,10_4.ogg,10
+rbr_base_note_cc_type,detail_20,150,-1,20_1.ogg,20
+rbr_base_note_cc_type,detail_20,150,-1,20_2.ogg,20
+rbr_base_note_cc_type,detail_20,150,-1,20_3.ogg,20
+rbr_base_note_cc_type,detail_20,150,-1,20_4.ogg,20
+rbr_base_note_cc_type,detail_go_full,215,0.0,go1.ogg,Go
+rbr_base_note_cc_type,detail_go_full,215,0.0,go2.ogg,Go
+rbr_base_note_cc_type,detail_go_full,215,0.0,go3.ogg,Go
+rbr_base_note_cc_type,detail_flatout,216,-1,flat1.ogg,Flat
+rbr_base_note_cc_type,detail_flatout,216,-1,flat2.ogg,Flat
+rbr_base_note_cc_type,detail_flatout,216,-1,flat3.ogg,Flat
+rbr_base_note_cc_type,detail_handbrake,219,-1,handbrake1.ogg,Handbrake
+rbr_base_note_cc_type,detail_handbrake,219,-1,handbrake2.ogg,Handbrake
+rbr_base_note_cc_type,detail_slowing,244,-1,slowing1.ogg,Slowing
+rbr_base_note_cc_type,detail_slowing,244,-1,slowing2.ogg,Slowing
+rbr_base_note_cc_type,detail_slowing,244,-1,slowing3.ogg,Slowing
+rbr_base_note_cc_type,detail_narrow,255,0.0,narrow1.ogg,Narrow
+rbr_base_note_cc_type,detail_narrow,255,0.0,narrow2.ogg,Narrow
+rbr_base_note_cc_type,detail_wide,256,-1,wide1.ogg,Wide
+rbr_base_note_cc_type,detail_wide,256,-1,wide2.ogg,Wide
+rbr_base_note_cc_type,detail_dirty,291,-1,shit1.ogg,Shit
+rbr_base_note_cc_type,detail_dirty,291,-1,shit2.ogg,Shit
+rbr_base_note_cc_type,detail_niu_bumpy,292,-1,bumps1.ogg,Bumps (NIU)
+rbr_base_note_cc_type,detail_niu_bumpy,292,-1,bumps2.ogg,Bumps (NIU)
+rbr_base_note_cc_type,detail_cramped,293,0.13,cramped1.ogg,Cramped
+rbr_base_note_cc_type,detail_cramped,293,0.13,cramped2.ogg,Cramped
+rbr_base_note_cc_type,detail_camber,342,0.03,camber1.ogg,Camber
+rbr_base_note_cc_type,detail_camber,342,0.03,camber2.ogg,Camber
+rbr_base_note_cc_type,detail_turn,353,0.01,turn1.ogg,Turn
+rbr_base_note_cc_type,detail_turn,353,0.01,turn2.ogg,Turn
+rbr_base_note_cc_type,detail_turn,353,0.01,turn3.ogg,Turn
+rbr_base_note_cc_type,detail_badcamber,355,0.05,badcamber1.ogg,Bad Camber
+rbr_base_note_cc_type,detail_badcamber,355,0.05,badcamber2.ogg,Bad Camber
+rbr_base_note_cc_type,detail_drops,362,0.01,drops1.ogg,Drops
+rbr_base_note_cc_type,detail_drops,362,0.01,drops2.ogg,Drops
+rbr_base_note_cc_type,detail_niu_negative_camber,367,-1,badcamber1.ogg,Bad Camber (NIU)
+rbr_base_note_cc_type,detail_niu_negative_camber,367,-1,badcamber2.ogg,Bad Camber (NIU)
+rbr_base_note_cc_type,detail_niu_positive_camber,368,-1,camber1.ogg,Camber (NIU)
+rbr_base_note_cc_type,detail_niu_positive_camber,368,-1,camber2.ogg,Camber (NIU)
+rbr_base_note_cc_type,detail_niu_compression,369,-1,dip1.ogg,Dip (NIU)
+rbr_base_note_cc_type,detail_niu_compression,369,-1,dip2.ogg,Dip (NIU)
+rbr_base_note_cc_type,detail_niu_post,376,-1,post1.ogg,Post (NIU)
+rbr_base_note_cc_type,detail_niu_post,376,-1,post2.ogg,Post (NIU)
+rbr_base_note_cc_type,detail_niu_in,408,-1,in1.ogg,In (NIU)
+rbr_base_note_cc_type,detail_niu_in,408,-1,in2.ogg,In (NIU)
+rbr_base_note_cc_type,detail_next_lap,435,-1,onto_nextlap1.ogg,Onto Next Lap
+rbr_base_note_cc_type,detail_next_lap,435,-1,onto_nextlap2.ogg,Onto Next Lap
+rbr_base_note_cc_type,detail_next_lap,435,-1,onto_nextlap3.ogg,Onto Next Lap
+rbr_base_note_cc_type,detail_next_lap,435,-1,onto_nextlap4.ogg,Onto Next Lap
+rbr_base_note_cc_type,detail_take_exit,436,0.01,onto_finish1.ogg,Onto Finish
+rbr_base_note_cc_type,detail_take_exit,436,0.01,onto_finish2.ogg,Onto Finish
+rbr_base_note_cc_type,detail_take_exit,436,0.01,onto_finish3.ogg,Onto Finish
+rbr_base_note_cc_type,detail_take_exit,436,0.01,onto_finish4.ogg,Onto Finish
+rbr_base_note_no_cc_type,niu_jatkuu,2025,0.18,and1.ogg,And (NIU)
+rbr_base_note_no_cc_type,niu_jatkuu,2025,0.18,and2.ogg,And (NIU)
+rbr_base_note_no_cc_type,niu_jatkuu,2025,0.18,and3.ogg,And (NIU)
+rbr_base_note_no_cc_type,niu_jatkuu,2025,0.18,and4.ogg,And (NIU)
+rbr_base_note_no_cc_type,flat_scale,2026,-1,flat_scale1.ogg,Flat
+rbr_base_note_no_cc_type,flat_scale,2026,-1,flat_scale2.ogg,Flat
+rbr_base_note_no_cc_type,flat_scale,2026,-1,flat_scale3.ogg,Flat
+rbr_base_note_cc_type,detail_tightenstoacute,2027,0.01,tightens_acute1.ogg,Tightens Acute
+rbr_base_note_cc_type,detail_tightenstoacute,2027,0.01,tightens_acute2.ogg,Tightens Acute
+rbr_base_note_cc_type,detail_tightenstoacute,2027,0.01,tightens_acute3.ogg,Tightens Acute
+rbr_base_note_no_cc_type,toacute,2028,-1,_acute1.ogg,_Acute
+rbr_base_note_no_cc_type,toacute,2028,-1,_acute2.ogg,_Acute
+rbr_base_note_no_cc_type,toacute,2028,-1,_acute3.ogg,_Acute
+rbr_base_note_no_cc_type,nips,2031,-1,nips1.ogg,Nips
+rbr_base_note_no_cc_type,nips,2031,-1,nips2.ogg,Nips
+rbr_base_note_no_cc_type,openslittle,2032,0.02,opens_abit1.ogg,Opens A Bit
+rbr_base_note_no_cc_type,openslittle,2032,0.02,opens_abit2.ogg,Opens A Bit
+rbr_base_note_no_cc_type,openslong,2033,-1,opens_long1.ogg,Opens Long
+rbr_base_note_no_cc_type,openslong,2033,-1,opens_long2.ogg,Opens Long
+rbr_base_note_no_cc_type,opensverylong,2034,-1,opens_verylong1.ogg,Opens Very Long
+rbr_base_note_no_cc_type,opensverylong,2034,-1,opens_verylong2.ogg,Opens Very Long
+rbr_base_note_no_cc_type,opensearly,2035,-1,opens_early1.ogg,Opens Early
+rbr_base_note_no_cc_type,opensearly,2035,-1,opens_early2.ogg,Opens Early
+rbr_base_note_no_cc_type,opensatjunction,2036,-1,opens_at_junction1.ogg,Opens At Junction
+rbr_base_note_no_cc_type,opensatjunction,2036,-1,opens_at_junction2.ogg,Opens At Junction
+rbr_base_note_no_cc_type,opensovercrest,2037,-1,opens_overcrest1.ogg,Opens Over Crest
+rbr_base_note_no_cc_type,opensovercrest,2037,-1,opens_overcrest2.ogg,Opens Over Crest
+rbr_base_note_no_cc_type,scaleplus,2038,-1,scale_plus1.ogg,Scale Plus
+rbr_base_note_no_cc_type,scaleplus,2038,-1,scale_plus2.ogg,Scale Plus
+rbr_base_note_no_cc_type,scaleminus,2039,-1,scale_minus1.ogg,Scale Minus
+rbr_base_note_no_cc_type,scaleminus,2039,-1,scale_minus2.ogg,Scale Minus
+rbr_base_note_no_cc_type,tightensearly,2042,-1,tightens_early1.ogg,Tightens Early
+rbr_base_note_no_cc_type,tightensearly,2042,-1,tightens_early2.ogg,Tightens Early
+rbr_base_note_no_cc_type,tightenslittle,2043,0.06,tightens_abit1.ogg,Tightens A Bit
+rbr_base_note_no_cc_type,tightenslittle,2043,0.06,tightens_abit2.ogg,Tightens A Bit
+rbr_base_note_no_cc_type,tightenslong,2044,-1,tightens_long1.ogg,Tightens Long
+rbr_base_note_no_cc_type,tightenslong,2044,-1,tightens_long2.ogg,Tightens Long
+rbr_base_note_no_cc_type,tightensverylong,2045,-1,tightens_verylong1.ogg,Tightens Very Long
+rbr_base_note_no_cc_type,tightensverylong,2045,-1,tightens_verylong2.ogg,Tightens Very Long
+rbr_base_note_no_cc_type,tightensatjunction,2046,-1,tightens_at_junction1.ogg,Tightens At Junction
+rbr_base_note_no_cc_type,tightensatjunction,2046,-1,tightens_at_junction2.ogg,Tightens At Junction
+rbr_base_note_no_cc_type,tightensovercrest,2047,0.01,tightens_overcrest1.ogg,Tightens Over Crest
+rbr_base_note_no_cc_type,tightensovercrest,2047,0.01,tightens_overcrest2.ogg,Tightens Over Crest
+rbr_base_note_cc_modifier,walk,2048,0.0,walk1.ogg,Walk
+rbr_base_note_cc_modifier,walk,2048,0.0,walk2.ogg,Walk
+rbr_base_note_no_cc_type,neat,2049,0.0,neat1.ogg,Neat
+rbr_base_note_no_cc_type,neat,2049,0.0,neat2.ogg,Neat
+rbr_base_note_cc_type,detail_flatrightminus,2050,0.03,six_right_plus1.ogg,6 Right+
+rbr_base_note_cc_type,detail_flatrightminus,2050,0.03,six_right_plus2.ogg,6 Right+
+rbr_base_note_cc_type,detail_flatrightminus,2050,0.03,six_right_plus3.ogg,6 Right+
+rbr_base_note_cc_type,detail_flatrightminus,2050,0.03,six_right_plus4.ogg,6 Right+
+rbr_base_note_cc_type,detail_quickright,2051,0.03,five_right_plus1.ogg,5 Right+
+rbr_base_note_cc_type,detail_quickright,2051,0.03,five_right_plus2.ogg,5 Right+
+rbr_base_note_cc_type,detail_quickright,2051,0.03,five_right_plus3.ogg,5 Right+
+rbr_base_note_cc_type,detail_quickright,2051,0.03,five_right_plus4.ogg,5 Right+
+rbr_base_note_cc_type,detail_emright,2052,0.06,four_right_plus1.ogg,4 Right+
+rbr_base_note_cc_type,detail_emright,2052,0.06,four_right_plus2.ogg,4 Right+
+rbr_base_note_cc_type,detail_emright,2052,0.06,four_right_plus3.ogg,4 Right+
+rbr_base_note_cc_type,detail_emright,2052,0.06,four_right_plus4.ogg,4 Right+
+rbr_base_note_cc_type,detail_plusright,2053,0.08,three_right_plus1.ogg,3 Right+
+rbr_base_note_cc_type,detail_plusright,2053,0.08,three_right_plus2.ogg,3 Right+
+rbr_base_note_cc_type,detail_plusright,2053,0.08,three_right_plus3.ogg,3 Right+
+rbr_base_note_cc_type,detail_plusright,2053,0.08,three_right_plus4.ogg,3 Right+
+rbr_base_note_cc_type,detail_minusright,2054,0.02,one_right_plus1.ogg,1 Right+
+rbr_base_note_cc_type,detail_minusright,2054,0.02,one_right_plus2.ogg,1 Right+
+rbr_base_note_cc_type,detail_minusright,2054,0.02,one_right_plus3.ogg,1 Right+
+rbr_base_note_cc_type,detail_minusright,2054,0.02,one_right_plus4.ogg,1 Right+
+rbr_base_note_cc_type,detail_veryslowright,2055,0.01,hp_right_plus1.ogg,Hairpin Right+
+rbr_base_note_cc_type,detail_veryslowright,2055,0.01,hp_right_plus2.ogg,Hairpin Right+
+rbr_base_note_cc_type,detail_veryslowright,2055,0.01,hp_right_plus3.ogg,Hairpin Right+
+rbr_base_note_cc_type,detail_veryslowright,2055,0.01,hp_right_plus4.ogg,Hairpin Right+
+rbr_base_note_cc_type,detail_flatleftminus,2056,0.03,six_left_plus1.ogg,6 Left+
+rbr_base_note_cc_type,detail_flatleftminus,2056,0.03,six_left_plus2.ogg,6 Left+
+rbr_base_note_cc_type,detail_flatleftminus,2056,0.03,six_left_plus3.ogg,6 Left+
+rbr_base_note_cc_type,detail_flatleftminus,2056,0.03,six_left_plus4.ogg,6 Left+
+rbr_base_note_cc_type,detail_quickleft,2057,0.04,five_left_plus1.ogg,5 Left+
+rbr_base_note_cc_type,detail_quickleft,2057,0.04,five_left_plus2.ogg,5 Left+
+rbr_base_note_cc_type,detail_quickleft,2057,0.04,five_left_plus3.ogg,5 Left+
+rbr_base_note_cc_type,detail_quickleft,2057,0.04,five_left_plus4.ogg,5 Left+
+rbr_base_note_cc_type,detail_emleft,2058,0.06,four_left_plus1.ogg,4 Left+
+rbr_base_note_cc_type,detail_emleft,2058,0.06,four_left_plus2.ogg,4 Left+
+rbr_base_note_cc_type,detail_emleft,2058,0.06,four_left_plus3.ogg,4 Left+
+rbr_base_note_cc_type,detail_emleft,2058,0.06,four_left_plus4.ogg,4 Left+
+rbr_base_note_cc_type,detail_plusleft,2059,0.08,three_left_plus1.ogg,3 Left+
+rbr_base_note_cc_type,detail_plusleft,2059,0.08,three_left_plus2.ogg,3 Left+
+rbr_base_note_cc_type,detail_plusleft,2059,0.08,three_left_plus3.ogg,3 Left+
+rbr_base_note_cc_type,detail_plusleft,2059,0.08,three_left_plus4.ogg,3 Left+
+rbr_base_note_cc_type,detail_minusleft,2060,0.01,one_left_plus1.ogg,1 Left+
+rbr_base_note_cc_type,detail_minusleft,2060,0.01,one_left_plus2.ogg,1 Left+
+rbr_base_note_cc_type,detail_minusleft,2060,0.01,one_left_plus3.ogg,1 Left+
+rbr_base_note_cc_type,detail_minusleft,2060,0.01,one_left_plus4.ogg,1 Left+
+rbr_base_note_cc_type,detail_veryslowleft,2061,0.0,hp_left_plus1.ogg,Hairpin Left+
+rbr_base_note_cc_type,detail_veryslowleft,2061,0.0,hp_left_plus2.ogg,Hairpin Left+
+rbr_base_note_cc_type,detail_veryslowleft,2061,0.0,hp_left_plus3.ogg,Hairpin Left+
+rbr_base_note_cc_type,detail_veryslowleft,2061,0.0,hp_left_plus4.ogg,Hairpin Left+
+rbr_base_note_cc_type,detail_tightenstoflatminus,2062,-1,tightens_six_plus1.ogg,Tightens 6+
+rbr_base_note_cc_type,detail_tightenstoflatminus,2062,-1,tightens_six_plus2.ogg,Tightens 6+
+rbr_base_note_cc_type,detail_tightenstoflatminus,2062,-1,tightens_six_plus3.ogg,Tightens 6+
+rbr_base_note_cc_type,detail_tightenstoquick,2063,-1,tightens_five_plus1.ogg,Tightens 5+
+rbr_base_note_cc_type,detail_tightenstoquick,2063,-1,tightens_five_plus2.ogg,Tightens 5+
+rbr_base_note_cc_type,detail_tightenstoquick,2063,-1,tightens_five_plus3.ogg,Tightens 5+
+rbr_base_note_cc_type,detail_tightenstoem,2064,0.0,tightens_four_plus1.ogg,Tightens 4+
+rbr_base_note_cc_type,detail_tightenstoem,2064,0.0,tightens_four_plus2.ogg,Tightens 4+
+rbr_base_note_cc_type,detail_tightenstoem,2064,0.0,tightens_four_plus3.ogg,Tightens 4+
+rbr_base_note_cc_type,detail_tightenstoplus,2065,0.02,tightens_three_plus1.ogg,Tightens 3+
+rbr_base_note_cc_type,detail_tightenstoplus,2065,0.02,tightens_three_plus2.ogg,Tightens 3+
+rbr_base_note_cc_type,detail_tightenstoplus,2065,0.02,tightens_three_plus3.ogg,Tightens 3+
+rbr_base_note_cc_type,detail_tightenstominus,2066,0.0,tightens_one_plus1.ogg,Tightens 1+
+rbr_base_note_cc_type,detail_tightenstominus,2066,0.0,tightens_one_plus2.ogg,Tightens 1+
+rbr_base_note_cc_type,detail_tightenstominus,2066,0.0,tightens_one_plus3.ogg,Tightens 1+
+rbr_base_note_cc_type,detail_tightenstoveryslow,2067,-1,tightens_hp_plus1.ogg,Tightens Hairpin+
+rbr_base_note_cc_type,detail_tightenstoveryslow,2067,-1,tightens_hp_plus2.ogg,Tightens Hairpin+
+rbr_base_note_cc_type,detail_tightenstoveryslow,2067,-1,tightens_hp_plus3.ogg,Tightens Hairpin+
+rbr_base_note_no_cc_type,toflatminus,2068,-1,_six_plus1.ogg,_6+
+rbr_base_note_no_cc_type,toflatminus,2068,-1,_six_plus2.ogg,_6+
+rbr_base_note_no_cc_type,toflatminus,2068,-1,_six_plus3.ogg,_6+
+rbr_base_note_no_cc_type,toquick,2069,0.0,_five_plus1.ogg,_5+
+rbr_base_note_no_cc_type,toquick,2069,0.0,_five_plus2.ogg,_5+
+rbr_base_note_no_cc_type,toquick,2069,0.0,_five_plus3.ogg,_5+
+rbr_base_note_no_cc_type,toem,2070,-1,_four_plus1.ogg,_4+
+rbr_base_note_no_cc_type,toem,2070,-1,_four_plus2.ogg,_4+
+rbr_base_note_no_cc_type,toem,2070,-1,_four_plus3.ogg,_4+
+rbr_base_note_no_cc_type,toplus,2071,0.0,_three_plus1.ogg,_3+
+rbr_base_note_no_cc_type,toplus,2071,0.0,_three_plus2.ogg,_3+
+rbr_base_note_no_cc_type,toplus,2071,0.0,_three_plus3.ogg,_3+
+rbr_base_note_no_cc_type,tominus,2072,0.0,_one_plus1.ogg,_1+
+rbr_base_note_no_cc_type,tominus,2072,0.0,_one_plus2.ogg,_1+
+rbr_base_note_no_cc_type,tominus,2072,0.0,_one_plus3.ogg,_1+
+rbr_base_note_no_cc_type,toveryslow,2073,-1,_hp_plus1.ogg,_Hairpin+
+rbr_base_note_no_cc_type,toveryslow,2073,-1,_hp_plus2.ogg,_Hairpin+
+rbr_base_note_no_cc_type,toveryslow,2073,-1,_hp_plus3.ogg,_Hairpin+
+rbr_base_note_no_cc_type,flatminus_scale,2074,-1,six_plus_scale1.ogg,6+
+rbr_base_note_no_cc_type,flatminus_scale,2074,-1,six_plus_scale2.ogg,6+
+rbr_base_note_no_cc_type,flatminus_scale,2074,-1,six_plus_scale3.ogg,6+
+rbr_base_note_no_cc_type,easy_scale,2075,-1,six_scale1.ogg,6
+rbr_base_note_no_cc_type,easy_scale,2075,-1,six_scale2.ogg,6
+rbr_base_note_no_cc_type,easy_scale,2075,-1,six_scale3.ogg,6
+rbr_base_note_no_cc_type,quick_scale,2076,-1,five_plus_scale1.ogg,5+
+rbr_base_note_no_cc_type,quick_scale,2076,-1,five_plus_scale2.ogg,5+
+rbr_base_note_no_cc_type,quick_scale,2076,-1,five_plus_scale3.ogg,5+
+rbr_base_note_no_cc_type,fast_scale,2077,0.0,five_scale1.ogg,5
+rbr_base_note_no_cc_type,fast_scale,2077,0.0,five_scale2.ogg,5
+rbr_base_note_no_cc_type,fast_scale,2077,0.0,five_scale3.ogg,5
+rbr_base_note_no_cc_type,em_scale,2078,-1,four_plus_scale1.ogg,4+
+rbr_base_note_no_cc_type,em_scale,2078,-1,four_plus_scale2.ogg,4+
+rbr_base_note_no_cc_type,em_scale,2078,-1,four_plus_scale3.ogg,4+
+rbr_base_note_no_cc_type,plus_scale,2079,0.0,three_plus_scale1.ogg,3+
+rbr_base_note_no_cc_type,plus_scale,2079,0.0,three_plus_scale2.ogg,3+
+rbr_base_note_no_cc_type,plus_scale,2079,0.0,three_plus_scale3.ogg,3+
+rbr_base_note_no_cc_type,k_scale,2080,0.0,three_scale1.ogg,3
+rbr_base_note_no_cc_type,k_scale,2080,0.0,three_scale2.ogg,3
+rbr_base_note_no_cc_type,k_scale,2080,0.0,three_scale3.ogg,3
+rbr_base_note_no_cc_type,square_scale,2081,-1,two_scale1.ogg,2
+rbr_base_note_no_cc_type,square_scale,2081,-1,two_scale2.ogg,2
+rbr_base_note_no_cc_type,square_scale,2081,-1,two_scale3.ogg,2
+rbr_base_note_no_cc_type,minus_scale,2082,-1,one_plus_scale1.ogg,1+
+rbr_base_note_no_cc_type,minus_scale,2082,-1,one_plus_scale2.ogg,1+
+rbr_base_note_no_cc_type,minus_scale,2082,-1,one_plus_scale3.ogg,1+
+rbr_base_note_no_cc_type,slow_scale,2083,0.0,one_scale1.ogg,1
+rbr_base_note_no_cc_type,slow_scale,2083,0.0,one_scale2.ogg,1
+rbr_base_note_no_cc_type,slow_scale,2083,0.0,one_scale3.ogg,1
+rbr_base_note_no_cc_type,veryslow_scale,2084,-1,hp_plus_scale1.ogg,Hairpin+
+rbr_base_note_no_cc_type,veryslow_scale,2084,-1,hp_plus_scale2.ogg,Hairpin+
+rbr_base_note_no_cc_type,veryslow_scale,2084,-1,hp_plus_scale3.ogg,Hairpin+
+rbr_base_note_no_cc_type,remember,2085,0.01,remember1.ogg,Remember
+rbr_base_note_no_cc_type,remember,2085,0.01,remember2.ogg,Remember
+rbr_base_note_no_cc_type,patient,2086,0.0,patient1.ogg,Patient
+rbr_base_note_no_cc_type,patient,2086,0.0,patient2.ogg,Patient
+rbr_base_note_no_cc_type,small_jump,2087,0.01,small_jump1.ogg,Small Jump
+rbr_base_note_no_cc_type,small_jump,2087,0.01,small_jump2.ogg,Small Jump
+rbr_base_note_no_cc_type,over_big_jump,2088,0.01,over_big_jump1.ogg,Over Big Jump
+rbr_base_note_no_cc_type,over_big_jump,2088,0.01,over_big_jump2.ogg,Over Big Jump
+rbr_base_note_no_cc_type,continuesoversmallcrest,2089,-1,continues_over_small_crest1.ogg,Continues Over Small Crest
+rbr_base_note_no_cc_type,continuesoversmallcrest,2089,-1,continues_over_small_crest2.ogg,Continues Over Small Crest
+rbr_base_note_no_cc_type,longcrest,2090,0.02,long_crest1.ogg,Long Crest
+rbr_base_note_no_cc_type,longcrest,2090,0.02,long_crest2.ogg,Long Crest
+rbr_base_note_no_cc_type,rut,2091,-1,rut1.ogg,Rut
+rbr_base_note_no_cc_type,rut,2091,-1,rut2.ogg,Rut
+rbr_base_note_no_cc_type,to_bump,2092,0.01,to_bump1.ogg,(Jump) To Bump
+rbr_base_note_no_cc_type,to_bump,2092,0.01,to_bump2.ogg,(Jump) To Bump
+rbr_base_note_no_cc_type,twisty_fromleft,2093,0.01,twisty_from_left1.ogg,Twisty From Left
+rbr_base_note_no_cc_type,twisty_fromleft,2093,0.01,twisty_from_left2.ogg,Twisty From Left
+rbr_base_note_no_cc_type,twisty_fromright,2094,0.01,twisty_from_right1.ogg,Twisty From Right
+rbr_base_note_no_cc_type,twisty_fromright,2094,0.01,twisty_from_right2.ogg,Twisty From Right
+rbr_base_note_no_cc_type,dontblock,2095,-1,post1.ogg,Post
+rbr_base_note_no_cc_type,dontblock,2095,-1,post2.ogg,Post
+rbr_base_note_no_cc_type,grip_middle,2096,-1,grip_middle1.ogg,Grip Middle
+rbr_base_note_no_cc_type,grip_middle,2096,-1,grip_middle2.ogg,Grip Middle
+rbr_base_note_no_cc_type,grip_in,2097,0.0,grip_in1.ogg,Grip In
+rbr_base_note_no_cc_type,grip_in,2097,0.0,grip_in2.ogg,Grip In
+rbr_base_note_no_cc_type,grip_out,2098,0.0,grip_out1.ogg,Grip Out
+rbr_base_note_no_cc_type,grip_out,2098,0.0,grip_out2.ogg,Grip Out
+rbr_base_note_no_cc_type,go_round,2099,-1,go_round1.ogg,Go Round
+rbr_base_note_no_cc_type,go_round,2099,-1,go_round2.ogg,Go Round
+rbr_base_note_cc_type,detail_vasemmalta,2100,0.07,vasen_laita.ogg,Keep Left
+rbr_base_note_cc_type,detail_oikeelta,2101,0.08,oikee_laita.ogg,Keep Right
+rbr_base_note_no_cc_type,niu_loiva_alku,2104,0.1,late1.ogg,Late (NIU)
+rbr_base_note_no_cc_type,niu_loiva_alku,2104,0.1,late2.ogg,Late (NIU)
+rbr_base_note_no_cc_type,niu_loiva_alku,2104,0.1,late3.ogg,Late (NIU)
+rbr_base_note_no_cc_type,dist21,2110,-1,21_1.ogg,21
+rbr_base_note_no_cc_type,dist21,2110,-1,21_2.ogg,21
+rbr_base_note_no_cc_type,dist21,2110,-1,21_3.ogg,21
+rbr_base_note_no_cc_type,dist21,2110,-1,21_4.ogg,21
+rbr_base_note_no_cc_type,dist31,2111,-1,31_1.ogg,31
+rbr_base_note_no_cc_type,dist31,2111,-1,31_2.ogg,31
+rbr_base_note_no_cc_type,dist31,2111,-1,31_3.ogg,31
+rbr_base_note_no_cc_type,dist31,2111,-1,31_4.ogg,31
+rbr_base_note_no_cc_type,dist41,2112,-1,41_1.ogg,41
+rbr_base_note_no_cc_type,dist41,2112,-1,41_2.ogg,41
+rbr_base_note_no_cc_type,dist41,2112,-1,41_3.ogg,41
+rbr_base_note_no_cc_type,dist41,2112,-1,41_4.ogg,41
+rbr_base_note_no_cc_type,dist51,2113,-1,51_1.ogg,51
+rbr_base_note_no_cc_type,dist51,2113,-1,51_2.ogg,51
+rbr_base_note_no_cc_type,dist51,2113,-1,51_3.ogg,51
+rbr_base_note_no_cc_type,dist51,2113,-1,51_4.ogg,51
+rbr_base_note_no_cc_type,dist61,2114,-1,61_1.ogg,61
+rbr_base_note_no_cc_type,dist61,2114,-1,61_2.ogg,61
+rbr_base_note_no_cc_type,dist61,2114,-1,61_3.ogg,61
+rbr_base_note_no_cc_type,dist61,2114,-1,61_4.ogg,61
+rbr_base_note_no_cc_type,dist71,2115,-1,71_1.ogg,71
+rbr_base_note_no_cc_type,dist71,2115,-1,71_2.ogg,71
+rbr_base_note_no_cc_type,dist71,2115,-1,71_3.ogg,71
+rbr_base_note_no_cc_type,dist71,2115,-1,71_4.ogg,71
+rbr_base_note_no_cc_type,dist81,2116,-1,81_1.ogg,81
+rbr_base_note_no_cc_type,dist81,2116,-1,81_2.ogg,81
+rbr_base_note_no_cc_type,dist81,2116,-1,81_3.ogg,81
+rbr_base_note_no_cc_type,dist81,2116,-1,81_4.ogg,81
+rbr_base_note_no_cc_type,dist101,2117,-1,101_1.ogg,101
+rbr_base_note_no_cc_type,dist101,2117,-1,101_2.ogg,101
+rbr_base_note_no_cc_type,dist101,2117,-1,101_3.ogg,101
+rbr_base_note_no_cc_type,dist101,2117,-1,101_4.ogg,101
+rbr_base_note_no_cc_type,dist121,2118,-1,121_1.ogg,121
+rbr_base_note_no_cc_type,dist121,2118,-1,121_2.ogg,121
+rbr_base_note_no_cc_type,dist121,2118,-1,121_3.ogg,121
+rbr_base_note_no_cc_type,dist121,2118,-1,121_4.ogg,121
+rbr_base_note_no_cc_type,dist141,2119,-1,141_1.ogg,141
+rbr_base_note_no_cc_type,dist141,2119,-1,141_2.ogg,141
+rbr_base_note_no_cc_type,dist141,2119,-1,141_3.ogg,141
+rbr_base_note_no_cc_type,dist141,2119,-1,141_4.ogg,141
+rbr_base_note_no_cc_type,dist151,2120,-1,151_1.ogg,151
+rbr_base_note_no_cc_type,dist151,2120,-1,151_2.ogg,151
+rbr_base_note_no_cc_type,dist151,2120,-1,151_3.ogg,151
+rbr_base_note_no_cc_type,dist151,2120,-1,151_4.ogg,151
+rbr_base_note_no_cc_type,dist161,2121,-1,161_1.ogg,161
+rbr_base_note_no_cc_type,dist161,2121,-1,161_2.ogg,161
+rbr_base_note_no_cc_type,dist161,2121,-1,161_3.ogg,161
+rbr_base_note_no_cc_type,dist161,2121,-1,161_4.ogg,161
+rbr_base_note_no_cc_type,dist181,2122,-1,181_1.ogg,181
+rbr_base_note_no_cc_type,dist181,2122,-1,181_2.ogg,181
+rbr_base_note_no_cc_type,dist181,2122,-1,181_3.ogg,181
+rbr_base_note_no_cc_type,dist181,2122,-1,181_4.ogg,181
+rbr_base_note_no_cc_type,dist201,2123,-1,201_1.ogg,201
+rbr_base_note_no_cc_type,dist201,2123,-1,201_2.ogg,201
+rbr_base_note_no_cc_type,dist201,2123,-1,201_3.ogg,201
+rbr_base_note_no_cc_type,dist201,2123,-1,201_4.ogg,201
+rbr_base_note_no_cc_type,dist251,2124,-1,251_1.ogg,251
+rbr_base_note_no_cc_type,dist251,2124,-1,251_2.ogg,251
+rbr_base_note_no_cc_type,dist251,2124,-1,251_3.ogg,251
+rbr_base_note_no_cc_type,dist251,2124,-1,251_4.ogg,251
+rbr_base_note_no_cc_type,dist301,2125,-1,301_1.ogg,301
+rbr_base_note_no_cc_type,dist301,2125,-1,301_2.ogg,301
+rbr_base_note_no_cc_type,dist301,2125,-1,301_3.ogg,301
+rbr_base_note_no_cc_type,dist301,2125,-1,301_4.ogg,301
+rbr_base_note_no_cc_type,dist351,2126,-1,351_1.ogg,351
+rbr_base_note_no_cc_type,dist351,2126,-1,351_2.ogg,351
+rbr_base_note_no_cc_type,dist351,2126,-1,351_3.ogg,351
+rbr_base_note_no_cc_type,dist351,2126,-1,351_4.ogg,351
+rbr_base_note_no_cc_type,dist401,2127,-1,401_1.ogg,401
+rbr_base_note_no_cc_type,dist401,2127,-1,401_2.ogg,401
+rbr_base_note_no_cc_type,dist401,2127,-1,401_3.ogg,401
+rbr_base_note_no_cc_type,dist401,2127,-1,401_4.ogg,401
+rbr_base_note_no_cc_type,dist451,2128,-1,451_1.ogg,451
+rbr_base_note_no_cc_type,dist451,2128,-1,451_2.ogg,451
+rbr_base_note_no_cc_type,dist451,2128,-1,451_3.ogg,451
+rbr_base_note_no_cc_type,dist451,2128,-1,451_4.ogg,451
+rbr_base_note_no_cc_type,dist501,2129,-1,501_1.ogg,501
+rbr_base_note_no_cc_type,dist501,2129,-1,501_2.ogg,501
+rbr_base_note_no_cc_type,dist501,2129,-1,501_3.ogg,501
+rbr_base_note_no_cc_type,dist501,2129,-1,501_4.ogg,501
+rbr_base_note_no_cc_type,dist601,2130,-1,601_1.ogg,601
+rbr_base_note_no_cc_type,dist601,2130,-1,601_2.ogg,601
+rbr_base_note_no_cc_type,dist601,2130,-1,601_3.ogg,601
+rbr_base_note_no_cc_type,dist601,2130,-1,601_4.ogg,601
+rbr_base_note_no_cc_type,dist701,2131,-1,701_1.ogg,701
+rbr_base_note_no_cc_type,dist701,2131,-1,701_2.ogg,701
+rbr_base_note_no_cc_type,dist701,2131,-1,701_3.ogg,701
+rbr_base_note_no_cc_type,dist701,2131,-1,701_4.ogg,701
+rbr_base_note_no_cc_type,dist801,2132,-1,801_1.ogg,801
+rbr_base_note_no_cc_type,dist801,2132,-1,801_2.ogg,801
+rbr_base_note_no_cc_type,dist801,2132,-1,801_3.ogg,801
+rbr_base_note_no_cc_type,dist801,2132,-1,801_4.ogg,801
+rbr_base_note_no_cc_type,dist901,2133,-1,901_1.ogg,901
+rbr_base_note_no_cc_type,dist901,2133,-1,901_2.ogg,901
+rbr_base_note_no_cc_type,dist901,2133,-1,901_3.ogg,901
+rbr_base_note_no_cc_type,dist901,2133,-1,901_4.ogg,901
+rbr_base_note_no_cc_type,dist1001,2134,-1,1001_1.ogg,1001
+rbr_base_note_no_cc_type,dist1001,2134,-1,1001_2.ogg,1001
+rbr_base_note_no_cc_type,dist1001,2134,-1,1001_3.ogg,1001
+rbr_base_note_no_cc_type,dist1001,2134,-1,1001_4.ogg,1001
+rbr_base_note_no_cc_type,bale_in,2135,0.0,bale_in1.ogg,Bale In
+rbr_base_note_no_cc_type,bale_in,2135,0.0,bale_in2.ogg,Bale In
+rbr_base_note_no_cc_type,bale_out,2136,0.0,bale_out1.ogg,Bale Out
+rbr_base_note_no_cc_type,bale_out,2136,0.0,bale_out2.ogg,Bale Out
+rbr_base_note_no_cc_type,tires_in,2137,0.0,tires_in1.ogg,Tires In
+rbr_base_note_no_cc_type,tires_in,2137,0.0,tires_in2.ogg,Tires In
+rbr_base_note_no_cc_type,tires_out,2138,-1,tires_out1.ogg,Tires Out
+rbr_base_note_no_cc_type,tires_out,2138,-1,tires_out2.ogg,Tires Out
+rbr_base_note_no_cc_type,rock_in,2139,0.02,rock_in1.ogg,Stone In
+rbr_base_note_no_cc_type,rock_in,2139,0.02,rock_in2.ogg,Stone In
+rbr_base_note_no_cc_type,rock_out,2140,0.01,rock_out1.ogg,Stone Out
+rbr_base_note_no_cc_type,rock_out,2140,0.01,rock_out2.ogg,Stone Out
+rbr_base_note_no_cc_type,fence_in,2141,-1,fence_in1.ogg,Fence In
+rbr_base_note_no_cc_type,fence_in,2141,-1,fence_in2.ogg,Fence In
+rbr_base_note_no_cc_type,fence_out,2142,0.0,fence_out1.ogg,Fence Out
+rbr_base_note_no_cc_type,fence_out,2142,0.0,fence_out2.ogg,Fence Out
+rbr_base_note_no_cc_type,tree_in,2143,0.01,tree_in1.ogg,Tree In
+rbr_base_note_no_cc_type,tree_in,2143,0.01,tree_in2.ogg,Tree In
+rbr_base_note_no_cc_type,tree_out,2144,0.0,tree_out1.ogg,Tree Out
+rbr_base_note_no_cc_type,tree_out,2144,0.0,tree_out2.ogg,Tree Out
+rbr_base_note_no_cc_type,ditch_in,2145,-1,ditch_in1.ogg,Ditch In
+rbr_base_note_no_cc_type,ditch_in,2145,-1,ditch_in2.ogg,Ditch In
+rbr_base_note_no_cc_type,ditch_out,2146,-1,ditch_out1.ogg,Ditch Out
+rbr_base_note_no_cc_type,ditch_out,2146,-1,ditch_out2.ogg,Ditch Out
+rbr_base_note_no_cc_type,drop_in,2147,-1,drop_in1.ogg,Drop In
+rbr_base_note_no_cc_type,drop_in,2147,-1,drop_in2.ogg,Drop In
+rbr_base_note_no_cc_type,drop_out,2148,-1,drop_out1.ogg,Drop Out
+rbr_base_note_no_cc_type,drop_out,2148,-1,drop_out2.ogg,Drop Out
+rbr_base_note_no_cc_type,house_in,2149,-1,house_in1.ogg,House In
+rbr_base_note_no_cc_type,house_in,2149,-1,house_in2.ogg,House In
+rbr_base_note_no_cc_type,house_out,2150,-1,house_out1.ogg,House Out
+rbr_base_note_no_cc_type,house_out,2150,-1,house_out2.ogg,House Out
+rbr_base_note_no_cc_type,niu_barrier_in,2151,-1,fence_in1.ogg,Fence In (NIU)
+rbr_base_note_no_cc_type,niu_barrier_in,2151,-1,fence_in2.ogg,Fence In (NIU)
+rbr_base_note_no_cc_type,niu_barrier_out,2152,-1,fence_out1.ogg,Fence Out (NIU)
+rbr_base_note_no_cc_type,niu_barrier_out,2152,-1,fence_out2.ogg,Fence Out (NIU)
+rbr_base_note_no_cc_type,sign_in,2153,-1,sign_in1.ogg,Sign In
+rbr_base_note_no_cc_type,sign_in,2153,-1,sign_in2.ogg,Sign In
+rbr_base_note_no_cc_type,sign_out,2154,0.0,sign_out1.ogg,Sign Out
+rbr_base_note_no_cc_type,sign_out,2154,0.0,sign_out2.ogg,Sign Out
+rbr_base_note_no_cc_type,post_in,2155,0.0,post_in1.ogg,Post In
+rbr_base_note_no_cc_type,post_in,2155,0.0,post_in2.ogg,Post In
+rbr_base_note_no_cc_type,post_out,2156,0.01,post_out1.ogg,Post Out
+rbr_base_note_no_cc_type,post_out,2156,0.01,post_out2.ogg,Post Out
+rbr_base_note_no_cc_type,log_in,2157,-1,log_in1.ogg,Log In
+rbr_base_note_no_cc_type,log_in,2157,-1,log_in2.ogg,Log In
+rbr_base_note_no_cc_type,log_out,2158,-1,log_out1.ogg,Log Out
+rbr_base_note_no_cc_type,log_out,2158,-1,log_out2.ogg,Log Out
+rbr_base_note_no_cc_type,cut_through,2159,-1,cut_through1.ogg,Cut Through
+rbr_base_note_no_cc_type,cut_through,2159,-1,cut_through2.ogg,Cut Through
+rbr_base_note_no_cc_type,at_tree,2160,0.0,at_tree1.ogg,At Tree
+rbr_base_note_no_cc_type,at_tree,2160,0.0,at_tree2.ogg,At Tree
+rbr_base_note_no_cc_type,at_trees,2161,-1,at_trees1.ogg,At Trees
+rbr_base_note_no_cc_type,at_trees,2161,-1,at_trees2.ogg,At Trees
+rbr_base_note_no_cc_type,at_bale,2162,-1,at_bale1.ogg,At Bale
+rbr_base_note_no_cc_type,at_bale,2162,-1,at_bale2.ogg,At Bale
+rbr_base_note_no_cc_type,at_rock,2163,-1,at_rock1.ogg,At Rock
+rbr_base_note_no_cc_type,at_rock,2163,-1,at_rock2.ogg,At Rock
+rbr_base_note_no_cc_type,at_guardrail,2164,-1,at_guardrail1.ogg,At Guardrail
+rbr_base_note_no_cc_type,at_guardrail,2164,-1,at_guardrail2.ogg,At Guardrail
+rbr_base_note_no_cc_type,at_banner,2165,-1,at_banner1.ogg,At Banner
+rbr_base_note_no_cc_type,at_banner,2165,-1,at_banner2.ogg,At Banner
+rbr_base_note_no_cc_type,at_tape,2166,-1,at_tape1.ogg,At Tape
+rbr_base_note_no_cc_type,at_tape,2166,-1,at_tape2.ogg,At Tape
+rbr_base_note_no_cc_type,at_fence,2167,-1,at_fence1.ogg,At Fence
+rbr_base_note_no_cc_type,at_fence,2167,-1,at_fence2.ogg,At Fence
+rbr_base_note_no_cc_type,at_flag,2168,-1,at_flag1.ogg,At Flag
+rbr_base_note_no_cc_type,at_flag,2168,-1,at_flag2.ogg,At Flag
+rbr_base_note_no_cc_type,at_house,2169,-1,at_house1.ogg,At House
+rbr_base_note_no_cc_type,at_house,2169,-1,at_house2.ogg,At House
+rbr_base_note_no_cc_type,at_sign,2170,0.0,at_sign1.ogg,At Sign
+rbr_base_note_no_cc_type,at_sign,2170,0.0,at_sign2.ogg,At Sign
+rbr_base_note_no_cc_type,at_post,2171,-1,at_post1.ogg,At Post
+rbr_base_note_no_cc_type,at_post,2171,-1,at_post2.ogg,At Post
+rbr_base_note_no_cc_type,at_junction,2172,-1,at_junction1.ogg,At Junction
+rbr_base_note_no_cc_type,at_junction,2172,-1,at_junction2.ogg,At Junction
+rbr_base_note_no_cc_type,at_crest,2173,0.04,at_crest1.ogg,At Crest
+rbr_base_note_no_cc_type,at_crest,2173,0.04,at_crest2.ogg,At Crest
+rbr_base_note_no_cc_type,at_gate,2174,-1,at_gate1.ogg,At Gate
+rbr_base_note_no_cc_type,at_gate,2174,-1,at_gate2.ogg,At Gate
+rbr_base_note_no_cc_type,at_bridge,2175,-1,at_bridge1.ogg,At Bridge
+rbr_base_note_no_cc_type,at_bridge,2175,-1,at_bridge2.ogg,At Bridge
+rbr_base_note_no_cc_type,brake_into,2176,-1,brake_into1.ogg,Brake Into
+rbr_base_note_no_cc_type,brake_into,2176,-1,brake_into2.ogg,Brake Into
+rbr_base_note_no_cc_type,brake_into,2176,-1,brake_into3.ogg,Brake Into
+rbr_base_note_no_cc_type,brake_and,2177,-1,brake_and1.ogg,Brake And
+rbr_base_note_no_cc_type,brake_and,2177,-1,brake_and2.ogg,Brake And
+rbr_base_note_no_cc_type,brake_and,2177,-1,brake_and3.ogg,Brake And
+rbr_base_note_no_cc_type,brake_20,2178,-1,brake_20_1.ogg,Brake 20
+rbr_base_note_no_cc_type,brake_20,2178,-1,brake_20_2.ogg,Brake 20
+rbr_base_note_no_cc_type,brake_20,2178,-1,brake_20_3.ogg,Brake 20
+rbr_base_note_no_cc_type,brake_30,2179,-1,brake_30_1.ogg,Brake 30
+rbr_base_note_no_cc_type,brake_30,2179,-1,brake_30_2.ogg,Brake 30
+rbr_base_note_no_cc_type,brake_30,2179,-1,brake_30_3.ogg,Brake 30
+rbr_base_note_no_cc_type,brake_40,2180,-1,brake_40_1.ogg,Brake 40
+rbr_base_note_no_cc_type,brake_40,2180,-1,brake_40_2.ogg,Brake 40
+rbr_base_note_no_cc_type,brake_40,2180,-1,brake_40_3.ogg,Brake 40
+rbr_base_note_no_cc_type,brake_50,2181,-1,brake_50_1.ogg,Brake 50
+rbr_base_note_no_cc_type,brake_50,2181,-1,brake_50_2.ogg,Brake 50
+rbr_base_note_no_cc_type,brake_50,2181,-1,brake_50_3.ogg,Brake 50
+rbr_base_note_no_cc_type,slippy_braking,2182,-1,slippy_braking1.ogg,Slippy Braking
+rbr_base_note_no_cc_type,slippy_braking,2182,-1,slippy_braking2.ogg,Slippy Braking
+rbr_base_note_no_cc_type,slippy_entry,2183,-1,slippy_entry1.ogg,Slippy Entry
+rbr_base_note_no_cc_type,slippy_entry,2183,-1,slippy_entry2.ogg,Slippy Entry
+rbr_base_note_no_cc_type,slippy_exit,2184,-1,slippy_exit1.ogg,Slippy Exit
+rbr_base_note_no_cc_type,slippy_exit,2184,-1,slippy_exit2.ogg,Slippy Exit
+rbr_base_note_no_cc_type,sumppu,2185,0.85,sumppu1.ogg,Sumppu
+rbr_base_note_no_cc_type,sumppu,2185,0.85,sumppu2.ogg,Sumppu
+rbr_base_note_no_cc_type,widens,2186,-1,widens1.ogg,Widens
+rbr_base_note_no_cc_type,widens,2186,-1,widens2.ogg,Widens
+rbr_base_note_no_cc_type,tightenssumppu,2187,0.02,tightens_sumppu1.ogg,Tightens Sumppu
+rbr_base_note_no_cc_type,tightenssumppu,2187,0.02,tightens_sumppu2.ogg,Tightens Sumppu
+rbr_base_note_no_cc_type,jump_maybe,2188,-1,jump_maybe1.ogg,Jump Maybe
+rbr_base_note_no_cc_type,jump_maybe,2188,-1,jump_maybe2.ogg,Jump Maybe
+rbr_base_note_no_cc_type,over_small_jump,2189,0.01,over_small_jump1.ogg,Over Small Jump
+rbr_base_note_no_cc_type,over_small_jump,2189,0.01,over_small_jump2.ogg,Over Small Jump
+rbr_base_note_no_cc_type,over_jump_dab,2190,0.01,over_jump_dab1.ogg,Over Jump Dab
+rbr_base_note_no_cc_type,over_jump_dab,2190,0.01,over_jump_dab2.ogg,Over Jump Dab
+rbr_base_note_no_cc_type,oversmallcrest,2191,0.05,over_small_crest1.ogg,Over Small Crest
+rbr_base_note_no_cc_type,oversmallcrest,2191,0.05,over_small_crest2.ogg,Over Small Crest
+rbr_base_note_no_cc_type,overlongcrest,2192,0.0,over_long_crest1.ogg,Over Long Crest
+rbr_base_note_no_cc_type,overlongcrest,2192,0.0,over_long_crest2.ogg,Over Long Crest
+rbr_base_note_no_cc_type,overtwocrests,2193,0.01,over_two_crests1.ogg,Over Two Crests
+rbr_base_note_no_cc_type,overtwocrests,2193,0.01,over_two_crests2.ogg,Over Two Crests
+rbr_base_note_no_cc_type,overthreecrests,2194,0.0,over_three_crests1.ogg,Over Three Crests
+rbr_base_note_no_cc_type,overthreecrests,2194,0.0,over_three_crests2.ogg,Over Three Crests
+rbr_base_note_no_cc_type,doublecrest,2195,0.0,double_crest1.ogg,Double Crest
+rbr_base_note_no_cc_type,doublecrest,2195,0.0,double_crest2.ogg,Double Crest
+rbr_base_note_no_cc_type,double_jump,2196,0.0,double_jump1.ogg,Double Jump
+rbr_base_note_no_cc_type,double_jump,2196,0.0,double_jump2.ogg,Double Jump
+rbr_base_note_no_cc_type,onto_straight,2197,-1,onto_straight1.ogg,Onto Straight
+rbr_base_note_no_cc_type,onto_straight,2197,-1,onto_straight2.ogg,Onto Straight
+rbr_base_note_no_cc_type,at_exit,2198,0.02,at_exit1.ogg,At Exit
+rbr_base_note_no_cc_type,at_exit,2198,0.02,at_exit2.ogg,At Exit
+rbr_base_note_no_cc_type,at_opening,2199,-1,at_opening1.ogg,At Opening
+rbr_base_note_no_cc_type,at_opening,2199,-1,at_opening2.ogg,At Opening
+rbr_base_note_no_cc_type,logs_in,2200,-1,logs_in1.ogg,Logs In
+rbr_base_note_no_cc_type,logs_in,2200,-1,logs_in2.ogg,Logs In
+rbr_base_note_no_cc_type,logs_out,2201,-1,logs_out1.ogg,Logs Out
+rbr_base_note_no_cc_type,logs_out,2201,-1,logs_out2.ogg,Logs Out
+rbr_base_note_no_cc_type,short_left,2202,0.0,short_left1.ogg,Short Left
+rbr_base_note_no_cc_type,short_left,2202,0.0,short_left2.ogg,Short Left
+rbr_base_note_no_cc_type,short_left,2202,0.0,short_left3.ogg,Short Left
+rbr_base_note_no_cc_type,short_left,2202,0.0,short_left4.ogg,Short Left
+rbr_base_note_no_cc_type,short_right,2203,0.0,short_right1.ogg,Short Right
+rbr_base_note_no_cc_type,short_right,2203,0.0,short_right2.ogg,Short Right
+rbr_base_note_no_cc_type,short_right,2203,0.0,short_right3.ogg,Short Right
+rbr_base_note_no_cc_type,short_right,2203,0.0,short_right4.ogg,Short Right
+rbr_base_note_no_cc_type,slippery_maybe,2204,-1,maybe_slippy1.ogg,Maybe Slippy
+rbr_base_note_no_cc_type,slippery_maybe,2204,-1,maybe_slippy2.ogg,Maybe Slippy
+rbr_base_note_no_cc_type,donut_right,2205,0.0,donut_right1.ogg,Donut Right
+rbr_base_note_no_cc_type,donut_right,2205,0.0,donut_right2.ogg,Donut Right
+rbr_base_note_no_cc_type,donut_right,2205,0.0,donut_right3.ogg,Donut Right
+rbr_base_note_no_cc_type,donut_right,2205,0.0,donut_right4.ogg,Donut Right
+rbr_base_note_no_cc_type,donut_left,2206,-1,donut_left1.ogg,Donut Left
+rbr_base_note_no_cc_type,donut_left,2206,-1,donut_left2.ogg,Donut Left
+rbr_base_note_no_cc_type,donut_left,2206,-1,donut_left3.ogg,Donut Left
+rbr_base_note_no_cc_type,donut_left,2206,-1,donut_left4.ogg,Donut Left
+rbr_base_note_no_cc_type,hp_scale,2207,-1,hp_scale1.ogg,Hairpin
+rbr_base_note_no_cc_type,hp_scale,2207,-1,hp_scale2.ogg,Hairpin
+rbr_base_note_no_cc_type,hp_scale,2207,-1,hp_scale3.ogg,Hairpin
+rbr_base_note_no_cc_type,acute_scale,2208,-1,acute_scale1.ogg,Acute
+rbr_base_note_no_cc_type,acute_scale,2208,-1,acute_scale2.ogg,Acute
+rbr_base_note_no_cc_type,acute_scale,2208,-1,acute_scale3.ogg,Acute
+rbr_base_note_no_cc_type,past_junction,2209,-1,past_junction1.ogg,Past Junction
+rbr_base_note_no_cc_type,past_junction,2209,-1,past_junction2.ogg,Past Junction
+rbr_base_note_no_cc_type,onto_bridge,2210,0.01,onto_bridge1.ogg,Onto Bridge
+rbr_base_note_no_cc_type,onto_bridge,2210,0.01,onto_bridge2.ogg,Onto Bridge
+rbr_base_note_no_cc_type,narrow_bridge,2211,-1,narrow_bridge1.ogg,Narrow Bridge
+rbr_base_note_no_cc_type,narrow_bridge,2211,-1,narrow_bridge2.ogg,Narrow Bridge
+rbr_base_note_no_cc_type,onto_narrow_bridge,2212,-1,onto_narrow_bridge1.ogg,Onto Narrow Bridge
+rbr_base_note_no_cc_type,onto_narrow_bridge,2212,-1,onto_narrow_bridge2.ogg,Onto Narrow Bridge
+rbr_base_note_no_cc_type,through_gate,2213,-1,through_gate1.ogg,Through Gate
+rbr_base_note_no_cc_type,through_gate,2213,-1,through_gate2.ogg,Through Gate
+rbr_base_note_no_cc_type,narrow_gate,2214,-1,narrow_gate1.ogg,Narrow Gate
+rbr_base_note_no_cc_type,narrow_gate,2214,-1,narrow_gate2.ogg,Narrow Gate
+rbr_base_note_no_cc_type,through_narrow_gate,2215,0.0,through_narrow_gate1.ogg,Through Narrow Gate
+rbr_base_note_no_cc_type,through_narrow_gate,2215,0.0,through_narrow_gate2.ogg,Through Narrow Gate
+rbr_base_note_no_cc_type,extraextralong,2216,0.0,veryverylong1.ogg,Very Very Long
+rbr_base_note_no_cc_type,extraextralong,2216,0.0,veryverylong2.ogg,Very Very Long
+rbr_base_note_no_cc_type,extraextralong,2216,0.0,veryverylong3.ogg,Very Very Long
+rbr_base_note_no_cc_type,very_slippy,2217,0.0,very_slippy1.ogg,Very Slippy
+rbr_base_note_no_cc_type,very_slippy,2217,0.0,very_slippy2.ogg,Very Slippy
+rbr_base_note_no_cc_type,at_bush,2218,-1,at_bush1.ogg,At Bush
+rbr_base_note_no_cc_type,at_bush,2218,-1,at_bush2.ogg,At Bush
+rbr_base_note_no_cc_type,big_sumppu,2219,0.02,big_sumppu1.ogg,Big Sumppu
+rbr_base_note_no_cc_type,big_sumppu,2219,0.02,big_sumppu2.ogg,Big Sumppu
+rbr_base_note_no_cc_type,small_sumppu,2220,0.04,small_sumppu1.ogg,Small Sumppu
+rbr_base_note_no_cc_type,small_sumppu,2220,0.04,small_sumppu2.ogg,Small Sumppu
+rbr_base_note_no_cc_type,onto_narrower_road,2221,-1,onto_narrower1.ogg,Onto Narrower
+rbr_base_note_no_cc_type,onto_narrower_road,2221,-1,onto_narrower2.ogg,Onto Narrower
+rbr_base_note_no_cc_type,onto_wider_road,2222,-1,onto_wider1.ogg,Onto Wider
+rbr_base_note_no_cc_type,onto_wider_road,2222,-1,onto_wider2.ogg,Onto Wider
+rbr_base_note_no_cc_type,lift,2223,-1,lift1.ogg,Lift
+rbr_base_note_no_cc_type,lift,2223,-1,lift2.ogg,Lift
+rbr_base_note_no_cc_type,again,2224,-1,again1.ogg,Again
+rbr_base_note_no_cc_type,again,2224,-1,again2.ogg,Again
+rbr_base_note_no_cc_type,again,2224,-1,again3.ogg,Again
+rbr_base_note_no_cc_type,again,2224,-1,again4.ogg,Again
+rbr_base_note_no_cc_type,to_crest,2225,0.01,to_crest1.ogg,To Crest
+rbr_base_note_no_cc_type,to_crest,2225,0.01,to_crest2.ogg,To Crest
+rbr_base_note_no_cc_type,left_over,2226,-1,left_over1.ogg,Left Over_(dist.)
+rbr_base_note_no_cc_type,left_over,2226,-1,left_over2.ogg,Left Over_(dist.)
+rbr_base_note_no_cc_type,left_over,2226,-1,left_over3.ogg,Left Over_(dist.)
+rbr_base_note_no_cc_type,left_over,2226,-1,left_over4.ogg,Left Over_(dist.)
+rbr_base_note_no_cc_type,right_over,2227,0.0,right_over1.ogg,Right Over_(dist.)
+rbr_base_note_no_cc_type,right_over,2227,0.0,right_over2.ogg,Right Over_(dist.)
+rbr_base_note_no_cc_type,right_over,2227,0.0,right_over3.ogg,Right Over_(dist.)
+rbr_base_note_no_cc_type,right_over,2227,0.0,right_over4.ogg,Right Over_(dist.)
+rbr_base_note_no_cc_type,precise,2228,0.01,precise1.ogg,Precise
+rbr_base_note_no_cc_type,precise,2228,0.01,precise2.ogg,Precise
+rbr_base_note_no_cc_type,stay_out,2229,-1,stay_out1.ogg,Stay Out
+rbr_base_note_no_cc_type,stay_out,2229,-1,stay_out2.ogg,Stay Out
+rbr_base_note_no_cc_type,bumpy_braking,2230,0.0,bumpy_braking1.ogg,Bumpy Braking
+rbr_base_note_no_cc_type,bumpy_braking,2230,0.0,bumpy_braking2.ogg,Bumpy Braking
+rbr_base_note_no_cc_type,over_narrow_bridge,2231,-1,over_narrow_bridge1.ogg,Over Narrow Bridge
+rbr_base_note_no_cc_type,over_narrow_bridge,2231,-1,over_narrow_bridge2.ogg,Over Narrow Bridge
+rbr_base_note_no_cc_type,gets_rougher,2232,-1,gets_rougher1.ogg,Gets Rougher
+rbr_base_note_no_cc_type,gets_rougher,2232,-1,gets_rougher2.ogg,Gets Rougher
+rbr_base_note_no_cc_type,gets_smoother,2233,-1,gets_smoother1.ogg,Gets Smoother
+rbr_base_note_no_cc_type,gets_smoother,2233,-1,gets_smoother2.ogg,Gets Smoother
+rbr_base_note_no_cc_type,gets_faster,2234,-1,gets_faster1.ogg,Gets Faster
+rbr_base_note_no_cc_type,gets_faster,2234,-1,gets_faster2.ogg,Gets Faster
+rbr_base_note_no_cc_type,gets_slower,2235,0.0,gets_slower1.ogg,Gets Slower
+rbr_base_note_no_cc_type,gets_slower,2235,0.0,gets_slower2.ogg,Gets Slower
+rbr_base_note_no_cc_type,surface_change,2236,-1,surface_change1.ogg,Surface Change
+rbr_base_note_no_cc_type,surface_change,2236,-1,surface_change2.ogg,Surface Change
+rbr_base_note_no_cc_type,bumps_over,2237,0.01,bumps_over1.ogg,Bumps Over_(dist.)
+rbr_base_note_no_cc_type,bumps_over,2237,0.01,bumps_over2.ogg,Bumps Over_(dist.)
+rbr_base_note_no_cc_type,over_rocks,2238,-1,over_rocks1.ogg,Over Rocks
+rbr_base_note_no_cc_type,over_rocks,2238,-1,over_rocks2.ogg,Over Rocks
+rbr_base_note_no_cc_type,onto_field,2239,-1,onto_field1.ogg,Onto Field
+rbr_base_note_no_cc_type,onto_field,2239,-1,onto_field2.ogg,Onto Field
+rbr_base_note_no_cc_type,fickle,2240,0.0,fickle1.ogg,Fickle
+rbr_base_note_no_cc_type,fickle,2240,0.0,fickle2.ogg,Fickle
+rbr_base_note_no_cc_type,to_jump,2241,-1,to_jump1.ogg,To Jump
+rbr_base_note_no_cc_type,to_jump,2241,-1,to_jump2.ogg,To Jump
+rbr_base_note_no_cc_type,double_dont,2242,-1,double_dont1.ogg,Double Don't
+rbr_base_note_no_cc_type,double_dont,2242,-1,double_dont2.ogg,Double Don't
+rbr_base_note_no_cc_type,triple_dont,2243,-1,triple_dont1.ogg,Triple Don't
+rbr_base_note_no_cc_type,triple_dont,2243,-1,triple_dont2.ogg,Triple Don't
+rbr_base_note_no_cc_type,important,2244,0.01,important1.ogg,Important
+rbr_base_note_no_cc_type,important,2244,0.01,important2.ogg,Important
+rbr_base_note_no_cc_type,crest_to_left,2245,-1,crest_to_left1.ogg,Crest To Left
+rbr_base_note_no_cc_type,crest_to_left,2245,-1,crest_to_left2.ogg,Crest To Left
+rbr_base_note_no_cc_type,crest_to_right,2246,-1,crest_to_right1.ogg,Crest To Right
+rbr_base_note_no_cc_type,crest_to_right,2246,-1,crest_to_right2.ogg,Crest To Right
+rbr_base_note_no_cc_type,medium_scale,2247,0.0,four_scale1.ogg,4
+rbr_base_note_no_cc_type,medium_scale,2247,0.0,four_scale2.ogg,4
+rbr_base_note_no_cc_type,medium_scale,2247,0.0,four_scale3.ogg,4
+rbr_base_note_no_cc_type,fuckinglong,2248,0.0,fuckinglong1.ogg,Fucking Long
+rbr_base_note_no_cc_type,fuckinglong,2248,0.0,fuckinglong2.ogg,Fucking Long
+rbr_base_note_no_cc_type,fuckinglong,2248,0.0,fuckinglong3.ogg,Fucking Long
+rbr_base_note_no_cc_type,tightensveryverylong,2249,-1,tightens_veryverylong1.ogg,Tightens Very Very Long
+rbr_base_note_no_cc_type,tightensveryverylong,2249,-1,tightens_veryverylong2.ogg,Tightens Very Very Long
+rbr_base_note_no_cc_type,tightensfuckinglong,2250,-1,tightens_fuckinglong1.ogg,Tightens Fucking Long
+rbr_base_note_no_cc_type,tightensfuckinglong,2250,-1,tightens_fuckinglong2.ogg,Tightens Fucking Long
+rbr_base_note_no_cc_type,opensveryverylong,2251,-1,opens_veryverylong1.ogg,Opens Very Very Long
+rbr_base_note_no_cc_type,opensveryverylong,2251,-1,opens_veryverylong2.ogg,Opens Very Very Long
+rbr_base_note_no_cc_type,opensfuckinglong,2252,-1,opens_fuckinglong1.ogg,Opens Fucking Long
+rbr_base_note_no_cc_type,opensfuckinglong,2252,-1,opens_fuckinglong2.ogg,Opens Fucking Long
+rbr_base_note_no_cc_type,tightenssharp,2253,-1,tightens_sharp1.ogg,Tightens Sharp
+rbr_base_note_no_cc_type,tightenssharp,2253,-1,tightens_sharp2.ogg,Tightens Sharp
+rbr_base_note_no_cc_type,tightensround,2254,-1,tightens_round1.ogg,Tightens Round
+rbr_base_note_no_cc_type,tightensround,2254,-1,tightens_round2.ogg,Tightens Round
+rbr_base_note_no_cc_type,openssharp,2255,-1,opens_sharp1.ogg,Opens Sharp
+rbr_base_note_no_cc_type,openssharp,2255,-1,opens_sharp2.ogg,Opens Sharp
+rbr_base_note_no_cc_type,opensround,2256,-1,opens_round1.ogg,Opens Round
+rbr_base_note_no_cc_type,opensround,2256,-1,opens_round2.ogg,Opens Round
+rbr_base_note_no_cc_type,over_early_crest,2257,-1,over_early_crest1.ogg,Over Early Crest
+rbr_base_note_no_cc_type,over_early_crest,2257,-1,over_early_crest2.ogg,Over Early Crest
+rbr_base_note_no_cc_type,over_late_crest,2258,0.01,over_late_crest1.ogg,Over Late Crest
+rbr_base_note_no_cc_type,over_late_crest,2258,0.01,over_late_crest2.ogg,Over Late Crest
+rbr_base_note_no_cc_type,brake_10,2259,-1,brake_10_1.ogg,Brake 10
+rbr_base_note_no_cc_type,brake_10,2259,-1,brake_10_2.ogg,Brake 10
+rbr_base_note_no_cc_type,brake_10,2259,-1,brake_10_3.ogg,Brake 10
+rbr_base_note_no_cc_type,black_ice,2260,-1,black_ice1.ogg,Black Ice
+rbr_base_note_no_cc_type,black_ice,2260,-1,black_ice2.ogg,Black Ice
+rbr_base_note_no_cc_type,at_log,2261,-1,at_log1.ogg,At Log
+rbr_base_note_no_cc_type,at_log,2261,-1,at_log2.ogg,At Log
+rbr_base_note_cc_type,detail_square_right_plus,2262,0.06,two_right_plus1.ogg,2 Right+
+rbr_base_note_cc_type,detail_square_right_plus,2262,0.06,two_right_plus2.ogg,2 Right+
+rbr_base_note_cc_type,detail_square_right_plus,2262,0.06,two_right_plus3.ogg,2 Right+
+rbr_base_note_cc_type,detail_square_right_plus,2262,0.06,two_right_plus4.ogg,2 Right+
+rbr_base_note_cc_type,detail_square_left_plus,2263,0.06,two_left_plus1.ogg,2 Left+
+rbr_base_note_cc_type,detail_square_left_plus,2263,0.06,two_left_plus2.ogg,2 Left+
+rbr_base_note_cc_type,detail_square_left_plus,2263,0.06,two_left_plus3.ogg,2 Left+
+rbr_base_note_cc_type,detail_square_left_plus,2263,0.06,two_left_plus4.ogg,2 Left+
+rbr_base_note_cc_type,detail_tightenstosquare_plus,2264,0.03,tightens_two_plus1.ogg,Tightens 2+
+rbr_base_note_cc_type,detail_tightenstosquare_plus,2264,0.03,tightens_two_plus2.ogg,Tightens 2+
+rbr_base_note_cc_type,detail_tightenstosquare_plus,2264,0.03,tightens_two_plus3.ogg,Tightens 2+
+rbr_base_note_no_cc_type,tosquare_plus,2265,0.01,_two_plus1.ogg,_2+
+rbr_base_note_no_cc_type,tosquare_plus,2265,0.01,_two_plus2.ogg,_2+
+rbr_base_note_no_cc_type,tosquare_plus,2265,0.01,_two_plus3.ogg,_2+
+rbr_base_note_no_cc_type,post_early,2266,-1,post_early1.ogg,Post Early
+rbr_base_note_no_cc_type,post_early,2266,-1,post_early2.ogg,Post Early
+rbr_base_note_no_cc_type,post_late,2267,0.0,post_late1.ogg,Post Late
+rbr_base_note_no_cc_type,post_late,2267,0.0,post_late2.ogg,Post Late
+rbr_base_note_no_cc_type,posts,2268,0.0,posts1.ogg,Posts
+rbr_base_note_no_cc_type,posts,2268,0.0,posts2.ogg,Posts
+rbr_base_note_no_cc_type,overcrest_nolink,2269,0.84,over_crest1.ogg,Over Crest
+rbr_base_note_no_cc_type,overcrest_nolink,2269,0.84,over_crest2.ogg,Over Crest
+rbr_base_note_no_cc_type,care_nolink,2270,0.37,care1.ogg,Care
+rbr_base_note_no_cc_type,care_nolink,2270,0.37,care2.ogg,Care
+rbr_base_note_no_cc_type,care_nolink,2270,0.37,care3.ogg,Care
+rbr_base_note_no_cc_type,caution_nolink,2271,0.67,caution1.ogg,Caution
+rbr_base_note_no_cc_type,caution_nolink,2271,0.67,caution2.ogg,Caution
+rbr_base_note_no_cc_type,caution_nolink,2271,0.67,caution3.ogg,Caution
+rbr_base_note_no_cc_type,square_plus_scale,2272,0.0,two_plus_scale1.ogg,2+
+rbr_base_note_no_cc_type,square_plus_scale,2272,0.0,two_plus_scale2.ogg,2+
+rbr_base_note_no_cc_type,square_plus_scale,2272,0.0,two_plus_scale3.ogg,2+
+rbr_base_note_no_cc_type,late_cut,2273,-1,late_cut1.ogg,Late Cut
+rbr_base_note_no_cc_type,late_cut,2273,-1,late_cut2.ogg,Late Cut
+rbr_base_note_no_cc_type,at_logs,2274,-1,at_logs1.ogg,At Logs
+rbr_base_note_no_cc_type,at_logs,2274,-1,at_logs2.ogg,At Logs
+rbr_base_note_no_cc_type,niu_brake_jatkuu,2275,0.0,brake_and1.ogg,Brake And (NIU)
+rbr_base_note_no_cc_type,niu_brake_jatkuu,2275,0.0,brake_and2.ogg,Brake And (NIU)
+rbr_base_note_no_cc_type,niu_brake_jatkuu,2275,0.0,brake_and3.ogg,Brake And (NIU)
+rbr_base_note_no_cc_type,deep,2276,-1,deep1.ogg,Deep
+rbr_base_note_no_cc_type,deep,2276,-1,deep2.ogg,Deep
+rbr_base_note_no_cc_type,trust,2277,-1,trust1.ogg,Trust
+rbr_base_note_no_cc_type,trust,2277,-1,trust2.ogg,Trust
+rbr_base_note_no_cc_type,leftish,2405,0.01,leftish1.ogg,Leftish
+rbr_base_note_no_cc_type,leftish,2405,0.01,leftish2.ogg,Leftish
+rbr_base_note_no_cc_type,rightish,2406,0.01,rightish1.ogg,Rightish
+rbr_base_note_no_cc_type,rightish,2406,0.01,rightish2.ogg,Rightish
+rbr_base_note_no_cc_type,niu_small_crest_fabz,2501,-1,small_crest1.ogg,Small Crest (NIU)
+rbr_base_note_no_cc_type,niu_small_crest_fabz,2501,-1,small_crest2.ogg,Small Crest (NIU)
+rbr_base_note_no_cc_type,niu_brow,2503,-1,crest1.ogg,Crest (NIU)
+rbr_base_note_no_cc_type,niu_brow,2503,-1,crest2.ogg,Crest (NIU)
+rbr_base_note_no_cc_type,two_bales,2507,-1,two_bales1.ogg,Two Bales
+rbr_base_note_no_cc_type,two_bales,2507,-1,two_bales2.ogg,Two Bales
+rbr_base_note_no_cc_type,three_bales,2508,-1,three_bales1.ogg,Three Bales
+rbr_base_note_no_cc_type,three_bales,2508,-1,three_bales2.ogg,Three Bales
+rbr_base_note_no_cc_type,four_bales,2509,-1,four_bales1.ogg,Four Bales
+rbr_base_note_no_cc_type,four_bales,2509,-1,four_bales2.ogg,Four Bales
+rbr_base_note_no_cc_type,logs,2512,-1,logs1.ogg,Logs
+rbr_base_note_no_cc_type,logs,2512,-1,logs2.ogg,Logs
+rbr_base_note_no_cc_type,gate,2515,-1,gate1.ogg,Gate
+rbr_base_note_no_cc_type,gate,2515,-1,gate2.ogg,Gate
+rbr_base_note_no_cc_type,big_jump,2516,0.01,big_jump1.ogg,Big Jump
+rbr_base_note_no_cc_type,big_jump,2516,0.01,big_jump2.ogg,Big Jump
+rbr_base_note_no_cc_type,bales,2521,-1,bales1.ogg,Bales
+rbr_base_note_no_cc_type,bales,2521,-1,bales2.ogg,Bales
+rbr_base_note_no_cc_type,surface_note,2571,-1,surface1.ogg,Surface
+rbr_base_note_no_cc_type,surface_note,2571,-1,surface2.ogg,Surface
+rbr_base_note_no_cc_type,be_brave,2600,0.0,be_brave1.ogg,Be Brave
+rbr_base_note_no_cc_type,be_brave,2600,0.0,be_brave2.ogg,Be Brave
+rbr_base_note_no_cc_type,niu_watch,2604,-1,precise1.ogg,Precise (NIU)
+rbr_base_note_no_cc_type,niu_watch,2604,-1,precise2.ogg,Precise (NIU)
+rbr_base_note_no_cc_type,bale,2611,-1,bale1.ogg,Bale
+rbr_base_note_no_cc_type,bale,2611,-1,bale2.ogg,Bale
+rbr_base_note_no_cc_type,niu_dab,2615,-1,dab1.ogg,Dab (NIU)
+rbr_base_note_no_cc_type,niu_dab,2615,-1,dab2.ogg,Dab (NIU)
+rbr_base_note_no_cc_type,two_parts,2622,0.02,two_parts1.ogg,Two Parts
+rbr_base_note_no_cc_type,two_parts,2622,0.02,two_parts2.ogg,Two Parts
+rbr_base_note_no_cc_type,three_parts,2623,0.0,three_parts1.ogg,Three Parts
+rbr_base_note_no_cc_type,three_parts,2623,0.0,three_parts2.ogg,Three Parts
+rbr_base_note_no_cc_type,four_parts,2624,0.0,four_parts1.ogg,Four Parts
+rbr_base_note_no_cc_type,four_parts,2624,0.0,four_parts2.ogg,Four Parts
+rbr_base_note_no_cc_type,five_parts,2625,-1,five_parts1.ogg,Five Parts
+rbr_base_note_no_cc_type,five_parts,2625,-1,five_parts2.ogg,Five Parts
+rbr_base_note_no_cc_type,five_bales,2626,-1,five_bales1.ogg,Five Bales
+rbr_base_note_no_cc_type,five_bales,2626,-1,five_bales2.ogg,Five Bales

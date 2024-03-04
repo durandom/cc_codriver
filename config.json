@@ -5,7 +5,7 @@
     "rbr_base_mod": "janne-v3",
     "rbr_base_package": "numeric",
     "pacenote_stats": "out/roadbooks-luppis-v3.csv",
-    "_skip_notes": {
+    "skip_notes": {
         "acknowledge_end_recce": -1,
         "acknowledge_start_recce": -1,
         "correction": -1,
@@ -13,13 +13,10 @@
         "penalty_false_start": -1,
         "we_are_lost": -1,
 
-        "detail_bad_camber": 355,
-        "detail_big_jump": 40002,
-        "detail_and": 4084,
-        "detail_caution_water": 4077,
-        "detail_go": -1,
-        "corner_open_hairpin_left": 40003,
-        "corner_open_hairpin_right": 40004
+        "corner_open_hairpin_left_rbr": 2061,
+        "corner_open_hairpin_right_rbr": 2055,
+        "detail_keep_left_rbr": 2100,
+        "detail_keep_right_rbr": 2101
     },
     "_map_notes": [
       {
@@ -115,6 +112,7 @@
                 "detail_to_finish": ["numeric", ["into.ogg", "finish.ogg"], 2105],
                 "detail_jump_bind": ["numeric", ["jump.ogg", "triple_caution.ogg"], 2107],
                 "detail_jump_bind_rushed": ["numeric", ["jump.ogg", "triple_caution.ogg"], 2107],
+                "detail_big_jump": ["numeric", ["big.ogg", "jump.ogg"], 2516],
                 "detail_to_dip": ["numeric", ["into.ogg", "dip.ogg"], 2024],
                 "detail_to_dip_rushed": ["numeric", ["into.ogg", "dip.ogg"], 2024],
                 "corner_hairpin_left": ["descriptive", "hairpin_left.ogg", 0],
@@ -123,6 +121,8 @@
                 "corner_hairpin_right_rushed": ["descriptive", "hairpin_right.ogg", 11],
                 "cmp_into_corner_hairpin_right": ["descriptive", ["into.ogg", "hairpin_right.ogg"]],
                 "cmp_into_corner_hairpin_left": ["descriptive", ["into.ogg", "hairpin_left.ogg"]],
+                "cmp_into_corner_hairpin_right_rushed": ["descriptive", ["into.ogg", "hairpin_right.ogg"]],
+                "cmp_into_corner_hairpin_left_rushed": ["descriptive", ["into.ogg", "hairpin_left.ogg"]],
                 "corner_6_plus_right": ["numeric", ["six_right.ogg", "plus.ogg"]],
                 "corner_5_plus_right": ["numeric", ["five_right.ogg", "plus.ogg"]],
                 "corner_4_plus_right": ["numeric", ["four_right.ogg", "plus.ogg"]],
@@ -131,12 +131,16 @@
                 "corner_1_plus_right": ["numeric", ["one_right.ogg", "plus.ogg"]],
                 "corner_open_hairpin_right": ["numeric", ["hairpin_right.ogg", "plus.ogg"], 2055],
                 "corner_open_hairpin_left": ["numeric", ["hairpin_left.ogg", "plus.ogg"], 2061],
+                "corner_open_hairpin_right_rushed": ["numeric", ["hairpin_right.ogg", "plus.ogg"], 2055],
+                "corner_open_hairpin_left_rushed": ["numeric", ["hairpin_left.ogg", "plus.ogg"], 2061],
                 "corner_6_plus_left": ["numeric", ["six_left.ogg", "plus.ogg"]],
                 "corner_5_plus_left": ["numeric", ["five_left.ogg", "plus.ogg"]],
                 "corner_4_plus_left": ["numeric", ["four_left.ogg", "plus.ogg"]],
                 "corner_3_plus_left": ["numeric", ["three_left.ogg", "plus.ogg"]],
                 "corner_2_plus_left": ["numeric", ["two_left.ogg", "plus.ogg"]],
                 "corner_1_plus_left": ["numeric", ["one_left.ogg", "plus.ogg"]],
+                "corner_left_acute": ["numeric", ["sharp.ogg", "hairpin_left.ogg"], 2040],
+                "corner_right_acute": ["numeric", ["sharp.ogg", "hairpin_right.ogg"], 2041],
                 "detail_tightens_to_6_plus": ["numeric", ["tightens.ogg", "../../../../../../../bollinger_sounds/6_plus.wav"]],
                 "detail_tightens_to_5_plus": ["numeric", ["tightens.ogg", "../../../../../../../bollinger_sounds/5_plus.wav"]],
                 "detail_tightens_to_4_plus": ["numeric", ["tightens.ogg", "../../../../../../../bollinger_sounds/4_plus.wav"]],
