@@ -3,8 +3,12 @@
 all: janne-v2 janne-v3 bollinger german-tts
 	@echo "Done"
 
-roadbooks:
-	./codriver.py --roadbook-csv --roadbook-name '/.*/' > out/roadbooks-luppis-v2.csv
+roadbooks-default:
+	./codriver.py --roadbook-csv-default --roadbook-name '/.*default.*/' > out/roadbooks-default.csv
+	@echo "Done"
+
+roadbooks-v2:
+	./codriver.py --roadbook-csv-v2 --roadbook-name '/.*/' > out/roadbooks-luppis-v2.csv
 	@echo "Done"
 
 roadbooks-v3:

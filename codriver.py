@@ -925,7 +925,8 @@ if __name__ == '__main__':
     parser.add_argument('--rbr-find-note-by-name', help='Find a note by name')
     parser.add_argument('--rbr-list-csv', action='store_true', help='List RBR pacenotes as CSV')
     parser.add_argument('--rbr-package', default='all', help='Only list pacenotes for a specific package, defaults to all')
-    parser.add_argument('--roadbook-csv', action='store_true', help='Analyzes a Roabook file and creates a CSV file')
+    parser.add_argument('--roadbook-csv-default', action='store_true', help='Analyzes a Roabook file and creates a CSV file')
+    parser.add_argument('--roadbook-csv-v2', action='store_true', help='Analyzes a Roabook file and creates a CSV file')
     parser.add_argument('--roadbook-csv-v3', action='store_true', help='Analyzes a Roabook file and creates a CSV file')
     parser.add_argument('--roadbook-name', default='/.*/', help='Which Roabook file to analyze, defaults to all')
     parser.add_argument('--create-codriver', help='Map RBR pacenotes to CC pacenotes and create folder structure')
@@ -937,7 +938,14 @@ if __name__ == '__main__':
     # read the configuration file, which is a json file
     config = json.load(open('config.json'))
 
-    if args.roadbook_csv:
+    if args.roadbook_csv_v2:
+        roadbook_dir = config['roadbooks_v2']
+        roadbooks = Roadbooks(roadbook_dir)
+        roadbooks.read_roadbooks(args.roadbook_name)
+        roadbooks.analyze_books()
+        exit(0)
+
+    if args.roadbook_csv_default:
         roadbook_dir = config['roadbooks']
         roadbooks = Roadbooks(roadbook_dir)
         roadbooks.read_roadbooks(args.roadbook_name)

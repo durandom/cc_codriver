@@ -15,6 +15,17 @@ class Note:
         self.type = type
         self.distance = distance
         self.flag = flag
+        self.flags = self.parse_flag(flag)
+
+    def parse_flag(self, flag):
+        # flag is a bitfield
+        # get all bits up to 16384
+        flags = set()
+        for i in range(15):
+            if flag & (1 << i):
+                flags.add(1 << i)
+        return flags
+
 
 class Roadbook:
     def __init__(self, filename):
@@ -80,7 +91,7 @@ class Roadbook:
     def note_flags(self):
         flags = set()
         for note in self.notes.values():
-            flags.add(note.flag)
+            flags |= note.flags
         return flags
 
 class Roadbooks:
@@ -135,7 +146,8 @@ class Roadbooks:
                 book_note_types = book.get_notes(note_type)
                 row.append(len(book_note_types))
             for note_flag in note_flags_list:
-                book_note_flags = book.get_notes_flag(note_flag)
+                note_flag_id = int(note_flag[5:])
+                book_note_flags = book.get_notes_flag(note_flag_id)
                 row.append(len(book_note_flags))
             csv_writer.writerow(row)
 

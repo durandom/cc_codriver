@@ -61,3 +61,24 @@ compand 0.3,2.5 6:-30,-40 5 -90 0.2 \
 overdrive 10 \
 equalizer 1000 0.707 3
 ```
+
+
+## RBR Pacenotes Modifiers
+
+53493760 - none
+53493761 - narrows
+53493762 - wideout
+53493764 - tightens
+53493792 - dont
+53493824 - cut
+53493888 - double tightens
+53494784 - long
+53501952 - maybe
+
+
+We have documented the pacenote IDs used by the plugin (see xls/ods).
+Custom IDs should be in the range from 1000 to 4000.
+Don't use IDs over 4000, or you will break Pacenote plugin features!
+Don't use or try to change those flags, they are all occupied and used internally, and even possibly crash the game when used in the wrong place.
+Modifiers cannot be added, so you're always going to have at worst 8 flags to worry about
+
