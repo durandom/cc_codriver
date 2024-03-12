@@ -78,84 +78,84 @@ rbr,cmp_into_detail_ford_rushed,17,0.11,ford.ogg,Furt
 rbr,corner_1_left,102,0.63,one_left.ogg,1 Links
 rbr,corner_1_left_descriptive,0,0.53,hairpin_left.ogg,Kehre Links
 rbr,corner_1_left_descriptive_rushed,0,0.53,hairpin_left.ogg,Kehre Links
+rbr_base_note,corner_1_left_plus,2060,0.01,one_left_plus4.ogg,1 Left+
 rbr,corner_1_left_reversed,-1,-1,../../../../../../../Hans Juchard Reverse/left_one.ogg,
 rbr,corner_1_left_reversed_rushed,-1,-1,../../../../../../../Hans Juchard Reverse/left_one.ogg,
 rbr,corner_1_left_rushed,102,0.63,one_left.ogg,1 Links
-rbr_base_note,corner_1_plus_left,2060,0.01,one_left_plus4.ogg,1 Left+
-rbr_base_note,corner_1_plus_right,2054,0.02,one_right_plus4.ogg,1 Right+
 rbr,corner_1_right,112,0.6,one_right.ogg,1 Rechts
 rbr,corner_1_right_descriptive,11,0.53,hairpin_right.ogg,Kehre Rechts
 rbr,corner_1_right_descriptive_rushed,11,0.53,hairpin_right.ogg,Kehre Rechts
+rbr_base_note,corner_1_right_plus,2054,0.02,one_right_plus4.ogg,1 Right+
 rbr,corner_1_right_reversed,-1,-1,../../../../../../../Hans Juchard Reverse/right_one.ogg,
 rbr,corner_1_right_reversed_rushed,-1,-1,../../../../../../../Hans Juchard Reverse/right_one.ogg,
 rbr,corner_1_right_rushed,112,0.6,one_right.ogg,1 Rechts
 rbr,corner_2_left,1,0.89,two_left.ogg,2 Links
 rbr,corner_2_left_descriptive,102,0.63,sharp_left.ogg,Scharf Links
 rbr,corner_2_left_descriptive_rushed,102,0.63,sharp_left.ogg,Scharf Links
+rbr_base_note,corner_2_left_plus,2263,0.06,two_left_plus4.ogg,2 Left+
 rbr,corner_2_left_reversed,-1,-1,../../../../../../../Hans Juchard Reverse/left_two.ogg,
 rbr,corner_2_left_reversed_rushed,-1,-1,../../../../../../../Hans Juchard Reverse/left_two.ogg,
 rbr,corner_2_left_rushed,1,0.89,two_left.ogg,2 Links
-rbr_base_note,corner_2_plus_left,2263,0.06,two_left_plus4.ogg,2 Left+
-rbr_base_note,corner_2_plus_right,2262,0.06,two_right_plus4.ogg,2 Right+
 rbr,corner_2_right,10,0.91,two_right.ogg,2 Rechts
 rbr,corner_2_right_descriptive,112,0.6,sharp_right.ogg,Scharf Rechts
 rbr,corner_2_right_descriptive_rushed,112,0.6,sharp_right.ogg,Scharf Rechts
+rbr_base_note,corner_2_right_plus,2262,0.06,two_right_plus4.ogg,2 Right+
 rbr,corner_2_right_reversed,-1,-1,../../../../../../../Hans Juchard Reverse/right_two.ogg,
 rbr,corner_2_right_reversed_rushed,-1,-1,../../../../../../../Hans Juchard Reverse/right_two.ogg,
 rbr,corner_2_right_rushed,10,0.91,two_right.ogg,2 Rechts
 rbr,corner_3_left,2,0.97,three_left.ogg,3 Links
 rbr,corner_3_left_descriptive,2,0.97,three_left.ogg,3 Links
 rbr,corner_3_left_descriptive_rushed,2,0.97,three_left.ogg,3 Links
+rbr_base_note,corner_3_left_plus,2059,0.08,three_left_plus4.ogg,3 Left+
 rbr,corner_3_left_reversed,-1,-1,../../../../../../../Hans Juchard Reverse/left_three.ogg,
 rbr,corner_3_left_reversed_rushed,-1,-1,../../../../../../../Hans Juchard Reverse/left_three.ogg,
 rbr,corner_3_left_rushed,2,0.97,three_left.ogg,3 Links
-rbr_base_note,corner_3_plus_left,2059,0.08,three_left_plus4.ogg,3 Left+
-rbr_base_note,corner_3_plus_right,2053,0.08,three_right_plus4.ogg,3 Right+
 rbr,corner_3_right,9,0.97,three_right.ogg,3 Rechts
 rbr,corner_3_right_descriptive,9,0.97,three_right.ogg,3 Rechts
 rbr,corner_3_right_descriptive_rushed,9,0.97,three_right.ogg,3 Rechts
+rbr_base_note,corner_3_right_plus,2053,0.08,three_right_plus4.ogg,3 Right+
 rbr,corner_3_right_reversed,-1,-1,../../../../../../../Hans Juchard Reverse/right_three.ogg,
 rbr,corner_3_right_reversed_rushed,-1,-1,../../../../../../../Hans Juchard Reverse/right_three.ogg,
 rbr,corner_3_right_rushed,9,0.97,three_right.ogg,3 Rechts
 rbr,corner_4_left,3,0.96,four_left.ogg,4 Links
 rbr,corner_4_left_descriptive,3,0.96,four_left.ogg,4 Links
 rbr,corner_4_left_descriptive_rushed,3,0.96,four_left.ogg,4 Links
+rbr_base_note,corner_4_left_plus,2058,0.06,four_left_plus4.ogg,4 Left+
 rbr,corner_4_left_reversed,-1,-1,../../../../../../../Hans Juchard Reverse/left_four.ogg,
 rbr,corner_4_left_reversed_rushed,-1,-1,../../../../../../../Hans Juchard Reverse/left_four.ogg,
 rbr,corner_4_left_rushed,3,0.96,four_left.ogg,4 Links
-rbr_base_note,corner_4_plus_left,2058,0.06,four_left_plus4.ogg,4 Left+
-rbr_base_note,corner_4_plus_right,2052,0.06,four_right_plus4.ogg,4 Right+
 rbr,corner_4_right,8,0.97,four_right.ogg,4 Rechts
 rbr,corner_4_right_descriptive,8,0.97,four_right.ogg,4 Rechts
 rbr,corner_4_right_descriptive_rushed,8,0.97,four_right.ogg,4 Rechts
+rbr_base_note,corner_4_right_plus,2052,0.06,four_right_plus4.ogg,4 Right+
 rbr,corner_4_right_reversed,-1,-1,../../../../../../../Hans Juchard Reverse/right_four.ogg,
 rbr,corner_4_right_reversed_rushed,-1,-1,../../../../../../../Hans Juchard Reverse/right_four.ogg,
 rbr,corner_4_right_rushed,8,0.97,four_right.ogg,4 Rechts
 rbr,corner_5_left,4,0.93,five_left.ogg,5 Links
 rbr,corner_5_left_descriptive,4,0.93,five_left.ogg,5 Links
 rbr,corner_5_left_descriptive_rushed,4,0.93,five_left.ogg,5 Links
+rbr_base_note,corner_5_left_plus,2057,0.04,five_left_plus4.ogg,5 Left+
 rbr,corner_5_left_reversed,-1,-1,../../../../../../../Hans Juchard Reverse/left_five.ogg,
 rbr,corner_5_left_reversed_rushed,-1,-1,../../../../../../../Hans Juchard Reverse/left_five.ogg,
 rbr,corner_5_left_rushed,4,0.93,five_left.ogg,5 Links
-rbr_base_note,corner_5_plus_left,2057,0.04,five_left_plus4.ogg,5 Left+
-rbr_base_note,corner_5_plus_right,2051,0.03,five_right_plus4.ogg,5 Right+
 rbr,corner_5_right,7,0.93,five_right.ogg,5 Rechts
 rbr,corner_5_right_descriptive,7,0.93,five_right.ogg,5 Rechts
 rbr,corner_5_right_descriptive_rushed,7,0.93,five_right.ogg,5 Rechts
+rbr_base_note,corner_5_right_plus,2051,0.03,five_right_plus4.ogg,5 Right+
 rbr,corner_5_right_reversed,-1,-1,../../../../../../../Hans Juchard Reverse/right_five.ogg,
 rbr,corner_5_right_reversed_rushed,-1,-1,../../../../../../../Hans Juchard Reverse/right_five.ogg,
 rbr,corner_5_right_rushed,7,0.93,five_right.ogg,5 Rechts
 rbr,corner_6_left,5,0.83,six_left.ogg,6 Links
 rbr,corner_6_left_descriptive,5,0.83,easy_left.ogg,Leicht Links
 rbr,corner_6_left_descriptive_rushed,5,0.83,easy_left.ogg,Leicht Links
+rbr_base_note,corner_6_left_plus,2056,0.03,six_left_plus4.ogg,6 Left+
 rbr,corner_6_left_reversed,-1,-1,../../../../../../../Hans Juchard Reverse/left_six.ogg,
 rbr,corner_6_left_reversed_rushed,-1,-1,../../../../../../../Hans Juchard Reverse/left_six.ogg,
 rbr,corner_6_left_rushed,5,0.83,six_left.ogg,6 Links
-rbr_base_note,corner_6_plus_left,2056,0.03,six_left_plus4.ogg,6 Left+
-rbr_base_note,corner_6_plus_right,2050,0.03,six_right_plus4.ogg,6 Right+
 rbr,corner_6_right,6,0.87,six_right.ogg,6 Rechts
 rbr,corner_6_right_descriptive,6,0.87,easy_right.ogg,Leicht Rechts
 rbr,corner_6_right_descriptive_rushed,6,0.87,easy_right.ogg,Leicht Rechts
+rbr_base_note,corner_6_right_plus,2050,0.03,six_right_plus4.ogg,6 Right+
 rbr,corner_6_right_reversed,-1,-1,../../../../../../../Hans Juchard Reverse/right_six.ogg,
 rbr,corner_6_right_reversed_rushed,-1,-1,../../../../../../../Hans Juchard Reverse/right_six.ogg,
 rbr,corner_6_right_rushed,6,0.87,six_right.ogg,6 Rechts
@@ -524,7 +524,7 @@ rbr,detail_tightens_opens_rushed,2019,0.08,tightensopens.ogg,"Macht zu, dann auf
 rbr,detail_tightens_rushed,4,0.93,five_left.ogg,5 Links
 rbr,detail_tightens_to_1,2006,0.24,tightens1.ogg,Enger 1
 rbr,detail_tightens_to_1,2006,0.24,tightens_acute.ogg,Enger 1
-rbr_base_note,detail_tightens_to_1_plus,2067,-1,tightens_hp_plus3.ogg,Tightens Hairpin+
+rbr_base_note,detail_tightens_to_1_plus,2066,0.0,tightens_one_plus3.ogg,Tightens 1+
 rbr,detail_tightens_to_1_rushed,2006,0.24,tightens1.ogg,Enger 1
 rbr,detail_tightens_to_1_rushed,2006,0.24,tightens_acute.ogg,Enger 1
 rbr,detail_tightens_to_2,2005,0.45,tightens2.ogg,Enger 2
@@ -547,6 +547,7 @@ rbr,detail_tightens_to_6_rushed,2001,-1,tightens6.ogg,Enger 6
 rbr_base_note,detail_tightens_to_acute,2027,0.01,tightens_acute3.ogg,Tightens Acute
 rbr_base_note,detail_tightens_to_acute_rushed,2027,0.01,tightens_acute3.ogg,Tightens Acute
 rbr,detail_tightens_to_hairpin,2007,0.03,tightens_acute.ogg,Enger Kehre
+rbr_base_note,detail_tightens_to_open_hairpin,2067,-1,tightens_hp_plus3.ogg,Tightens Hairpin+
 rbr,detail_to_1,2013,0.03,to_1.ogg,In 1
 rbr,detail_to_2,2012,0.06,to_2.ogg,In 2
 rbr,detail_to_3,2011,0.08,to_90.ogg,In 3
@@ -630,7 +631,7 @@ rbr_base_note_no_cc_type,dontcut,-1,-1,dontcut.ogg,Nicht Schneiden
 rbr_base_note_cc_type,detail_narrows,14,0.0,narrows.ogg,Enger
 rbr_base_note_no_cc_type,tightens,-1,-1,tightens.ogg,Verengung
 rbr_base_note_no_cc_type,tightensbad,-1,-1,tightensbad.ogg,Verengt Stark
-rbr_base_note_no_cc_type,wideout,-1,-1,wideout.ogg,Breiter
+rbr_base_note_cc_type,detail_wideout,15,0.22,wideout.ogg,Breiter
 sound_not_found,detail_na_wooden_fence,443,-1,wooden_fence.ogg,Wooden Fence (N/A)
 rbr_base_note_no_cc_type,niu_jatkuu,2025,0.18,and1.ogg,And (NIU)
 rbr_base_note_no_cc_type,niu_jatkuu,2025,0.18,and2.ogg,And (NIU)
@@ -684,9 +685,6 @@ rbr_base_note_cc_type,detail_veryslowleft,2061,0.0,hp_left_plus1.ogg,Hairpin Lef
 rbr_base_note_cc_type,detail_veryslowleft,2061,0.0,hp_left_plus2.ogg,Hairpin Left+
 rbr_base_note_cc_type,detail_veryslowleft,2061,0.0,hp_left_plus3.ogg,Hairpin Left+
 rbr_base_note_cc_type,detail_veryslowleft,2061,0.0,hp_left_plus4.ogg,Hairpin Left+
-rbr_base_note_cc_type,detail_tightenstominus,2066,0.0,tightens_one_plus1.ogg,Tightens 1+
-rbr_base_note_cc_type,detail_tightenstominus,2066,0.0,tightens_one_plus2.ogg,Tightens 1+
-rbr_base_note_cc_type,detail_tightenstominus,2066,0.0,tightens_one_plus3.ogg,Tightens 1+
 rbr_base_note_no_cc_type,toflatminus,2068,-1,_six_plus1.ogg,_6+
 rbr_base_note_no_cc_type,toflatminus,2068,-1,_six_plus2.ogg,_6+
 rbr_base_note_no_cc_type,toflatminus,2068,-1,_six_plus3.ogg,_6+

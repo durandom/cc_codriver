@@ -1454,12 +1454,12 @@ no_rbr_note,unknown,20000,-1,,
 rbr_base_note_no_cc_type,dontcut,-1,-1,additional/dontcut_2.ogg,Don't Cut
 rbr_base_note_no_cc_type,dontcut,-1,-1,additional/dontcut_3.ogg,Don't Cut
 rbr_base_note_no_cc_type,dontcut,-1,-1,dontcut.ogg,Don't Cut
-rbr_base_note_no_cc_type,narrows,-1,-1,additional/narrows_2.ogg,Enger
-rbr_base_note_no_cc_type,narrows,-1,-1,additional/narrows_3.ogg,Enger
-rbr_base_note_no_cc_type,narrows,-1,-1,narrows.ogg,Enger
-rbr_base_note_no_cc_type,tightens,-1,-1,additional/tightens_2.ogg,Macht Zu
-rbr_base_note_no_cc_type,tightens,-1,-1,additional/tightens_3.ogg,Macht Zu
-rbr_base_note_no_cc_type,tightens,-1,-1,tightens.ogg,Macht Zu
+rbr_base_note_cc_type,detail_narrows,14,0.0,additional/narrows_2.ogg,Enger
+rbr_base_note_cc_type,detail_narrows,14,0.0,additional/narrows_3.ogg,Enger
+rbr_base_note_cc_type,detail_narrows,14,0.0,narrows.ogg,Enger
+rbr_base_note_no_cc_type,tightens,-1,-1,additional/tightens_2.ogg,Macht zu
+rbr_base_note_no_cc_type,tightens,-1,-1,additional/tightens_3.ogg,Macht zu
+rbr_base_note_no_cc_type,tightens,-1,-1,tightens.ogg,Macht zu
 rbr_base_note_cc_type,detail_wideout,15,0.22,additional/wideout_2.ogg,Breiter
 rbr_base_note_cc_type,detail_wideout,15,0.22,additional/wideout_3.ogg,Breiter
 rbr_base_note_cc_type,detail_wideout,15,0.22,wideout.ogg,Breiter
