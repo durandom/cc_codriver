@@ -11,20 +11,85 @@ class Note:
     # type = 1649545214
     # distance = 0.00001
     # flag = 0
+
+    flags = {
+        "None": 0x00,
+        "Narrows": 0x01,
+        "WideOut": 0x02,
+        "Tightens": 0x04,
+        "x1": 0x08,
+        "x2": 0x10,
+        "DontCut": 0x20,
+        "Cut": 0x40,
+        "TightensBad": 0x80,
+        "x3": 0x0100,
+        "x4": 0x0100,
+        "x5": 0x0200,
+        "Long": 0x0400,
+        "x6": 0x0800,
+        "x7": 0x1000,
+        "Maybe": 0x2000,
+        "x9": 0x4000,
+        "x10": 0x8000,
+        "x11": 0x00010000,
+        "x12": 0x00020000,
+        "x13": 0x00040000,
+        "x14": 0x00080000,
+        "x15": 0x00100000,
+        "x16": 0x00200000,
+        "x17": 0x00400000,
+        "x19": 0x00800000,
+        "x20": 0x01000000,
+        "x21": 0x02000000,
+        "x22": 0x04000000,
+        "x23": 0x08000000,
+        "x24": 0x10000000,
+        "x25": 0x20000000,
+        "x26": 0x40000000,
+        "x27": 0x80000000,
+    }
+
+    # Define only the explicitly named flags
+    named_flags = {
+        "None": 0x00,
+        "Narrows": 0x01,
+        "WideOut": 0x02,
+        "Tightens": 0x04,
+        "DontCut": 0x20,
+        "Cut": 0x40,
+        "TightensBad": 0x80,
+        "Long": 0x0400,
+        "Maybe": 0x2000,
+    }
+
+
     def __init__(self, type, distance, flag):
         self.type = type
         self.distance = distance
         self.flag = flag
         self.flags = self.parse_flag(flag)
 
-    def parse_flag(self, flag):
-        # flag is a bitfield
-        # get all bits up to 16384
-        flags = set()
-        for i in range(15):
-            if flag & (1 << i):
-                flags.add(1 << i)
-        return flags
+    def parse_flag(self, flag_value):
+        # Parse the flags
+        set_flags = {name for name, value in self.flags.items() if flag_value & value}
+        named_set_flags = {name for name, value in self.named_flags.items() if flag_value & value}
+
+        return set_flags
+
+    def print_flags_in_binary(self):
+        for name, value in self.flags.items():
+            print(f"{name}: {format(value, 'b')}")
+
+
+
+    # def parse_flag(self, flag):
+    #     # flag is a bitfield
+    #     # get all bits up to 16384
+    #     flags = set()
+    #     for i in range(15):
+    #         if flag & (1 << i):
+    #             flags.add(1 << i)
+    #     return flags
 
 
 class Roadbook:

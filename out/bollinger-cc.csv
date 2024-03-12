@@ -220,6 +220,7 @@ rbr,corner_1_left_descriptive,0,0.53,hairpin_left.ogg,Kehre Links
 rbr,corner_1_left_descriptive_rushed,0,0.53,additional/hairpin_left_2.ogg,Kehre Links
 rbr,corner_1_left_descriptive_rushed,0,0.53,additional/hairpin_left_3.ogg,Kehre Links
 rbr,corner_1_left_descriptive_rushed,0,0.53,hairpin_left.ogg,Kehre Links
+rbr,corner_1_left_plus,-1,-1,plus.ogg,
 rbr,corner_1_left_reversed,0,0.53,additional/hairpin_left_2.ogg,Kehre Links
 rbr,corner_1_left_reversed,0,0.53,additional/hairpin_left_3.ogg,Kehre Links
 rbr,corner_1_left_reversed,0,0.53,hairpin_left.ogg,Kehre Links
@@ -229,8 +230,6 @@ rbr,corner_1_left_reversed_rushed,0,0.53,hairpin_left.ogg,Kehre Links
 rbr,corner_1_left_rushed,102,0.63,additional/one_left_2.ogg,1 Links
 rbr,corner_1_left_rushed,102,0.63,additional/one_left_3.ogg,1 Links
 rbr,corner_1_left_rushed,102,0.63,one_left.ogg,1 Links
-rbr,corner_1_plus_left,-1,-1,plus.ogg,
-rbr,corner_1_plus_right,-1,-1,plus.ogg,
 rbr,corner_1_right,112,0.6,additional/one_right_2.ogg,1 Rechts
 rbr,corner_1_right,112,0.6,additional/one_right_3.ogg,1 Rechts
 rbr,corner_1_right,112,0.6,one_right.ogg,1 Rechts
@@ -240,6 +239,7 @@ rbr,corner_1_right_descriptive,11,0.53,hairpin_right.ogg,Kehre Rechts
 rbr,corner_1_right_descriptive_rushed,11,0.53,additional/hairpin_right_2.ogg,Kehre Rechts
 rbr,corner_1_right_descriptive_rushed,11,0.53,additional/hairpin_right_3.ogg,Kehre Rechts
 rbr,corner_1_right_descriptive_rushed,11,0.53,hairpin_right.ogg,Kehre Rechts
+rbr,corner_1_right_plus,-1,-1,plus.ogg,
 rbr,corner_1_right_reversed,11,0.53,additional/hairpin_right_2.ogg,Kehre Rechts
 rbr,corner_1_right_reversed,11,0.53,additional/hairpin_right_3.ogg,Kehre Rechts
 rbr,corner_1_right_reversed,11,0.53,hairpin_right.ogg,Kehre Rechts
@@ -254,18 +254,18 @@ rbr,corner_2_left,1,0.89,additional/two_left_de_3.ogg,2 Links
 rbr,corner_2_left,1,0.89,two_left_de.ogg,2 Links
 rbr,corner_2_left_descriptive,102,0.63,slowleft.ogg,Langsam Links
 rbr,corner_2_left_descriptive_rushed,102,0.63,slowleft.ogg,Langsam Links
+rbr,corner_2_left_plus,-1,-1,plus.ogg,
 rbr,corner_2_left_reversed,102,0.63,left_one.ogg,1 Links
 rbr,corner_2_left_reversed_rushed,102,0.63,left_one.ogg,1 Links
 rbr,corner_2_left_rushed,1,0.89,additional/two_left_de_2.ogg,2 Links
 rbr,corner_2_left_rushed,1,0.89,additional/two_left_de_3.ogg,2 Links
 rbr,corner_2_left_rushed,1,0.89,two_left_de.ogg,2 Links
-rbr,corner_2_plus_left,-1,-1,plus.ogg,
-rbr,corner_2_plus_right,-1,-1,plus.ogg,
 rbr,corner_2_right,10,0.91,additional/two_right_de_2.ogg,2 Rechts
 rbr,corner_2_right,10,0.91,additional/two_right_de_3.ogg,2 Rechts
 rbr,corner_2_right,10,0.91,two_right_de.ogg,2 Rechts
 rbr,corner_2_right_descriptive,112,0.6,slowright.ogg,Langsam Rechts
 rbr,corner_2_right_descriptive_rushed,112,0.6,slowright.ogg,Langsam Rechts
+rbr,corner_2_right_plus,-1,-1,plus.ogg,
 rbr,corner_2_right_reversed,112,0.6,right_one.ogg,1 Rechts
 rbr,corner_2_right_reversed_rushed,112,0.6,right_one.ogg,1 Rechts
 rbr,corner_2_right_rushed,10,0.91,additional/two_right_de_2.ogg,2 Rechts
@@ -280,13 +280,12 @@ rbr,corner_3_left_descriptive,2,0.97,kleft.ogg,K Links
 rbr,corner_3_left_descriptive_rushed,2,0.97,additional/kleft_2.ogg,K Links
 rbr,corner_3_left_descriptive_rushed,2,0.97,additional/kleft_3.ogg,K Links
 rbr,corner_3_left_descriptive_rushed,2,0.97,kleft.ogg,K Links
+rbr,corner_3_left_plus,-1,-1,plus.ogg,
 rbr,corner_3_left_reversed,2,0.97,left_three.ogg,3 Links
 rbr,corner_3_left_reversed_rushed,2,0.97,left_three.ogg,3 Links
 rbr,corner_3_left_rushed,2,0.97,additional/three_left_2.ogg,3 Links
 rbr,corner_3_left_rushed,2,0.97,additional/three_left_3.ogg,3 Links
 rbr,corner_3_left_rushed,2,0.97,three_left.ogg,3 Links
-rbr,corner_3_plus_left,-1,-1,plus.ogg,
-rbr,corner_3_plus_right,-1,-1,plus.ogg,
 rbr,corner_3_right,9,0.97,additional/three_right_2.ogg,3 Rechts
 rbr,corner_3_right,9,0.97,additional/three_right_3.ogg,3 Rechts
 rbr,corner_3_right,9,0.97,three_right.ogg,3 Rechts
@@ -296,6 +295,7 @@ rbr,corner_3_right_descriptive,9,0.97,kright.ogg,K Rechts
 rbr,corner_3_right_descriptive_rushed,9,0.97,additional/kright_2.ogg,K Rechts
 rbr,corner_3_right_descriptive_rushed,9,0.97,additional/kright_3.ogg,K Rechts
 rbr,corner_3_right_descriptive_rushed,9,0.97,kright.ogg,K Rechts
+rbr,corner_3_right_plus,-1,-1,plus.ogg,
 rbr,corner_3_right_reversed,9,0.97,right_three.ogg,3 Rechts
 rbr,corner_3_right_reversed_rushed,9,0.97,right_three.ogg,3 Rechts
 rbr,corner_3_right_rushed,9,0.97,additional/three_right_2.ogg,3 Rechts
@@ -310,13 +310,12 @@ rbr,corner_4_left_descriptive,3,0.96,mediumleft.ogg,Normal Links
 rbr,corner_4_left_descriptive_rushed,3,0.96,additional/mediumleft_2.ogg,Normal Links
 rbr,corner_4_left_descriptive_rushed,3,0.96,additional/mediumleft_3.ogg,Normal Links
 rbr,corner_4_left_descriptive_rushed,3,0.96,mediumleft.ogg,Normal Links
+rbr,corner_4_left_plus,-1,-1,plus.ogg,
 rbr,corner_4_left_reversed,3,0.96,left_four.ogg,4 Links
 rbr,corner_4_left_reversed_rushed,3,0.96,left_four.ogg,4 Links
 rbr,corner_4_left_rushed,3,0.96,additional/four_left_2.ogg,4 Links
 rbr,corner_4_left_rushed,3,0.96,additional/four_left_3.ogg,4 Links
 rbr,corner_4_left_rushed,3,0.96,four_left.ogg,4 Links
-rbr,corner_4_plus_left,-1,-1,plus.ogg,
-rbr,corner_4_plus_right,-1,-1,plus.ogg,
 rbr,corner_4_right,8,0.97,additional/four_right_2.ogg,4 Rechts
 rbr,corner_4_right,8,0.97,additional/four_right_3.ogg,4 Rechts
 rbr,corner_4_right,8,0.97,four_right.ogg,4 Rechts
@@ -326,6 +325,7 @@ rbr,corner_4_right_descriptive,8,0.97,mediumright.ogg,Normal Rechts
 rbr,corner_4_right_descriptive_rushed,8,0.97,additional/mediumright_2.ogg,Normal Rechts
 rbr,corner_4_right_descriptive_rushed,8,0.97,additional/mediumright_3.ogg,Normal Rechts
 rbr,corner_4_right_descriptive_rushed,8,0.97,mediumright.ogg,Normal Rechts
+rbr,corner_4_right_plus,-1,-1,plus.ogg,
 rbr,corner_4_right_reversed,8,0.97,right_four.ogg,4 Rechts
 rbr,corner_4_right_reversed_rushed,8,0.97,right_four.ogg,4 Rechts
 rbr,corner_4_right_rushed,8,0.97,additional/four_right_2.ogg,4 Rechts
@@ -340,13 +340,12 @@ rbr,corner_5_left_descriptive,4,0.93,fastleft.ogg,Schnell Links
 rbr,corner_5_left_descriptive_rushed,4,0.93,additional/fastleft_2.ogg,Schnell Links
 rbr,corner_5_left_descriptive_rushed,4,0.93,additional/fastleft_3.ogg,Schnell Links
 rbr,corner_5_left_descriptive_rushed,4,0.93,fastleft.ogg,Schnell Links
+rbr,corner_5_left_plus,-1,-1,plus.ogg,
 rbr,corner_5_left_reversed,4,0.93,left_five.ogg,5 Links
 rbr,corner_5_left_reversed_rushed,4,0.93,left_five.ogg,5 Links
 rbr,corner_5_left_rushed,4,0.93,additional/five_left_2.ogg,5 Links
 rbr,corner_5_left_rushed,4,0.93,additional/five_left_3.ogg,5 Links
 rbr,corner_5_left_rushed,4,0.93,five_left.ogg,5 Links
-rbr,corner_5_plus_left,-1,-1,plus.ogg,
-rbr,corner_5_plus_right,-1,-1,plus.ogg,
 rbr,corner_5_right,7,0.93,additional/five_right_2.ogg,5 Rechts
 rbr,corner_5_right,7,0.93,additional/five_right_3.ogg,5 Rechts
 rbr,corner_5_right,7,0.93,five_right.ogg,5 Rechts
@@ -356,6 +355,7 @@ rbr,corner_5_right_descriptive,7,0.93,fastright.ogg,Schnell Rechts
 rbr,corner_5_right_descriptive_rushed,7,0.93,additional/fastright_2.ogg,Schnell Rechts
 rbr,corner_5_right_descriptive_rushed,7,0.93,additional/fastright_3.ogg,Schnell Rechts
 rbr,corner_5_right_descriptive_rushed,7,0.93,fastright.ogg,Schnell Rechts
+rbr,corner_5_right_plus,-1,-1,plus.ogg,
 rbr,corner_5_right_reversed,7,0.93,right_five.ogg,5 Rechts
 rbr,corner_5_right_reversed_rushed,7,0.93,right_five.ogg,5 Rechts
 rbr,corner_5_right_rushed,7,0.93,additional/five_right_2.ogg,5 Rechts
@@ -370,13 +370,12 @@ rbr,corner_6_left_descriptive,5,0.83,easyleft.ogg,Leicht Links
 rbr,corner_6_left_descriptive_rushed,5,0.83,additional/easyleft_2.ogg,Leicht Links
 rbr,corner_6_left_descriptive_rushed,5,0.83,additional/easyleft_3.ogg,Leicht Links
 rbr,corner_6_left_descriptive_rushed,5,0.83,easyleft.ogg,Leicht Links
+rbr,corner_6_left_plus,-1,-1,plus.ogg,
 rbr,corner_6_left_reversed,5,0.83,left_six.ogg,6 Links
 rbr,corner_6_left_reversed_rushed,5,0.83,left_six.ogg,6 Links
 rbr,corner_6_left_rushed,5,0.83,additional/six_left_2.ogg,6 Links
 rbr,corner_6_left_rushed,5,0.83,additional/six_left_3.ogg,6 Links
 rbr,corner_6_left_rushed,5,0.83,six_left.ogg,6 Links
-rbr,corner_6_plus_left,-1,-1,plus.ogg,
-rbr,corner_6_plus_right,-1,-1,plus.ogg,
 rbr,corner_6_right,6,0.87,additional/six_right_2.ogg,6 Rechts
 rbr,corner_6_right,6,0.87,additional/six_right_3.ogg,6 Rechts
 rbr,corner_6_right,6,0.87,six_right.ogg,6 Rechts
@@ -386,6 +385,7 @@ rbr,corner_6_right_descriptive,6,0.87,easyright.ogg,Leicht Rechts
 rbr,corner_6_right_descriptive_rushed,6,0.87,additional/easyright_2.ogg,Leicht Rechts
 rbr,corner_6_right_descriptive_rushed,6,0.87,additional/easyright_3.ogg,Leicht Rechts
 rbr,corner_6_right_descriptive_rushed,6,0.87,easyright.ogg,Leicht Rechts
+rbr,corner_6_right_plus,-1,-1,plus.ogg,
 rbr,corner_6_right_reversed,6,0.87,right_six.ogg,6 Rechts
 rbr,corner_6_right_reversed_rushed,6,0.87,right_six.ogg,6 Rechts
 rbr,corner_6_right_rushed,6,0.87,additional/six_right_2.ogg,6 Rechts
@@ -1265,6 +1265,7 @@ rbr,detail_tightens_to_6_rushed,2001,-1,tightens6.ogg,Macht zu 6*
 rbr_base_note,detail_tightens_to_acute,2027,0.01,tightens_acute3.ogg,Tightens Acute
 rbr_base_note,detail_tightens_to_acute_rushed,2027,0.01,tightens_acute3.ogg,Tightens Acute
 rbr,detail_tightens_to_hairpin,-1,-1,../../../../../../../bollinger_sounds/kehre.wav,
+rbr_base_note,detail_tightens_to_open_hairpin,2067,-1,tightens_hp_plus3.ogg,Tightens Hairpin+
 rbr,detail_to_1,2013,0.03,1.ogg,1*
 rbr,detail_to_1,2013,0.03,additional/1_2.ogg,1*
 rbr,detail_to_1,2013,0.03,additional/1_3.ogg,1*
@@ -1453,9 +1454,9 @@ no_rbr_note,unknown,20000,-1,,
 rbr_base_note_no_cc_type,dontcut,-1,-1,additional/dontcut_2.ogg,Don't Cut
 rbr_base_note_no_cc_type,dontcut,-1,-1,additional/dontcut_3.ogg,Don't Cut
 rbr_base_note_no_cc_type,dontcut,-1,-1,dontcut.ogg,Don't Cut
-rbr_base_note_cc_type,detail_narrows,14,0.0,additional/narrows_2.ogg,Enger
-rbr_base_note_cc_type,detail_narrows,14,0.0,additional/narrows_3.ogg,Enger
-rbr_base_note_cc_type,detail_narrows,14,0.0,narrows.ogg,Enger
+rbr_base_note_no_cc_type,narrows,-1,-1,additional/narrows_2.ogg,Enger
+rbr_base_note_no_cc_type,narrows,-1,-1,additional/narrows_3.ogg,Enger
+rbr_base_note_no_cc_type,narrows,-1,-1,narrows.ogg,Enger
 rbr_base_note_no_cc_type,tightens,-1,-1,additional/tightens_2.ogg,Macht Zu
 rbr_base_note_no_cc_type,tightens,-1,-1,additional/tightens_3.ogg,Macht Zu
 rbr_base_note_no_cc_type,tightens,-1,-1,tightens.ogg,Macht Zu
@@ -1567,9 +1568,6 @@ rbr_base_note_cc_type,detail_tightenstoplus,2065,0.02,tightens_three_plus3.ogg,T
 rbr_base_note_cc_type,detail_tightenstominus,2066,0.0,tightens_one_plus1.ogg,Tightens 1+
 rbr_base_note_cc_type,detail_tightenstominus,2066,0.0,tightens_one_plus2.ogg,Tightens 1+
 rbr_base_note_cc_type,detail_tightenstominus,2066,0.0,tightens_one_plus3.ogg,Tightens 1+
-rbr_base_note_cc_type,detail_tightenstoveryslow,2067,-1,tightens_hp_plus1.ogg,Tightens Hairpin+
-rbr_base_note_cc_type,detail_tightenstoveryslow,2067,-1,tightens_hp_plus2.ogg,Tightens Hairpin+
-rbr_base_note_cc_type,detail_tightenstoveryslow,2067,-1,tightens_hp_plus3.ogg,Tightens Hairpin+
 rbr_base_note_no_cc_type,toflatminus,2068,-1,_six_plus1.ogg,_6+
 rbr_base_note_no_cc_type,toflatminus,2068,-1,_six_plus2.ogg,_6+
 rbr_base_note_no_cc_type,toflatminus,2068,-1,_six_plus3.ogg,_6+
